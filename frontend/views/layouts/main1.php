@@ -1,135 +1,65 @@
 <?php
-
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-use yii\helpers\Html;
-use yii\helpers\Url;
-
-
-\frontend\assets\IeAsset::register($this);
-\frontend\assets\CoreAsset::register($this);
-\frontend\assets\ComponentsAsset::register($this);
-\frontend\assets\AppAsset::register($this);
-
+\frontend\assets\DgjAsset::register($this);
 $this->beginPage();
 ?>
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-    <!--<![endif]-->
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8" />
-        <title>首页 | 前台huanglongfei.cn</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="网站描述" name="description" />
-        <meta content="phphome@qq.com" name="author" />
-        <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <?php $this->head() ?>
-        <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <script language="JavaScript">
-            var BaseUrl = "<?=Yii::getAlias('@web')?>";
-        </script>
-    </head>
-    <!-- END HEAD -->
 
-    <body class="page-container-bg-solid page-md">
-    <?php $this->beginBody() ?>
-        <!-- BEGIN HEADER -->
-        <div class="page-header">
-            <!-- BEGIN HEADER TOP -->
-            <div class="page-header-top">
-                <div class="container">
-                    <!-- BEGIN LOGO -->
-                    <div class="page-logo">
-                        <a href="<?=Yii::getAlias('@web')?>">
-                            <img src="<?=Yii::getAlias('@web/static/images/logo-default.jpg')?>" alt="logo" class="logo-default">
-                        </a>
-                    </div>
-                    <!-- END LOGO -->
-                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                    <a href="javascript:;" class="menu-toggler"></a>
-                    <!-- END RESPONSIVE MENU TOGGLER -->
-                    <!-- BEGIN TOP NAVIGATION MENU -->
-                    <div class="top-menu">
-                        <ul class="nav navbar-nav pull-right">
-                            <!-- BEGIN NOTIFICATION DROPDOWN 开始通知下拉 -->
-                            <?php $this->beginContent('@app/views/layouts/public/notice.php') ?>
-                            <?php $this->endContent() ?>
-                            <!-- END NOTIFICATION DROPDOWN -->
-                            
-                            <li class="droddown dropdown-separator">
-                                <span class="separator"></span>
-                            </li>
-                            
-                            <!-- BEGIN USER LOGIN DROPDOWN 用户面板 -->
-                            <li class="dropdown dropdown-user dropdown-dark">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <img alt="" class="img-circle" src="<?=Yii::getAlias('@web/static/images/avatar2.jpg')?>">
-                                    <span class="username username-hide-mobile">Admin</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-default">
-                                    <li><a href="#"><i class="icon-user"></i> 个人资料 </a></li>
-                                    <li><a href="#"><i class="icon-calendar"></i> 我的日历 </a></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-envelope-open"></i> 收件箱
-                                            <span class="badge badge-danger"> 3 </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-rocket"></i> 我的任务
-                                            <span class="badge badge-success"> 7 </span>
-                                        </a>
-                                    </li>
-                                    <li class="divider"> </li>
-                                    <li><a href="#"><i class="icon-lock"></i> 锁屏 </a></li>
-                                    <li><a href="#"><i class="icon-key"></i> 注销 </a></li>
-                                </ul>
-                            </li>
-                            <!-- END USER LOGIN DROPDOWN -->
-                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                            <li class="dropdown dropdown-extended quick-sidebar-toggler">
-                                <span class="sr-only">切换快捷栏</span>
-                                <i class="icon-logout"></i>
-                            </li>
-                            <!-- END QUICK SIDEBAR TOGGLER -->
-                        </ul>
-                    </div>
-                    <!-- END TOP NAVIGATION MENU -->
-                </div>
-            </div>
-            <!-- END HEADER TOP -->
-            <!-- BEGIN HEADER MENU -->
-            <div class="page-header-menu">
-                <div class="container">
-                    <!-- BEGIN HEADER SEARCH BOX -->
-                    <form class="search-form" action="#" method="GET">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="query">
-                            <span class="input-group-btn">
-                                <a href="javascript:;" class="btn submit">
-                                    <i class="icon-magnifier"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </form>
-                    <!-- END HEADER SEARCH BOX -->
-                    <!-- BEGIN MEGA MENU 栏目 -->
-                    <div class="hor-menu  ">
-                        <?php $this->beginContent('@app/views/layouts/public/menu.php') ?>
-                        <?php $this->endContent() ?>
-                    </div>
-                    <!-- END MEGA MENU -->
-                </div>
-            </div>
-            <!-- END HEADER MENU -->
+<!DOCTYPE html><html lang="zh" xmlns="http://www.w3.org/1999/xhtml"><head data-base="/">
+<meta name="baidu-site-verification" content="JxTRMxGj4c">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache,must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta http-equiv="expires" content="0">
+<title>【官网】冻干机,冷干机,冷冻干燥机,真空冷冻干燥机-新默真科技</title>
+<meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
+<meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
+<?php $this->head()?>
+<script language="JavaScript">
+    var BaseUrl = "<?=Yii::getAlias('@web')?>";
+</script>
+<link rel="alternate" media="only screen and (max-width:640px)" href="http://m.nmgen.com.cn">
+<body>
+<?php $this->beginBody()?>
+<!--头部-->
+<div class="head">
+<div class="header">
+  <div class="tok">
+   <h1><a href="/" title="新默真科技"><img alt="新默真科技" src="/static/images/logo.png"></a> </h1>
+   <h2>专业<span>冻干设备+解决方案</span>提供商</h2>
+   <p class="tod">
+       <!--
+       <span>
+        <a href="#" target="_blank" title="英文切入窗口">英文切入窗口</a>
+       </span>
+        -->
+       <em>010-51656110 / 010-51620600</em>
+   </p>
+  </div>
+  <div class="nav menu">
+        <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
+        <?php $this->endContent()?>
+  </div>
+ </div>
+
+</div>
+  <div class="banner fullSlide">
+    <ul class="bd">
+            <li>
+                <a alt="新默真科技专业冻干设备+解决方案提供商" href="#" style="background:url(/static/images/584fae5f0c7f493e8946b2fe086d3b33_3.jpg) no-repeat center top;"></a>
+            </li>
+    </ul>
+    <div class="hd">
+        <ul>
+        </ul>
+    </div>
+    <a class="prev" href="javascript:void(0)"></a>
+    <a class="next" href="javascript:void(0)"></a>
+</div>
+
+
         </div>
         <!-- END HEADER -->
         <!-- BEGIN CONTAINER -->
@@ -148,12 +78,13 @@ $this->beginPage();
         </div>
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
-        <?php $this->beginContent('@app/views/layouts/public/footer.php') ?>
-        <?php $this->endContent() ?>
+        <?php $this->beginContent('@app/views/layouts/public/footer.php')?>
+        <?php $this->endContent()?>
         <!-- END FOOTER -->
-    <?php \frontend\assets\LayoutAsset::register($this); ?>
-    <?php $this->endBody() ?>
+        <?php $this->beginContent('@app/views/layouts/public/side.php')?>
+        <?php $this->endContent()?>
+    <?php $this->endBody()?>
     </body>
 
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage()?>

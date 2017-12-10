@@ -1,55 +1,32 @@
 <!-- BEGIN PRE-FOOTER -->
-<div class="page-prefooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>关于我们</h2>
-                <p> 作为一个yii2爱好者，加入我们来完善这个应用吧。复制下面网址到浏览器。github.com/e282486518/yii2admin </p>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs12 footer-block">
-                <h2>订阅邮件</h2>
-                <div class="subscribe-form">
-                    <form action="javascript:;">
-                        <div class="input-group">
-                            <input type="text" placeholder="phphome@qq.com" class="form-control">
-                            <span class="input-group-btn">
-                                <button class="btn" type="submit">提交</button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>加入我们</h2>
-                <ul class="social-icons">
-                    <li><a href="javascript:;" data-original-title="rss" class="rss"></a></li>
-                    <li><a href="javascript:;" data-original-title="facebook" class="facebook"></a></li>
-                    <li><a href="javascript:;" data-original-title="twitter" class="twitter"></a></li>
-                    <li><a href="javascript:;" data-original-title="googleplus" class="googleplus"></a></li>
-                    <li><a href="javascript:;" data-original-title="linkedin" class="linkedin"></a></li>
-                    <li><a href="javascript:;" data-original-title="youtube" class="youtube"></a></li>
-                    <li><a href="javascript:;" data-original-title="vimeo" class="vimeo"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>联系方式</h2>
-                <address class="margin-bottom-40"> Phone: 136 xxxx 1235
-                    <br> Email:
-                    <a href="mailto:phphome@qq.com">phphome@qq.com</a>
-                </address>
-            </div>
-        </div>
-    </div>
+<div class="foot">
+ <div class="footer">
+  <p class="f_nav">
+        <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
+        <?php $this->endContent()?>
+    </p>
+  <div class="f_k">
+  <h1>
+       <a href="/" title="博医康"><img alt="博医康" src="/Skins/Default/Img/Common/dbl.jpg">  新默真科技（北京）有限公司  </a>
+       <p>  版权所有 &nbsp;&nbsp;
+       <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备10200644号</a>  <span>&nbsp;&nbsp;</span>
+       </p>
+   </h1>
+   <h2>  电话：   010-51656110  <p>  邮箱：   sale@boyikang.com  </p>  地址：   北京市石景山区八角西街61号  </h2>
+   <p class="f_w"> <em>
+       <img alt="手机二维码" src="/resource/images/cce2192286f14d84aef120ab48018b08_9.png">  手机二维码 </em>
+       <em><img alt="微信公众号" src="/resource/images/b35e2e745e4242769abea625c0a63f15_3.jpg">  微信公众号 </em>
+   </p>
+  </div>
+  <div class="yq">
+   <span>友情链接：</span>
+    <a href="http://kfb.nsw88.net.cn/" target="_blank" title="牛商学堂">牛商学堂</a>
+
+    <a href="http://www.srzxjt.com/" target="_blank" title="单仁资讯">单仁资讯</a>
+
+    <a href="http://www.nsw88.com/" target="_blank" title="牛商网">牛商网</a>
+
+  </div>
+ </div>
+
 </div>
-<!-- END PRE-FOOTER -->
-<!-- BEGIN INNER FOOTER -->
-<div class="page-footer">
-    <div class="container"> 
-        2016 &copy; Metronic by huanglongfei.cn.
-        <a href="https://github.com/e282486518/yii2admin" title="黄龙飞" target="_blank">查看应用!</a>
-    </div>
-</div>
-<div class="scroll-to-top">
-    <i class="icon-arrow-up"></i>
-</div>
-<!-- END INNER FOOTER -->

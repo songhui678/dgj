@@ -3,14 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
-use yii\helpers\Url;
-
-
 \frontend\assets\IeAsset::register($this);
-\frontend\assets\CoreAsset::register($this);
-\frontend\assets\ComponentsAsset::register($this);
-\frontend\assets\AppAsset::register($this);
 
 $this->beginPage();
 ?>
@@ -29,7 +22,7 @@ $this->beginPage();
         <meta content="网站描述" name="description" />
         <meta content="phphome@qq.com" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <?php $this->head() ?>
+        <?php $this->head()?>
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="/favicon.ico" />
         <script language="JavaScript">
@@ -39,7 +32,7 @@ $this->beginPage();
     <!-- END HEAD -->
 
     <body class="page-container-bg-solid page-md">
-    <?php $this->beginBody() ?>
+    <?php $this->beginBody()?>
         <!-- BEGIN HEADER -->
         <div class="page-header">
             <!-- BEGIN HEADER TOP -->
@@ -59,14 +52,14 @@ $this->beginPage();
                     <div class="top-menu">
                         <ul class="nav navbar-nav pull-right">
                             <!-- BEGIN NOTIFICATION DROPDOWN 开始通知下拉 -->
-                            <?php $this->beginContent('@app/views/layouts/public/notice.php') ?>
-                            <?php $this->endContent() ?>
+                            <?php $this->beginContent('@app/views/layouts/public/notice.php')?>
+                            <?php $this->endContent()?>
                             <!-- END NOTIFICATION DROPDOWN -->
-                            
+
                             <li class="droddown dropdown-separator">
                                 <span class="separator"></span>
                             </li>
-                            
+
                             <!-- BEGIN USER LOGIN DROPDOWN 用户面板 -->
                             <li class="dropdown dropdown-user dropdown-dark">
                                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
@@ -123,8 +116,8 @@ $this->beginPage();
                     <!-- END HEADER SEARCH BOX -->
                     <!-- BEGIN MEGA MENU 栏目 -->
                     <div class="hor-menu  ">
-                        <?php $this->beginContent('@app/views/layouts/public/menu.php') ?>
-                        <?php $this->endContent() ?>
+                        <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
+                        <?php $this->endContent()?>
                     </div>
                     <!-- END MEGA MENU -->
                 </div>
@@ -146,8 +139,8 @@ $this->beginPage();
                         </div>
                         <!-- END PAGE TITLE -->
                         <!-- BEGIN PAGE TOOLBAR 设置工具栏 -->
-                        <?php $this->beginContent('@app/views/layouts/public/setting.php') ?>
-                        <?php $this->endContent() ?>
+                        <?php $this->beginContent('@app/views/layouts/public/setting.php')?>
+                        <?php $this->endContent()?>
                         <!-- END PAGE TOOLBAR -->
                     </div>
                 </div>
@@ -180,12 +173,12 @@ $this->beginPage();
         </div>
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
-        <?php $this->beginContent('@app/views/layouts/public/footer.php') ?>
-        <?php $this->endContent() ?>
+        <?php $this->beginContent('@app/views/layouts/public/footer.php')?>
+        <?php $this->endContent()?>
         <!-- END FOOTER -->
-    <?php \frontend\assets\LayoutAsset::register($this); ?>
-    <?php $this->endBody() ?>
+    <?php \frontend\assets\LayoutAsset::register($this);?>
+    <?php $this->endBody()?>
     </body>
 
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage()?>
