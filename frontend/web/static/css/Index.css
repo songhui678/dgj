@@ -32,7 +32,7 @@ img { display: block;}
 .zs .zsl6 a:hover p { background: url("/static/images/zsb_13.jpg") no-repeat;}
 .zs .zsl7 a:hover p { background: url("/static/images/zsb_15.jpg") no-repeat;}
 /**/
-.qs { height: 1580px; background: url("/static/images/qsb.jpg") no-repeat center 184px; overflow: hidden; font-family: "Microsoft YaHei", serif;}
+.qs { height: 580px; background: url("/static/images/qsb.jpg") no-repeat center 184px; overflow: hidden; font-family: "Microsoft YaHei", serif;}
 .qs h3 { height: 263px; text-align: center; font-size: 40px;}
 .qs h3 a { color: #0674b1;}
 .qs h3 p { font-size: 24px; color: #666666; font-weight: normal; padding-top: 55px; background: url("/static/images/qsx.jpg") no-repeat center 20px;}
