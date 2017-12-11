@@ -1,5 +1,3 @@
-<?php \frontend\assets\DgjAsset::register($this);?>
-
 <div class="search">
  <div class="content">
   <p class="sez"> 热门搜索关键词：

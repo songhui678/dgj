@@ -1,6 +1,4 @@
-<?php
 
-?>
    <ul>
      <li class="cur"><a href="/" title="首页">首页</a> </li>
      <li><a href="/product/" title="真空冷冻干燥机">真空冷冻干燥机</a> </li>

@@ -1,13 +1,31 @@
+
+
 <!-- BEGIN PRE-FOOTER -->
 <div class="foot">
  <div class="footer">
-  <p class="f_nav">
-        <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
-        <?php $this->endContent()?>
+<p class="f_nav">
+
+    <a href="/" title="首页">首页</a>
+
+    <a href="/product/ZhenKongLingDongGan.html" title="真空冷冻干燥机">真空冷冻干燥机</a>
+
+    <a href="/product/CengXiShiYanLing.html" title="层析实验冷柜">层析实验冷柜</a>
+
+    <a href="/helps/FeiBiaoDingZhi.html" title="冻干机定制">冻干机定制</a>
+
+    <a href="/helps/FuWuZhiChi.html" title="技术服务">技术服务</a>
+
+    <a href="/article/TouTiaoXinWen.html" title="案例资讯">案例资讯</a>
+
+    <a href="/helps/BoYiKangJieShao.html" title="走进博医康">走进博医康</a>
+
+    <a href="/helps/LianXiFangShi.html" title="联系我们">联系我们</a>
+
+    <a href="/sitemap.html" target="_blank" title="网站地图">网站地图</a>
     </p>
   <div class="f_k">
   <h1>
-       <a href="/" title="博医康"><img alt="博医康" src="/Skins/Default/Img/Common/dbl.jpg">  新默真科技（北京）有限公司  </a>
+       <a href="/" title="博医康"><img alt="博医康" src="/static/images/logo.png">  新默真科技（北京）有限公司  </a>
        <p>  版权所有 &nbsp;&nbsp;
        <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备10200644号</a>  <span>&nbsp;&nbsp;</span>
        </p>

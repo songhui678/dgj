@@ -28,17 +28,17 @@ strong {
  
         .header , .content , .footer { width:1200px; margin:0 auto;  }
         /*头部开始*/
-        .head { height: 198px; background: url("static/images/tob.jpg") repeat-x; font-family: "Microsoft YaHei", serif; overflow: hidden;}
+        .head { height: 198px; background: url("/static/images/tob.jpg") repeat-x; font-family: "Microsoft YaHei", serif; overflow: hidden;}
         .tok { height: 138px;}
         .tok h1 { float: left; margin-top: 38px;}
         .tok h1 img { width: 248px; height: 61px;}
         .tok h2 { float: left; margin: 38px 0 0 22px; height: 27px; border-left: 1px solid #0674b1; padding: 25px 0 0 34px; font-size: 20px; color: #333333; font-weight: normal;}
         .tok h2 span { font-weight: bold; color: #0674b1;}
         .tok .tod { float: right; margin-top: 35px;}
-        .tok .tod span { display: block; height: 28px; padding-left: 110px; background: url("static/images/tod.jpg") no-repeat left 0;}
+        .tok .tod span { display: block; height: 28px; padding-left: 110px; background: url("/static/images/tod.jpg") no-repeat left 0;}
         .tok .tod a { display: block; width: 196px; height: 25px; background: #2ea20c; font-size: 14px; color: #ffffff; text-align: center; line-height: 25px;}
         .tok .tod em { display: block; font: 24px "Latha"; color: #0674b1; line-height: 30px;}
-        .nav li { float: left; padding: 0 30px; background: url("static/images/tox.jpg") no-repeat right center;}
+        .nav li { float: left; padding: 0 30px; background: url("/static/images/tox.jpg") no-repeat right center;}
         .nav li a { display: block; font-size: 18px; color: #ffffff; line-height: 58px;}
         .nav li a:hover,.nav li.cur a  { border-bottom: 3px solid #9bc7e0;}
         .nav li:last-child { background: none;}
@@ -135,13 +135,13 @@ strong {
     }
 
 
-    .search { height: 64px; background:#FFF url("static/images/sex.jpg") no-repeat center bottom; overflow: hidden; font-family: "Microsoft YaHei", serif;}
+    .search { height: 64px; background:#FFF url("/static/images/sex.jpg") no-repeat center bottom; overflow: hidden; font-family: "Microsoft YaHei", serif;}
     .search .sez { float: left; font-size: 14px; color: #333333; line-height: 61px; padding-left: 65px;}
     .search .sez a { margin-right: 10px;}
     .search .sey { float: right; margin-top: 15px;}
     .search .sey input { display: block; float: left; border: 0;}
-    .search .sey .sek1 { width: 236px; height: 34px; background: url("static/images/sek1.jpg") no-repeat; padding-left: 20px;}
-    .search .sey .sek2 { width: 111px; height: 34px; background: url("static/images/sek2.jpg") no-repeat;}
+    .search .sey .sek1 { width: 236px; height: 34px; background: url("/static/images/sek1.jpg") no-repeat; padding-left: 20px;}
+    .search .sey .sek2 { width: 111px; height: 34px; background: url("/static/images/sek2.jpg") no-repeat;}
     
 
     .qsb1{display:none;}
@@ -156,18 +156,18 @@ strong {
 
 
         /*底部开始*/
-        .foot { height: 320px; background: url("static/images/dbb.jpg") repeat-x; font-family: "Microsoft YaHei", serif; overflow: hidden;}
+        .foot { height: 320px; background: url("/static/images/dbb.jpg") repeat-x; font-family: "Microsoft YaHei", serif; overflow: hidden;}
         .foot img{display:block;}
         .f_nav { height: 60px; border-bottom: 1px solid #20a4a7;}
-        .f_nav a { display: inline-block; font-size: 18px; color: #ffffff; line-height: 60px; padding: 0 20px; background: url("static/images/dbx.jpg") no-repeat right center;}
+        .f_nav a { display: inline-block; font-size: 18px; color: #ffffff; line-height: 60px; padding: 0 20px; background: url("/static/images/dbx.jpg") no-repeat right center;}
         .f_nav a:last-child { background: none;}
         .f_k { height: 217px;}
-        .f_k h1 { float: left; margin: 70px 0 0 25px; font-size: 26px; color: #333333; font-weight: normal; text-align: center; padding-right: 46px; background: url("static/images/dbx1.jpg") no-repeat right center;}
+        .f_k h1 { float: left; margin: 70px 0 0 25px; font-size: 26px; color: #333333; font-weight: normal; text-align: center; padding-right: 46px; background: url("/static/images/dbx1.jpg") no-repeat right center;}
         .f_k h1 a { color: #333333;}
         .f_k h1 img { width: 351px; height: 41px; margin-bottom: 5px;}
         .f_k h1 p { font-size: 16px; color: #333333; margin-top: 5px;}
         .f_k h1 p span { margin-left: 20px;}
-        .f_k h2 { float: left; margin: 65px 0 0 40px; padding-right: 50px; font-size: 16px; color: #333333; line-height: 35px; font-weight: normal; background: url("static/images/dbx1.jpg") no-repeat right center;}
+        .f_k h2 { float: left; margin: 65px 0 0 40px; padding-right: 50px; font-size: 16px; color: #333333; line-height: 35px; font-weight: normal; background: url("/static/images/dbx1.jpg") no-repeat right center;}
         .f_k .f_w { float: right; margin-top: 47px;}
         .f_k .f_w em { display: block; float: left; margin-right: 40px; text-align: center; font-size: 14px; color: #666666;}
         .f_k .f_w em img { margin-bottom: 10px;width:120px;}
@@ -196,7 +196,7 @@ strong {
             width: 77px;
         } 
 .client-2 li i {
-            background: url("static/images/fx.png") no-repeat;
+            background: url("/static/images/fx.png") no-repeat;
             display: block;
             width: 30px;
             height: 27px;
