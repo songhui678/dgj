@@ -1,7 +1,6 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
-
 $this->beginPage();
 ?>
 
@@ -19,9 +18,9 @@ $this->beginPage();
 <meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
 <meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
 
-<link href="static/css/n-reset.css" rel="stylesheet">
-<link href="static/css/Index.css" rel="stylesheet">
-<link href="static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet">
+<link href="/static/css/n-reset.css" rel="stylesheet">
+<!-- <link href="static/css/Index.css" rel="stylesheet"> -->
+<!-- <link href="static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet"> -->
 
 <script language="javascript" type="text/javascript" src="static/scripts/uaredirect.js"></script>
 <script language="javascript" type="text/javascript" src="static/scripts/nsw.pc.min.js"></script>

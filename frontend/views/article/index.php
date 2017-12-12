@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 ?>
-<link href="static/css/article_list.css" rel="stylesheet">
+<link href="/static/css/article_list.css" rel="stylesheet">
 <div class="blk-xs fl">
     <div class="p14-left-nav-1 b">
  <div class="p14-left-nav-1-tit">
