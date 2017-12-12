@@ -1,4 +1,4 @@
-<?php \frontend\assets\ContactAsset::register($this);?>
+
 
 
 <div class="c-content-contact-1 c-opt-1">
@@ -102,9 +102,9 @@
     </div>
 </div>
 
-<?php $this->registerJsFile('http://api.map.baidu.com/api?v=2.0&ak=LwBmuc22Mn7sZHWhrqGs2H8dfU1pLIhL', ['depends'=>['backend\assets\CoreAsset']]);?>
+<?php $this->registerJsFile('http://api.map.baidu.com/api?v=2.0&ak=LwBmuc22Mn7sZHWhrqGs2H8dfU1pLIhL', ['depends' => ['backend\assets\CoreAsset']]);?>
 <!-- 定义数据块 -->
-<?php $this->beginBlock('test'); ?>
+<?php $this->beginBlock('test');?>
     $(function(){
         // 百度地图API功能
         var map = new BMap.Map("gmapbg");
@@ -122,6 +122,6 @@
             }
         }, "深圳市");
     });
-<?php $this->endBlock() ?>
+<?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
-<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END); ?>
+<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END);?>
