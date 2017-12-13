@@ -2,17 +2,12 @@
 
 namespace frontend\controllers;
 
-use yii\web\Controller;
-
-class AboutController extends Controller {
+class ContactController extends \yii\web\Controller {
 	/**
 	 * @var string
 	 */
 	public $layout = 'main';
-
 	public function actionIndex() {
-		$this->getView()->title = "关于新默真科技";
-		//phpinfo();
 		return $this->render('index');
 	}
 

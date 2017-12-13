@@ -1,6 +1,7 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Html;
 $this->beginPage();
 ?>
 
@@ -14,7 +15,7 @@ $this->beginPage();
 <meta http-equiv="cache-control" content="no-cache,must-revalidate">
 <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
 <meta http-equiv="expires" content="0">
-<title>【官网】冻干机,冷干机,冷冻干燥机,真空冷冻干燥机-新默真科技</title>
+<title><?=Html::encode($this->title) . "-新默真科技"?></title>
 <meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
 <meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
 
@@ -22,9 +23,9 @@ $this->beginPage();
 <!-- <link href="static/css/Index.css" rel="stylesheet"> -->
 <!-- <link href="static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet"> -->
 
-<script language="javascript" type="text/javascript" src="static/scripts/uaredirect.js"></script>
-<script language="javascript" type="text/javascript" src="static/scripts/nsw.pc.min.js"></script>
-<script language="javascript" type="text/javascript" src="static/scripts/template-sub-domain.js"></script>
+<script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
+<script language="javascript" type="text/javascript" src="/static/scripts/nsw.pc.min.js"></script>
+<script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
 
 
 <link rel="shortcut icon" href="/favicon.ico" />
