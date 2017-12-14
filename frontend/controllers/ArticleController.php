@@ -32,9 +32,12 @@ class ArticleController extends Controller {
 		$tujianList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(3)->all();
 		//相关资讯
 		$xiangguanList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(3)->all();
-		$nextArticle = Article::find()->where(array('status' => 1, 'category_id' => $article->category_id, 'id' => ['>', 'id', $id]))->select(array('id', 'title'))->orderBy('id asc')->one();
+		// Article::findBySql('SELECT * FROM user')->one();  此方法是用 sql  语句查询 user 表里面的一条数据；
+		$sql = "select id,title from yii2_article where id<" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
+		$nextArticle = Article::findBySql($sql)->one();
 
-		$beforeArticle = Article::find()->where(array('status' => 1, 'category_id' => $article->category_id, 'id' => ['<', 'id', $id]))->select(array('id', 'title'))->orderBy('id desc')->one();
+		$sql = "select id,title from yii2_article where id>" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
+		$beforeArticle = Article::findBysql($sql)->one();
 
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'xiangguanList' => $xiangguanList, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle));
 	}

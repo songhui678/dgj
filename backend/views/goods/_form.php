@@ -16,21 +16,21 @@ use yii\helpers\Url;
 		'enctype' => "multipart/form-data",
 	],
 ]);?>
-<?=$form->field($model, 'category_id')->selectList(
-	ArrayHelper::listDataLevel(\backend\models\ArticleCat::find()->asArray()->all(), 'id', 'title', 'id', 'pid'),
-	['class' => 'form-control c-md-2'])->label('栏目')->hint('英文标识');?>
+<?=$form->field($model, 'cat_id')->selectList(
+	ArrayHelper::listDataLevel(\backend\models\GoodsCat::find()->asArray()->all(), 'id', 'title', 'id', 'pid'),
+	['class' => 'form-control c-md-2'])->label('分类')->hint('英文标识');?>
 
-<?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('文章标识')->hint('英文标识，只允许含有:英文、数字和中划线');?>
+<?=$form->field($model, 'goods_name')->textInput(['class' => 'form-control c-md-5'])->label('产品名称')->hint('英文标识，只允许含有:英文、数字和中划线');?>
 
-<?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-5'])->label('文章标题')->hint('文章标题');?>
 
 <!-- 单图 -->
-<?=$form->field($model, 'cover')->widget('\common\widgets\images\Images', [
+<?=$form->field($model, 'goods_cover')->widget('\common\widgets\images\Images', [
 	//'type' => \backend\widgets\images\Images::TYPE_IMAGE, // 单图
 	'saveDB' => 1, //图片是否保存到picture表，默认不保存
-], ['class' => 'c-md-12'])->label('封面图片')->hint('单图图片尺寸为：300*300');?>
+], ['class' => 'c-md-12'])->label('产品封面')->hint('单图图片尺寸为：300*300');?>
 
-<?=$form->field($model, 'description')->textarea(['class' => 'form-control c-md-4', 'rows' => 3])->label('文章描述')->hint('文章描述')?>
+<?=$form->field($model, 'keywords')->textInput(['class' => 'form-control c-md-5'])->label('产品关键字')->hint('产品关键字');?>
+<?=$form->field($model, 'description')->textarea(['class' => 'form-control c-md-4', 'rows' => 3])->label('产品描述')->hint('产品描述')?>
 
 <?=$form->field($model, 'content')->widget('\kucha\ueditor\UEditor', [
 	'clientOptions' => [
@@ -52,14 +52,11 @@ use yii\helpers\Url;
 			['preview', 'simpleupload', 'insertimage', 'link', 'emotion', 'map', 'insertvideo', 'insertcode'],
 		],
 	],
-], ['class' => 'c-md-7'])->label('文章内容');?>
+], ['class' => 'c-md-7'])->label('产品内容');?>
 
-<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('文章标签')->hint('111111');?>
+<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('产品标签')->hint('111111');?>
 
-<?=$form->field($model, 'link')->textInput(['class' => 'form-control c-md-5'])->label('外链')->hint('外链地址必须带http')?>
-<!--
-<?=$form->field($model, 'extend')->textarea(['class' => 'form-control c-md-4', 'rows' => 5])->label('扩展参数')->hint('一维数组配置格式“项:值”每项之间用换行或逗号隔开，其值转化为array后serialize()存储到数据库')?>
- -->
+
 <?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越前')?>
 
 <?=$form->field($model, 'status')->radioList(['1' => '正常', '0' => '隐藏'])->label('状态')?>

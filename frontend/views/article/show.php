@@ -46,9 +46,20 @@ use yii\helpers\Url;
 </div>
     <div class="p14-pagination-1 b">
     <dl>
-        <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>">查看详情 +</a></em></b><span>上一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a></dd>
+        <?php if (!empty($nextArticle)) {?>
+            <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>">查看详情 +</a></em></b><span>上一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
+            </dd>
+        <?php } else {?>
+            <dd><b><em></em></b><span style="width:100px;">没有上一条了</span></dd>
+        <?php }?>
         <dt></dt>
-        <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>">查看详情 +</a></em></b><span>下一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a></dd>
+        <?php if (!empty($beforeArticle)) {?>
+            <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>">查看详情 +</a></em></b><span>下一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
+            </dd>
+        <?php } else {?>
+            <dd><b><em></em></b><span style="width:100px;">没有下一条了</span></dd>
+        <?php }?>
+
     </dl>
     <div class="p14-pagination-1-href">
         <span><a href="<?=Url::to(['/article/index', 'id' => $cate->id])?>" title="返回列表">返回列表</a></span>
