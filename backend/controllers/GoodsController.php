@@ -2,9 +2,10 @@
 
 namespace backend\controllers;
 
-use backend\controllers\BaseController;
+use backend\models\Goods;
 use backend\models\search\GoodsSearch;
-use common\modelsgii\Goods;
+use common\modelsgii\GoodsTag;
+use common\modelsgii\Tag;
 use Yii;
 use yii\web\NotFoundHttpException;
 
@@ -38,9 +39,12 @@ class GoodsController extends BaseController {
 
 		if (Yii::$app->request->isPost) {
 			$data = Yii::$app->request->post('Goods');
-
+			$data['goods_sn'] = date('Ymd') . substr(implode(NULL, array_map('ord', str_split(substr(uniqid(), 7, 13), 1))), 0, 8);
+			$data['create_time'] = time();
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
+				//添加标签相关处理
+				$this->insertTag($model->goods_id, $data['tag']);
 				$this->success('操作成功', $this->getForward());
 			} else {
 				$this->error('操作错误');
@@ -66,7 +70,7 @@ class GoodsController extends BaseController {
 
 		if (Yii::$app->request->isPost) {
 			$data = Yii::$app->request->post('Goods');
-
+			$data['update_time'] = time();
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
 				$this->success('操作成功', $this->getForward());
@@ -109,6 +113,48 @@ class GoodsController extends BaseController {
 		} else {
 			throw new NotFoundHttpException('The requested page does not exist.');
 		}
-
+	}
+	/**
+	 * [insertTag 添加标签]
+	 * @author songhui
+	 * @datetime 2017-12-15T01:51:43+0800
+	 * @param    [type]                   $id  [description]
+	 * @param    [type]                   $tag [description]
+	 * @return   [type]                        [description]
+	 */
+	private function insertTag($id, $tag) {
+		$tagarr = array();
+		$tags = str_replace("，", ",", $tag);
+		$tagarr = explode(",", $tags);
+		GoodsTag::deleteAll("goods_id = :goods_id", array(':goods_id' => $id));
+		foreach ($tagarr as $kt => $vt) {
+			$tagm = Tag::find()->where(array("name" => $vt))->one();
+			if (empty($tagm)) {
+				$tagmodel = new Tag();
+				$tagmodel->name = $vt;
+				$tagmodel->num = 0;
+				$tagmodel->save(false);
+				self::insertTagId($id, $tagmodel->id);
+			} else {
+				self::insertTagId($id, $tagm->id);
+			}
+		}
+	}
+	/**
+	 * [insertTagId 添加标签与产品对应表]
+	 * @author songhui
+	 * @datetime 2017-12-15T01:57:28+0800
+	 * @param    [type]                   $id    [description]
+	 * @param    [type]                   $tagid [description]
+	 * @return   [type]                          [description]
+	 */
+	private function insertTagId($id, $tagid) {
+		$gTag = GoodsTag::find()->where(array("tag_id" => $tagid, "goods_id" => $id))->one();
+		if (empty($gTag)) {
+			$tagIdmodel = new GoodsTag();
+			$tagIdmodel->goods_id = $id;
+			$tagIdmodel->tag_id = $tagid;
+			$tagIdmodel->save(false);
+		}
 	}
 }

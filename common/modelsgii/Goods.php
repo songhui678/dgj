@@ -47,7 +47,7 @@ class Goods extends \common\core\BaseActiveRecord {
 	 */
 	public function rules() {
 		return [
-			[['cat_id', 'goods_number', 'goods_cover', 'view', 'up', 'down', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
+			[['cat_id', 'goods_cover', 'view', 'up', 'down', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
 			[['goods_cover', 'content'], 'required'],
 			[['content'], 'string'],
 			[['goods_sn'], 'string', 'max' => 60],
@@ -79,5 +79,14 @@ class Goods extends \common\core\BaseActiveRecord {
 			'sort' => 'Sort',
 			'status' => 'Status',
 		];
+	}
+	//显示推广图链接
+	public function getPhoto() {
+		$url = "";
+		$photo = \common\modelsgii\Picture::find()->where(array("id" => $this->goods_cover))->one();
+		if (is_object($photo)) {
+			$url = "http://image.dgj.com/image/$photo->path";
+		}
+		return $url;
 	}
 }

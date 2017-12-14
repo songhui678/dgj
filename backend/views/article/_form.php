@@ -54,9 +54,9 @@ use yii\helpers\Url;
 	],
 ], ['class' => 'c-md-7'])->label('文章内容');?>
 
-<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('文章标签')->hint('111111');?>
+<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('文章标签')->hint('多个标签请用逗号分开');?>
 
-<?=$form->field($model, 'link')->textInput(['class' => 'form-control c-md-5'])->label('外链')->hint('外链地址必须带http')?>
+<!-- <?=$form->field($model, 'link')->textInput(['class' => 'form-control c-md-5'])->label('外链')->hint('外链地址必须带http')?> -->
 <!--
 <?=$form->field($model, 'extend')->textarea(['class' => 'form-control c-md-4', 'rows' => 5])->label('扩展参数')->hint('一维数组配置格式“项:值”每项之间用换行或逗号隔开，其值转化为array后serialize()存储到数据库')?>
  -->

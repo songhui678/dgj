@@ -68,7 +68,6 @@ class GoodsSearch extends Goods {
 
 		$query->andFilterWhere(['like', 'goods_sn', $this->goods_sn])
 			->andFilterWhere(['like', 'goods_name', $this->goods_name])
-			->andFilterWhere(['like', 'goods_album', $this->goods_album])
 			->andFilterWhere(['like', 'keywords', $this->keywords])
 			->andFilterWhere(['like', 'description', $this->description])
 			->andFilterWhere(['like', 'content', $this->content])

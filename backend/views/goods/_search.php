@@ -1,61 +1,45 @@
 <?php
 
+use common\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
 /* @var $this yii\web\View */
-/* @var $model backend\models\search\GoodsSearch */
+/* @var $model backend\models\search\AdSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="goods-search">
+<?php $form = ActiveForm::begin([
+	'action' => ['index'],
+	'method' => 'get',
+	'options' => [
+		//'class'=>"form-inline",
+		'data-pjax' => true, //开启pjax搜索
+	],
+]);?>
+<div class="row">
+    <div class="col-md-2">
 
-    <?php $form = ActiveForm::begin([
-        'action' => ['index'],
-        'method' => 'get',
-    ]); ?>
+    <?=$form->field($model, 'cat_id')->dropDownList(
+	ArrayHelper::listDataLevel(\backend\models\GoodsCat::find(array('status' => 1))->asArray()->all(), 'id', 'title', 'id', 'pid'),
+	['class' => 'form-control'])->label('产品分类');?>
 
-    <?= $form->field($model, 'goods_id') ?>
-
-    <?= $form->field($model, 'cat_id') ?>
-
-    <?= $form->field($model, 'goods_sn') ?>
-
-    <?= $form->field($model, 'goods_name') ?>
-
-    <?= $form->field($model, 'goods_cover') ?>
-
-    <?php // echo $form->field($model, 'goods_album') ?>
-
-    <?php // echo $form->field($model, 'keywords') ?>
-
-    <?php // echo $form->field($model, 'description') ?>
-
-    <?php // echo $form->field($model, 'content') ?>
-
-    <?php // echo $form->field($model, 'tag') ?>
-
-    <?php // echo $form->field($model, 'is_promote') ?>
-
-    <?php // echo $form->field($model, 'view') ?>
-
-    <?php // echo $form->field($model, 'up') ?>
-
-    <?php // echo $form->field($model, 'down') ?>
-
-    <?php // echo $form->field($model, 'create_time') ?>
-
-    <?php // echo $form->field($model, 'update_time') ?>
-
-    <?php // echo $form->field($model, 'sort') ?>
-
-    <?php // echo $form->field($model, 'status') ?>
-
-    <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+    </div>
+    <div class="col-md-2">
+    <?=$form->field($model, 'goods_sn')->textInput()->label('产品编号')?>
+    </div>
+    <div class="col-md-2">
+    <?=$form->field($model, 'goods_name')->textInput()->label('产品名称')?>
+    </div>
+    <div class="col-md-2">
+    <?=$form->field($model, 'status')->dropDownList(['' => '全部', 0 => '隐藏', 1 => '正常'], ['class' => 'form-control'])->label('状态');?>
     </div>
 
-    <?php ActiveForm::end(); ?>
-
+    <div class="col-md-2">
+        <div class="form-group" style="margin-top: 24px;">
+        <?=Html::submitButton('搜索', ['class' => 'btn btn-primary'])?>
+        <?=Html::resetButton('重置', ['class' => 'btn btn-default'])?>
+        </div>
+    </div>
 </div>
+<?php ActiveForm::end();?>
+

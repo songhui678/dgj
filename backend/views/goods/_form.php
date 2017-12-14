@@ -54,7 +54,7 @@ use yii\helpers\Url;
 	],
 ], ['class' => 'c-md-7'])->label('产品内容');?>
 
-<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('产品标签')->hint('111111');?>
+<?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('产品标签')->hint('多个标签请用逗号分开');?>
 
 
 <?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越前')?>

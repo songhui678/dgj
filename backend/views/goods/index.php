@@ -43,7 +43,7 @@ $columns = [
 		'header' => '上级分类',
 		'content' => function ($model) {
 			$str = '';
-			$paths = GoodsCat::getParents($model['cate_id']);
+			$paths = GoodsCat::getParents($model['cat_id']);
 			foreach ($paths as $value) {
 				$str .= $value['title'] . ' > ';
 			}
@@ -98,7 +98,7 @@ $columns = [
                 <?=Html::a('添加 <i class="fa fa-plus"></i>', ['add'], ['class' => 'btn green', 'style' => 'margin-right:10px;'])?>
                 <?=Html::a('删除 <i class="fa fa-times"></i>', ['delete'], ['class' => 'btn green ajax-post confirm', 'target-form' => 'ids', 'style' => 'margin-right:10px;'])?>
             </div>
-            <div class="btn-group">
+<!--             <div class="btn-group">
                 <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
                     工具箱
                     <i class="fa fa-angle-down"></i>
@@ -108,7 +108,7 @@ $columns = [
                     <li class="divider"> </li>
                     <li><a href="javascript:;"> 其他 </a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="portlet-body">
@@ -149,7 +149,7 @@ $columns = [
 <!-- 定义数据块 -->
 <?php $this->beginBlock('test');?>
 jQuery(document).ready(function() {
-    highlight_subnav('article/index'); //子导航高亮
+    highlight_subnav('goods/index'); //子导航高亮
 });
 <?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
