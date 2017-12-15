@@ -15,4 +15,8 @@ class IndexController extends Controller {
 		return $this->render('index');
 	}
 
+	public function actionError() {
+		//phpinfo();
+		return $this->render('error');
+	}
 }

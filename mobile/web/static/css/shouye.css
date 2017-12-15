@@ -1,0 +1,85 @@
+
+        .wrap img{ width:100%; display: block;}
+        /*格式化*/
+        html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, span, input, textarea {margin:0;padding:0;}
+        body{ font-size:14px;font-family:"Microsoft Yahei",Verdana,Arial,Helvetica,sans-serif; padding-top:1px; background:#f9f9f9;} 
+        li, ol { list-style:none; }
+        ins { text-decoration:none; }
+        i, em { font-style:normal; }
+        a { text-decoration:none;font-family:"Microsoft Yahei"; color:#666;}
+        a:hover { cursor:pointer; text-decoration:none;}
+        a:active{star:expression(this.onFocus=this.blur());}
+        :focus{outline:0;}
+        .clear { clear:both; line-height:0px; overflow:hidden; zoom:1; font-size:0px; content:'.';}
+        .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+        img{ padding:0; margin:0;}
+        a img { border:none; }
+        input,textarea{ border:none;font-family:"Microsoft Yahei"; font-size:13px;}
+        h1, h2, h3, h4, h5, h6{ font-weight:normal; font-size:14px;}
+        /*排版通用*/
+        .f-mm{ margin-left:auto; margin-right:auto;}/*居中对齐*/
+        .f-fl{ float:left;} /*左浮动*/
+        .f-fr{ float:right;} /*右浮动*/
+        .f-tr{ text-align:right;} /*右对齐*/
+        .f-tl{ text-align:left;} /*左对齐*/
+        .f-tc{ text-align:center;} /*中间对齐*/
+        .f-pr{ position:relative;} /*定位*/
+        .f-di{ display:inline;}
+        /*杂项*/
+        .u-co-bt{ border-radius:4px; /*css3圆角*/ width:80px; height:26px; line-height:26px; display: inline-block; vertical-align: middle;  padding-top:1px;}/*提交按钮样式*/
+        .u-co-bt.z-spe{ width:100%;}
+        .u-lico{ width:24px; height:24px; border-radius:4px;  /*css3圆角*/ background:#000; padding:10px;opacity: 0.8; position:relative; left:50%; margin:10px 0 10px -14px; box-shadow:0 0 3px #2d2d2d;}/*等待载入*/
+        .fs15{font-size:15px;} /*15号字体*/
+        .fs12{font-size:12px;} /*12号字体*/
+        .pdr12{ padding-right:12px;} /*右边距12px*/
+        .pl10{ padding-left:10px;} /*左边距10px*/
+        .red { color:#f00; } /*字体颜色红色*/
+        .emptyData{padding-left:10px;line-height:26px; }
+        .wrap{ min-width:320px; max-width:640px; margin:0 auto; overflow:hidden; position:relative; background:#fff;} /*网站首页宽度*/
+        /* -- 页面整体布局 -- */
+        /*头部开始*/
+        .g-hd { height: 8.67rem; overflow: hidden;}
+        .g-hd .tod { height: 2.25rem; background: #0674b1 url("Images/Common/tod.jpg") no-repeat 32.2% center; background-size: 1.54rem 1.17rem; font: 1rem Arial; color: #ffffff; text-align: center; line-height: 2.25rem;}
+        .g-hd h1 { width: 38.8%; margin: 0 auto; padding-top: 1.29rem;}
+        .g-hd .toz { font-size: 1rem; color: #333333; text-align: center; margin-top: 0.5rem;}
+        .g-hd .toz span { font-weight: bold; color: #0674b1;}
+        /*头部结束*/
+        
+        
+    
+
+        
+        /*底部开始*/
+        .g-ft { height: 15.92rem; overflow: hidden;}
+        .g-ft img{ display:block;width:100%;}
+        .f_to { height: 3.13rem; background: #e6e6e6;}
+        .f_to a { display: block; float: left; font-size: 1rem; color: #0674b1; line-height: 3.13rem; padding-left: 8%; margin-left: 15%;}
+        .f_to a:nth-child(1) { background: url("Images/Common/dbt_03.jpg") no-repeat left center; background-size: 1.6rem 1.54rem;}
+        .f_to a:nth-child(2) { background: url("Images/Common/dbt_05.jpg") no-repeat left center; background-size: 1.6rem 1.54rem;}
+        .f_z { height: 6.55rem; text-align: center; font-size: 1.17rem; color: #333333; padding-top: 1.2rem;}
+        .f_z span { font-size: 0.67rem; color: #333333; margin-left: 3%;}
+        .f_z em { display: block; font-size: 0.92rem; color: #666666; padding-top: 0.8rem; line-height: 1.5rem;}
+        .f_z em i { display: block;}
+        .social_nav5{height:5.04rem;position:fixed; bottom:0; min-width:320px; max-width:640px; width:100%;  z-index:999; background: url("Images/Common/dbb.jpg") no-repeat; background-size: 100% 5.04rem;}
+        .social_nav5 li{ width:25%; float:left; position:relative; font-size:0.92rem; text-align:center; color:#3b3b3b; height:5.04rem;box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -o-box-sizing:border-box;}
+        .social_nav5 li em{ width:33%; display:block; margin:0 auto; padding:0.8rem 0 0.4rem 0;}
+        .social_nav5 li a{ color:#ffffff;}
+
+        @media screen and (min-width:320px) {
+          html { font-size:75%;}
+        }
+        @media screen and (min-width:360px) {
+          html { font-size:87%;}
+        }
+        @media screen and (min-width:480px) {
+          html { font-size:112%;}
+
+        }
+        @media screen and (min-width:568px) {
+          html { font-size:131%;}
+
+        }
+        @media screen and (min-width:639px) {
+          html { font-size:150%;}
+        }
+    

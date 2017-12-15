@@ -1,55 +1,16 @@
-<!-- BEGIN PRE-FOOTER -->
-<div class="page-prefooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>关于我们</h2>
-                <p> 作为一个yii2爱好者，加入我们来完善这个应用吧。复制下面网址到浏览器。github.com/e282486518/yii2admin </p>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs12 footer-block">
-                <h2>订阅邮件</h2>
-                <div class="subscribe-form">
-                    <form action="javascript:;">
-                        <div class="input-group">
-                            <input type="text" placeholder="phphome@qq.com" class="form-control">
-                            <span class="input-group-btn">
-                                <button class="btn" type="submit">提交</button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>加入我们</h2>
-                <ul class="social-icons">
-                    <li><a href="javascript:;" data-original-title="rss" class="rss"></a></li>
-                    <li><a href="javascript:;" data-original-title="facebook" class="facebook"></a></li>
-                    <li><a href="javascript:;" data-original-title="twitter" class="twitter"></a></li>
-                    <li><a href="javascript:;" data-original-title="googleplus" class="googleplus"></a></li>
-                    <li><a href="javascript:;" data-original-title="linkedin" class="linkedin"></a></li>
-                    <li><a href="javascript:;" data-original-title="youtube" class="youtube"></a></li>
-                    <li><a href="javascript:;" data-original-title="vimeo" class="vimeo"></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
-                <h2>联系方式</h2>
-                <address class="margin-bottom-40"> Phone: 136 xxxx 1235
-                    <br> Email:
-                    <a href="mailto:phphome@qq.com">phphome@qq.com</a>
-                </address>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END PRE-FOOTER -->
-<!-- BEGIN INNER FOOTER -->
-<div class="page-footer">
-    <div class="container"> 
-        2016 &copy; Metronic by huanglongfei.cn.
-        <a href="https://github.com/e282486518/yii2admin" title="黄龙飞" target="_blank">查看应用!</a>
-    </div>
-</div>
-<div class="scroll-to-top">
-    <i class="icon-arrow-up"></i>
-</div>
-<!-- END INNER FOOTER -->
+<!-- 底部 -->
+<footer class="g-ft">
+ <p class="f_to"><a href="/mobile/sitemap.html">网站地图</a><a href="#">返回顶部</a> </p>
+ <p class="f_z">北京博医康实验仪器有限公司<span>版权所有</span><em>地址：北京房山区良乡工业开发区建设路20号<i>邮箱：sale@boyikang.com</i></em></p>
+ <div class="social_nav5">
+  <ul>
+   <li><a href="tel:010-68173889"><em><img src="/mobile/Images/Common/ico_03.png"></em>电话咨询</a></li>
+   <li><a href="/mobile/product/"><em><img src="/mobile/Images/Common/ico_05.png"></em>产品中心</a></li>
+   <li><a href="/mobile/article/KeHuAnLi.html"><em><img src="/mobile/Images/Common/ico_08.png"></em>案例资讯</a></li>
+   <li><a href="/mobile/"><em><img src="/mobile/Images/Common/ico_10.png"></em>博医康首页</a></li>
+  </ul>
+ </div>
+</footer>
+<script src="/mobile/js/public.js"></script>
+<script src="/mobile/css/58fb0485ac305a6aefa1c259.js" type="text/javascript"></script>
+<script>  var sysBasePath = null ;var projPageData = {};</script></body></html>

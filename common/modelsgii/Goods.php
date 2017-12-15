@@ -66,7 +66,6 @@ class Goods extends \common\core\BaseActiveRecord {
 			'goods_sn' => 'Goods Sn',
 			'goods_name' => 'Goods Name',
 			'goods_cover' => 'Goods Cover',
-
 			'keywords' => 'Keywords',
 			'description' => 'Description',
 			'content' => 'Content',
@@ -80,12 +79,12 @@ class Goods extends \common\core\BaseActiveRecord {
 			'status' => 'Status',
 		];
 	}
-	//显示推广图链接
+	//显示图链接
 	public function getPhoto() {
 		$url = "";
 		$photo = \common\modelsgii\Picture::find()->where(array("id" => $this->goods_cover))->one();
 		if (is_object($photo)) {
-			$url = "http://image.dgj.com/image/$photo->path";
+			$url = Yii::getAlias('@storageUrl') . "image/$photo->path";
 		}
 		return $url;
 	}

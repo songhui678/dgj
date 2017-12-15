@@ -1,191 +1,84 @@
 <?php
-
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-use yii\helpers\Html;
-use yii\helpers\Url;
-
-
-\mobile\assets\IeAsset::register($this);
-\mobile\assets\CoreAsset::register($this);
-\mobile\assets\ComponentsAsset::register($this);
-\mobile\assets\AppAsset::register($this);
-
 $this->beginPage();
 ?>
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-    <!--<![endif]-->
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8" />
-        <title>首页 | 前台huanglongfei.cn</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="网站描述" name="description" />
-        <meta content="phphome@qq.com" name="author" />
-        <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <?php $this->head() ?>
-        <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <script language="JavaScript">
-            var BaseUrl = "<?=Yii::getAlias('@web')?>";
-        </script>
-    </head>
-    <!-- END HEAD -->
+<!DOCTYPE html><html lang="zh"><head data-base="/mobile/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="wap-font-scale" content="no">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache,must-revalidate">
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta http-equiv="expires" content="0">
+ <title>联系博医康,北京博医康联系方式,咨询热线：010-68173889-博医康</title>
+<meta name="keywords" content="联系博医康,北京博医康联系方式,咨询热线：010-68173889">
+<meta name="description" content="联系博医康，北京博医康联系方式，咨询热线：010-68173889。北京博医康实验仪器有限公司地址：北京房山区良乡工业开发区建设路20号">
+<link rel="canonical" href="http://www.boyikang.com/helps/LianXiFangShi.html">
+<link href="/mobile/css/reset.css" rel="stylesheet">
+<link href="/mobile/css/swiper-3.3.1.min.css" rel="stylesheet">
+<script src="/mobile/js/jquery-1.10.1.min.js"></script>
+<script src="/mobile/js/swiper-3.3.1.jquery.min.js"></script>
+<script src="/mobile/js/laypage.js"></script>
+<script src="/mobile/js/template-sub-domain.js"></script></head>
+ <body>
+<!-- 主体 -->
+<div class="blk-main">
+<!-- 标题栏 -->
+<div class="blk">
+<header class="g-hd">
+<p class="tod">010-68173889 </p>
+<h1><a href="/mobile/"><img src="/mobile/Skins/Default/Img/Common/logo.jpg" title="博医康"></a>
+</h1>
+<p class="toz">专业<span>冻干设备+解决方案</span>提供商</p>
 
-    <body class="page-container-bg-solid page-md">
-    <?php $this->beginBody() ?>
-        <!-- BEGIN HEADER -->
-        <div class="page-header">
-            <!-- BEGIN HEADER TOP -->
-            <div class="page-header-top">
-                <div class="container">
-                    <!-- BEGIN LOGO -->
-                    <div class="page-logo">
-                        <a href="<?=Yii::getAlias('@web')?>">
-                            <img src="<?=Yii::getAlias('@web/static/images/logo-default.jpg')?>" alt="logo" class="logo-default">
-                        </a>
-                    </div>
-                    <!-- END LOGO -->
-                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                    <a href="javascript:;" class="menu-toggler"></a>
-                    <!-- END RESPONSIVE MENU TOGGLER -->
-                    <!-- BEGIN TOP NAVIGATION MENU -->
-                    <div class="top-menu">
-                        <ul class="nav navbar-nav pull-right">
-                            <!-- BEGIN NOTIFICATION DROPDOWN 开始通知下拉 -->
-                            <?php $this->beginContent('@app/views/layouts/public/notice.php') ?>
-                            <?php $this->endContent() ?>
-                            <!-- END NOTIFICATION DROPDOWN -->
-                            
-                            <li class="droddown dropdown-separator">
-                                <span class="separator"></span>
-                            </li>
-                            
-                            <!-- BEGIN USER LOGIN DROPDOWN 用户面板 -->
-                            <li class="dropdown dropdown-user dropdown-dark">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <img alt="" class="img-circle" src="<?=Yii::getAlias('@web/static/images/avatar2.jpg')?>">
-                                    <span class="username username-hide-mobile">Admin</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-default">
-                                    <li><a href="#"><i class="icon-user"></i> 个人资料 </a></li>
-                                    <li><a href="#"><i class="icon-calendar"></i> 我的日历 </a></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-envelope-open"></i> 收件箱
-                                            <span class="badge badge-danger"> 3 </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-rocket"></i> 我的任务
-                                            <span class="badge badge-success"> 7 </span>
-                                        </a>
-                                    </li>
-                                    <li class="divider"> </li>
-                                    <li><a href="#"><i class="icon-lock"></i> 锁屏 </a></li>
-                                    <li><a href="#"><i class="icon-key"></i> 注销 </a></li>
-                                </ul>
-                            </li>
-                            <!-- END USER LOGIN DROPDOWN -->
-                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                            <li class="dropdown dropdown-extended quick-sidebar-toggler">
-                                <span class="sr-only">切换快捷栏</span>
-                                <i class="icon-logout"></i>
-                            </li>
-                            <!-- END QUICK SIDEBAR TOGGLER -->
-                        </ul>
-                    </div>
-                    <!-- END TOP NAVIGATION MENU -->
-                </div>
-            </div>
-            <!-- END HEADER TOP -->
-            <!-- BEGIN HEADER MENU -->
-            <div class="page-header-menu">
-                <div class="container">
-                    <!-- BEGIN HEADER SEARCH BOX -->
-                    <form class="search-form" action="#" method="GET">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="query">
-                            <span class="input-group-btn">
-                                <a href="javascript:;" class="btn submit">
-                                    <i class="icon-magnifier"></i>
-                                </a>
-                            </span>
-                        </div>
-                    </form>
-                    <!-- END HEADER SEARCH BOX -->
-                    <!-- BEGIN MEGA MENU 栏目 -->
-                    <div class="hor-menu  ">
-                        <?php $this->beginContent('@app/views/layouts/public/menu.php') ?>
-                        <?php $this->endContent() ?>
-                    </div>
-                    <!-- END MEGA MENU -->
-                </div>
-            </div>
-            <!-- END HEADER MENU -->
+</header>
+
+<div>
+        <div class="m4-title_nav">
+            <div class="m4-t-sear1"></div>
+            <a class="m4-goback" href="javascript:history.back(-1);">返回上一页</a>
+            <a href="/mobile/help/category.html" id="m4-topclick"></a>
+            <h2>联系方式</h2>
         </div>
-        <!-- END HEADER -->
-        <!-- BEGIN CONTAINER -->
-        <div class="page-container">
-            <!-- BEGIN CONTENT -->
-            <div class="page-content-wrapper">
-                <!-- BEGIN CONTENT BODY -->
-                <!-- BEGIN PAGE HEAD-->
-                <div class="page-head">
-                    <div class="container">
-                        <!-- BEGIN PAGE TITLE -->
-                        <div class="page-title">
-                            <h1>这里是页面的标题 <small>页面子标题...</small></h1>
-                        </div>
-                        <!-- END PAGE TITLE -->
-                        <!-- BEGIN PAGE TOOLBAR 设置工具栏 -->
-                        <?php $this->beginContent('@app/views/layouts/public/setting.php') ?>
-                        <?php $this->endContent() ?>
-                        <!-- END PAGE TOOLBAR -->
-                    </div>
-                </div>
-                <!-- END PAGE HEAD-->
-                <!-- BEGIN PAGE CONTENT BODY -->
-                <div class="page-content">
-                    <div class="container">
-                        <!-- BEGIN PAGE BREADCRUMBS -->
-                        <ul class="page-breadcrumb breadcrumb">
-                            <li>
-                                <a href="<?=Yii::getAlias('@web')?>">主页</a>
-                                <i class="fa fa-circle"></i>
-                            </li>
-                            <li>
-                                <span>布局页</span>
-                            </li>
-                        </ul>
-                        <!-- END PAGE BREADCRUMBS -->
-                        <!-- BEGIN PAGE CONTENT INNER -->
-                        <div class="page-content-inner">
-                            <?=$content?>
-                        </div>
-                        <!-- END PAGE CONTENT INNER -->
-                    </div>
-                </div>
-                <!-- END PAGE CONTENT BODY -->
-                <!-- END CONTENT BODY -->
+
+    </div>
+    <!-- 搜索模块 -->
+    <div class="m4-t-sear2">
+        <div class="m4-t-sear2-txt">
+            <p>取消</p>
+            <div class="m4-t-sear2-inp">
+                <input class="m4-t-sear2-inp-text" id="key" type="text">
+                <span class="m4-t-sear2-inp-but"><input onkeydown="keydown();" type="button"></span>
             </div>
-            <!-- END CONTENT -->
         </div>
-        <!-- END CONTAINER -->
-        <!-- BEGIN FOOTER -->
-        <?php $this->beginContent('@app/views/layouts/public/footer.php') ?>
-        <?php $this->endContent() ?>
-        <!-- END FOOTER -->
-    <?php \mobile\assets\LayoutAsset::register($this); ?>
-    <?php $this->endBody() ?>
+    </div>
+</div>
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+        <p><a href="/mobile/" title="首页">首页</a>
+                    &gt; 公司信息
+        </p>
+    </div>
+</div>
+
+ <?=$content?>
+
+</div>
+  </div>
+      <!-- END FOOTER -->
+    <?php $this->beginContent('@app/views/layouts/public/side.php')?>
+    <?php $this->endContent()?>
+    <!-- BEGIN FOOTER -->
+    <?php $this->beginContent('@app/views/layouts/public/footer.php')?>
+    <?php $this->endContent()?>
+
+    <?php $this->endBody()?>
     </body>
 
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage()?>

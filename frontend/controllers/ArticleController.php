@@ -17,7 +17,7 @@ class ArticleController extends Controller {
 		$cate = ArticleCat::find()->where(array("pid" => 0, "id" => $id))->one();
 		$cateList = ArticleCat::find()->where(array("pid" => 0))->orderBy('sort asc')->all();
 		$articleCount = Article::find()->where(array("category_id" => $id, "status" => 1))->count('id');
-		$pages = new Pagination(['totalCount' => $articleCount, 'pageSize' => '2']);
+		$pages = new Pagination(['totalCount' => $articleCount, 'pageSize' => '10']);
 		$articleList = Article::find()->where(array("category_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$toutiaoArticle = Article::find()->where(array("category_id" => $id, "status" => 2))->orderBy('create_time desc')->one();
 		// var_dump($cateList);exit;

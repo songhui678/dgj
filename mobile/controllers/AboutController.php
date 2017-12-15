@@ -4,17 +4,16 @@ namespace mobile\controllers;
 
 use yii\web\Controller;
 
-class AboutController extends Controller
-{
-    /**
-     * @var string
-     */
-    public $layout = 'main';
+class AboutController extends Controller {
+	/**
+	 * @var string
+	 */
+	public $layout = 'main';
 
-    public function actionContact()
-    {
-        //phpinfo();
-        return $this->render('contact');
-    }
-    
+	public function actionIndex() {
+		$this->getView()->title = "关于新默真科技";
+		//phpinfo();
+		return $this->render('index');
+	}
+
 }
