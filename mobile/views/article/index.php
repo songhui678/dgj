@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
-<link href="/static/css/article_list.css" rel="stylesheet">
+<link href="/mobile/css/article_list.css" rel="stylesheet">
  <!-- 文章列表2 -->
    <div class="m4-blk blk">
     <div class="m4-nsws-list-content-2">
