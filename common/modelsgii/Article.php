@@ -1,6 +1,7 @@
 <?php
 
 namespace common\modelsgii;
+use Yii;
 
 /**
  * This is the model class for table "{{%article}}".
@@ -74,7 +75,7 @@ class Article extends \common\core\BaseActiveRecord {
 		$url = "";
 		$photo = \common\modelsgii\Picture::find()->where(array("id" => $this->cover))->one();
 		if (is_object($photo)) {
-			$url = Yii::getAlias('@storageUrl') . "image/$photo->path";
+			$url = Yii::getAlias('@storageUrl') . "/image/$photo->path";
 		}
 		return $url;
 	}

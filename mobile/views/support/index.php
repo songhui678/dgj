@@ -10,7 +10,7 @@
     }
 
     .ws h3 {
-        background:url("/Skins/Default/Img/Index/qsx.jpg") no-repeat scroll center 73px;
+        background:url("/static/images/qsx.jpg") no-repeat scroll center 73px;
         color: #0674b1;
         font-size: 40px;
         height: 300px;
@@ -67,7 +67,7 @@
     }
 
     .ws li p {
-        background:url("/Skins/Default/Img/Index/wsy1.png") no-repeat scroll 0 0;
+        background:url("/static/images/wsy1.png") no-repeat scroll 0 0;
         height: 190px;
         left: 25px;
         position: absolute;
@@ -84,7 +84,7 @@
     }
 
     .ws li a:hover p {
-        background:url("/Skins/Default/Img/Index/wsy2.png") no-repeat scroll 0 0;
+        background:url("/static/images/wsy2.png") no-repeat scroll 0 0;
     }
 
     .ws li a:hover em {
@@ -100,35 +100,35 @@
     </h3>
     <ul>
         <li>
-            <a><img alt="解决方案" class="wsi" src="/Skins/Default/Img/Index/wst_03.jpg">
+            <a><img alt="解决方案" class="wsi" src="/static/images/wst_03.jpg">
                 <p>
                     <br>
                 </p>
                 <em>解决方案</em><span>博医康拥有优秀的研发团队，可以为客户提供从实验室研究、中试到工业生产全范围的真空冷冻解决方案</span></a>
         </li>
         <li>
-            <a><img alt="工艺培训" class="wsi" src="/Skins/Default/Img/Index/wst_05.jpg">
+            <a><img alt="工艺培训" class="wsi" src="/static/images/wst_05.jpg">
                 <p>
                     <br>
                 </p>
                 <em>工艺培训</em><span>博医康定期举办技术研讨会,与客户携手推动冻干技术发展,切实解决客户冻干难题</span></a>
         </li>
         <li>
-            <a><img alt="样品冻干" class="wsi" src="/Skins/Default/Img/Index/wst_07.jpg">
+            <a><img alt="样品冻干" class="wsi" src="/static/images/wst_07.jpg">
                 <p>
                     <br>
                 </p>
                 <em>样品冻干</em><span>博医康专设冻干实验室,根据客户需求,可免费提供样品冻干实验,以及冻干工艺优化服务</span></a>
         </li>
         <li>
-            <a><img alt="非标定制" class="wsi" src="/Skins/Default/Img/Index/wst_08.jpg">
+            <a><img alt="非标定制" class="wsi" src="/static/images/wst_08.jpg">
                 <p>
                     <br>
                 </p>
                 <em>非标定制</em><span>专业承接非标准真空冷冻干燥机项目，提供完善的冻干系统解决方案，满足客户对冻干生产不同的应用需求。</span></a>
         </li>
         <li>
-            <a><img alt="售后维护" class="wsi" src="/Skins/Default/Img/Index/wst_11.jpg">
+            <a><img alt="售后维护" class="wsi" src="/static/images/wst_11.jpg">
                 <p>
                     <br>
                 </p>

@@ -1,87 +1,80 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Html;
+use yii\helpers\Url;
 $this->beginPage();
 ?>
 
-<!DOCTYPE html>
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-<head data-base="/">
-<meta name="baidu-site-verification" content="JxTRMxGj4c">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache,must-revalidate">
-<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-<meta http-equiv="expires" content="0">
-<title>【官网】冻干机,冷干机,冷冻干燥机,真空冷冻干燥机-新默真科技</title>
-<meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
-<meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
+<!DOCTYPE html><html lang="zh"><head data-base="/mobile/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+ <meta http-equiv="cache-control" content="no-cache,must-revalidate">
+ <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+ <meta http-equiv="expires" content="0">
+<title><?=Html::encode($this->title)?></title>
+<meta name="description" content="<?php echo isset($this->metaTags['description']) ? $this->metaTags['description'] : ''; ?>" />
+<meta name="keywords" content="<?php echo isset($this->metaTags['keywords']) ? $this->metaTags['keywords'] : ''; ?>" />
 
-<link href="/static/css/dgjcommon.css" rel="stylesheet">
-<link href="/static/css/Index.css" rel="stylesheet">
-<link href="/static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet">
+  <link rel="canonical" href="http://www.nmgen.com/">
 
-<script language="javascript" type="text/javascript" src="/static/scripts/58e5bd1aac30899558b844f3.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/JQuery.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/jquery.SuperSlide.2.1.1.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/public.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
+  <link href="/mobile/css/index.css" rel="stylesheet" type="text/css">
+  <link href="/mobile/css/shouye.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="/favicon.ico" />
+ <script src="/mobile/js/template-sub-domain.js"></script></head>
 
-<link rel="alternate" media="only screen and (max-width:640px)" href="http://m.nmgen.com.cn">
-<body>
-<?php $this->beginBody()?>
-<!--头部-->
-<div class="head">
-<div class="header">
-  <div class="tok">
-   <h1><a href="/" title="新默真科技"><img alt="新默真科技" src="/static/images/logo.png"></a> </h1>
-   <h2>专业<span>冻干设备+解决方案</span>提供商</h2>
-   <p class="tod">
-       <!--
-       <span>
-        <a href="#" target="_blank" title="英文切入窗口">英文切入窗口</a>
-       </span>
-        -->
-       <em>010-51656110 / 010-51620600</em>
-   </p>
-  </div>
-  <div class="nav menu">
-        <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
-        <?php $this->endContent()?>
-  </div>
- </div>
+ <body>
+  <div class="wrap">
+   <!--box-->
+   <!--头部-->
+   <header class="g-hd">
+ <p class="tod">010-51656110  </p>
+ <h1><a href="/mobile/"><img src="/mobile/Skins/Default/Img/Common/logo.jpg" title="博医康"></a></h1>
+ <p class="toz">专业<span>冻干设备+解决方案</span>提供商</p>
 
-</div>
-  <div class="banner fullSlide">
-    <ul class="bd">
-            <li>
-                <a alt="新默真科技专业冻干设备+解决方案提供商" href="#" style="background:url(/static/images/584fae5f0c7f493e8946b2fe086d3b33_3.jpg) no-repeat center top;"></a>
-            </li>
-    </ul>
-    <div class="hd">
-        <ul>
-        </ul>
-    </div>
-    <a class="prev" href="javascript:void(0)"></a>
-    <a class="next" href="javascript:void(0)"></a>
+</header>
+   <!--内容-->
+   <section class="g-bd">
+    <div class="banner j-slide-auto">
+ <ul class="m-box">
+
+   <li><a href="/mobile/product/ZhenKongLingDongGan.html"><img alt="博医康" src="/mobile/resource/images/049dfbb4519641c188b4f57b8b67bbfa_8.jpg"></a></li>
+
+ </ul>
 </div>
 
+    <div class="zs">
 
+<ul>
+  <li class="cur">
+    <a href="<?=Url::toRoute('/product')?>" title="真空冷冻干燥机">真空冷冻干燥机</a>
+  </li>
+  <li>
+      <a href="/product/CengXiShiYanLing.html" title="层析实验冷柜">层析实验冷柜</a>
+  </li>
+  <li>
+      <a href="<?=Url::toRoute('/custom')?>" title="冻干机定制">冻干机定制</a>
+  </li>
+  <li>
+      <a href="<?=Url::toRoute('/support')?>" title="技术服务">技术服务</a>
+  </li>
+  <li>
+      <a href="<?=Url::toRoute(['/article'])?>" title="案例资讯">案例资讯</a>
+  </li>
+  <li>
+      <a href="<?=Url::toRoute('/contact')?>" title="联系我们">联系我们</a>
+  </li>
+</ul>
 
-
-                <!-- BEGIN CONTENT BODY -->
-                <div class="page-content">
-                    <div class="container">
-                        <?=$content?>
-                    </div>
-                </div>
-
-        <!-- END CONTAINER -->
-    <!-- END FOOTER -->
+</div>
+   <?=$content?>
+</div>
+  </div>
+      <!-- END FOOTER -->
     <?php $this->beginContent('@app/views/layouts/public/side.php')?>
     <?php $this->endContent()?>
     <!-- BEGIN FOOTER -->

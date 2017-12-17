@@ -4,7 +4,6 @@ namespace backend\controllers;
 
 use backend\models\Article;
 use backend\models\search\ArticleSearch;
-use common\helpers\FuncHelper;
 use common\modelsgii\ArticleTag;
 use common\modelsgii\Tag;
 use Yii;
@@ -42,20 +41,12 @@ class ArticleController extends BaseController {
 
 		if (Yii::$app->request->isPost) {
 			$data = Yii::$app->request->post('Article');
-			//$data['create_time'] = time(); // backend/models/Article->behaviors()自动完成时间更新
-			/* 格式化extend值，为空或数组序列化 */
-			if ($data['extend']) {
-				$tmp = FuncHelper::parse_field_attr($data['extend']);
-				if (is_array($tmp)) {
-					$data['extend'] = serialize($tmp);
-				} else {
-					$data['extend'] = '';
-				}
-			}
+			$data['create_time'] = time();
+
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
 				//添加标签相关处理
-				$this->insertTag($model->goods_id, $data['tag']);
+				$this->insertTag($model->id, $data['tag']);
 				$this->success('操作成功', $this->getForward());
 			} else {
 				$this->error('操作错误');
@@ -81,18 +72,10 @@ class ArticleController extends BaseController {
 
 		if (Yii::$app->request->isPost) {
 			$data = Yii::$app->request->post('Article');
-			//$data['update_time'] = time(); // backend/models/Article->behaviors()自动完成时间更新
-			/* 格式化extend值，为空或数组序列化 */
-			if ($data['extend']) {
-				$tmp = FuncHelper::parse_field_attr($data['extend']);
-				if (is_array($tmp)) {
-					$data['extend'] = serialize($tmp);
-				} else {
-					$data['extend'] = '';
-				}
-			}
+			$data['update_time'] = time();
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
+				$this->insertTag($model->id, $data['tag']);
 				$this->success('操作成功', $this->getForward());
 			} else {
 				$this->error('操作错误');

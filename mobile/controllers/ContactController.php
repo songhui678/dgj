@@ -11,4 +11,8 @@ class ContactController extends \yii\web\Controller {
 		return $this->render('index');
 	}
 
+	public function actionRoute() {
+		//phpinfo();
+		return $this->render('route');
+	}
 }

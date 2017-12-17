@@ -48,6 +48,7 @@ $columns = [
 				$str .= '<span style="color:#f00;">一级分类</span>';
 			} else {
 				$paths = GoodsCat::getParents($model['id']);
+
 				foreach ($paths as $value) {
 					$str .= $value['title'] . ' > ';
 				}

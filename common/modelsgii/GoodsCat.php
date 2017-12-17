@@ -1,6 +1,7 @@
 <?php
 
 namespace common\modelsgii;
+use common\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "{{%goods_cat}}".
@@ -59,5 +60,42 @@ class GoodsCat extends \common\core\BaseActiveRecord {
 			'sort' => 'Sort',
 			'status' => 'Status',
 		];
+	}
+
+	/**
+	 * 获取所有的分类
+	 */
+	public function getCategories() {
+		$data = self::find()->all();
+		$data = ArrayHelper::toArray($data);
+		return $data;
+	}
+
+	/**
+	 *遍历出各个子类 获得树状结构的数组
+	 */
+	public static function getTree($data, $pid = 0, $lev = 1) {
+		$tree = [];
+		foreach ($data as $value) {
+			if ($value['pid'] == $pid) {
+				$value['title'] = str_repeat('|___', $lev) . $value['title'];
+				$tree[] = $value;
+				$tree = array_merge($tree, self::getTree($data, $value['id'], $lev + 1));
+			}
+		}
+		return $tree;
+	}
+
+	/**
+	 * 得到相应  id  对应的  分类名  数组
+	 */
+	public function getOptions() {
+		$data = $this->getCategories();
+		$tree = $this->getTree($data);
+		$list = ['添加分类'];
+		foreach ($tree as $value) {
+			$list[$value['id']] = $value['title'];
+		}
+		return $list;
 	}
 }

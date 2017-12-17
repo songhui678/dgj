@@ -11,6 +11,9 @@ class IndexController extends Controller {
 	public $layout = 'main1';
 
 	public function actionIndex() {
+		$this->getView()->title = "your title";
+		$this->getView()->metaTags['keywords'] = 'keywords';
+		$this->getView()->metaTags['description'] = 'description';
 		//phpinfo();
 		return $this->render('index');
 	}
@@ -19,4 +22,5 @@ class IndexController extends Controller {
 		//phpinfo();
 		return $this->render('error');
 	}
+
 }

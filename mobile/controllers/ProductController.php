@@ -15,7 +15,13 @@ class ProductController extends Controller {
 	 */
 	public $layout = 'main';
 	public function actionIndex() {
-		return $this->render('index');
+		$id = 1;
+		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
+		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+
+		return $this->render('index', array('pages' => $pages, 'goodsList' => $goodsList));
+
 	}
 	/**
 	 * [actionShow 产品详情]
@@ -27,13 +33,10 @@ class ProductController extends Controller {
 	public function actionShow($id) {
 		$goods = Goods::find()->where(array("goods_id" => $id, "status" => 1))->one();
 		//最新资讯
-		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
-		//推荐产品
-		$goodsList = array();
-		if (!empty($goods)) {
-			$goodsList = Goods::find()->where(array("cat_id" => $goods->cat_id, "status" => 1))->orderBy('create_time asc')->limit(3)->all();
+		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(3)->all();
 
-			return $this->render('show', array('goods' => $goods, 'articleList' => $articleList, 'goodsList' => $goodsList));
+		if (!empty($goods)) {
+			return $this->render('show', array('goods' => $goods, 'articleList' => $articleList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
@@ -45,7 +48,7 @@ class ProductController extends Controller {
 	 * @return   [type]                   [description]
 	 */
 	public function actionCate($id) {
-		$cate = GoodsCat::find()->where(array("id" => $id))->one();
+		$cate = GoodsCat::find()->where(array("id" => $id, "status" => 1))->one();
 
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);

@@ -33,7 +33,7 @@ return [
 			],
 		],
 		'errorHandler' => [
-			'errorAction' => 'public/404',
+			'errorAction' => 'index/error',
 		],
 
 		'urlManager' => [

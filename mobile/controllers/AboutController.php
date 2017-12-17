@@ -12,7 +12,9 @@ class AboutController extends Controller {
 
 	public function actionIndex() {
 		$this->getView()->title = "关于新默真科技";
-		//phpinfo();
+		$this->getView()->metaTags['keywords'] = 'keywords';
+		$this->getView()->metaTags['description'] = 'description';
+
 		return $this->render('index');
 	}
 

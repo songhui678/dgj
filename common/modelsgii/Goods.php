@@ -1,6 +1,7 @@
 <?php
 
 namespace common\modelsgii;
+use Yii;
 
 /**
  * This is the model class for table "{{%goods}}".

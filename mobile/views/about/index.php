@@ -1,4 +1,4 @@
-<link href="/static/css/dingzhi.css" rel="stylesheet">
+<link href="/mobile/css/contact.css" rel="stylesheet">
 
    <div class="p12-aboutinfo-1">
 

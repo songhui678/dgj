@@ -24,7 +24,6 @@ class GoodsCatController extends BaseController {
 		//var_dump(Category::getParents(2));
 		$searchModel = new GoodsCatSearch();
 		$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-		//\yii\helpers\VarDumper::dump($dataProvider->allModels);exit;
 
 		return $this->render('index', [
 			'searchModel' => $searchModel,
@@ -38,16 +37,7 @@ class GoodsCatController extends BaseController {
 		if (Yii::$app->request->isPost) {
 
 			$data = Yii::$app->request->post('GoodsCat');
-			//$data['create_time'] = time();
-			/* 格式化extend值，为空或数组序列化 */
-			// if ($data['extend']) {
-			//     $tmp = FuncHelper::parse_field_attr($data['extend']);
-			//     if (is_array($tmp)) {
-			//         $data['extend'] = serialize($tmp);
-			//     } else {
-			//         $data['extend'] = '';
-			//     }
-			// }
+			$data['create_time'] = time();
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
 				$this->success('操作成功', $this->getForward());
@@ -59,9 +49,12 @@ class GoodsCatController extends BaseController {
 		/* 获取模型默认数据 */
 		$model->loadDefaultValues();
 		$model->pid = Yii::$app->request->get('pid', 0);
+		$list = $model->getOptions();
+
 		/* 渲染模板 */
 		return $this->render('edit', [
 			'model' => $model,
+			'list' => $list,
 		]);
 	}
 
@@ -76,16 +69,8 @@ class GoodsCatController extends BaseController {
 
 		if (Yii::$app->request->isPost) {
 			$data = Yii::$app->request->post('GoodsCat');
-			//$data['update_time'] = time();
-			/* 格式化extend值，为空或数组序列化 */
-			// if ($data['extend']) {
-			//  $tmp = FuncHelper::parse_field_attr($data['extend']);
-			//  if (is_array($tmp)) {
-			//      $data['extend'] = serialize($tmp);
-			//  } else {
-			//      $data['extend'] = '';
-			//  }
-			// }
+			$data['update_time'] = time();
+
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
 				$this->success('操作成功', $this->getForward());
@@ -93,20 +78,11 @@ class GoodsCatController extends BaseController {
 				$this->error('操作错误');
 			}
 		}
-		/* 还原extend的数据 */
-		if ($model->extend) {
-			$_tmp = unserialize($model->extend);
-			$_str = '';
-			if ($_tmp && is_array($_tmp)) {
-				foreach ($_tmp as $key => $value) {
-					$_str .= $key . ':' . $value . ',';
-				}
-			}
-			$model->extend = $_str;
-		}
+		$list = $model->getOptions();
 		/* 渲染模板 */
 		return $this->render('edit', [
 			'model' => $model,
+			'list' => $list,
 		]);
 	}
 

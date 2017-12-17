@@ -52,7 +52,7 @@ use yii\widgets\LinkPager;
 
     <?php foreach ($articleList as $article) {?>
         <dl>
-            <dt><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><img alt="<?=$article->title?>" src="/resource/images/da9bc071970949ef9d429ca3e4d0506a_57.png" title="<?=$article->title?>"></a></dt>
+            <dt><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><img alt="<?=$article->title?>" src="<?=$article->photo?>" title="<?=$article->title?>"></a></dt>
             <dd>
                 <h4><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>"><?=$article->title?></a></h4>
                 <div class="p14-infolist-1-list-desc"><?=$article->description?></div>

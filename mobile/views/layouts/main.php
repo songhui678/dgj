@@ -1,6 +1,7 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Html;
 $this->beginPage();
 ?>
 <!DOCTYPE html><html lang="zh"><head data-base="/mobile/">
@@ -14,16 +15,18 @@ $this->beginPage();
 <meta http-equiv="cache-control" content="no-cache,must-revalidate">
 <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
 <meta http-equiv="expires" content="0">
- <title>联系博医康,北京博医康联系方式,咨询热线：010-68173889-博医康</title>
-<meta name="keywords" content="联系博医康,北京博医康联系方式,咨询热线：010-68173889">
-<meta name="description" content="联系博医康，北京博医康联系方式，咨询热线：010-68173889。北京博医康实验仪器有限公司地址：北京房山区良乡工业开发区建设路20号">
+ <title><?=Html::encode($this->title)?></title>
+<meta name="description" content="<?php echo isset($this->metaTags['description']) ? $this->metaTags['description'] : ''; ?>" />
+<meta name="keywords" content="<?php echo isset($this->metaTags['keywords']) ? $this->metaTags['keywords'] : ''; ?>" />
 <link rel="canonical" href="http://www.boyikang.com/helps/LianXiFangShi.html">
 <link href="/mobile/css/reset.css" rel="stylesheet">
 <link href="/mobile/css/swiper-3.3.1.min.css" rel="stylesheet">
+<link href="/mobile/css/contact.css" rel="stylesheet">
 <script src="/mobile/js/jquery-1.10.1.min.js"></script>
 <script src="/mobile/js/swiper-3.3.1.jquery.min.js"></script>
 <script src="/mobile/js/laypage.js"></script>
-<script src="/mobile/js/template-sub-domain.js"></script></head>
+<script src="/mobile/js/template-sub-domain.js"></script>
+</head>
  <body>
 <!-- 主体 -->
 <div class="blk-main">
@@ -60,7 +63,7 @@ $this->beginPage();
    <!-- 面包屑 -->
    <div class="m4-blk">
     <div class="m4-crumbs-1">
-        <p><a href="/mobile/" title="首页">首页</a>
+        <p><a href="/" title="首页">首页</a>
                     &gt; 公司信息
         </p>
     </div>

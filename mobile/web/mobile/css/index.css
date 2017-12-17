@@ -8,16 +8,16 @@
 /**/
 .zs1 { height: 29.63rem; overflow: hidden;}
 .zs1 ul { width: 68.6%; margin: 0 auto; padding-top: 3.13rem;}
-.zs1 li { float: left; width: 46.15%; height: 6.75rem; background: url("../Images/Index/zsy.jpg") no-repeat; background-size: 100% 8.13rem; padding-top: 1.38rem; font-size: 1rem; text-align: center; margin-bottom: 1.08rem;}
+.zs1 li { float: left; width: 46.15%; height: 6.75rem; background: url("/static/images/zsy.jpg") no-repeat; background-size: 100% 8.13rem; padding-top: 1.38rem; font-size: 1rem; text-align: center; margin-bottom: 1.08rem;}
 .zs1 li a { color: #ffffff;}
 .zs1 li p { width: 38%; margin: 0 auto 0.5rem;}
 .zs1 li:nth-child(odd) { margin-right: 7.7%;}
 /**/
 .qs { height: 123.5rem; overflow: hidden;}
-.qs h3 { height: 9.21rem; text-align: center; font-size: 1rem; color: #666666; background: url("../Images/Index/qs_03.jpg") no-repeat center 5.08rem; background-size: 84.7% 0.88rem;}
+.qs h3 { height: 9.21rem; text-align: center; font-size: 1rem; color: #666666; background: url("/static/images/qs_03.jpg") no-repeat center 5.08rem; background-size: 84.7% 0.88rem;}
 .qs h3 p { font-size: 1.5rem; color: #0674b1; font-weight: bold; padding: 2.8rem 0 1.4rem;}
 .qsk1 { width: 84.7%; height: 40.8rem; overflow: hidden; margin: 0 auto;}
-.qsk1 h4 { height: 1.46rem; background: url("../Images/Index/qs_06.jpg") no-repeat; background-size: 100% 1.46rem; font-size:1rem; color: #0674b1; text-align: center; line-height: 1.46rem; font-weight: bold; margin-bottom: 1.29rem;}
+.qsk1 h4 { height: 1.46rem; background: url("/static/images/qs_06.jpg") no-repeat; background-size: 100% 1.46rem; font-size:1rem; color: #0674b1; text-align: center; line-height: 1.46rem; font-weight: bold; margin-bottom: 1.29rem;}
 .qsk1 .qsu1 { height: 7.46rem;}
 .qsk1 .qsu1 li { height: 2.25rem; margin-bottom: 1px;}
 .qsk1 .qsu1 li p { float: left; width: 22%; height: 2.25rem;line-height: 2.25rem; background: #0674b1; font-size: 1.08rem; color: #ffffff; padding-left: 3%;vertical-align: middle;display: table-cell; }
@@ -28,7 +28,7 @@
 .qsk1 .qsu2 li img { height: 11rem;}
 .qsk1 .qsu2 li p { height: 2.5rem; background: #0674b1; font: 0.85rem Arial; color: #ffffff; text-align: center; line-height: 2.5rem; text-transform: uppercase; font-weight: bold;}
 .qsk1 .qsu2 li:nth-child(odd) { margin-right: 1.9%;}
-.qsk1 .qsa { width: 62.5%; height: 1.96rem; background: url("../Images/Index/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
+.qsk1 .qsa { width: 62.5%; height: 1.96rem; background: url("/static/images/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
 .qsk1 .qsa a { display: block; width: 55%; height: 1.96rem; background: #2ea20c; border-radius: 1.2rem; font-size: 0.92rem; color: #ffffff; text-align: center; line-height: 1.96rem; margin: 0 auto;}
 .qsk1 .m-box .con{ display:inline; float:left;}
 
@@ -41,7 +41,7 @@
 .qsk2 .qsu1 li:last-child em a{ display:inline-block;}
 
 .qsk3 { width: 84.7%; height: 25.04rem; overflow: hidden; margin: 0 auto; position: relative;}
-.qsk3 h4 { height: 1.46rem; background: url("../Images/Index/qs_06.jpg") no-repeat; background-size: 100% 1.46rem; font-size: 1rem; color: #0674b1; text-align: center; line-height: 1.46rem; font-weight: bold; margin-bottom: 1.4rem;}
+.qsk3 h4 { height: 1.46rem; background: url("/static/images/qs_06.jpg") no-repeat; background-size: 100% 1.46rem; font-size: 1rem; color: #0674b1; text-align: center; line-height: 1.46rem; font-weight: bold; margin-bottom: 1.4rem;}
 .qsk3 .c-list { font-size:1.08rem; height:3.25rem; line-height:2.25rem; margin-bottom:0.46rem;}
 .qsk3 .c-list li { float:left; text-align:center; color:#333333; width:50%; background:#e6e6e6; height:3.25rem;line-height:3.25rem; overflow:hidden; font-size:0.95rem; display: table-cell;vertical-align: middle;}
 .qsk3 .c-list li.z-on { background:#0674b1; color:#fff;}
@@ -52,11 +52,11 @@
 .qsk3 .no_ov .m-box .page li img{height:11rem;}
 .qsk3 .no_ov .m-box .page li p { height: 2.42rem; font-size: 1rem; color: #ffffff; text-align: center; line-height: 2.42rem; background: #0674b1; font-weight: bold;}
 .qsk3 .no_ov .m-box .page li:nth-child(odd) { margin-right: 1.9%;}
-.qsk3 .qsa { position: absolute; left: 18%; top: 22.08rem; width: 62.5%; height: 1.96rem; background: url("../Images/Index/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
+.qsk3 .qsa { position: absolute; left: 18%; top: 22.08rem; width: 62.5%; height: 1.96rem; background: url("/static/images/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
 .qsk3 .qsa a { display: block; width: 55%; height: 1.96rem; background: #2ea20c; border-radius: 1.2rem; font-size: 0.92rem; color: #ffffff; text-align: center; line-height: 1.96rem; margin: 0 auto;}
 /**/
 .fs { height: 29rem; overflow: hidden;}
-.fs h3 { height: 5.09rem; text-align: center; padding-top: 2.7rem; font-size: 1.5rem; color: #0674b1; font-weight: bold; background: url("../Images/Index/qs_03.jpg") no-repeat center 5.7rem; background-size: 84.7% 0.88rem;}
+.fs h3 { height: 5.09rem; text-align: center; padding-top: 2.7rem; font-size: 1.5rem; color: #0674b1; font-weight: bold; background: url("/static/images/qs_03.jpg") no-repeat center 5.7rem; background-size: 84.7% 0.88rem;}
 .fs h3 span { color: #2ea20c;}
 .fs .m-box .con{ display:inline; float:left;}
 .fs ul { width: 84.7%; height:16rem; margin: 0 auto;}
@@ -66,35 +66,35 @@
 .fs li:last-child { margin-left: 1.6%;}
 .fs li:last-child p { }
 .fs li:last-child p span { display: block;}
-.fs .qsa { width: 55.5%; height: 1.96rem; background: url("../Images/Index/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
+.fs .qsa { width: 55.5%; height: 1.96rem; background: url("/static/images/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
 .fs .qsa a { display: block; width: 55%; height: 1.96rem; background: #2ea20c; border-radius: 1.2rem; font-size: 0.92rem; color: #ffffff; text-align: center; line-height: 1.96rem; margin: 0 auto;}
 /**/
 .ss { height: 46.46rem; overflow: hidden;}
-.ss h3 { height: 8.55rem; text-align: center; font-size: 1rem; color: #666666; background: url("../Images/Index/qs_03.jpg") no-repeat center 5.2rem; background-size: 84.7% 0.88rem;}
+.ss h3 { height: 8.55rem; text-align: center; font-size: 1rem; color: #666666; background: url("/static/images/qs_03.jpg") no-repeat center 5.2rem; background-size: 84.7% 0.88rem;}
 .ss h3 p { padding: 2.6rem 0 1.8rem 0; font-size: 1.5rem; color: #0674b1; font-weight: bold;}
 .ss dl { height: 12.21rem; margin-bottom: 0.63rem;}
 .ss dt { float: left; width: 54%; margin: 1.3rem 0 0 3.8%; border: 4px solid #ffffff;}
-.ss dd { float: left; width: 37%; padding-left: 2%; background: url("../Images/Index/ssx.png") no-repeat 0 3.96rem; background-size: 35.3% 2px;}
+.ss dd { float: left; width: 37%; padding-left: 2%; background: url("/static/images/ssx.png") no-repeat 0 3.96rem; background-size: 35.3% 2px;}
 .ss dd p { font-size: 1.25rem; color: #ffffff; font-weight: bold; padding-top: 1.9rem;}
 .ss dd em { display: block; font-size: 0.92rem; color: #ffffff; line-height: 1.33rem; margin-top: 0.9rem;}
 .ss dd em span { display: block;}
 .ss dd a { display: block; width: 74.3%; height: 1.96rem; font-size: 0.92rem; color: #2ea20c; background: #ffffff; border-radius: 1.2rem; text-align: center; line-height: 1.96rem; margin-top: 1.2rem;}
-.ss .ssd1 { background: url("../Images/Index/ssb_02.jpg") no-repeat; background-size: 100% 12.21rem;}
-.ss .ssd2 { background: url("../Images/Index/ssb_04.jpg") no-repeat; background-size: 100% 12.21rem;}
-.ss .ssd3 { background: url("../Images/Index/ssb_06.jpg") no-repeat; background-size: 100% 12.21rem;}
+.ss .ssd1 { background: url("/static/images/ssb_02.jpg") no-repeat; background-size: 100% 12.21rem;}
+.ss .ssd2 { background: url("/static/images/ssb_04.jpg") no-repeat; background-size: 100% 12.21rem;}
+.ss .ssd3 { background: url("/static/images/ssb_06.jpg") no-repeat; background-size: 100% 12.21rem;}
 /**/
 .lr { height: 35.46rem; overflow: hidden;}
-.lr h3 { height: 4.5rem; text-align: center; font-size: 1.5rem; color: #0674b1; font-weight: bold; padding-top: 3.5rem; background: url("../Images/Index/qs_03.jpg") no-repeat center 6rem; background-size: 84.7% 0.88rem;}
+.lr h3 { height: 4.5rem; text-align: center; font-size: 1.5rem; color: #0674b1; font-weight: bold; padding-top: 3.5rem; background: url("/static/images/qs_03.jpg") no-repeat center 6rem; background-size: 84.7% 0.88rem;}
 .lr .m-box .con{ display:inline; float:left;}
 .lr dl { height: 25.33rem;}
 .lr dt { width: 100%; position: relative;}
-.lr dt em { display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 2.38rem; background: url("../Images/Index/lrtm.png") repeat; font-size: 0.92rem; color: #feffff; text-align: center; line-height: 2.38rem;}
+.lr dt em { display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 2.38rem; background: url("/static/images/lrtm.png") repeat; font-size: 0.92rem; color: #feffff; text-align: center; line-height: 2.38rem;}
 .lr dd { width: 84.4%; font-size: 0.92rem; color: #666666; line-height: 1.5rem; margin: 0 auto; padding-top: 0.5rem;}
-.lr .qsa { width: 55.5%; height: 1.96rem; background: url("../Images/Index/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
+.lr .qsa { width: 55.5%; height: 1.96rem; background: url("/static/images/qs_18.jpg") no-repeat; background-size: 100% 1.96rem; margin: 0 auto;}
 .lr .qsa a { display: block; width: 55%; height: 1.96rem; background: #2ea20c; border-radius: 1.2rem; font-size: 0.92rem; color: #ffffff; text-align: center; line-height: 1.96rem; margin: 0 auto;}
 /**/
 .ws { height: 34.9rem; overflow: hidden;}
-.ws h3 { height: 9.54rem; text-align: center; font-size: 1rem; color: #666666; background: url("../Images/Index/qs_03.jpg") no-repeat center 5.5rem; background-size: 84.7% 0.88rem;}
+.ws h3 { height: 9.54rem; text-align: center; font-size: 1rem; color: #666666; background: url("/static/images/qs_03.jpg") no-repeat center 5.5rem; background-size: 84.7% 0.88rem;}
 .ws h3 p { font-size: 1.5rem; color: #0674b1; font-weight: bold; padding: 3rem 0 1.7rem;}
 .ws .m-box .con{ display:inline; float:left;}
 .ws dl { width: 84.7%; height: 19.33rem; margin: 0 auto;}
@@ -103,39 +103,39 @@
 .ws dd p { position: absolute; left: 2%; top: -2.42rem; width: 22%; height: 4rem; background: #0674b1; border-radius: 100%; font-size: 1.25rem; color: #ffffff; text-align: center; padding-top: 0.75rem; line-height: 1.5rem;}
 .ws dd p span { display: block;}
 .ws dd em { display: block; width: 68%; font-size: 0.92rem; color: #666666; line-height: 1.33rem; padding: 0.8rem 0 0 30%;}
-.ws .m-cnt{ width:37.7%; height: 2rem; display:block; margin: 0 auto; padding: 0.83rem 0 0 15%; background: url("../Images/Index/qs_18.jpg") no-repeat; background-size: 100% 2rem;}
+.ws .m-cnt{ width:37.7%; height: 2rem; display:block; margin: 0 auto; padding: 0.83rem 0 0 15%; background: url("/static/images/qs_18.jpg") no-repeat; background-size: 100% 2rem;}
 .ws .m-cnt li{ width: 0.71rem; height: 0.71rem; border: 1px solid #5db742; float: left; border-radius: 100%; margin-right: 4.5%;}
 .ws .m-cnt li.z-on{ background:#2ea20c; }
 /**/
 .ms { height: 81.5rem; overflow: hidden;}
-.ms h3 { height: 8rem; text-align: center; background: url("../Images/Index/msb.jpg") no-repeat; background-size: 100%; font-size: 1rem; color: #b8cbde; margin-bottom: 0.75rem;}
+.ms h3 { height: 8rem; text-align: center; background: url("/static/images/msb.jpg") no-repeat; background-size: 100%; font-size: 1rem; color: #b8cbde; margin-bottom: 0.75rem;}
 .ms h3 p { font-size: 1.5rem; color: #ffffff; font-weight: bold; padding: 1.6rem 0 2.1rem;}
 .ms h4 { padding-left: 8%; height: 3.5rem;}
 .ms h4 p { float: left; width: 13%; height: 2.5rem; background: #0674b1; font-size: 2.5rem; color: #ffffff; text-align: center; line-height: 2.5rem; padding-top: 1rem;}
 .ms h4 span { display: block; float: left; font-size: 1.25rem; color: #333333; margin: 1.7rem 0 0 1%;}
-.ms li { margin-left: 11.6%; padding-left: 8%; width: 74%; font-size: 0.92rem; color: #666666; background: url("../Images/Index/ms_07.jpg") no-repeat left 0.2rem; background-size: 0.92rem 0.83rem; margin-top: 0.5rem;}
+.ms li { margin-left: 11.6%; padding-left: 8%; width: 74%; font-size: 0.92rem; color: #666666; background: url("/static/images/ms_07.jpg") no-repeat left 0.2rem; background-size: 0.92rem 0.83rem; margin-top: 0.5rem;}
 .ms .msk1 { height: 37.2rem;}
 /**/
 .dz { height: 27.8rem; overflow: hidden;}
-.dz h3 { height: 6.42rem; text-align: center; font-size: 1rem; color: #666666; background: url("../Images/Index/qs_03.jpg") no-repeat center 3.1rem; background-size: 84.7% 0.88rem; overflow: hidden;}
+.dz h3 { height: 6.42rem; text-align: center; font-size: 1rem; color: #666666; background: url("/static/images/qs_03.jpg") no-repeat center 3.1rem; background-size: 84.7% 0.88rem; overflow: hidden;}
 .dz h3 p { font-size: 1.5rem; color: #0674b1; font-weight: bold; padding: 0.8rem 0 1.3rem;}
 .dz .m-cnt{ width:100%; display:block; height: 3rem; margin-bottom: 1.2rem;}
 .dz .m-cnt li{ width: 50%; float: left; height: 3rem; font-size: 1.25rem; color: #333333; text-align: center; line-height: 3rem;}
 .dz .m-cnt li.z-on{ background:#0674b1; color: #ffffff;}
-.dz .m-cnt li:nth-child(1) { background: #e6e6e6 url("../Images/Index/dzt_03.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
-.dz .m-cnt li:nth-child(2) { background: #e6e6e6 url("../Images/Index/dzt_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
-.dz .m-cnt li:nth-child(1).z-on { background: #0674b1 url("../Images/Index/dzb_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
-.dz .m-cnt li:nth-child(2).z-on { background: #0674b1 url("../Images/Index/dzb_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
+.dz .m-cnt li:nth-child(1) { background: #e6e6e6 url("/static/images/dzt_03.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
+.dz .m-cnt li:nth-child(2) { background: #e6e6e6 url("/static/images/dzt_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
+.dz .m-cnt li:nth-child(1).z-on { background: #0674b1 url("/static/images/dzb_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
+.dz .m-cnt li:nth-child(2).z-on { background: #0674b1 url("/static/images/dzb_05.png") no-repeat 20% center; background-size: 1.42rem 1.25rem;}
 .dz .m-box .con{ display:inline; float:left;}
 .dz .m-box .con ul { width: 85.2%; margin: 0 auto; height: 15.13rem;}
-.dz .m-box .con li { font-size: 1rem; color: #666666; line-height: 2.79rem; border-bottom: 1px dashed #999999; padding-left: 5%; background: url("../Images/Index/dzj.jpg") no-repeat left center; background-size: 0.67rem 0.75rem;height: 2.79rem; display:block;}
+.dz .m-box .con li { font-size: 1rem; color: #666666; line-height: 2.79rem; border-bottom: 1px dashed #999999; padding-left: 5%; background: url("/static/images/dzj.jpg") no-repeat left center; background-size: 0.67rem 0.75rem;height: 2.79rem; display:block;}
 .dz .m-box .con li i{overflow: hidden; text-overflow:ellipsis;white-space:nowrap; display:block; float:left; width:70%;}
 .dz .m-box .con li span { display: block; float: right;}
 .dz .m-box .con li:last-child { border: 0;}
 .dz .dza { display: block; width: 28.1%; height: 2.08rem; margin: 0 auto; background: #2ea20c; border-radius: 2rem; font-size: 0.92rem; color: #ffffff; text-align: center; line-height: 2.08rem;}
 /**/
 .dk { height: 31.21rem; overflow: hidden;}
-.dk h3 { height: 4.76rem; font-size: 1.5rem; color: #0674b1; padding-top: 2.7rem; background: url("../Images/Index/qs_03.jpg") no-repeat center 5.58rem; background-size: 84.7% 0.88rem; overflow: hidden; font-weight: bold; text-align: center;}
+.dk h3 { height: 4.76rem; font-size: 1.5rem; color: #0674b1; padding-top: 2.7rem; background: url("/static/images/qs_03.jpg") no-repeat center 5.58rem; background-size: 84.7% 0.88rem; overflow: hidden; font-weight: bold; text-align: center;}
 .dk dt { width: 100%;}
 .dk dd { width: 84.7%; height: 9.04rem; border: 1px solid #0674b1; border-top: 0; margin: 0 auto; position: relative; font-size: 1.25rem; color: #0674b1; text-align: center; padding-top: 0.5rem;}
 .dk dd p { width: 88%; margin: 0 auto; font-size: 0.92rem; color: #333333; line-height: 1.5rem; margin-top: 0.5rem;}

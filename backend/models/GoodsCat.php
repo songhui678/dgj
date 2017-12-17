@@ -37,7 +37,45 @@ class GoodsCat extends \common\modelsgii\GoodsCat {
 		}
 		return $path;
 	}
+	/**
+	 * ---------------------------------------
+	 * 递归获取其所有父栏目
+	 * @param $id int 菜单ID
+	 * @return array
+	 * ---------------------------------------
+	 */
+	public static function getParent($id) {
+		$path = [];
+		$nav = static::find()->select(['id', 'pid', 'title'])->where(['id' => $id])->asArray()->one();
 
+		$path[] = $nav;
+		if ($nav['pid'] > 0) {
+			$path = array_merge(static::getParent($nav['pid']), $path);
+			$sub = static::find()->select(['id', 'pid', 'title'])->where(['pid' => $nav['id']])->asArray()->one();
+
+			if ($sub) {
+				$path[] = $sub;
+				$path = array_merge($sub, $path);
+			}
+
+		}
+		return $path;
+	}
+
+	/**
+	 *遍历出各个子类 获得树状结构的数组
+	 */
+	public static function getTree($data = array(), $pid = 0, $lev = 1) {
+		$tree = [];
+		foreach ($data as $value) {
+			if ($value['pid'] == $pid) {
+				$value['title'] = str_repeat('|___', $lev) . $value['title'];
+				$tree[] = $value;
+				$tree = array_merge($tree, self::getTree($data, $value['id'], $lev + 1));
+			}
+		}
+		return $tree;
+	}
 	/**
 	 * ---------------------------------------
 	 * 获取一条数据

@@ -1,4 +1,4 @@
-<link href="/static/css/dingzhi.css" rel="stylesheet">
+<link href="/mobile/css/dingzhi.css" rel="stylesheet">
 
  <!-- 文章列表2 -->
    <div class="m4-blk endit-content">

@@ -11,7 +11,7 @@
                     var searchKey = document.getElementById("key").value;
                     var base=$('head').data('base');
                     
-                    location.href ="/mobile/search.php?key=" + searchKey;
+                    location.href ="/search?key=" + searchKey;
                 }
                 $('.m4-t-sear2-txt p').click(function() {
                     $('.m4-t-sear2').hide();
