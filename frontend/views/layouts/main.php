@@ -26,7 +26,7 @@ $this->beginPage();
 <script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/nsw.pc.min.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
-
+<script language="javascript" type="text/javascript" src="/static/scripts/product.js"></script>
 
 <link rel="shortcut icon" href="/favicon.ico" />
 

@@ -3,6 +3,14 @@ use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 <link href="/mobile/css/product_list.css" rel="stylesheet">
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+        <p><a href="/" title="首页">首页</a>
+                    &gt; 公司信息
+        </p>
+    </div>
+</div>
 <!-- 文章列表2 -->
    <div class="m4-blk blk">
     <div class="m4-nsws-list-content-2">

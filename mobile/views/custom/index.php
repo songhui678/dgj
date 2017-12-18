@@ -1,5 +1,26 @@
+<?php
+use yii\widgets\Breadcrumbs;
+?>
 <link href="/mobile/css/dingzhi.css" rel="stylesheet">
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+<?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<p>{link}",
+],
+	'links' => [
+		[
+			'label' => '联系我们',
+			'url' => ['/contact'],
+			'template' => "{link}<p>",
+		],
 
+	]]);
+?>
+    </div>
+</div>
  <!-- 文章列表2 -->
    <div class="m4-blk endit-content">
     <div class="m4-prod-content-1-con prod-content">

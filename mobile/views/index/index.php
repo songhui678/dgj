@@ -1,3 +1,11 @@
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+        <p><a href="/" title="首页">首页</a>
+                    &gt; 公司信息
+        </p>
+    </div>
+</div>
 <div class="zs1">
       <ul>
         <li><a><p><img src="/mobile/Images/Index/zs_03.jpg"></p>生物应用</a> </li>

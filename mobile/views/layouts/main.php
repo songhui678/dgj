@@ -33,7 +33,7 @@ $this->beginPage();
 <!-- 标题栏 -->
 <div class="blk">
 <header class="g-hd">
-<p class="tod">010-68173889 </p>
+<p class="tod">010-51656110 </p>
 <h1><a href="/mobile/"><img src="/mobile/Skins/Default/Img/Common/logo.jpg" title="博医康"></a>
 </h1>
 <p class="toz">专业<span>冻干设备+解决方案</span>提供商</p>
@@ -60,14 +60,7 @@ $this->beginPage();
         </div>
     </div>
 </div>
-   <!-- 面包屑 -->
-   <div class="m4-blk">
-    <div class="m4-crumbs-1">
-        <p><a href="/" title="首页">首页</a>
-                    &gt; 公司信息
-        </p>
-    </div>
-</div>
+
 
  <?=$content?>
 

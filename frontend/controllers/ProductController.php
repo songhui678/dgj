@@ -16,7 +16,10 @@ class ProductController extends Controller {
 	 */
 	public $layout = 'main';
 	public function actionIndex() {
-		return $this->render('index');
+		$cateList = $this->cateTree();
+		//最新资讯
+		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
+		return $this->render('index', array('cateList' => $cateList, 'articleList' => $articleList));
 	}
 	/**
 	 * [actionShow 产品详情]
@@ -27,6 +30,7 @@ class ProductController extends Controller {
 	 */
 	public function actionShow($id) {
 		$goods = Goods::find()->where(array("goods_id" => $id, "status" => 1))->one();
+		$cateList = $this->cateTree();
 		//最新资讯
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
 		//推荐产品
@@ -34,7 +38,7 @@ class ProductController extends Controller {
 		if (!empty($goods)) {
 			$goodsList = Goods::find()->where(array("cat_id" => $goods->cat_id, "status" => 1))->orderBy('create_time asc')->limit(3)->all();
 
-			return $this->render('show', array('goods' => $goods, 'articleList' => $articleList, 'goodsList' => $goodsList));
+			return $this->render('show', array('goods' => $goods, 'cateList' => $cateList, 'articleList' => $articleList, 'goodsList' => $goodsList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
@@ -48,7 +52,7 @@ class ProductController extends Controller {
 	public function actionCate($id) {
 		$cate = GoodsCat::find()->where(array("id" => $id))->one();
 		$cateList = $this->cateTree();
-		var_dump($cateList);exit;
+		// var_export($cateList);exit;
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
 		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
@@ -68,7 +72,7 @@ class ProductController extends Controller {
 	 * ---------------------------------------
 	 */
 	private function cateTree() {
-		$lists = GoodsCat::find()->orderBy('sort asc')->asArray()->all();
+		$lists = GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->asArray()->all();
 		$lists = ArrayHelper::list_to_tree($lists, 'id', 'pid');
 		// $lists = ArrayHelper::jstree($lists);
 		return $lists;

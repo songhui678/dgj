@@ -101,7 +101,7 @@ strong {
         .p1-search-1-inp2 {
             width: 30px;
             height: 30px;
-            background: url(images/VISkins-p1.png) no-repeat -258px -936px;
+            background: url(/static/images/VISkins-p1.png) no-repeat -258px -936px;
             float: right;
             cursor: pointer;
         }
@@ -110,7 +110,7 @@ strong {
         .p12-curmbs-1{font-size: 14px;border-bottom: 1px dashed #dcdcdc;}
         .p12-curmbs-1 b{border-left: 10px solid #2ea20c;font-weight: normal;padding-left: 8px;}
             /*.xnznr-mbx .blk-main{}*/
-        .p12-curmbs-1 span{font-family: '瀹嬩綋';padding: 0 5px;height: 46px;line-height: 46px;}
+        .p12-curmbs-1 span{font-family: '宋体';padding: 0 5px;height: 46px;line-height: 46px;}
     
 
         
@@ -134,7 +134,7 @@ strong {
         .p14-left-nav-1-nav-one h3 {
             height: 50px;
             line-height: 50px; 
-            background:url(images/p14-icon5.png) no-repeat right center #2ea20c; 
+            background:url(/static/images/p14-icon5.png) no-repeat right center #2ea20c; 
             margin-bottom: 2px;
             
         }
@@ -149,7 +149,7 @@ strong {
         }
         
         .p14-left-nav-1-nav-one h3.sidenavcur,.p14-left-nav-1-nav-one h3:hover{
-            background: url(images/p14-icon2.png) no-repeat right center #0674b1; 
+            background: url(/static/images/p14-icon2.png) no-repeat right center #0674b1; 
         }  
         
         .p14-left-nav-1-nav dl{
@@ -167,7 +167,7 @@ strong {
         }
         
         .p14-left-nav-1-nav dt.sidenavcur,.p14-left-nav-1-nav dt:hover {
-            background: url(images/p14-icon4.png) no-repeat right center #ececec;
+            background: url(/static/images/p14-icon4.png) no-repeat right center #ececec;
         }
         .p14-left-nav-1-nav dt.sidenavcur a,.p14-left-nav-1-nav dt:hover a{color: #0674b1; }
         
@@ -223,7 +223,7 @@ strong {
         
         .p1-info-5-txt li {
             border-bottom: 1px solid #eee;
-            background: url(images/VISkins-p1.png) no-repeat -405px -212px;
+            background: url(/static/images/VISkins-p1.png) no-repeat -405px -212px;
             padding-left: 15px;
             overflow: hidden;
         }
@@ -251,7 +251,7 @@ strong {
         }
         
         .p1-info-5-txt .p1-info-5-txt-t1 {
-            background: url(images/VISkins-p1.png) no-repeat -404px -225px;
+            background: url(/static/images/VISkins-p1.png) no-repeat -404px -225px;
             line-height: 22px;
             height: auto;
             padding-bottom: 12px;
@@ -303,7 +303,7 @@ strong {
         }
     
 
-        .contact-z1{height:140px;background:url("images/contact-z1.jpg") no-repeat;color:#333;}
+        .contact-z1{height:140px;background:url("/static/images/contact-z1.jpg") no-repeat;color:#333;}
         .contact-z1 p{font-size:20px;height:30px;line-height:30px;padding:45px 0 0 108px;}
         .contact-z1 span{display:block;height:30px;line-height:30px;font-weight:bold;font-size:18px;padding-left:80px;}
     
@@ -313,7 +313,7 @@ strong {
             display:inline-block;
             width:30px;
             height: 30px;
-            background: url(images/t1-sprite.png) no-repeat 0 -600px;
+            background: url(/static/images/t1-sprite.png) no-repeat 0 -600px;
             vertical-align:middle;
         }
         .p14-showcase-right .hotline .text{display:inline-block;margin-left:10px;line-height:24px;vertical-align:middle;}
@@ -414,7 +414,7 @@ strong {
         .p14-prodcontent-1-nav{ height: 56px; border-bottom: 1px solid #ebebeb;}
         .p14-prodcontent-1-nav li{float: left;font-size: 18px; line-height: 56px; color:#cecece; padding: 0 30px; border-right: 1px solid #ebebeb; cursor: pointer;}
 
-        .p14-prodcontent-1-nav li.cur{ background: url(images/p14-icon10.png) no-repeat center bottom #0674b1; color: #fff;}
+        .p14-prodcontent-1-nav li.cur{ background: url(/static/images/p14-icon10.png) no-repeat center bottom #0674b1; color: #fff;}
         .p14-prodcontent-1-text{display: none;}
         .p14-prodcontent-1-desc{padding-left:15px;padding-right: 15px;}
         .p14-prodcontent-1-cur{display: block;}
@@ -435,7 +435,7 @@ strong {
             color: #464646;
             padding-left: 52px;
             border-bottom: 2px solid  #2ea20c;
-            background:url(images/p14-icon11.png) no-repeat 22px center;
+            background:url(/static/images/p14-icon11.png) no-repeat 22px center;
         }
 
         .p14-product-3-tit span {

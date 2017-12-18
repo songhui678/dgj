@@ -1,5 +1,26 @@
-
+<?php
+use yii\widgets\Breadcrumbs;
+?>
 <link href="/mobile/css/route.css" rel="stylesheet">
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+<?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<p>{link}",
+],
+	'links' => [
+		[
+			'label' => '路线',
+			'url' => ['/route'],
+			'template' => "{link}<p>",
+		],
+
+	]]);
+?>
+    </div>
+</div>
 <!-- 文章列表2 -->
    <div>
     <!-- 区块 -->

@@ -1,7 +1,34 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 ?>
 <link href="/mobile/css/article.css" rel="stylesheet">
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+<?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<p>{link}",
+],
+	'links' => [
+		[
+			'label' => '资讯频道',
+			'url' => ['/article'],
+			'template' => "{link} ",
+		],
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/article/index', "id" => "{$cate['id']}"],
+			'template' => "{link}</p>",
+		],
+
+	]]);
+?>
+
+
+    </div>
+</div>
 <!-- 文章列表2 -->
    <div class="m4-blk endit-content">
     <div class="m4-prod-content-1-con prod-content">

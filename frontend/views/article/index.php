@@ -15,11 +15,15 @@ use yii\widgets\LinkPager;
 ],
 	'links' => [
 		[
-			'label' => '案例资讯',
+			'label' => '资讯频道',
 			'url' => ['/article'],
-			'template' => " {link}",
+			'template' => "{link}<span>&gt;</span>",
 		],
-
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/article/index', "id" => "{$cate['id']}"],
+			'template' => "{link}",
+		],
 	]]);
 ?>
 

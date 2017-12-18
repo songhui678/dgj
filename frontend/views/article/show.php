@@ -14,11 +14,20 @@ use yii\widgets\Breadcrumbs;
 ],
 	'links' => [
 		[
-			'label' => '案例资讯',
+			'label' => '资讯频道',
 			'url' => ['/article'],
-			'template' => " {link}",
+			'template' => "{link}<span>&gt;</span>",
 		],
-
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/article/index', "id" => "{$cate['id']}"],
+			'template' => "{link}<span>&gt;</span>",
+		],
+		[
+			'label' => "{$article['title']}",
+			'url' => ['/article/show', "id" => "{$article['id']}"],
+			'template' => "{link}",
+		],
 	]]);
 ?>
 

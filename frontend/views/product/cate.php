@@ -4,7 +4,7 @@ use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 
 ?>
-<link href="/static/css/product_list.css" rel="stylesheet">
+<link href="/static/css/product_cate.css" rel="stylesheet">
 <div class="blk-main">
    <div class="b plc">
     <!-- HTML -->
@@ -16,11 +16,15 @@ use yii\widgets\LinkPager;
 ],
 	'links' => [
 		[
-			'label' => '产品',
+			'label' => '产品频道',
 			'url' => ['/product'],
-			'template' => " {link}",
+			'template' => "{link}<span>&gt;</span>",
 		],
-
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/product/cate', "id" => "{$cate['id']}"],
+			'template' => "{link}",
+		],
 	]]);
 ?>
 
@@ -38,33 +42,36 @@ use yii\widgets\LinkPager;
   <?php foreach ($cateList as $cateone) {?>
    <div class="p14-left-nav-1-nav-one">
     <h3>
-    <a href="<?=Url::toRoute(['/product/cate', 'id' => $cateone->id])?>" title="<?=$cateone->title?>"><?=$cateone->title?></a>
+    <a href="<?=Url::toRoute(['/product/cate', 'id' => $cateone['id']])?>" title="<?=$cateone['title']?>"><?=$cateone['title']?></a>
     </h3>
+    <?php if (isset($cateone['_child'])) {?>
+    <?php foreach ($cateone['_child'] as $erji) {?>
     <dl style="display:none;">
      <!-- 2级 -->
-     <?php foreach ($cateone['_child'] as $erji) {?>
       <dt>
-       <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji->id])?>" title="<?=$erji->title?>"><?=$erji->title?></a>
+       <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"><?=$erji['title']?></a>
       </dt>
-
+      <?php if (isset($erji['_child'])) {?>
+      <?php foreach ($erji['_child'] as $sanji) {?>
       <dd style="display:none;">
        <!-- 3级 -->
-        <p class="pl3"> <span><a href="/product/PilotXiLieJingJiXing.html" title="Pilot系列（经济型）">&gt;&gt; Pilot系列（经济型）</a></span>
+        <p class="pl3"> <span><a href="<?=Url::toRoute(['/product/cate', 'id' => $sanji['id']])?>" title="<?=$sanji['title']?>">&gt;&gt;<?=$sanji['title']?></a></span>
+        <?php if (isset($sanji['_child'])) {?>
          <!-- 4级 --> <em class="pl4">
-
-           <a href="/product/PilotLXiLie.html" title="Pilot-L系列">Pilot-L系列</a>
-
-           <a href="/product/PilotEXiLie.html" title="Pilot-E系列">Pilot-E系列</a>
-           </em> 
+           <?php foreach ($sanji['_child'] as $siji) {?>
+           <a href="<?=Url::toRoute(['/product/cate', 'id' => $siji['id']])?>" title="<?=$siji['title']?>"><?=$siji['title']?></a>
+           <?php }?>
+           </em>
+           <?php }?>
         </p>
       </dd>
+      <?php }?>
+      <?php }?>
     </dl>
+    <?php }?>
+    <?php }?>
    </div>
    <?php }?>
-
-
-
-
  </div>
  <div class="clear"></div>
 
@@ -92,7 +99,7 @@ use yii\widgets\LinkPager;
     <div>
     <div class="contact-z1">
         <p>咨询热线</p>
-        <span>010-68173889</span>
+        <span>010-51656110</span>
     </div>
 
 </div>

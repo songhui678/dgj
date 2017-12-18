@@ -94,7 +94,7 @@ strong {
         .p14-left-nav-1-nav-one h3 {
             height: 50px;
             line-height: 50px; 
-            background:url(images/p14-icon5.png) no-repeat right center #2ea20c; 
+            background:url(/static/images/p14-icon5.png) no-repeat right center #2ea20c; 
             margin-bottom: 2px;
             
         }
@@ -109,7 +109,7 @@ strong {
         }
         
         .p14-left-nav-1-nav-one h3.sidenavcur,.p14-left-nav-1-nav-one h3:hover{
-            background: url(images/p14-icon2.png) no-repeat right center #0674b1; 
+            background: url(/static/images/p14-icon2.png) no-repeat right center #0674b1; 
         }  
         
         .p14-left-nav-1-nav dl{
@@ -122,12 +122,12 @@ strong {
             padding-left: 54px;
             padding-right: 40px; 
             margin-bottom: 1px;
-            background: url(images/p14-icon3.png) no-repeat right center #ececec;
+            background: url(/static/images/p14-icon3.png) no-repeat right center #ececec;
             
         }
         
         .p14-left-nav-1-nav dt.sidenavcur,.p14-left-nav-1-nav dt:hover {
-            background: url(images/p14-icon4.png) no-repeat right center #ececec;
+            background: url(/static/images/p14-icon4.png) no-repeat right center #ececec;
         }
         .p14-left-nav-1-nav dt.sidenavcur a,.p14-left-nav-1-nav dt:hover a{color: #0674b1; }
         
@@ -183,7 +183,7 @@ strong {
         
         .p1-info-5-txt li {
             border-bottom: 1px solid #eee;
-            background: url(images/VISkins-p1.png) no-repeat -405px -212px;
+            background: url(/static/images/VISkins-p1.png) no-repeat -405px -212px;
             padding-left: 15px;
             overflow: hidden;
         }
@@ -211,7 +211,7 @@ strong {
         }
         
         .p1-info-5-txt .p1-info-5-txt-t1 {
-            background: url(images/VISkins-p1.png) no-repeat -404px -225px;
+            background: url(/static/images/VISkins-p1.png) no-repeat -404px -225px;
             line-height: 22px;
             height: auto;
             padding-bottom: 12px;
@@ -263,7 +263,7 @@ strong {
         }
     
 
-        .contact-z1{height:140px;background:url("images/contact-z1.jpg") no-repeat;color:#333;}
+        .contact-z1{height:140px;background:url("/static/images/contact-z1.jpg") no-repeat;color:#333;}
         .contact-z1 p{font-size:20px;height:30px;line-height:30px;padding:45px 0 0 108px;}
         .contact-z1 span{display:block;height:30px;line-height:30px;font-weight:bold;font-size:18px;padding-left:80px;}
     

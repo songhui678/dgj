@@ -1,8 +1,33 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 ?>
+
 <link href="/mobile/css/article_list.css" rel="stylesheet">
+   <!-- 面包屑 -->
+   <div class="m4-blk">
+    <div class="m4-crumbs-1">
+<?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<p>{link}",
+],
+	'links' => [
+		[
+			'label' => '资讯频道',
+			'url' => ['/article'],
+			'template' => "{link} ",
+		],
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/article/index', "id" => "{$cate['id']}"],
+			'template' => "{link}</p>",
+		],
+	]]);
+?>
+    </div>
+</div>
  <!-- 文章列表2 -->
    <div class="m4-blk blk">
     <div class="m4-nsws-list-content-2">

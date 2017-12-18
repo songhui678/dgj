@@ -101,7 +101,7 @@ use yii\widgets\Breadcrumbs;
                                                    <dd>
                                <h4><a class="t1-article-link" href="http://www.boyikang.com/helps/LianXiFangShi.html">联系方式</a></h4>
                                <div class="xnznr-search-1-desc">
-                                联系博医康全国统一服务咨询热线：010-68173889北京博医康实验<span style='color:red'>仪器</span>有限公司联系电话：010-68173889手机：18610045012传真：010-68233815E-mail：ale@oyikag.com地址：北京房山区良乡工业开发区建设路20号......                             </div>
+                                联系博医康全国统一服务咨询热线：010-51656110北京博医康实验<span style='color:red'>仪器</span>有限公司联系电话：010-51656110手机：18610045012传真：010-68233815E-mail：ale@oyikag.com地址：北京房山区良乡工业开发区建设路20号......                             </div>
                            </dd>
                        </dl>
 
