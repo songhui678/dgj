@@ -70,16 +70,8 @@ $this->beginPage();
     <a class="next" href="javascript:void(0)"></a>
 </div>
 
-
-
-
                 <!-- BEGIN CONTENT BODY -->
-                <div class="page-content">
-                    <div class="container">
                         <?=$content?>
-                    </div>
-                </div>
-
         <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
     <?php $this->beginContent('@app/views/layouts/public/footer.php')?>

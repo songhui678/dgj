@@ -60,19 +60,7 @@ $this->beginPage();
             <img alt="冻干机定制" src="/resource/images/64f483789fa745b1b622fafefbe7b650_3.jpg" title="冻干机定制">
         </a>
 </div>
-<div class="blk-main">
-   <div class="b plc">
-    <!-- HTML -->
-        <div class="p12-curmbs-1" navcrumbs="">
-            <b>您的位置:</b>
-                <a href="#">首页</a><span>&gt;</span>
-                <a href="/helps/FeiBiaoDingZhi.html">非标定制</a>
-                <!--<a href="#">三防漆</a>-->
-        </div>
-    <!-- css -->
-    </div>
-<div class="clear"></div>
-<div class="p12-aboutinfo-1">
+
 
  <?=$content?>
 

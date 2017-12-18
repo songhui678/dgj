@@ -1,8 +1,34 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 ?>
 <link href="/static/css/article_list.css" rel="stylesheet">
+<div class="blk-main">
+   <div class="b plc">
+    <!-- HTML -->
+        <div class="p12-curmbs-1" navcrumbs="">
+            <?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
+],
+	'links' => [
+		[
+			'label' => '案例资讯',
+			'url' => ['/article'],
+			'template' => " {link}",
+		],
+
+	]]);
+?>
+
+        </div>
+    <!-- css -->
+    </div>
+<div class="clear"></div>
+<div class="p12-aboutinfo-1">
+
 <div class="blk-xs fl">
     <div class="p14-left-nav-1 b">
  <div class="p14-left-nav-1-tit">
@@ -24,7 +50,7 @@ use yii\widgets\LinkPager;
     <div>
     <div class="contact-z1">
         <p>咨询热线</p>
-        <span>010-68173889</span>
+        <span>010-51656110</span>
     </div>
 
 </div>

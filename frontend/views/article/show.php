@@ -1,7 +1,32 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 ?>
 <link href="/static/css/article.css" rel="stylesheet">
+<div class="blk-main">
+   <div class="b plc">
+    <!-- HTML -->
+        <div class="p12-curmbs-1" navcrumbs="">
+            <?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
+],
+	'links' => [
+		[
+			'label' => '案例资讯',
+			'url' => ['/article'],
+			'template' => " {link}",
+		],
+
+	]]);
+?>
+
+        </div>
+    <!-- css -->
+    </div>
+<div class="clear"></div>
+<div class="p12-aboutinfo-1">
  <div class="blk-sm fl">
     <div class="p14-infocontent-1 b">
     <h1 class="p14-infocontent-1-tit"><?=$article->title?></h1>
@@ -29,7 +54,7 @@ use yii\helpers\Url;
     <div class="clear"></div>
 
 </div>
-    <div class="p14-info-3 b">
+<div class="p14-info-3 b">
     <div class="p14-info-3-tit">
         【相关推荐】
     </div>
@@ -38,8 +63,6 @@ use yii\helpers\Url;
             <?php foreach ($tujianList as $article) {?>
                 <li><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><span>了解详情 &gt;</span><?=$article->title?></a></li>
             <?php }?>
-
-
         </ul>
     </div>
 
@@ -103,7 +126,7 @@ use yii\helpers\Url;
     <div>
     <div class="contact-z1">
         <p>咨询热线</p>
-        <span>010-68173889</span>
+        <span>010-51656110</span>
     </div>
 
 </div>
