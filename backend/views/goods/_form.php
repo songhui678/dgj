@@ -52,7 +52,7 @@ use yii\helpers\Url;
 			['preview', 'simpleupload', 'insertimage', 'link', 'emotion', 'map', 'insertvideo', 'insertcode'],
 		],
 	],
-], ['class' => 'c-md-7'])->label('产品内容');?>
+], ['class' => 'c-md-9'])->label('产品内容');?>
 
 <?=$form->field($model, 'tag')->textInput(['class' => 'form-control c-md-5'])->label('产品标签')->hint('多个标签请用逗号分开');?>
 

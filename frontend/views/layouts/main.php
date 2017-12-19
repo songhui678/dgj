@@ -27,7 +27,7 @@ $this->beginPage();
 <script language="javascript" type="text/javascript" src="/static/scripts/nsw.pc.min.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/product.js"></script>
-
+<script type="text/javascript">uaredirect('http://m.dgj.com/');</script>
 <link rel="shortcut icon" href="/favicon.ico" />
 
 <link rel="alternate" media="only screen and (max-width:640px)" href="http://m.nmgen.com.cn">
