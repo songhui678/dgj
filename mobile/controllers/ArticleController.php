@@ -33,4 +33,66 @@ class ArticleController extends Controller {
 
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'goodsList' => $goodsList));
 	}
+
+	public function actionTest() {
+		$orderList = array(
+			array(
+				"orderId" => "test001",
+				"startTime" => "2017-11-25 21:17:22",
+				"endTime" => "2017-11-25 21:27:22",
+			),
+			array(
+				"orderId" => "test002",
+				"startTime" => "2017-11-25 21:20:22",
+				"endTime" => "2017-11-25 21:37:22",
+			),
+			array(
+				"orderId" => "test003",
+				"startTime" => "2017-11-25 21:03:22",
+				"endTime" => "2017-11-25 21:17:22",
+			),
+		);
+
+		$a = $this->msectime();
+		var_dump($a);
+		$orderArr = array();
+		foreach ($orderList as $key => $order) {
+			$orderArr[strtotime($order['startTime'])] = $order;
+		}
+		var_dump($orderArr);exit;
+		ksort($orderArr);
+		$b = $this->msectime();
+		var_dump($b);
+		var_dump($b - $a);
+
+		array_multisort(array_column($orderList, "startTime"), SORT_ASC, $orderList);
+		$c = $this->msectime();
+		var_dump($c - $b);
+		var_dump($orderList);exit;
+		$count = count($orderList);
+		for ($i = 0; $i < $count - 1; $i++) {
+			$j = $i + 1;
+			if (isset($orderList[$j])) {
+				if ($orderList[$i]['endTime'] >= $orderList[$j]["startTime"]) {
+					//处理后一条数据的结束时间比前一条数据结束时间小的情况
+					if ($orderList[$i]['endTime'] >= $orderList[$j]["endTime"]) {
+						$orderList[$j] = $orderList[$i];
+					} else {
+						$orderList[$j]["startTime"] = $orderList[$i]["startTime"];
+					}
+					$orderList[$i] = array();
+				}
+			} else {
+				$i++;
+			}
+		}
+
+		var_dump($orderList);exit;
+	}
+
+	private function msectime() {
+		list($msec, $sec) = explode(' ', microtime());
+		$msectime = (float) sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
+		return $msectime;
+	}
 }

@@ -9,7 +9,7 @@ class SearchController extends \yii\web\Controller {
 	 */
 	public $layout = 'main';
 	public function actionIndex() {
-		var_dump(Yii::$app->request->queryParams);exit;
+
 		$key = Yii::$app->request->queryParams('key');
 		$type = Yii::$app->request->queryParams('type');
 		if ($type == "all") {

@@ -1,14 +1,30 @@
 <?php
 use yii\helpers\Url;
+use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 ?>
 <link href="/mobile/css/product_list.css" rel="stylesheet">
    <!-- 面包屑 -->
    <div class="m4-blk">
     <div class="m4-crumbs-1">
-        <p><a href="/" title="首页">首页</a>
-                    &gt; 公司信息
-        </p>
+<?php echo Breadcrumbs::widget(['homeLink' => [
+	'label' => '首页',
+	'url' => ['/'],
+	'template' => "<p>{link}<span>&gt;</span>",
+],
+	'links' => [
+		[
+			'label' => '产品频道',
+			'url' => ['/product'],
+			'template' => "{link}<span>&gt;</span>",
+		],
+		[
+			'label' => "{$cate['title']}",
+			'url' => ['/product/cate', "id" => "{$cate['id']}"],
+			'template' => "{link}</p>",
+		],
+	]]);
+?>
     </div>
 </div>
 <!-- 文章列表2 -->

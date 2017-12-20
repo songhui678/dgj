@@ -2,13 +2,25 @@
 use yii\widgets\Breadcrumbs;
 ?>
 <link href="/mobile/css/contact.css" rel="stylesheet">
+<div>
+        <div class="m4-title_nav">
+            <div class="m4-t-sear1"></div>
+            <a class="m4-goback" href="javascript:history.back(-1);">返回上一页</a>
+            <a href="/about" id="m4-topclick"></a>
+            <h2>公司简介</h2>
+        </div>
+    </div>
+      <!-- END FOOTER -->
+    <?php $this->beginContent('@app/views/layouts/public/setting.php')?>
+    <?php $this->endContent()?>
+</div>
    <!-- 面包屑 -->
    <div class="m4-blk">
     <div class="m4-crumbs-1">
 <?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
-	'template' => "<p>{link}",
+	'template' => "<p>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[

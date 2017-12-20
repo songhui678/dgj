@@ -8,7 +8,7 @@ use yii\widgets\Breadcrumbs;
 <?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
-	'template' => "<p>{link}",
+	'template' => "<p>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[

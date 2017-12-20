@@ -1,6 +1,7 @@
 <?php
 
 namespace frontend\controllers;
+use common\modelsgii\Page;
 
 class ContactController extends \yii\web\Controller {
 	/**
@@ -8,7 +9,8 @@ class ContactController extends \yii\web\Controller {
 	 */
 	public $layout = 'main';
 	public function actionIndex() {
-		return $this->render('index');
+		$content = Page::find()->where(array('name' => 'contact', 'type' => 1))->one();
+		return $this->render('index', array('content' => $content));
 	}
 
 }
