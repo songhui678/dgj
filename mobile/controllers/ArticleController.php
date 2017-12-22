@@ -35,40 +35,62 @@ class ArticleController extends Controller {
 	}
 
 	public function actionTest() {
-		$orderList = array(
-			array(
-				"orderId" => "test001",
-				"startTime" => "2017-11-25 21:17:22",
-				"endTime" => "2017-11-25 21:27:22",
-			),
-			array(
-				"orderId" => "test002",
-				"startTime" => "2017-11-25 21:20:22",
-				"endTime" => "2017-11-25 21:37:22",
-			),
-			array(
+		$arr = array(1, 2, 3);
+		foreach ($arr as &$val) {
+			$val;
+		}
+		foreach ($arr as $val) {
+			echo $val;
+		}
+		exit;
+		// $orderList = array(
+		// 	array(
+		// 		"orderId" => "test001",
+		// 		"startTime" => "2017-11-25 21:17:22",
+		// 		"endTime" => "2017-11-25 21:27:22",
+		// 	),
+		// 	array(
+		// 		"orderId" => "test002",
+		// 		"startTime" => "2017-11-25 21:20:22",
+		// 		"endTime" => "2017-11-25 21:37:22",
+		// 	),
+		// 	array(
+		// 		"orderId" => "test003",
+		// 		"startTime" => "2017-11-25 21:03:22",
+		// 		"endTime" => "2017-11-25 21:17:22",
+		// 	),
+		// );
+		$orderList = array();
+		for ($i = 0; $i < 50000; $i++) {
+			$orderList[] = array(
 				"orderId" => "test003",
-				"startTime" => "2017-11-25 21:03:22",
+				// "startTime" => "2017-11-25 21:03:22",
+				"startTime" => date('Y-m-d H:i:s', time() + $i),
 				"endTime" => "2017-11-25 21:17:22",
-			),
-		);
+			);
+		}
 
 		$a = $this->msectime();
 		var_dump($a);
-		$orderArr = array();
-		foreach ($orderList as $key => $order) {
-			$orderArr[strtotime($order['startTime'])] = $order;
-		}
-		var_dump($orderArr);exit;
-		ksort($orderArr);
+
+		array_multisort(array_column($orderList, "startTime"), SORT_ASC, $orderList);
+
 		$b = $this->msectime();
 		var_dump($b);
 		var_dump($b - $a);
+		$orderArr = array();
+		foreach ($orderList as $key => $order) {
+			// $order['startTime'] = strtotime($order['startTime']);
+			// $order['endTime'] = strtotime($order['endTime']);
+			$orderArr[strtotime($order['startTime'])] = $order;
+		}
+		ksort($orderList);
 
-		array_multisort(array_column($orderList, "startTime"), SORT_ASC, $orderList);
 		$c = $this->msectime();
+		var_dump($c);
 		var_dump($c - $b);
-		var_dump($orderList);exit;
+		exit;
+		// var_dump($orderList);exit;
 		$count = count($orderList);
 		for ($i = 0; $i < $count - 1; $i++) {
 			$j = $i + 1;
