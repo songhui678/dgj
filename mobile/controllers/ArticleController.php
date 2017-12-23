@@ -33,4 +33,88 @@ class ArticleController extends Controller {
 
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'goodsList' => $goodsList));
 	}
+
+	public function actionTest() {
+		$arr = array(1, 2, 3);
+		foreach ($arr as &$val) {
+			$val;
+		}
+		foreach ($arr as $val) {
+			echo $val;
+		}
+		exit;
+		// $orderList = array(
+		// 	array(
+		// 		"orderId" => "test001",
+		// 		"startTime" => "2017-11-25 21:17:22",
+		// 		"endTime" => "2017-11-25 21:27:22",
+		// 	),
+		// 	array(
+		// 		"orderId" => "test002",
+		// 		"startTime" => "2017-11-25 21:20:22",
+		// 		"endTime" => "2017-11-25 21:37:22",
+		// 	),
+		// 	array(
+		// 		"orderId" => "test003",
+		// 		"startTime" => "2017-11-25 21:03:22",
+		// 		"endTime" => "2017-11-25 21:17:22",
+		// 	),
+		// );
+		$orderList = array();
+		for ($i = 0; $i < 50000; $i++) {
+			$orderList[] = array(
+				"orderId" => "test003",
+				// "startTime" => "2017-11-25 21:03:22",
+				"startTime" => date('Y-m-d H:i:s', time() + $i),
+				"endTime" => "2017-11-25 21:17:22",
+			);
+		}
+
+		$a = $this->msectime();
+		var_dump($a);
+
+		array_multisort(array_column($orderList, "startTime"), SORT_ASC, $orderList);
+
+		$b = $this->msectime();
+		var_dump($b);
+		var_dump($b - $a);
+		$orderArr = array();
+		foreach ($orderList as $key => $order) {
+			// $order['startTime'] = strtotime($order['startTime']);
+			// $order['endTime'] = strtotime($order['endTime']);
+			$orderArr[strtotime($order['startTime'])] = $order;
+		}
+		ksort($orderList);
+
+		$c = $this->msectime();
+		var_dump($c);
+		var_dump($c - $b);
+		exit;
+		// var_dump($orderList);exit;
+		$count = count($orderList);
+		for ($i = 0; $i < $count - 1; $i++) {
+			$j = $i + 1;
+			if (isset($orderList[$j])) {
+				if ($orderList[$i]['endTime'] >= $orderList[$j]["startTime"]) {
+					//处理后一条数据的结束时间比前一条数据结束时间小的情况
+					if ($orderList[$i]['endTime'] >= $orderList[$j]["endTime"]) {
+						$orderList[$j] = $orderList[$i];
+					} else {
+						$orderList[$j]["startTime"] = $orderList[$i]["startTime"];
+					}
+					$orderList[$i] = array();
+				}
+			} else {
+				$i++;
+			}
+		}
+
+		var_dump($orderList);exit;
+	}
+
+	private function msectime() {
+		list($msec, $sec) = explode(' ', microtime());
+		$msectime = (float) sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
+		return $msectime;
+	}
 }

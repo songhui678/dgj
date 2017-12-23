@@ -2,6 +2,7 @@
 
 namespace frontend\controllers;
 
+use common\modelsgii\Page;
 use yii\web\Controller;
 
 class AboutController extends Controller {
@@ -12,8 +13,7 @@ class AboutController extends Controller {
 
 	public function actionIndex() {
 		$this->getView()->title = "关于新默真科技";
-		//phpinfo();
-		return $this->render('index');
+		$content = Page::find()->where(array('name' => 'about', 'type' => 1))->one();
+		return $this->render('index', array('content' => $content));
 	}
-
 }

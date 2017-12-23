@@ -1,6 +1,7 @@
 <?php
 
 namespace mobile\controllers;
+use common\modelsgii\Page;
 
 class CustomController extends \yii\web\Controller {
 	/**
@@ -8,7 +9,8 @@ class CustomController extends \yii\web\Controller {
 	 */
 	public $layout = 'main';
 	public function actionIndex() {
-		return $this->render('index');
+		$content = Page::find()->where(array('name' => 'custom', 'type' => 2))->one();
+		return $this->render('route', array('content' => $content));
 	}
 
 }

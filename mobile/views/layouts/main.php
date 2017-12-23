@@ -15,7 +15,7 @@ $this->beginPage();
 <meta http-equiv="cache-control" content="no-cache,must-revalidate">
 <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
 <meta http-equiv="expires" content="0">
- <title><?=Html::encode($this->title)?></title>
+<title><?=Html::encode($this->title)?></title>
 <meta name="description" content="<?php echo isset($this->metaTags['description']) ? $this->metaTags['description'] : ''; ?>" />
 <meta name="keywords" content="<?php echo isset($this->metaTags['keywords']) ? $this->metaTags['keywords'] : ''; ?>" />
 <link rel="canonical" href="http://www.boyikang.com/helps/LianXiFangShi.html">
@@ -40,26 +40,7 @@ $this->beginPage();
 
 </header>
 
-<div>
-        <div class="m4-title_nav">
-            <div class="m4-t-sear1"></div>
-            <a class="m4-goback" href="javascript:history.back(-1);">返回上一页</a>
-            <a href="/mobile/help/category.html" id="m4-topclick"></a>
-            <h2>联系方式</h2>
-        </div>
 
-    </div>
-    <!-- 搜索模块 -->
-    <div class="m4-t-sear2">
-        <div class="m4-t-sear2-txt">
-            <p>取消</p>
-            <div class="m4-t-sear2-inp">
-                <input class="m4-t-sear2-inp-text" id="key" type="text">
-                <span class="m4-t-sear2-inp-but"><input onkeydown="keydown();" type="button"></span>
-            </div>
-        </div>
-    </div>
-</div>
 
 
  <?=$content?>

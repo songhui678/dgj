@@ -2,6 +2,7 @@
 
 namespace mobile\controllers;
 
+use common\modelsgii\Page;
 use yii\web\Controller;
 
 class AboutController extends Controller {
@@ -14,8 +15,8 @@ class AboutController extends Controller {
 		$this->getView()->title = "关于新默真科技";
 		$this->getView()->metaTags['keywords'] = 'keywords';
 		$this->getView()->metaTags['description'] = 'description';
-
-		return $this->render('index');
+		$content = Page::find()->where(array('name' => 'about', 'type' => 2))->one();
+		return $this->render('index', array('content' => $content));
 	}
 
 }
