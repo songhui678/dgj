@@ -5,12 +5,11 @@
  * Note: To avoid "Multiple Implementations" PHPStorm warning and make autocomplete faster
  * exclude or "Mark as Plain Text" vendor/yiisoft/yii2/Yii.php file
  */
-class Yii extends \yii\BaseYii
-{
-    /**
-     * @var BaseApplication|WebApplication|ConsoleApplication the application instance
-     */
-    public static $app;
+class Yii extends \yii\BaseYii {
+	/**
+	 * @var BaseApplication|WebApplication|ConsoleApplication the application instance
+	 */
+	public static $app;
 }
 
 /**
@@ -24,8 +23,7 @@ class Yii extends \yii\BaseYii
  * @property common\core\Request $request 在main.php中配置components
  * @property common\core\rbac\DbManager $authManager 在main.php中配置components
  */
-abstract class BaseApplication extends yii\base\Application
-{
+abstract class BaseApplication extends yii\base\Application {
 }
 
 /**
@@ -34,16 +32,14 @@ abstract class BaseApplication extends yii\base\Application
  *
  * @property User $user User component.
  */
-class WebApplication extends yii\web\Application
-{
+class WebApplication extends yii\web\Application {
 }
 
 /**
  * Class ConsoleApplication
  * Include only Console application related components here
  */
-class ConsoleApplication extends yii\console\Application
-{
+class ConsoleApplication extends yii\console\Application {
 }
 
 /**
@@ -53,6 +49,5 @@ class ConsoleApplication extends yii\console\Application
  * @property \common\modelsgii\User $identity User model.
  * @method \common\modelsgii\User getIdentity() returns User model.
  */
-class User extends \yii\web\User
-{
+class User extends \yii\web\User {
 }
