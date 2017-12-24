@@ -10,7 +10,7 @@ use yii\helpers\Html;
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
 $this->title = '广告管理';
-$this->params['title_sub'] = 'test ad ...'; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
+$this->params['title_sub'] = 'ad ...'; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
 \backend\assets\TablesAsset::register($this);
