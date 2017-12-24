@@ -2,7 +2,6 @@
 
 use yii\grid\GridView;
 use yii\helpers\Html;
-use yii\helpers\Url;
 
 /* @var $model common\modelsgii\ArticleCat */
 /* @var $dataProvider yii\data\ActiveDataProvider  */
@@ -10,7 +9,7 @@ use yii\helpers\Url;
 
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
-$this->title = '文章分类管理';
+$this->title = '广告分类';
 $this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
@@ -106,25 +105,8 @@ $columns = [
 
 ?>
 <div class="row">
-    <div class="col-md-3">
-        <div class="portlet light portlet-fit portlet-datatable bordered">
-            <div class="portlet-title">
-                <div class="caption">
-                    <i class="icon-settings font-dark"></i>
-                    <span class="caption-subject font-dark sbold uppercase">Tree栏目管理</span>
-                </div>
-                <div class="actions">
 
-                </div>
-            </div>
-            <div class="portlet-body">
-                <div id="tree_3" class="tree-demo">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
         <div class="portlet light portlet-fit portlet-datatable bordered">
             <div class="portlet-title">
                 <div class="caption">
@@ -136,6 +118,7 @@ $columns = [
                         <?=Html::a('添加 <i class="fa fa-plus"></i>', ['add', 'pid' => Yii::$app->request->get('pid', 0)], ['class' => 'btn green', 'style' => 'margin-right:10px;'])?>
                         <?=Html::a('删除 <i class="fa fa-times"></i>', ['delete'], ['class' => 'btn green ajax-post confirm', 'target-form' => 'ids', 'style' => 'margin-right:10px;'])?>
                     </div>
+
                 </div>
             </div>
             <div class="portlet-body">
@@ -176,102 +159,5 @@ $columns = [
 
 
 
-<!-- 定义数据块 -->
-<?php $this->beginBlock('test');?>
-jQuery(document).ready(function() {
-    highlight_subnav('article-cat/index'); //子导航高亮
-
-    /* jstree栏目管理 */
-    $("#tree_3").jstree({
-        "plugins" : [ "state", "types" ],
-        "core" : {
-            "themes" : {
-                "responsive": false
-            },
-            // so that create works
-            "check_callback" : true,
-            'data': {
-                "url" : "<?=Url::toRoute('/article-cat/tree');?>",
-                "dataType" : "json"
-            }
-            /*'data': [
-                {
-                    "text": "子节点一",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [
-                        {"text": "叶子节点一", "icon" : "fa fa-file icon-state-warning"}
-                    ]
-                }, {
-                    "text": "子节点二",
-                    "icon": "fa fa-folder icon-state-danger",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [
-                        {"text": "叶子节点一", "icon" : "fa fa-file icon-state-warning"}
-                    ]
-                }, {
-                    "text": "子节点三",
-                    "icon": "fa fa-folder icon-state-success",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [
-                        {"text": "叶子节点一", "icon" : "fa fa-file icon-state-warning"}
-                    ]
-                }, {
-                    "text": "子节点四",
-                    "icon": "fa fa-folder icon-state-warning",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [
-                        {"text": "叶子节点一", "icon" : "fa fa-file icon-state-warning"}
-                    ]
-                }, {
-                    "text": "子节点五",
-                    "icon": "fa fa-folder icon-state-success",
-                    "state": {
-                        "disabled": true
-                    },
-                    "children": [
-                        {"text": "叶子节点一", "icon" : "fa fa-file icon-state-warning"}
-                    ]
-                }, {
-                    "text": "子节点六",
-                    "icon": "fa fa-folder icon-state-danger",
-                    "state": {
-                        "opened": true
-                    },
-                    "children": [
-                        {"text": "子节点六 1", "icon" : "fa fa-file icon-state-warning"},
-                        {"text": "子节点六 2", "icon" : "fa fa-file icon-state-success"},
-                        {"text": "子节点六 3", "icon" : "fa fa-file icon-state-default"},
-                        {"text": "子节点六 4", "icon" : "fa fa-file icon-state-danger"},
-                        {"text": "子节点六 5", "icon" : "fa fa-file icon-state-info"}
-                    ]
-                }
-            ]*/
-        },
-        "types" : {
-            "default" : {
-                "icon" : "fa fa-folder icon-state-warning icon-lg"
-            },
-            "file" : {
-                "icon" : "fa fa-file icon-state-warning icon-lg"
-            }
-        },
-        "state" : { "key" : "demo2" }
-    });
-
-    $("#tree_3").on('activate_node.jstree', function(e, data){
-        var currentNode = data.node;
-        console.log(currentNode);
-    });
-
-});
-<?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
 <?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END);?>
