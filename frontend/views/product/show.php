@@ -137,18 +137,12 @@ use yii\widgets\Breadcrumbs;
         </div>
     </div>
     <div class="clear"></div>
-
-
-
-
 </div>
     <div class="clear"></div>
     <div class="p14-prodcontent-1 b">
    <div class="p14-prodcontent-1-nav">
        <ul>
-
            <li class="cur">产品详情</li>
-
        </ul>
    </div>
    <div class="clear"></div>

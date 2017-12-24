@@ -13,7 +13,7 @@ $this->beginPage();
 
     <head>
         <meta charset="utf-8" />
-        <title>登录 | Yii2通用后台 by huanglongfei.cn</title>
+        <title>登录 | 新默真科技后台</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -61,7 +61,7 @@ $this->beginPage();
             </form>
             <!-- END LOGIN FORM -->
         </div>
-        <div class="copyright"> 2017 &copy;nmgen.cn. </div>
+        <div class="copyright"> 2018 &copy;新默真科技 nmgen.cn </div>
 
     <?php $this->endBody()?>
     </body>

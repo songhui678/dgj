@@ -1,8 +1,8 @@
 <?php
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
-$this->title = '测试标题';
-$this->params['title_sub'] = '测试标题的子标题或提示信息';
+$this->title = '后台首页';
+$this->params['title_sub'] = '后台首页';
 
 /* 渲染其他文件 */
 //echo $this->renderFile('@app/views/public/login.php');
@@ -89,10 +89,10 @@ $this->params['title_sub'] = '测试标题的子标题或提示信息';
 
 
 <!-- 定义数据块 -->
-<?php $this->beginBlock('test'); ?>
+<?php $this->beginBlock('test');?>
 jQuery(document).ready(function() {
     highlight_subnav('index/index'); //子导航高亮
 });
-<?php $this->endBlock() ?>
+<?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
-<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END); ?>
+<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END);?>
