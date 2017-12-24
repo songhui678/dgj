@@ -18,7 +18,7 @@ $this->beginPage();
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
-        <?php $this->head() ?>
+        <?php $this->head()?>
         <link rel="shortcut icon" href="favicon.ico" />
         <script language="JavaScript">
             var BaseUrl = '<?=Yii::getAlias('@web')?>';
@@ -27,7 +27,7 @@ $this->beginPage();
     <!-- END HEAD -->
 
     <body class=" login">
-    <?php $this->beginBody() ?>
+    <?php $this->beginBody()?>
         <!-- BEGIN LOGO -->
         <div class="logo">
         </div>
@@ -44,11 +44,11 @@ $this->beginPage();
                 <div class="form-group">
                     <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
                     <label class="control-label visible-ie8 visible-ie9">用户名</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="用户名" name="info[username]" /> 
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="用户名" name="info[username]" />
                 </div>
                 <div class="form-group">
                     <label class="control-label visible-ie8 visible-ie9">密码</label>
-                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="info[password]" /> 
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="info[password]" />
                 </div>
                 <div class="form-actions">
                     <label class="rememberme check mt-checkbox mt-checkbox-outline" style="padding-left:25px;">
@@ -61,10 +61,10 @@ $this->beginPage();
             </form>
             <!-- END LOGIN FORM -->
         </div>
-        <div class="copyright"> 2016 &copy; Metronic. huanglongfei.cn. </div>
+        <div class="copyright"> 2017 &copy;nmgen.cn. </div>
 
-    <?php $this->endBody() ?>
+    <?php $this->endBody()?>
     </body>
 
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage()?>
