@@ -1,3 +1,4 @@
+<script language="javascript" type="text/javascript" src="/static/scripts/side.js"></script>
 <div class="client-2">
     <ul id="client-2">
 
@@ -32,7 +33,7 @@
                 <div class="my-kefu-right">
 </div>
                 <div class="my-kefu-weixin-pic">
-                    <img src="/resource/images/cce2192286f14d84aef120ab48018b08_9.png">
+                    <img src="/static/images/weixin.jpg">
                 </div>
             </div>
         </li>
