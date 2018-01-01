@@ -2,6 +2,8 @@
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 ?>
+<?php $this->beginContent('@app/views/layouts/public/ad.php')?>
+<?php $this->endContent()?>
 <div class="container">
     <div class="wrap clearfix">
                 <div class="location">

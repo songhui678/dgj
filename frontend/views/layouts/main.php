@@ -49,22 +49,17 @@ $this->beginPage();
         </div>
     </div>
 </div>
-<div class="iBanner">
-    <div class="bd"><img src="/upload/2016-12/148281142597275200.jpg" width="1920" height="258" ></div>
-</div>
 
-
-
- <?=$content?>
-
+<?=$content?>
 </div>
   </div>
 
 
         <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
-    <?php $this->beginContent('@app/views/layouts/public/footer.php')?>
-    <?php $this->endContent()?>
+    <?=$this->render('public/footer')?>
+<!--     <?php $this->beginContent('@app/views/layouts/public/footer.php')?>
+    <?php $this->endContent()?> -->
     <!-- END FOOTER -->
     <?php $this->beginContent('@app/views/layouts/public/side.php')?>
     <?php $this->endContent()?>

@@ -47,21 +47,7 @@ $this->beginPage();
         </div>
     </div>
 </div>
-<div class="banner">
-    <div class="bd">
-        <ul>
-        <?php foreach ($adList as $ad) {?>
-            <li><a href="<?=Url::toRoute([$ad->url])?>" target="_blank" title="<?=$ad->title?>"><img src="<?=$ad->photo?>" alt="<?=$ad->title?>" width="1920" height="664" ></a>
-            </li>
-        <?php }?>
-        </ul>
-    </div>
-    <div class="hd">
-        <ul></ul>
-    </div>
-    <p class="aPrev"><img src="images/aPrev.png"></p>
-    <p class="aNext"><img src="images/aNext.png"></p>
-</div>
+
 <script type="text/javascript">
     $(".banner").slide({titCell:".hd ul", mainCell:".bd ul", effect:"fold", autoPlay:true, autoPage:true, delayTime:2000,interTime:4000, prevCell:".aPrev", nextCell:".aNext"});
 </script>

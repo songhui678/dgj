@@ -10,7 +10,11 @@ return [
 
 	'components' => [
 		'cache' => [
-			'class' => 'yii\caching\FileCache',
+			'class' => 'yii\redis\Connection',
+			'hostname' => '47.104.72.210',
+			'port' => 6379,
+			'database' => 0,
+
 		],
 
 		/**

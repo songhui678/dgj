@@ -1,3 +1,26 @@
+<?php
+/* @var $this \yii\web\View */
+/* @var $content string */
+use yii\helpers\Url;
+?>
+<div class="banner">
+    <div class="bd">
+        <ul>
+        <?php foreach ($adverList as $adver) {?>
+            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="664" ></a>
+            </li>
+        <?php }?>
+        </ul>
+    </div>
+    <div class="hd">
+        <ul></ul>
+    </div>
+    <p class="aPrev"><img src="/static/newimage/aPrev.png"></p>
+    <p class="aNext"><img src="/static/newimage/aNext.png"></p>
+</div>
+<script type="text/javascript">
+    $(".banner").slide({titCell:".hd ul", mainCell:".bd ul", effect:"fold", autoPlay:true, autoPage:true, delayTime:2000,interTime:4000, prevCell:".aPrev", nextCell:".aNext"});
+</script>
 <div class="hadv">
     <div class="hd">
         <h2>解决方案</h2>
@@ -898,91 +921,7 @@
 <script type="text/javascript">
     jQuery(".news").slide({titCell:".news-quan ul", mainCell:".wrap .news-item-wrap", autoPage:true, effect:"leftLoop", autoPlay:true, vis:3, prevCell:".aPrev", nextCell:".aNext", trigger:"click"});
 </script>
-<div class="case">
-    <div class="wrap">
-        <div class="hd">
-            <h2>合作案例</h2>
-        </div>
-        <div class="bd">
-            <div class="case-tit">
-                <ul>
-                                        <li class='noBg'><em>制药</em></li>
-                                        <li ><em>科研</em></li>
-                                        <li ><em>医院</em></li>
-                                        <li ><em>高校</em></li>
-                                    </ul>
-            </div>
-            <div class="case-box">
-                                <div class="case-item">
-                    <div class="case-con clearfix">
-                        <ul>
-                                                        <li><a href="" target="_blank" title="大北农集团"><img src="/upload/2016-09/147495734219498500.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="百泰生物"><img src="/upload/2016-09/147511714182812600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="大清生物"><img src="/upload/2016-09/147511715471875000.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="华大基因"><img src="/upload/2016-09/147511716642187600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="启元药业"><img src="/upload/2016-09/147511717743750100.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="瑞泰制药"><img src="/upload/2016-09/147511718660937600.jpg" width="199" height="116"></a></li>
-                                                    </ul>
-                    </div>
-                    <div class="case-quan">
-                        <ul></ul>
-                    </div>
-                </div>
-                                <div class="case-item">
-                    <div class="case-con clearfix">
-                        <ul>
-                                                        <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511745629687600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511746317187600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="3"><img src="/upload/2016-09/147511746951562600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="4"><img src="/upload/2016-09/147511747957812600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="5"><img src="/upload/2016-09/147511748578125100.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="6"><img src="/upload/2016-09/147511749281250100.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="7"><img src="/upload/2016-09/147511750198437600.jpg" width="199" height="116"></a></li>
-                                                    </ul>
-                    </div>
-                    <div class="case-quan">
-                        <ul></ul>
-                    </div>
-                </div>
-                                <div class="case-item">
-                    <div class="case-con clearfix">
-                        <ul>
-                                                        <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511775848437600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511776464062600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="3"><img src="/upload/2016-09/147511777645312600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="4"><img src="/upload/2016-09/147511778489062600.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="济南军区总院"><img src="/upload/2016-09/147511780790625100.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="济南市第一人民医院"><img src="/upload/2016-09/147511786403125100.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="济南市第三人民医院"><img src="/upload/2016-09/147511785651562500.jpg" width="199" height="116"></a></li>
-                                                        <li><a href="" target="_blank" title="香港大学深圳医院"><img src="/upload/2016-09/147511788756250100.jpg" width="199" height="116"></a></li>
-                                                    </ul>
-                    </div>
-                    <div class="case-quan">
-                        <ul></ul>
-                    </div>
-                </div>
-                                <div class="case-item">
-                    <div class="case-con clearfix">
-                        <ul>
-                          <li><a href="" target="_blank" title="北京大学"><img src="/upload/2016-09/147511826229687600.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="清华大学"><img src="/upload/2016-09/147511827385937600.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="北京师范大学"><img src="/upload/2016-09/147511828435937600.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="北京林业大学"><img src="/upload/2016-09/147511829882812500.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="中国石油大学"><img src="/upload/2016-09/147511831145312600.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="济南大学"><img src="/upload/2016-09/147511833946875100.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="中国海洋大学"><img src="/upload/2016-09/147511834593750000.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511835243750000.jpg" width="199" height="116"></a></li>
-                          <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511835785937600.jpg" width="199" height="116"></a></li>
-                        </ul>
-                    </div>
-                    <div class="case-quan">
-                        <ul></ul>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
-</div>
+
 <script type="text/javascript">
     $(".case-item").slide({titCell:".case-quan ul", mainCell:".case-con ul", autoPage:true, effect:"left", autoPlay:false, vis:6, scroll:6, trigger:"click"});
     $(".case .bd").slide({titCell:".case-tit li", mainCell:".case-box", effect:"fold", autoPlay:false});
@@ -1071,13 +1010,11 @@
                 </div>
                     <div class="pic-list-panel clearfix" id="index-module-4">
                         <ul>
+                        <?php foreach ($linksList as $links) {?>
                             <li style="width:152px;" class='Mgright'>
-                                <div class="pic"><a href="http://www.dts650.com" target="_blank" title="后处理培训">后处理培训</a></div>
-                            </li>                                                     <li style="width:152px;" class='Mgright'>
-                                <div class="pic"><a href="http://www.okagv.com" target="_blank" title="AGV">AGV</a></div>
-                            </li>                                                     <li style="width:152px;" class='Mgright'>
-                                <div class="pic"><a href="http://www.jtdny.com/" target="_blank" title="生物质燃烧机">生物质燃烧机</a></div>
+                                <div class="pic"><a href="<?=$links->link?>" target="_blank" title="<?=$links->title?>"><?=$links->title?></a></div>
                             </li>
+                        <?php }?>
                         </ul>
                 </div>
                     <script type="text/javascript">

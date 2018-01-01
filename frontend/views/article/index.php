@@ -3,6 +3,8 @@ use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 ?>
+<?php $this->beginContent('@app/views/layouts/public/ad.php')?>
+<?php $this->endContent()?>
 <div class="container hhh">
     <div class="wrap clearfix">
         <div class="main">

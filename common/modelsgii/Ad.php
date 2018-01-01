@@ -29,8 +29,8 @@ class Ad extends \common\core\BaseActiveRecord {
 	public function rules() {
 		return [
 			[['image', 'type'], 'required'],
-			[['type', 'sort', 'status'], 'integer'],
-			[['image', 'url'], 'string', 'max' => 255],
+			[['type', 'sort', 'status', 'image'], 'integer'],
+			[['url'], 'string', 'max' => 255],
 			[['title'], 'string', 'max' => 50],
 		];
 	}

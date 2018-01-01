@@ -10,8 +10,16 @@ use yii\helpers\Url;
                 <div class="subNavBox">
                     <div class="subNav subNav_1 clearfix">
                     <dl>
-                        <dt><a href="category.php?class_id=102101">超低温冷冻存储箱</a></dt>
-                        <dt>|<a href="category.php?class_id=102102">血液血细胞速冻箱</a></dt>
+<?php
+$footList = \common\modelsgii\GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->all();
+foreach ($footList as $key => $cate) {
+	if ($key == 0) {
+		?>
+                        <dt><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate->id])?>"><?=$cate->title?></a></dt>
+<?php } else {?>
+
+                        <dt>|<a href="<?=Url::toRoute(['/product/cate', 'id' => $cate->id])?>"><?=$cate->title?></a></dt>
+<?php }}?>
 
                     </dl>
                     </div>

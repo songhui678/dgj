@@ -1,6 +1,8 @@
 <?php
 
 namespace frontend\controllers;
+use common\modelsgii\Ad;
+use common\modelsgii\AdCat;
 use common\modelsgii\Article;
 use common\modelsgii\ArticleCat;
 use yii\data\Pagination;
@@ -20,9 +22,12 @@ class ArticleController extends Controller {
 		$pages = new Pagination(['totalCount' => $articleCount, 'pageSize' => '10']);
 		$articleList = Article::find()->where(array("category_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$toutiaoArticle = Article::find()->where(array("category_id" => $id, "status" => 2))->orderBy('create_time desc')->one();
-		// var_dump($cateList);exit;
-		//phpinfo();
-		return $this->render('index', array('cateList' => $cateList, 'cate' => $cate, 'articleList' => $articleList, 'pages' => $pages, "toutiaoArticle" => $toutiaoArticle));
+		$adCate = AdCat::find()->where(array("name" => 'article', "status" => 1))->one();
+		if (!empty($adCate)) {
+			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
+			// var_dump($adverList);exit;
+		}
+		return $this->render('index', array('cateList' => $cateList, 'cate' => $cate, 'articleList' => $articleList, 'pages' => $pages, "toutiaoArticle" => $toutiaoArticle, 'adverList' => $adverList));
 	}
 
 	public function actionShow($id) {
@@ -41,7 +46,11 @@ class ArticleController extends Controller {
 
 		$sql = "select id,title from yii2_article where id>" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
 		$beforeArticle = Article::findBysql($sql)->one();
-
-		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'xiangguanList' => $xiangguanList, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle));
+		$adCate = AdCat::find()->where(array("name" => 'article', "status" => 1))->one();
+		if (!empty($adCate)) {
+			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
+			// var_dump($adverList);exit;
+		}
+		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'xiangguanList' => $xiangguanList, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle, 'adverList' => $adverList));
 	}
 }
