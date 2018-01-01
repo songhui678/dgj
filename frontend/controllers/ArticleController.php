@@ -27,6 +27,9 @@ class ArticleController extends Controller {
 
 	public function actionShow($id) {
 		$article = Article::find()->where(array("id" => $id, "status" => 1))->one();
+		// Article::updateByPk($id, array('view' => $article->view + 1));
+		$article->view = $article->view + 1;
+		$article->save();
 		$cate = ArticleCat::find()->where(array("pid" => 0, "id" => $article->category_id))->one();
 		//推荐资讯
 		$tujianList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(3)->all();

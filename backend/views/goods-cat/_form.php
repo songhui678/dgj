@@ -22,6 +22,11 @@ use yii\helpers\Html;
 
 <?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-2'])->label('分类名称')->hint('栏目中文名称')?>
 <?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('栏目标识')->hint('英文标识，只允许含有:英文、数字和中划线')?>
+<!-- 单图 -->
+<!--<?=$form->field($model, 'image')->widget('\common\widgets\images\Images', [
+	'saveDB' => 1], ['class' => 'c-md-12'])->label('分类图片')->hint('单图图片尺寸为：300*300');?>-->
+
+
 <?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越靠前')?>
 <?=$form->field($model, 'status')->radioList(['1' => '显示', '0' => '隐藏'])->label('是否显示')?>
 

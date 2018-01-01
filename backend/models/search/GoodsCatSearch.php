@@ -18,7 +18,7 @@ class GoodsCatSearch extends GoodsCat {
 	public function rules() {
 		return [
 			[['id', 'pid', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
-			[['name', 'title', 'link', 'extend', 'meta_title', 'keywords', 'description'], 'safe'],
+			[['name', 'title', 'link', 'extend', 'image', 'meta_title', 'keywords', 'description'], 'safe'],
 		];
 	}
 

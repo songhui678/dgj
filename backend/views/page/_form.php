@@ -42,6 +42,7 @@ use yii\helpers\Url;
 	],
 ], ['class' => 'c-md-9'])->label('文章内容');?>
 
+<?=$form->field($model, 'type')->textInput()->hiddenInput(['value' => '1'])->label(false);?>
 <?=$form->field($model, 'status')->radioList(['1' => '正常', '0' => '隐藏'])->label('状态')?>
 
 <div class="form-actions">

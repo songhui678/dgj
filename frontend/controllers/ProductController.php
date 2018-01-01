@@ -15,11 +15,20 @@ class ProductController extends Controller {
 	 * @var string
 	 */
 	public $layout = 'main';
-	public function actionIndex() {
+	public function actionIndex($id = 1) {
+
+		$cate = GoodsCat::find()->where(array("id" => $id))->one();
 		$cateList = $this->cateTree();
-		//最新资讯
-		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
-		return $this->render('index', array('cateList' => $cateList, 'articleList' => $articleList));
+		// var_export($cateList);exit;
+		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
+		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+
+		if (!empty($cate)) {
+			return $this->render('index', array('cate' => $cate, 'cateList' => $cateList, 'pages' => $pages, 'goodsList' => $goodsList));
+		} else {
+			$this->redirect(array('index/error'));
+		}
 	}
 	/**
 	 * [actionShow 产品详情]
@@ -30,6 +39,8 @@ class ProductController extends Controller {
 	 */
 	public function actionShow($id) {
 		$goods = Goods::find()->where(array("goods_id" => $id, "status" => 1))->one();
+		$goods->view = $goods->view + 1;
+		$goods->save();
 		$cateList = $this->cateTree();
 		//最新资讯
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();

@@ -79,4 +79,5 @@ class Article extends \common\core\BaseActiveRecord {
 		}
 		return $url;
 	}
+
 }

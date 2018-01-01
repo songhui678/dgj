@@ -4,74 +4,70 @@
 $this->beginPage();
 ?>
 
-<!DOCTYPE html>
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-<head data-base="/">
-<meta name="baidu-site-verification" content="JxTRMxGj4c">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache,must-revalidate">
-<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-<meta http-equiv="expires" content="0">
-<title>【官网】冻干机,冷干机,冷冻干燥机,真空冷冻干燥机-新默真科技</title>
-<meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
-<meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
-
-<link href="/static/css/dgjcommon.css" rel="stylesheet">
-<link href="/static/css/Index.css" rel="stylesheet">
-<link href="/static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet">
-
-<script language="javascript" type="text/javascript" src="/static/scripts/58e5bd1aac30899558b844f3.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/JQuery.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/jquery.SuperSlide.2.1.1.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/public.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>企业简介 - 关于我们 - 美菱生物医疗</title>
+<meta name="keywords" content="超低温冰箱,医用冷藏箱,实验室超低温冰箱,血液冷藏箱,医用低温冰箱,-80℃超低温冰箱,美菱药品保存箱,智能生物样本库" />
+<meta name="description" content="美菱生物医疗主营低温,超低温存储设备,耗材及生物样本冻存管理,无线智能云监控,冷链仓储物流系统解决方案,家庭健康等业务,广泛应用于医疗,基因工程,生命科学等领域.欢迎来电咨询:4008600266" />
+<link rel="shortcut icon" type="image/x-icon" href="" />
+<link href="/static/newcss/base.css" type="text/css" rel="stylesheet">
+<link href="/static/newcss/inside.css" type="text/css" rel="stylesheet">
+<link href="/static/newcss/home.css" type="text/css" rel="stylesheet">
+<script src="/static/newjs/jquery-1.8.3.min.js"></script>
+<script src="/static/newjs/jquery.SuperSlide.2.1.1.js"></script>
+<script src="/static/newjs/adver.js"></script>
+<script type="text/javascript" src="/static/newjs/common.js?rightButton=0"></script>
+<script type="text/javascript" src="/static/newjs/morecity.js" mce_src="js/morecity.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
 <script type="text/javascript">uaredirect('http://m.dgj.com/');</script>
-<link rel="shortcut icon" href="/favicon.ico" />
-
-<link rel="alternate" media="only screen and (max-width:640px)" href="http://m.nmgen.com.cn">
+<!--[if lt IE 7]><script src="js/iepng.js"></script><![endif]-->
+</head>
 <body>
-<?php $this->beginBody()?>
-<!--头部-->
-<div class="head">
-<div class="header">
-  <div class="tok">
-   <h1><a href="/" title="新默真科技"><img alt="新默真科技" src="/static/images/logo.png"></a> </h1>
-   <h2>专业<span>冻干设备+解决方案</span>提供商</h2>
-   <p class="tod">
-       <!--
-       <span>
-        <a href="#" target="_blank" title="英文切入窗口">英文切入窗口</a>
-       </span>
-        -->
-       <em>010-51656110 / 010-51620600</em>
-   </p>
-  </div>
-  <div class="nav menu">
+
+<div class="topArea wrap clearfix">
+    <div class="logo fl">
+        <h1 class="logo"><a href="index.php"><img src="/upload/2016-09/147494550929618200.jpg" alt=""/></a></h1>
+    </div>
         <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
         <?php $this->endContent()?>
-  </div>
- </div>
-
+     <script type="text/javascript">
+        Nav();
+    </script>
+    <div class="set fr clearfix">
+        <div class="searchbox fl">
+            <form action="search.php" method="get" class="search-form clearfix" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }">
+                <div class="input-box"><input type="text" name="search_keyword" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }" onfocus="if (this.value == '请输入关键字') this.value=''" onblur="if (this.value == '') this.value=''" value="" /></div>
+                <div class="btn-box"><button type="submit"></button></div>
+            </form>
+        </div>
+    </div>
 </div>
-  <div class="banner fullSlide">
-    <ul class="bd">
-            <li>
-                <a alt="新默真科技专业冻干设备+解决方案提供商" href="#" style="background:url(/static/images/584fae5f0c7f493e8946b2fe086d3b33_3.jpg) no-repeat center top;"></a>
-            </li>
-    </ul>
-    <div class="hd">
+<div class="banner">
+    <div class="bd">
         <ul>
+        <?php foreach ($adList as $ad) {?>
+            <li><a href="<?=Url::toRoute([$ad->url])?>" target="_blank" title="<?=$ad->title?>"><img src="<?=$ad->photo?>" alt="<?=$ad->title?>" width="1920" height="664" ></a>
+            </li>
+        <?php }?>
         </ul>
     </div>
-    <a class="prev" href="javascript:void(0)"></a>
-    <a class="next" href="javascript:void(0)"></a>
+    <div class="hd">
+        <ul></ul>
+    </div>
+    <p class="aPrev"><img src="images/aPrev.png"></p>
+    <p class="aNext"><img src="images/aNext.png"></p>
 </div>
-
-                <!-- BEGIN CONTENT BODY -->
-                        <?=$content?>
+<script type="text/javascript">
+    $(".banner").slide({titCell:".hd ul", mainCell:".bd ul", effect:"fold", autoPlay:true, autoPage:true, delayTime:2000,interTime:4000, prevCell:".aPrev", nextCell:".aNext"});
+</script>
+<?=$content?>
+</div>
+  </div>
         <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
     <?php $this->beginContent('@app/views/layouts/public/footer.php')?>

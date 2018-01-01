@@ -5,7 +5,7 @@
          <li class="my-kefu-qq">
             <div class="my-kefu-main">
               <div class="my-kefu-left">
-                    <a class="online-contact-btn" target="_blank" th:href="'http://wpa.qq.com/msgrd?v=3&uin='+${data.items[0].children[0].serverType.name=='QQ'?data.items[0].children[0].serverType.content:''} +'&site=qq&menu=yes'" th:if="${ not #lists.isEmpty(data.items) and #lists.size(data.items)>0 and not #lists.isEmpty(data.items[0].children)  and #lists.size(data.items[0].children)>0 and  not #strings.isEmpty(data.items[0].children[0].serverType)}">
+                    <a class="online-contact-btn" target="_blank" href="tencent://message/?uin=898329669&amp;Site=&amp;Menu=yes">
                         <i></i>
                         <p>QQ咨询</p>
                     </a>

@@ -3,39 +3,44 @@
 /* @var $content string */
 use yii\widgets\Breadcrumbs;
 ?>
-<link href="/static/css/dingzhi.css" rel="stylesheet">
-<div class="blk-main">
-   <div class="b plc">
-    <!-- HTML -->
-    <div class="p12-curmbs-1" navcrumbs="">
-    <?php echo Breadcrumbs::widget(['homeLink' => [
+<div class="container hhh">
+  <div class="wrap clearfix">
+    <div class="main">
+            <div class="location">
+            <?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
-	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
+	'template' => "<img src='/static/newimage/home.jpg'>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[
-			'label' => '公司简介',
+			'label' => '关于我们',
 			'url' => ['/about'],
 			'template' => " {link}",
 		],
 
 	]]);
 ?>
-        </div>
-    <!-- css -->
-    </div>
-<div class="clear"></div>
-<div class="p12-aboutinfo-1">
-   <div class="p12-aboutinfo-1">
 
-   <div class="p12-aboutinfo-1-nr endit-content">
-       <div class="content">
+            </div>
+       <div class="article clearfix" id="info_content">
 
-<?=$content->content?>
+
+              <?=$content->content?>
        </div>
 
-   </div>
-
-</div>
+        <script language="javascript">
+          $(function(){
+            var imgObj = $("#info_content").find("img");
+            if (imgObj.length > 0)
+            {
+              for (var i = 0; i < imgObj.length; i++)
+              {
+                if (imgObj[i].width > 1140) imgObj[i].width = 1140;
+              }
+            }
+          });
+        </script>
+                  </div>
   </div>
+</div>

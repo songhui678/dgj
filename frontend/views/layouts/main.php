@@ -1,65 +1,58 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
-use yii\helpers\Html;
 $this->beginPage();
 ?>
 
-<!DOCTYPE html>
-<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
-<head data-base="/">
-<meta name="baidu-site-verification" content="JxTRMxGj4c">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="format-detection" content="telephone=no">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache,must-revalidate">
-<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-<meta http-equiv="expires" content="0">
-<title><?=Html::encode($this->title) . "-新默真科技"?></title>
-<meta name="keywords" content="冻干机,冷干机,冷冻干燥机,真空冷冻干燥机,新默真科技">
-<meta name="description" content="北京新默真科技实验仪器有限公司是一家专业真空冷冻干燥机及解决方案提供商，为客户提供从实验室型、中试型冻干机设备以及完整的真空冷冻解决方案。联系电话：010-51620600">
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<title>企业简介 - 关于我们 - 美菱生物医疗</title>
+<meta name="keywords" content="超低温冰箱,医用冷藏箱,实验室超低温冰箱,血液冷藏箱,医用低温冰箱,-80℃超低温冰箱,美菱药品保存箱,智能生物样本库" />
+<meta name="description" content="美菱生物医疗主营低温,超低温存储设备,耗材及生物样本冻存管理,无线智能云监控,冷链仓储物流系统解决方案,家庭健康等业务,广泛应用于医疗,基因工程,生命科学等领域.欢迎来电咨询:4008600266" />
+<link rel="shortcut icon" type="image/x-icon" href="" />
+<link href="/static/newcss/base.css" type="text/css" rel="stylesheet">
+<link href="/static/newcss/inside.css" type="text/css" rel="stylesheet">
 
-<link href="/static/css/n-reset.css" rel="stylesheet">
-<!-- <link href="static/css/Index.css" rel="stylesheet"> -->
-<!-- <link href="static/css/58e5bd1aac30899558b844f3.css" rel="stylesheet"> -->
-
+<script src="/static/newjs/jquery-1.8.3.min.js"></script>
+<script src="/static/newjs/jquery.SuperSlide.2.1.1.js"></script>
+<script src="/static/newjs/adver.js"></script>
+<script type="text/javascript" src="/static/newjs/common.js?rightButton=0"></script>
+<script type="text/javascript" src="/static/newjs/morecity.js" mce_src="js/morecity.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/nsw.pc.min.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/template-sub-domain.js"></script>
-<script language="javascript" type="text/javascript" src="/static/scripts/product.js"></script>
 <script type="text/javascript">uaredirect('http://m.dgj.com/');</script>
-<link rel="shortcut icon" href="/favicon.ico" />
+<!--[if lt IE 7]><script src="js/iepng.js"></script><![endif]-->
 
-<link rel="alternate" media="only screen and (max-width:640px)" href="http://m.nmgen.com.cn">
+
+</head>
 <body>
-<?php $this->beginBody()?>
-<!--头部-->
-<div class="head">
-<div class="header">
-  <div class="tok">
-   <h1><a href="/" title="新默真科技"><img alt="新默真科技" src="/static/images/logo.png"></a> </h1>
-   <h2>专业<span>冻干设备+解决方案</span>提供商</h2>
-   <p class="tod">
-       <!--
-       <span>
-        <a href="#" target="_blank" title="英文切入窗口">英文切入窗口</a>
-       </span>
-        -->
-       <em>010-51656110 / 010-51620600</em>
-   </p>
-  </div>
-  <div class="nav menu">
+
+<div class="topArea wrap clearfix">
+    <div class="logo fl">
+        <h1 class="logo"><a href="index.php"><img src="/upload/2016-09/147494550929618200.jpg" alt=""/></a></h1>
+    </div>
         <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
         <?php $this->endContent()?>
-  </div>
- </div>
+     <script type="text/javascript">
+        Nav();
+    </script>
+    <div class="set fr clearfix">
+        <div class="searchbox fl">
+            <form action="search.php" method="get" class="search-form clearfix" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }">
+                <div class="input-box"><input type="text" name="search_keyword" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }" onfocus="if (this.value == '请输入关键字') this.value=''" onblur="if (this.value == '') this.value=''" value="" /></div>
+                <div class="btn-box"><button type="submit"></button></div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="iBanner">
+    <div class="bd"><img src="/upload/2016-12/148281142597275200.jpg" width="1920" height="258" ></div>
+</div>
 
-</div>
-<div class="ty-banner-1">
-        <a href="/helps/BoYiKangJieShao.html" title="冻干机定制">
-            <img alt="冻干机定制" src="/resource/images/64f483789fa745b1b622fafefbe7b650_3.jpg" title="冻干机定制">
-        </a>
-</div>
 
 
  <?=$content?>

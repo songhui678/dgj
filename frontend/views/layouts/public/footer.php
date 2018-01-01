@@ -1,50 +1,33 @@
-
-
-<!-- BEGIN PRE-FOOTER -->
-<div class="foot">
- <div class="footer">
-<p class="f_nav">
-
-    <a href="/" title="首页">首页</a>
-
-    <a href="/product/ZhenKongLingDongGan.html" title="真空冷冻干燥机">真空冷冻干燥机</a>
-
-    <a href="/product/CengXiShiYanLing.html" title="层析实验冷柜">层析实验冷柜</a>
-
-    <a href="/helps/FeiBiaoDingZhi.html" title="冻干机定制">冻干机定制</a>
-
-    <a href="/helps/FuWuZhiChi.html" title="技术服务">技术服务</a>
-
-    <a href="/article/TouTiaoXinWen.html" title="案例资讯">案例资讯</a>
-
-    <a href="/helps/BoYiKangJieShao.html" title="走进博医康">走进博医康</a>
-
-    <a href="/helps/LianXiFangShi.html" title="联系我们">联系我们</a>
-
-    <a href="/sitemap.html" target="_blank" title="网站地图">网站地图</a>
-    </p>
-  <div class="f_k">
-  <h1>
-       <a href="/" title="博医康"><img alt="博医康" src="/static/images/logo.png">  新默真科技（北京）有限公司  </a>
-       <p>  版权所有 &nbsp;&nbsp;
-       <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备10200644号</a>  <span>&nbsp;&nbsp;</span>
-       </p>
-   </h1>
-   <h2>  电话：   010-51656110  <p>  邮箱：   sale@boyikang.com  </p>  地址：   北京市石景山区八角西街61号  </h2>
-   <p class="f_w"> <em>
-       <img alt="手机二维码" src="/resource/images/cce2192286f14d84aef120ab48018b08_9.png">  手机二维码 </em>
-       <em><img alt="微信公众号" src="/resource/images/b35e2e745e4242769abea625c0a63f15_3.jpg">  微信公众号 </em>
-   </p>
-  </div>
-  <div class="yq">
-   <span>友情链接：</span>
-    <a href="http://kfb.nsw88.net.cn/" target="_blank" title="牛商学堂">牛商学堂</a>
-
-    <a href="http://www.srzxjt.com/" target="_blank" title="单仁资讯">单仁资讯</a>
-
-    <a href="http://www.nsw88.com/" target="_blank" title="牛商网">牛商网</a>
-
-  </div>
- </div>
-
+<?php
+use yii\helpers\Url;
+?>
+<div class="footer">
+    <div class="foot">
+        <div class="wrap clearfix">
+            <dl><dt><a href="<?=Url::toRoute('/about')?>">关于我们</a></dt></dl>
+            <dl><dt><a href="<?=Url::toRoute('/product')?>">产品中心</a></dt>
+                <dd><a href="category.php?class_id=102101">超低温冷冻存储箱</a></dd>
+                <dd><a href="category.php?class_id=102102">血液血细胞速冻箱</a></dd>
+                <dd><a href="category.php?class_id=102103">血液冷藏箱</a></dd>
+                <dd><a href="category.php?class_id=102104">医用冷藏箱</a></dd>
+                <dd><a href="category.php?class_id=102105">医用冷藏冷冻箱</a></dd>
+                <dd><a href="category.php?class_id=102106">医用低温箱</a></dd>
+                <dd><a href="category.php?class_id=102108">液氮罐</a></dd>
+            </dl>
+            <dl><dt><a href="<?=Url::toRoute('/support')?>">解决方案</a></dt></dl>
+            <dl><dt><a href="<?=Url::toRoute('/service')?>">客服服务</a></dt></dl>
+            <dl><dt><a href="<?=Url::toRoute(['/article'])?>">新闻中心</a></dt></dl>
+            <dl><dt><a href="<?=Url::toRoute('/contact')?>">联系我们</a></dt></dl>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="copyright">
+            <p> Copyright 2018 新默真科技（北京）有限公司 京ICP备10200644号</p>
+            <p>
+              地址：北京市石景山区八角西街61号
+            </p>
+        </div>
+    </div>
 </div>
+</body>
+</html>

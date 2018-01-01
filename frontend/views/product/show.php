@@ -1,189 +1,162 @@
 <?php
 use yii\helpers\Url;
-use yii\widgets\Breadcrumbs;
 ?>
-<link href="/static/css/product.css" rel="stylesheet">
-<div class="blk-main">
-   <div class="b plc">
-    <!-- HTML -->
-        <div class="p12-curmbs-1" navcrumbs="">
-            <?php echo Breadcrumbs::widget(['homeLink' => [
-	'label' => '首页',
-	'url' => ['/'],
-	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
-],
-	'links' => [
-		[
-			'label' => '产品频道',
-			'url' => ['/product'],
-			'template' => "{link}<span>&gt;</span>",
-		],
-		[
-			'label' => "{$cate['title']}",
-			'url' => ['/product/cate', "id" => "{$cate['id']}"],
-			'template' => "{link}",
-		],
-		[
-			'label' => "{$goods['goods_name']}",
-			'url' => ['/product/show', "id" => "{$goods['goods_id']}"],
-			'template' => "{link}",
-		],
-	]]);
-?>
-
-        </div>
-    <!-- css -->
-    </div>
-<div class="clear"></div>
-<div class="p12-aboutinfo-1">
-<div class="blk-xs fl">
-    <div class="p14-left-nav-1 b">
- <div class="p14-left-nav-1-tit">
-  <h3>产品中心<span><?=Url::toRoute(['/product'])?></span></h3>
- </div>
- <div class="p14-left-nav-1-nav" navvicefocus1="">
-
-  <?php foreach ($cateList as $cateone) {?>
-   <div class="p14-left-nav-1-nav-one">
-    <h3>
-    <a href="<?=Url::toRoute(['/product/cate', 'id' => $cateone['id']])?>" title="<?=$cateone['title']?>"><?=$cateone['title']?></a>
-    </h3>
-    <?php if (isset($cateone['_child'])) {?>
-    <?php foreach ($cateone['_child'] as $erji) {?>
-    <dl style="display:none;">
-     <!-- 2级 -->
-      <dt>
-       <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"><?=$erji['title']?></a>
-      </dt>
-      <?php if (isset($erji['_child'])) {?>
-      <?php foreach ($erji['_child'] as $sanji) {?>
-      <dd style="display:none;">
-       <!-- 3级 -->
-        <p class="pl3"> <span><a href="<?=Url::toRoute(['/product/cate', 'id' => $sanji['id']])?>" title="<?=$sanji['title']?>">&gt;&gt;<?=$sanji['title']?></a></span>
-        <?php if (isset($sanji['_child'])) {?>
-         <!-- 4级 --> <em class="pl4">
-           <?php foreach ($sanji['_child'] as $siji) {?>
-           <a href="<?=Url::toRoute(['/product/cate', 'id' => $siji['id']])?>" title="<?=$siji['title']?>"><?=$siji['title']?></a>
-           <?php }?>
-           </em>
-           <?php }?>
-        </p>
-      </dd>
-      <?php }?>
-      <?php }?>
-    </dl>
-    <?php }?>
-    <?php }?>
-   </div>
-   <?php }?>
-
- </div>
- <div class="clear"></div>
+<div class="menuwrap">
+  <div class="menu wrap pro-tit">
+    <dl class="clearfix">
+              <dt><a href="category.php?class_id=102101" class="current"><i class="i1"></i>超低温冷冻存储箱</a></dt>
 
 
-</div>
-    <div class="blk">
- <div class="p1-info-5">
-  <div class="p1-titlel-1">
-   <h3><span>最新资讯</span></h3>
+              <dt><a href="category.php?class_id=102102"><i class="i2"></i>血液血细胞速冻箱</a></dt>
+
+
+
+              <dt><a href="category.php?class_id=102103"><i class="i3"></i>血液冷藏箱</a></dt>
+
+
+
+              <dt><a href="category.php?class_id=102104"><i class="i4"></i>医用冷藏箱</a></dt>
+
+
+
+              <dt><a href="category.php?class_id=102105"><i class="i5"></i>医用冷藏冷冻箱</a></dt>
+
+
+
+              <dt><a href="category.php?class_id=102106"><i class="i6"></i>医用低温箱</a></dt>
+
+
+
+              <dt><a href="category.php?class_id=102108"><i class="i7"></i>液氮罐</a></dt>
+
+
+
+                    </dl>
   </div>
-  <div class="p1-info-5-txt">
-   <ul>
-
-    <?php foreach ($articleList as $article) {?>
-     <li>
-        <a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>"><?=$article->title?></a>
-     </li>
-     <?php }?>
-   </ul>
+</div>
+<div class="third_menu">
+  <div class="s_menu">
+      <ul class="clearfix">
+                  <li><a href="category.php?class_id=102101107" >-120℃— -164℃</a></li>
+                    <li>|<a href="category.php?class_id=102101106"  class='current'>-110℃— -152℃</a></li>
+                    <li>|<a href="category.php?class_id=102101103" >-10℃— -86℃</a></li>
+                    <li>|<a href="category.php?class_id=102101102" >-10℃— -65℃</a></li>
+                    <li>|<a href="category.php?class_id=102101101" >-10℃ — -40℃</a></li>
+                </ul>
   </div>
- </div>
- <!-- CSS -->
-
 </div>
-    <div>
-    <div class="contact-z1">
-        <p>咨询热线</p>
-        <span>010-51656110</span>
-    </div>
 
-</div>
-   </div>
-   <div class="blk-sm fr">
-    <div class="p14-showcase b">
+<div class="container">
+  <div class="wrap clearfix">
+        <div class="back-color">
+      <div class="art-box">
+                <h2><?=$goods->goods_name?></h2>
+                <div class="info">
+                    <span><img src="images/i_icon_scan.jpg"><em><?=$goods->view?></em> </span>
 
-    <div class="p14-showcase-left">
-        <div class="p14-showcase-left-jt p14-showcase-left-prev"><img alt="" src="/images/p15-icon2.png"></div>
-        <div class="p14-showcase-left-jt p14-showcase-left-next"><img alt="" src="/images/p15-icon3.png"></div>
-        <div class="p14-showcase-left-pic">
-            <ul>
-                <li><img alt="<?=$goods->goods_name?>" src="<?=$goods->photo?>"></li>
-            </ul>
-        </div>
-        <div class="p14-showcase-left-size">
-            <span></span>/<em></em>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="p14-showcase-right">
-        <div class="p14-showcase-right-tit"><span><?=$goods->goods_name?></span></div>
-        <div class="p14-showcase-right-con"><?=$goods->description?></div>
-        <div class="hotline">
-            <span class="tel"></span>
-            <div class="text">
-                <p>服务热线:</p>
-                <h3>010-51656110</h3>
+                    <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d", $goods->create_time); ?></em> </span>
+                    <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
-    <div class="clear"></div>
-    <div class="p14-prodcontent-1 b">
-   <div class="p14-prodcontent-1-nav">
-       <ul>
-           <li class="cur">产品详情</li>
-       </ul>
-   </div>
-   <div class="clear"></div>
-   <div class="p14-prodcontent-1-desc endit-desc endit-content">
+            <div class="pro-article clearfix">
+                <ul class="pro-tit">
+                                      <li><img src="<?=$goods->photo?>" width="108" height="100"></li>
 
-           <div class="p14-prodcontent-1-text p14-prodcontent-1-cur">
+                                  </ul>
+                <div class="bigpic">
+                  <ul>
+                                        <li><img src="<?=$goods->photo?>" width="473" height="436"></li>
+
+                                      </ul>
+                </div>
+                <div class="pro-info">
+                    <h2><?=$goods->goods_name?></h2>
+                    <div class="txt"><?=$goods->description?></div>
+                    <div class="btn"><a href=""><img src="images/p_btn.jpg"> </a> </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+          $(".pro-article").slide({titCell:".pro-tit li", mainCell:".bigpic ul", effect:"fold", autoPlay:true});
+      </script>
+      <ul class="pro-txt-tit clearfix">
+                <li class="on">产品介绍</li>
+            </ul>
+            <div class="pro-txt-con">
                 <?=$goods->content?>
             </div>
+      <script language="javascript">
+      $(function(){
+        $(".pro-txt-tit li").click(function(){
+          var index = $(this).index();
+          $(this).addClass("on");
+          $(this).siblings().removeClass("on");
+          $(".article_"+index).addClass("cur");
+          $(".article_"+index).siblings().removeClass("cur");
+        });
 
+        var imgObj = $(".article").find("img");
+        if (imgObj.length > 0)
+        {
+          for (var i = 0; i < imgObj.length; i++)
+          {
+            if (imgObj[i].width > 1140) imgObj[i].width = 1140;
+          }
+        }
+      });
+      </script>
+      <div class="fx-wrap">
+                <div class="article-bottom-fx clearfix">
+                    <span class="fl">
+                      <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                      <p style="text-align: left; ">快给朋友分享吧！</p>
+                    </span>
+                    <span class="zan"><i><img src="images/ico-zan.png"></i><span>点赞</span><em>+1</em></span>
+                </div>
+            </div>
+            <script language="javascript">
+      $(function(){
+        $(".zan").click(function(){
+          $.ajax({
+            type:"post",
+            url:"ajax.php?active=zan",
+            data:'id='+132,
+            success: function(msg){
+              if(msg==1){
+                $(".zan").unbind("click");
+                $(".zan span").text("已赞");
+                $(".zan em").show(0);
+                              $(".zan em").animate({fontSize:'68px',opacity:'0'},1000);
+                              $(".zan em").hide(0);
+                          }else{
+                              alert(msg);
+                          };
+            }
+          });
+        });
 
-   </div>
-    <div class="clear"></div>
-
-
-</div>
-    <div class="clear"></div>
-    <div class="p14-product-3 b">
-    <div class="p14-product-3-tit"><b>热品推荐</b> <span>/ Hot product </span></div>
-    <div class="p14-product-3-list">
-    <?php foreach ($goodsList as $goods) {?>
-            <dl>
-                <dt>
-                    <a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>">
-                        <img alt="<?=$goods->goods_name?>" src="<?=$goods->photo?>" title="<?=$goods->goods_name?>">
-                    </a>
-                </dt>
-                <dd>
-                    <h3><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><?=$goods->goods_name?></a></h3>
-                    <div class="p14-product-3-desc">
-                        <?=$goods->description?>
-                    </div>
-                </dd>
-            </dl>
-        <?php }?>
-
-
-
-   <div class="clear"></div>
+      });
+      </script>
     </div>
-
-</div>
-   </div>
-   <div class="clear"></div>
+    <div class="xgcp">
+            <h2><span></span>相关产品</h2>
+            <div class="pro-item-wrap clearfix">
+              <?php foreach ($goodsList as $goods) {?>
+                <div class="pro-item ">
+                  <div class="pic">
+                        <a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>" target="_blank"><img src="<?=$goods->photo?>" width="288" height="204" alt="<?=$goods->goods_name?>" /></a>
+                        <div class="name"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>" target="_blank"><?=$goods->goods_name?></a></div>
+                  </div>
+                  <dl>
+                      <dt><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><?=$goods->goods_name?></a></dt>
+                      <dd class="txt">
+                        <?=$goods->description?>
+                      </dd>
+                      <!--<dd class="wendu">存储温度（℃）：</dd>-->
+                  </dl>
+              </div>
+          <?php }?>
+                            </div>
+        </div>
   </div>
+</div>

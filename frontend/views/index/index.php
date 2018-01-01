@@ -1,478 +1,1088 @@
-<div class="search">
- <div class="content">
-  <p class="sez"> 热门搜索关键词：
-    <a href="/products/Pilot58TZhenKongLingDongGanZ.html" title="仪器">仪器</a>
-   </p>
-  <p class="sey"> <label> <input class="sek1" id="key" onfocus="this.value=''" onkeypress="if(event.keyCode==13) {search();return false;}" placeholder="请输入您要搜索的关键词" type="text" value="请输入您要搜索的关键词"> </label> <input class="sek2" onclick="searchInfo()" type="button"> </p>
-</div>
-</div>
-<div class="zs content">
- <ul>
-  <li class="zsl1"><a title="生物应用"><p></p>生物应用</a> </li>
-  <li class="zsl2"><a title="制药应用"><p></p>制药应用</a> </li>
-  <li class="zsl3"><a title="医疗应用"><p></p>医疗应用</a> </li>
-  <li class="zsl4"><a title="食品应用"><p></p>食品应用</a> </li>
-  <li class="zsl5"><a title="新材料应用"><p></p>新材料应用</a> </li>
-  <li class="zsl6"><a title="工业应用"><p></p>工业应用</a> </li>
-  <li class="zsl7"><a title="其他应用"><p></p>其他应用</a> </li>
- </ul>
-</div>
-<div class="qs">
-<div class="content">
-    <a href="/product/ZhenKongLingDongGan.html" title="真空冷冻干燥机"><h3>真空冷冻干燥机<p>专注冻干机15载,致力打造国内冻干机高端品牌</p></h3> </a>
-    <!--2级-->
-        <div class="qsk qsk1">
-            <!--3个产品-->
-
-                <div class="qs_com">
-                   <!--大-->
-                   <div class="qsb1" style="display: block;">
-                        <h4><p>中试冻干机<span>Pilot-E系列</span></p><em>Pilot10-15E</em></h4>
-                        <a class="qsa1" href="/products/Pilot1015EZhenKongLingDongGa.html" title="查看详情">查看详情+</a>
-                        <img alt="Pilot10-15E真空冷冻干燥机" class="qst1" src="/resource/images/4e6656bd5b154ac0803aaec1f068dfce_16.png">
-                        <!--浮动-->
-                        <p class="qsp">真空冷冻干燥机<span>中试冻干机</span>
-                            <em>
-                                <!-- 3级 -->
-                                <a href="/product/PilotXiLieJingJiXing.html" title="经济型">经济型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieBiaoZhunXing.html" title="标准型">标准型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieQuanGongNenXing.html" title="全功能型">全功能型 </a>
-
-                            </em>
-                        </p>
-                   </div>
-                   <!--小-->
-                   <div class="qsb2" style="display: none;">
-                        <em>中试冻干机</em>
-                        <p>Pilot-E系列</p>
-                        <span>Pilot10-15E</span>
-                        <img alt="Pilot10-15E真空冷冻干燥机" src="/resource/images/4e6656bd5b154ac0803aaec1f068dfce_16.png">
-                   </div>
-                </div>
-
-                <div class="qs_com">
-                   <!--大-->
-                   <div class="qsb1" style="display: none;">
-                        <h4><p>中试冻干机<span>Pilot-T系列</span></p><em>Pilot5-8T</em></h4>
-                        <a class="qsa1" href="/products/Pilot58TZhenKongLingDongGanZ.html" title="查看详情">查看详情+</a>
-                        <img alt="Pilot5-8T 真空冷冻干燥机" class="qst1" src="/resource/images/4e6656bd5b154ac0803aaec1f068dfce_3.png">
-                        <!--浮动-->
-                        <p class="qsp">真空冷冻干燥机<span>中试冻干机</span>
-                            <em>
-                                <!-- 3级 -->
-                                <a href="/product/PilotXiLieJingJiXing.html" title="经济型">经济型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieBiaoZhunXing.html" title="标准型">标准型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieQuanGongNenXing.html" title="全功能型">全功能型 </a>
-
-                            </em>
-                        </p>
-                   </div>
-                   <!--小-->
-                   <div class="qsb2" style="display: block;">
-                        <em>中试冻干机</em>
-                        <p>Pilot-T系列</p>
-                        <span>Pilot5-8T</span>
-                        <img alt="Pilot5-8T 真空冷冻干燥机" src="/resource/images/4e6656bd5b154ac0803aaec1f068dfce_3.png">
-                   </div>
-                </div>
-
-                <div class="qs_com">
-                   <!--大-->
-                   <div class="qsb1" style="display: none;">
-                        <h4><p>中试冻干机<span>Pilot-H系列</span></p><em>Pilot3-6H</em></h4>
-                        <a class="qsa1" href="/products/Pilot36HZhenKongLingDongGanZ.html" title="查看详情">查看详情+</a>
-                        <img alt="Pilot3-6H 真空冷冻干燥机" class="qst1" src="/resource/images/4a8873ea568642acb28a606b5c5aaba5_3.png">
-                        <!--浮动-->
-                        <p class="qsp">真空冷冻干燥机<span>中试冻干机</span>
-                            <em>
-                                <!-- 3级 -->
-                                <a href="/product/PilotXiLieJingJiXing.html" title="经济型">经济型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieBiaoZhunXing.html" title="标准型">标准型 <i>|</i></a>
-                                 <!-- 3级 -->
-                                <a href="/product/PilotXiLieQuanGongNenXing.html" title="全功能型">全功能型 </a>
-
-                            </em>
-                        </p>
-                   </div>
-                   <!--小-->
-                   <div class="qsb2">
-                        <em>中试冻干机</em>
-                        <p>Pilot-H系列</p>
-                        <span>Pilot3-6H</span>
-                        <img alt="Pilot3-6H 真空冷冻干燥机" src="/resource/images/4a8873ea568642acb28a606b5c5aaba5_3.png">
-                   </div>
-                </div>
-        </div>
-</div>
-</div>
-<div class="fs content">
-
- <a href="/product/CengXiShiYanLing.html" title="层析实验冷柜"><h3>层析实验冷柜 &amp; 真空离心浓缩仪</h3> </a>
-
- <div class="fsu">
-  <div class="tempWrap" style="overflow:hidden; position:relative; width:1221px"><ul style="width: 1221px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
-
-<li style="float: left; width: 385px;">
-    <a href="/products/YC1CengXiShiYanLingGui.html" target="_blank" title="YC-1层析实验冷柜">
-        <img alt="YC-1层析实验冷柜" src="/resource/images/4e6656bd5b154ac0803aaec1f068dfce_122.png">
-        <p class="fsp1">YC-1层析实验冷柜</p>
-        <p class="fsp2"><span>YC-1层析实验冷柜</span><em>查看详情+</em></p>
-    </a>
-</li>
-
-<li style="float: left; width: 385px;">
-    <a href="/products/YC2CengXiShiYanLingGui.html" target="_blank" title="YC-2层析实验冷柜">
-        <img alt="YC-2层析实验冷柜" src="/resource/images/794e424c8a7342e399f8c0f31eb38f7b_18.png">
-        <p class="fsp1">YC-2层析实验冷柜</p>
-        <p class="fsp2"><span>YC-2层析实验冷柜</span><em>查看详情+</em></p>
-    </a>
-</li>
-
-<li style="float: left; width: 385px;">
-    <a href="/products/YC2ACengXiShiYanLingGui.html" target="_blank" title="YC-2A层析实验冷柜">
-        <img alt="YC-2A层析实验冷柜" src="/resource/images/794e424c8a7342e399f8c0f31eb38f7b_35.png">
-        <p class="fsp1">YC-2A层析实验冷柜</p>
-        <p class="fsp2"><span>YC-2A层析实验冷柜</span><em>查看详情+</em></p>
-    </a>
-</li>
-
-  </ul></div>
- </div>
- <p class="fsj1"><img alt="<" src="/Skins/Default/Img/Index/fs_10.jpg"></p>
- <p class="fsj2"><img alt=">" src="/Skins/Default/Img/Index/fs_13.jpg"></p>
-</div>
-<div class="ss">
- <div class="content ysb">
-  <h3>15年匠心,实力铸造经典品质<p>生命不息，创新不止</p></h3>
-  <div class="ssu">
-   <ul>
-    <li class="on"><a><p>01</p><span>研 发</span></a> </li>
-    <li class=""><a><p>02</p><span>生 产</span></a> </li>
-    <li class=""><a><p>03</p><span>品 控</span></a> </li>
-   </ul>
-  </div>
-  <div class="bd">
-   <div class="ssd" style="display: block;">
-    <p class="ssz"><span>01</span><em>品质为王</em></p>
-    <dl>
-     <dt>
-      <img alt="品质为王" src="/Skins/Default/Img/Index/ss_03.jpg">
-     </dt>
-     <dd>
-       研 发
-      <p>用已知创造更多客户需要的未知</p>
-      <em>来自制冷、真空、循环等领域的专家，致力于为您开发出更加先进的冻干机产品；</em>
-      <em>与各大研究机构的深度合作，让我们的研究工作遍地开花。</em>
-      <a href="javascript:QQLink();" title="立即咨询">立即咨询+</a>
-      <img alt="研 发" class="ssx" src="/Skins/Default/Img/Index/ssx.png">
-     </dd>
-    </dl>
-   </div>
-   <div class="ssd" style="display: none;">
-    <p class="ssz"><span>02</span><em>品质为王</em></p>
-    <dl>
-     <dt>
-      <img alt="生 产" src="/Skins/Default/Img/Index/ss_04.jpg">
-     </dt>
-     <dd>
-       生 产
-      <p>以国际大牌的标准造一台国产冻干机</p>
-      <em>人：高级技工团队是我们宝贵的财富，精益求精使他们令人尊敬;</em>
-      <em>机：先进的加工设备并不值得炫耀，它们只是让我们的工作更加高效;</em>
-      <em>物：螺丝钉与核心配件一样都要严格把控，毕竟这是高性能产品的源头;</em>
-      <em>法：每个生产流程都是一场不能输掉的战争，“纪律严明”让我们克敌制胜。</em>
-      <a href="javascript:QQLink();" title="立即咨询">立即咨询+</a>
-      <img alt="生 产" class="ssx" src="/Skins/Default/Img/Index/ssx.png">
-     </dd>
-    </dl>
-   </div>
-   <div class="ssd" style="display: none;">
-    <p class="ssz"><span>03</span><em>品质为王</em></p>
-    <dl>
-     <dt>
-      <img alt="品 控" src="/Skins/Default/Img/Index/ss_05.jpg">
-     </dt>
-     <dd>
-       品 控
-      <p>一个公开的秘密——我们比客户更关心质量</p>
-      <em>全程质量检验监控以及高精度检测仪器，只为杜绝任何产品质量隐患；</em>
-      <em>成熟可靠的软件与硬件验证系统，让每件产品都达到最佳状态。</em>
-      <a href="javascript:QQLink();" title="立即咨询">立即咨询+</a>
-      <img alt="品 控" class="ssx" src="/Skins/Default/Img/Index/ssx.png">
-     </dd>
-    </dl>
-   </div>
-  </div>
- </div>
-</div>
-<div>
-    <div class="lr">
-        <div class="xlr">
-
-                <a href="/article/KeHuAnLi.html" title="客户案例">
-                    <h3>客户案例
-                    <p>已成功为全球30多个国家及地区、10000多家客户提供冻干设备服务</p>
-                    </h3>
+<div class="hadv">
+    <div class="hd">
+        <h2>解决方案</h2>
+        <div class="txt">  新默真科技，专业为实验室提供完善、一体化系统解决方案。</div>
+    </div>
+    <div class="bd">
+        <img src="images/hadv.jpg">
+    </div>
+    <div class="wrap">
+        <ul>
+            <li>
+                <a href="category.php?class_id=103101">
+                    <i class="i1"></i>MIBS智能生物样本库
                 </a>
+            </li>
+            <li>
+                <a href="category.php?class_id=103102">
+                    <i class="i2"></i>无线智能温湿度监控
+                </a>
+            </li>
+            <li>
+                <a href="category.php?class_id=103103">
+                    <i class="i3"></i>冷链仓储
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="product">
+    <div class="wrap">
+        <div class="pro-wrap">
+            <div class="pro-tit">
+                <ul>
+                    <li>
+                        <a href="category.php?class_id=102101">
+                            <i class="i1"></i>超低温冷冻存储箱                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php?class_id=102102">
+                            <i class="i2"></i>血液血细胞速冻箱                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php?class_id=102103">
+                            <i class="i3"></i>血液冷藏箱                        </a>
+                    </li>
+                                        <li>
+                        <a href="category.php?class_id=102104">
+                            <i class="i4"></i>医用冷藏箱                        </a>
+                    </li>
+                                        <li>
+                        <a href="category.php?class_id=102105">
+                            <i class="i5"></i>医用冷藏冷冻箱                        </a>
+                    </li>
+                                        <li>
+                        <a href="category.php?class_id=102106">
+                            <i class="i6"></i>医用低温箱                        </a>
+                    </li>
+                                        <li>
+                        <a href="category.php?class_id=102108">
+                            <i class="i7"></i>液氮罐                        </a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="pro-Box">
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                               <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=207"><img src="/upload/2017-03/148834845091366500.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=207">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=207">超低温冷冻储存箱DW-HL1008</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=261"><img src="/upload/2017-03/148853110908061200.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=261">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=261">超低温冷冻储存箱DW-HL778</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=260"><img src="/upload/2017-03/148853083967519400.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=260">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=260">超低温冷冻储存箱DW-HL678</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=143"><img src="/upload/2016-09/147520063831250100.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=143">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=143">超低温冷冻储存箱DW-HL398</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=183"><img src="/upload/2017-03/148835561754126600.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=183">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=183">超低温冷冻储存箱DW-FL270</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=156"><img src="/upload/2017-03/148835933956442800.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=156">超低温冷冻存储箱</a></h2>
+                                        <span><a href="pdisplay.php?id=156">超低温冷冻储存箱DW-HL508</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                           <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=207"><img src="/upload/2017-03/148834817197966600.jpg" width="233" height="165"></a></div>
+                                <p class="name">超低温冷冻储存箱DW-HL1008</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=207">
+                                        <p class="name">超低温冷冻储存箱DW-HL1008</p>
+                                        <p class="txt">
+  智能温控
 
-                <p class="lrp">博医康产品<span>已畅销30多个国家和地区</span></p>
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=318"><img src="/upload/2017-07/150035803642762200.jpg" width="233" height="165"></a></div>
+                                <p class="name">超低温冷冻储存箱DW-HL528</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=318">
+                                        <p class="name">超低温冷冻储存箱DW-HL528</p>
+                                        <p class="txt">
+
+</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=285"><img src="/upload/2017-04/149337045042482500.jpg" width="233" height="165"></a></div>
+                                <p class="name">超低温冷冻储存箱DW-HL1.8</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=285">
+                                        <p class="name">超低温冷冻储存箱DW-HL1.8</p>
+                                        <p class="txt">
+  温控系统
+
+
+
+
+
+  高精度微电脑温度…</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=273"><img src="/upload/2017-03/149034932776769500.jpg" width="233" height="165"></a></div>
+                                <p class="name">超低温冷冻储存箱DW-GW251</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=273">
+                                        <p class="name">超低温冷冻储存箱DW-GW251</p>
+                                        <p class="txt">
+  制冷系统
+
+
+  采用由中国科学院理化所发…</p>
+                                    </a>
+                                </div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                              <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=204"><img src="/upload/2016-09/147520812387500100.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=204">血液血细胞速冻箱</a></h2>
+                                        <span><a href="pdisplay.php?id=204">血液血细胞速冻箱DW-HW258</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                            <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=204"><img src="/upload/2016-09/147520811692187600.jpg" width="233" height="165"></a></div>
+                                <p class="name">血液血细胞速冻箱DW-HW258</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=204">
+                                        <p class="name">血液血细胞速冻箱DW-HW258</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=202"><img src="/upload/2017-03/148850478727454000.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=202">血液冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=202">血液冷藏箱XC-90W</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=200"><img src="/upload/2016-09/147520766167187600.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=200">血液冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=200">血液冷藏箱XC-88L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=187"><img src="/upload/2017-03/148851299881630100.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=187">血液冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=187">血液冷藏箱XC-1380L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=202"><img src="/upload/2017-03/148850452974721500.jpg" width="233" height="165"></a></div>
+                                <p class="name">血液冷藏箱XC-90W</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=202">
+                                        <p class="name">血液冷藏箱XC-90W</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=200"><img src="/upload/2016-09/147520764584375000.jpg" width="233" height="165"></a></div>
+                                <p class="name">血液冷藏箱XC-88L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=200">
+                                        <p class="name">血液冷藏箱XC-88L</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=197"><img src="/upload/2017-03/148850994437874800.jpg" width="233" height="165"></a></div>
+                                <p class="name">血液冷藏箱XC-268L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=197">
+                                        <p class="name">血液冷藏箱XC-268L</p>
+                                        <p class="txt">
+
+
+</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=187"><img src="/upload/2017-03/148851298222987900.jpg" width="233" height="165"></a></div>
+                                <p class="name">血液冷藏箱XC-1380L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=187">
+                                        <p class="name">血液冷藏箱XC-1380L</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=213"><img src="/upload/2017-03/148973008844429500.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=213">医用冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=213">医用冷藏箱YC-365L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=201"><img src="/upload/2016-09/147520949579687600.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=201">医用冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=201">医用冷藏箱YC-1500L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=192"><img src="/upload/2016-09/147520888201562600.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=192">医用冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=192">医用冷藏箱YC-520L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=186"><img src="/upload/2017-03/148879501792393900.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=186">医用冷藏箱</a></h2>
+                                        <span><a href="pdisplay.php?id=186">医用冷藏箱YC-300L</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=213"><img src="/upload/2017-03/148973006375669300.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏箱YC-365L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=213">
+                                        <p class="name">医用冷藏箱YC-365L</p>
+                                        <p class="txt">
+
+
+</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=342"><img src="/upload/2017-10/150873976215080800.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏箱YC-395L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=342">
+                                        <p class="name">医用冷藏箱YC-395L</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统：…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=214"><img src="/upload/2016-11/147926553269336700.jpg" width="233" height="165"></a></div>
+                                <p class="name">玲珑系列医用冷藏箱</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=214">
+                                        <p class="name">玲珑系列医用冷藏箱</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统,…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=201"><img src="/upload/2016-09/147520951753125100.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏箱YC-1500L</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=201">
+                                        <p class="name">医用冷藏箱YC-1500L</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统：…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=184"><img src="/upload/2017-03/148963434300226000.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=184">医用冷藏冷冻箱</a></h2>
+                                        <span><a href="pdisplay.php?id=184">医用冷藏冷冻箱YCD-EL259A</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=180"><img src="/upload/2017-03/148963662389247700.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=180">医用冷藏冷冻箱</a></h2>
+                                        <span><a href="pdisplay.php?id=180">医用冷藏冷冻箱YCD-EL200</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=270"><img src="/upload/2017-03/148963398525226100.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏冷冻箱YCD-EL450</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=270">
+                                        <p class="name">医用冷藏冷冻箱YCD-EL450</p>
+                                        <p class="txt">
+
+
+</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=184"><img src="/upload/2017-03/148963429061806200.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏冷冻箱YCD-EL259A</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=184">
+                                        <p class="name">医用冷藏冷冻箱YCD-EL259A</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=180"><img src="/upload/2017-03/148964216969995800.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用冷藏冷冻箱YCD-EL200</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=180">
+                                        <p class="name">医用冷藏冷冻箱YCD-EL200</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=175"><img src="/upload/2017-03/148965076464405200.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=175">医用低温箱</a></h2>
+                                        <span><a href="pdisplay.php?id=175">医用低温箱DW-YL450</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=171"><img src="/upload/2017-03/148965203433397000.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=171">医用低温箱</a></h2>
+                                        <span><a href="pdisplay.php?id=171">医用低温箱DW-YL270</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=175"><img src="/upload/2017-03/148965065630012200.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用低温箱DW-YL450</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=175">
+                                        <p class="name">医用低温箱DW-YL450</p>
+                                        <p class="txt">温度控制
+
+  高精度电脑温度控制系统，箱体内…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=171"><img src="/upload/2017-03/148965154370794600.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用低温箱DW-YL270</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=171">
+                                        <p class="name">医用低温箱DW-YL270</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=169"><img src="/upload/2017-03/148965320114851700.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用低温箱DW-YW508A</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=169">
+                                        <p class="name">医用低温箱DW-YW508A</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=166"><img src="/upload/2016-09/147520533671875100.jpg" width="233" height="165"></a></div>
+                                <p class="name">医用低温箱DW-YW358A</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=166">
+                                        <p class="name">医用低温箱DW-YW358A</p>
+                                        <p class="txt">
+  温度控制
+
+
+  高精度电脑温度控制系统，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                                <div class="pro-con clearfix">
+                    <div class="pro-big">
+                        <div class="bd">
+                            <ul>
+                                                                <li class="clearfix">
+                                    <p class="p"><a href="pdisplay.php?id=291"><img src="/upload/2017-06/149801722196774700.jpg" width="300" height="277"></a></p>
+                                    <div class="t">
+                                        <h2><a href="pdisplay.php?id=291">液氮罐</a></h2>
+                                        <span><a href="pdisplay.php?id=291">液氮罐-实验室系列</a></span>
+                                        <p class="m"><a href="">在线咨询</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="hd">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <ul>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=312"><img src="/upload/2017-06/149794886420798400.jpg" width="233" height="165"></a></div>
+                                <p class="name">液氮罐-液氮补充系列</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=312">
+                                        <p class="name">液氮罐-液氮补充系列</p>
+                                        <p class="txt">
+  液氮补充系列主要为中心实验室储备液氮用，…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=311"><img src="/upload/2017-06/149794389405419200.jpg" width="233" height="165"></a></div>
+                                <p class="name">液氮罐-液氮运输系列</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=311">
+                                        <p class="name">液氮罐-液氮运输系列</p>
+                                        <p class="txt">
+  液氮运输系列是专为少量液氮储存和少量液氮…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=310"><img src="/upload/2017-06/149794297777294200.jpg" width="233" height="165"></a></div>
+                                <p class="name">液氮罐-航空运输系列</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=310">
+                                        <p class="name">液氮罐-航空运输系列</p>
+                                        <p class="txt">
+  航空运输系列适用于深低温环境下（气相储存…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                        <li>
+                                <div class="list-pic"><a href="pdisplay.php?id=309"><img src="/upload/2017-06/149794429685106700.jpg" width="233" height="165"></a></div>
+                                <p class="name">液氮罐-运输储存系列</p>
+                                <div class="gray">
+                                    <a href="pdisplay.php?id=309">
+                                        <p class="name">液氮罐-运输储存系列</p>
+                                        <p class="txt">
+  运输储存系列是一种经济型小型液氮罐，专门…</p>
+                                    </a>
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <script type="text/javascript">
+            $(".pro-big").slide({titCell:".hd ul", mainCell:".bd ul", effect:"fold", autoPlay:true, autoPage:true});
+            $(".pro-wrap").slide({titCell:".pro-tit li", mainCell:".pro-Box", effect:"fold", autoPlay:false, delayTime:0});
+        </script>
+        <div class="more">
+            <a href="category.php?class_id=103">更多产品</a>
         </div>
     </div>
-    <div class="xd">
-        <div class="xxd">
-            <div class="xdk">
-                <div class="xdz">
-                    <div class="tempWrap" style="overflow:hidden; position:relative; width:594px"><ul style="width: 4752px; left: -1954.88px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/beijinghuayeshengwu.html" target="_blank" title="北京华叶生物采购博医康中试冻干机Pilot3-6ES">
-                                    <img alt="北京华叶生物采购博医康中试冻干机Pilot3-6ES" src="/resource/images/7a294fb3967742198c2dba0bf9dcc836_8.jpg">
-                                    <p>北京华叶生物采购博医康中试冻干机Pilot3-6ES</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/HeBeiTianSiShengWuKeJiCaiGou.html" target="_blank" title="河北天思生物科技采购中试冻干机Pilot3-6ES">
-                                    <img alt="河北天思生物科技采购中试冻干机Pilot3-6ES" src="/resource/images/606e833b5a9d4d94bb71e632d22ec9c4_3.png">
-                                    <p>河北天思生物科技采购中试冻干机Pilot3-6ES</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/ZhongKeYuanGuoChengSuoCaiGou.html" target="_blank" title="中科院过程所采购中试冻干机Pilot1-2LD">
-                                    <img alt="中科院过程所采购中试冻干机Pilot1-2LD" src="/resource/images/29ce693571db49299a74457a6f85b0c0_38.jpg">
-                                    <p>中科院过程所采购中试冻干机Pilot1-2LD</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/HuiZhongGuoJiYiLiaoCaiGouZho.html" target="_blank" title="惠众国际医疗采购中试冻干机Pilot3-6T">
-                                    <img alt="惠众国际医疗采购中试冻干机Pilot3-6T" src="/resource/images/cc7d75c358154d489dff0d6ba519e9e0_29.jpg">
-                                    <p>惠众国际医疗采购中试冻干机Pilot3-6T</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/NongKeYuanShuCaiYanJiuZhongX.html" target="_blank" title="农科院蔬菜研究中心订购中试冻干机Pilot10-15M">
-                                    <img alt="农科院蔬菜研究中心订购中试冻干机Pilot10-15M" src="/resource/images/12dee56251524d549ef9d762013ed02a_12.jpg">
-                                    <p>农科院蔬菜研究中心订购中试冻干机Pilot10-15M</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/YiKeYuanBingYuanSuoDingGouZh.html" target="_blank" title="医科院病原所订购中试冻干机Pilot2-4LD">
-                                    <img alt="医科院病原所订购中试冻干机Pilot2-4LD" src="/resource/images/29ce693571db49299a74457a6f85b0c0_13.jpg">
-                                    <p>医科院病原所订购中试冻干机Pilot2-4LD</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/YiNuoTaiYaoWuHuaXueCaiGouZho.html" target="_blank" title="依诺泰药物化学采购中试冻干机Pilot2-4M">
-                                    <img alt="依诺泰药物化学采购中试冻干机Pilot2-4M" src="/resource/images/29ce693571db49299a74457a6f85b0c0_3.jpg">
-                                    <p>依诺泰药物化学采购中试冻干机Pilot2-4M</p>
-                                </a>
-                            </li>
-
-                            <li style="float: left; width: 594px;">
-                                <a href="/articles/DuoYingYiXueDingGouZhongShiD.html" target="_blank" title="多赢医学订购中试冻干机Pilot5-8T">
-                                    <img alt="多赢医学订购中试冻干机Pilot5-8T" src="/resource/images/ff8bba171d024717a1a2a48424f3675b_207.jpg">
-                                    <p>多赢医学订购中试冻干机Pilot5-8T</p>
-                                </a>
-                            </li>
-
-                    </ul></div>
+</div>
+<div class="about">
+    <div class="wrap">
+        <div class="hd">
+            <h2>关于我们</h2>
+            <div class="txt">中科美菱是合肥美菱股份有限公司和中国科学院理化技术研究所成立的国家级高新技术企业，美菱生物医疗，关爱生命，关注健康！助力生命科学扬帆远航！</div>
+        </div>
+        <div class="bd">
+            <div class="about-con clearfix">
+                                <div class="intropic">
+                    <img src="/upload/2016-10/147643440164642800.jpg" width="604" height="346">
                 </div>
-                <div class="xdy">
-                    <div class="tempWrap" style="overflow:hidden; position:relative; height:381px"><div class="al_list" style="top: -110.885px; position: relative; padding: 0px; margin: 0px;">
+                <div class="intro">
+                    <h2><a href="category.php?class_id=101101">美菱生物医疗</a> </h2>
+                    <div class="txt">
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/beijinghuayeshengwu.html" target="_blank" title="北京华叶生物采购博医康中试冻干机Pilot3-6ES">
-                                北京华叶生物采购博医康中试冻干机Pilot3-6ES
-                                <em><div style="text-align:left;">
-    北京华叶生物工程有限公司成立于2005年8月...<span>[详情]</span></div></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/HeBeiTianSiShengWuKeJiCaiGou.html" target="_blank" title="河北天思生物科技采购中试冻干机Pilot3-6ES">
-                                河北天思生物科技采购中试冻干机Pilot3-6ES
-                                <em>河北天思生物科技有限公司，主要经营生物技术开发、技术咨询、技术转让、技术推广；生物制品的研发、生产、销售；销售实验...<span>[详情]</span></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/ZhongKeYuanGuoChengSuoCaiGou.html" target="_blank" title="中科院过程所采购中试冻干机Pilot1-2LD">
-                                中科院过程所采购中试冻干机Pilot1-2LD
-                                <em><p>中国科学院过程工程研究所成立于1958年10月1日，原名中国科学院化工冶金研究所，2001年更为现名。199...<span>[详情]</span></p></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/HuiZhongGuoJiYiLiaoCaiGouZho.html" target="_blank" title="惠众国际医疗采购中试冻干机Pilot3-6T">
-                                惠众国际医疗采购中试冻干机Pilot3-6T
-                                <em><p>
-    香港亚洲惠众囯际集团主要致力于打造中国健康产业专业化服务平台，经营范围覆盖健康管理、社区养老连锁加...<span>[详情]</span></p></em>
-                            </a>
-                        </div>
 
-                        <div class="p1 on" style="height: 105px;">
-                            <a href="/articles/NongKeYuanShuCaiYanJiuZhongX.html" target="_blank" title="农科院蔬菜研究中心订购中试冻干机Pilot10-15M">
-                                农科院蔬菜研究中心订购中试冻干机Pilot10-15M
-                                <em>北京市农林科学院蔬菜研究中心为北京市属农业科研机构。主要任务是立足北京，面向全国，瞄准世界蔬菜科技发展的前沿，为中...<span>[详情]</span></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/YiKeYuanBingYuanSuoDingGouZh.html" target="_blank" title="医科院病原所订购中试冻干机Pilot2-4LD">
-                                医科院病原所订购中试冻干机Pilot2-4LD
-                                <em><p>
-    中国医学科学院/北京协和医学院病原生物学研究所(以下简称“病原所”)是国家为应对传染病对人类健康的...<span>[详情]</span></p></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/YiNuoTaiYaoWuHuaXueCaiGouZho.html" target="_blank" title="依诺泰药物化学采购中试冻干机Pilot2-4M">
-                                依诺泰药物化学采购中试冻干机Pilot2-4M
-                                <em><p>北京依诺泰药物化学技术有限公司是一家以新药研发为主，涵盖原料与中间体的加工、新制剂的开发与产业化、办理进口与...<span>[详情]</span></p></em>
-                            </a>
-                        </div>
 
-                        <div class="p1" style="height: 105px;">
-                            <a href="/articles/DuoYingYiXueDingGouZhongShiD.html" target="_blank" title="多赢医学订购中试冻干机Pilot5-8T">
-                                多赢医学订购中试冻干机Pilot5-8T
-                                <em><p>项目背景：北京多赢医学集团，是专业从事细胞与基因治疗技术、精准医疗技术开发与技术服务、再生医学技术研发及成果...<span>[详情]</span></p></em>
-                            </a>
-                        </div>
 
-                    </div></div>
+
+  中科美菱低温科技股份有限公司（品牌名：美菱生物医疗），位于安徽省合肥市国家级经济技术开发区，注册资本6815万元。是合肥美菱股份有限公司和中国科学院理化技术研究所于2002年10月成立的国家级高新技术企业。
+
+
+
+
+
+  公司目前涉…                    </div>
+                    <ul>
+                        <li><span>高新<Br>技术</span></li>
+                        <li><span>自主<Br>研发</span></li>
+                        <li><span>应用<Br>广泛</span></li>
+                        <li><span>服务<Br>完善</span></li>
+                    </ul>
+                    <p class="more"><a href="category.php?class_id=101101"><img src="images/more2.png"> </a> </p>
                 </div>
-
-                <p class="xdj1"><img alt="<" src="/Skins/Default/Img/Index/xdj1.jpg"></p>
-                <p class="xdj2"><img alt=">" src="/Skins/Default/Img/Index/xdj2.jpg"></p>
+                            </div>
+            <div class="about-item clearfix">
+                <ul>
+                                        <li>
+                        <div class="list-txt">
+                            2016年6月，公司荣获“安徽省行业品牌创新企业”奖项                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2016年6月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2016年5月，公司喜获“2016年度合肥市知识产权示范企业”以及“2016年度合肥市认定企业技术中心”双项荣誉称号                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2016年5月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2016年2月，公司在全国股份转让系统成功挂牌，公司发展驶入快车道                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2016年2月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2015年8月，公司完成股份制改造，公司更名为中科美菱低温科技股份有限公司                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2015年8月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2015年4月，中标“科摩罗”冷库项目                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2015年4月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2014年10月，公司被认定为“高新技术企业”                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2014年10月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2014年8月，公司整体搬迁至合肥经济技术开发区                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2014年8月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2013年10月，DW-HL388S型超低温水冷式超低温冷冻储存箱被认定为“安徽省高新技术产品”称号                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2013年10月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2012年7月，DW-HL508型超低温冷冻储存箱、XC-1380L型血液冷藏箱被认定为“安徽省高新技术产品”称号                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2012年7月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2011年12月，DW-UW258、DW-HL538型超低温冷冻储存箱、DW-HW258SD血浆血细胞速冻箱被认定为“安徽省高新技术产品”称号                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2011年12月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2010年12月，公司承担的合肥市自主创新研发和消化吸收再创新项目顺利获得验收                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2010年12月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2010年2月，家用冰箱剥离深冷业务，公司发展提速                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2010年2月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2008年11月，公司被合肥市人民政府授予“合肥市科技创新型企业”                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2008年11月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2008年7月，公司获得合肥市科技创新专项基金支持                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2008年7月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2008年6月，公司取得ISO13485医疗器械质量管理体系认证证书                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2008年6月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2007年11月，公司超低温冰箱获2007年工业博览会银奖                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2007年11月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2007年9月，-86℃血浆/血细胞速冻箱研制成功，成为世界容积最大，制冷速度最快的速冻箱                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2007年9月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2007年2月，公司首席科学家吴剑峰教授的“深冷混合工质节流制冷技术及其应用”项目获国家技术发明二等奖                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2007年2月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2006年11月，公司成功研制中国最冷的冰箱——-164℃超低温冷冻储存箱，并经央视新闻联成功报道                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2006年11月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2006年9月，公司超低温冰箱项目被列入国家级火炬计划项目                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2006年9月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2004年11月，DW-HL328、DW-HW328、DW-ML328、DW-MW328型超低温冷冻储存箱获安徽省科学技术二等奖                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2004年11月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2004年6月，DW-FL208型超低温冷冻储存获合肥市科学技术进步奖                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2004年6月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2004年4月，取得职业健康安全体系认证证书                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2004年4月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2003年5月，取得高新技术企业认定证书                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2003年5月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2002年11月，取得医疗器械生产许可证                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2002年11月</p>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="list-txt">
+                            2002年10月，公司成立                        </div>
+                        <div class="time">
+                            <img src="images/time.png"><p>2002年10月</p>
+                        </div>
+                    </li>
+                                    </ul>
+                <p class="aPrev"><img src="images/about_prev.png"></p>
+                <p class="aNext"><img src="images/about_next.png"></p>
             </div>
-            <div class="hd">
-                <ul><li class="">1</li><li class="on">2</li><li class="">3</li></ul>
-            </div>
+            <script type="text/javascript">
+                jQuery(".about-item").slide({mainCell:"ul", autoPage:true, effect:"leftLoop",autoPlay:false, vis:4, prevCell:".aPrev", nextCell:".aNext", trigger:"click"});
+            </script>
         </div>
     </div>
 </div>
-<div class="ws content">
- <h3>我们的服务<p>好产品源于完整的解决方案系统</p></h3>
- <ul>
-  <li><a><img alt="解决方案" class="wsi" src="/Skins/Default/Img/Index/wst_03.jpg"><p></p><em>解决方案</em><span>博医康拥有优秀的研发团队，可以为客户提供从实验室研究、中试到工业生产全范围的真空冷冻解决方案</span></a> </li>
-  <li><a><img alt="工艺培训" class="wsi" src="/Skins/Default/Img/Index/wst_05.jpg"><p></p><em>工艺培训</em><span>博医康定期举办技术研讨会,与客户携手推动冻干技术发展,切实解决客户冻干难题</span></a> </li>
-  <li><a><img alt="样品冻干" class="wsi" src="/Skins/Default/Img/Index/wst_07.jpg"><p></p><em>样品冻干</em><span>博医康专设冻干实验室,根据客户需求,可免费提供样品冻干实验,以及冻干工艺优化服务</span></a> </li>
-  <li><a><img alt="非标定制" class="wsi" src="/Skins/Default/Img/Index/wst_08.jpg"><p></p><em>非标定制</em><span>专业承接非标准真空冷冻干燥机项目，提供完善的冻干系统解决方案，满足客户对冻干生产不同的应用需求。</span></a> </li>
-  <li><a><img alt="售后维护" class="wsi" src="/Skins/Default/Img/Index/wst_11.jpg"><p></p><em>售后维护</em><span>完善的服务体系，严格奉行三快准则(响应快、上门快、维修快)，及时为客户排忧解难。</span></a> </li>
- </ul>
-</div>
-<div class="ms">
- <div class="xms">
-  <h3>选择博医康 冻干应用一步到位<p>专业 · 稳定 · 全面 · 细致 </p></h3>
-  <div class="msz1">
-   <h4><p>01</p><span>15年专注发展，技术实力雄厚</span></h4>
-   <em>拥有多名真空冷冻干燥技术专家，研发能力业内瞩目;</em>
-   <em>掌握冻干机核心制造技术，可提供完整真空冷冻解决方案;</em>
-  </div>
-  <div class="msz1">
-   <h4><p>02</p><span>产品质优价廉，市场认可度高</span></h4>
-   <em>生产过程质量管理体系，设计、采购、生产、验收多环节把关；</em>
-   <em>冻干机产品性能优良，功能强大，可支持各种复杂工艺；</em>
-   <em>产品畅销30多个国家与地区。</em>
-  </div>
-  <div class="msz1 msz2">
-   <h4><p>03</p><span>多元化产品系列，覆盖更全面</span></h4>
-   <em>针对不同应用领域不断推出新型冻干机产品</em>
-   <em>各个应用机型个性化设计，解决客户冻干机适用性难题</em>
-  </div>
-  <div class="msz1 msz3">
-   <h4><p>04</p><span>快速专业的服务体系，客户无忧</span></h4>
-   <em>实行三快准则（响应快、上门快、维修快）；</em>
-   <em>丰富专业的技术支持服务。</em>
-  </div>
-  <img alt="博医康" class="msi1" src="/Skins/Default/Img/Index/ms_06.jpg">
-  <img alt="博医康" class="msi2" src="/Skins/Default/Img/Index/ms_10.jpg">
- </div>
-</div>
-<div class="dz">
-   <div class="content">
-    <h3> 聚焦资讯 <p>了解博医康最新动态</p></h3>
-
-<div class="dzz">
- <h4><p><a href="/article/TouTiaoXinWen.html" title="头条新闻">头条新闻</a> </p><em><a href="/article/TouTiaoXinWen.html" title="更多头条新闻">MORE+</a> </em></h4>
-
- <dl>
-  <dt>
-   <a href="/articles/BoYiKang2017ZhiBeiSePuJiDong.html" target="_blank" title="博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开"><img alt="博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开" src="/resource/images/0f386aaf4aa24d38a4adc140caf856f7_3.jpg"></a>
-  </dt>
-  <dd>
-    <a href="/articles/BoYiKang2017ZhiBeiSePuJiDong.html" target="_blank" title="博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开">
-        博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开
-        <p></p><div style="text-align:center;">
-    2017年7月18日，由北京博医康举办的“2017制备色谱及冻干技术华北区域研讨会”在北京博医康总部成功召开。
-</div><p></p>
-        <span>查看详情+</span>
-    </a>
-  </dd>
- </dl>
-
- <ul>
-
-  <li><a href="/articles/BoYiKang2017ZhiBeiSePuJiDong.html" target="_blank" title="博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开">博医康“2017制备色谱及冻干技术华北区域研讨会”成功召开<span>[ 2017-07-18 ]</span></a> </li>
-
-  <li><a href="/articles/BoYiKangTuRang.html" target="_blank" title="博医康土壤冻干机为环保事业保驾护航">博医康土壤冻干机为环保事业保驾护航<span>[ 2017-07-06 ]</span></a> </li>
-
-  <li><a href="/articles/BoYiKangZhuLi.html" target="_blank" title="博医康助力生物医药企业优化冻干工艺">博医康助力生物医药企业优化冻干工艺<span>[ 2017-06-29 ]</span></a> </li>
-
-  <li><a href="/articles/CISILE2017KaiMuBeiJingBoYiKa.html" target="_blank" title="CISILE 2017开幕 北京博医康应邀参展">CISILE 2017开幕 北京博医康应邀参展<span>[ 2017-05-25 ]</span></a> </li>
-
- </ul>
-</div>
-
-
-<div class="dzy">
- <h4><p><a href="/article/ZuiXinDongTai.html" title="最新动态">最新动态</a> </p><em><a href="/article/ZuiXinDongTai.html" title="更多最新动态">MORE+</a> </em></h4>
- <ul>
-
-    <li><a href="/articles/LiangXiangGuangZhouMei.html" target="_blank" title="亮相广州美博会 北京博医康展现信心"><span>+</span> 亮相广州美博会 北京博医康展现信心</a> </li>
-
-    <li><a href="/articles/Pilot58ESTuRangDongGanJiTuRa.html" target="_blank" title="Pilot5-8ES土壤冻干机-土壤样品冻干处理的神兵利器"><span>+</span> Pilot5-8ES土壤冻干机-土壤样品冻干处理的神兵利器</a> </li>
-
-    <li><a href="/articles/BaWoZhiYaoXingYeXinQuShiBoYi.html" target="_blank" title="把握行业趋势 博医康亮相“世界制药中国展”"><span>+</span> 把握行业趋势 博医康亮相“世界制药中国展”</a> </li>
-
-    <li><a href="/articles/Di53JieYaoJiZhanKaiMuBeiJing.html" target="_blank" title="第53届药机展开幕 北京博医康如约而至"><span>+</span> 第53届药机展开幕 北京博医康如约而至</a> </li>
-
- </ul>
-
-    <div class="dzp1">
-        <a href="/articles/BoYiKangJiangLiangXiangDi47J.html" target="_blank" title="博医康将亮相第47届广州国际美博会">
-        展会公告
-        <img alt="博医康将亮相第47届广州国际美博会" src="/resource/images/3a036843aa2448c6821d660e88dca85e_3.jpg">
-        <em>
-            博医康将亮相第47届广州国际美博会
-            <span>2017年9月3日至5日，北京博医康在第47届广州国际美...</span>
-        </em>
-        </a>
+<div class="news">
+    <div class="wrap clearfix">
+        <p class="aPrev"><img src="images/n_prev.jpg"> </p>
+        <p class="aNext"><img src="images/n_Next.jpg"> </p>
+        <div class="news-item-wrap">
+                    </div>
     </div>
-
+    <div class="news-quan">
+        <ul></ul>
+    </div>
 </div>
-
-   </div>
-  </div>
-<div class="dk">
- <div class="content">
-  <h3>走进博医康</h3>
-  <div class="dkk">
-   <a href="/helps/BoYiKangJieShao.html" title="北京博医康实验仪器有限公司">
-       <em>北京博医康实验仪器有限公司</em>
-       <p>北京博医康实验仪器有限公司成立于2002年，总部位于北京，是一家专业冻干设备及解决方案提供商，能够为客户提供从实验室型、中试型到工业生产型全范围的真空冷冻干燥设备，以及完整的真空冷冻解决方案。十多年来，博医康坚持自主创新与技术引进相结合的发展之路，在公司冻干技术专家团队的努力下，公司的产品研发、生......</p>
-       <span>查看详情+</span></a>
-  </div>
- </div>
+<script type="text/javascript">
+    jQuery(".news").slide({titCell:".news-quan ul", mainCell:".wrap .news-item-wrap", autoPage:true, effect:"leftLoop", autoPlay:true, vis:3, prevCell:".aPrev", nextCell:".aNext", trigger:"click"});
+</script>
+<div class="case">
+    <div class="wrap">
+        <div class="hd">
+            <h2>合作案例</h2>
+        </div>
+        <div class="bd">
+            <div class="case-tit">
+                <ul>
+                                        <li class='noBg'><em>制药</em></li>
+                                        <li ><em>科研</em></li>
+                                        <li ><em>医院</em></li>
+                                        <li ><em>高校</em></li>
+                                    </ul>
+            </div>
+            <div class="case-box">
+                                <div class="case-item">
+                    <div class="case-con clearfix">
+                        <ul>
+                                                        <li><a href="" target="_blank" title="大北农集团"><img src="/upload/2016-09/147495734219498500.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="百泰生物"><img src="/upload/2016-09/147511714182812600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="大清生物"><img src="/upload/2016-09/147511715471875000.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="华大基因"><img src="/upload/2016-09/147511716642187600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="启元药业"><img src="/upload/2016-09/147511717743750100.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="瑞泰制药"><img src="/upload/2016-09/147511718660937600.jpg" width="199" height="116"></a></li>
+                                                    </ul>
+                    </div>
+                    <div class="case-quan">
+                        <ul></ul>
+                    </div>
+                </div>
+                                <div class="case-item">
+                    <div class="case-con clearfix">
+                        <ul>
+                                                        <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511745629687600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511746317187600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="3"><img src="/upload/2016-09/147511746951562600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="4"><img src="/upload/2016-09/147511747957812600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="5"><img src="/upload/2016-09/147511748578125100.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="6"><img src="/upload/2016-09/147511749281250100.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="7"><img src="/upload/2016-09/147511750198437600.jpg" width="199" height="116"></a></li>
+                                                    </ul>
+                    </div>
+                    <div class="case-quan">
+                        <ul></ul>
+                    </div>
+                </div>
+                                <div class="case-item">
+                    <div class="case-con clearfix">
+                        <ul>
+                                                        <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511775848437600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511776464062600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="3"><img src="/upload/2016-09/147511777645312600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="4"><img src="/upload/2016-09/147511778489062600.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="济南军区总院"><img src="/upload/2016-09/147511780790625100.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="济南市第一人民医院"><img src="/upload/2016-09/147511786403125100.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="济南市第三人民医院"><img src="/upload/2016-09/147511785651562500.jpg" width="199" height="116"></a></li>
+                                                        <li><a href="" target="_blank" title="香港大学深圳医院"><img src="/upload/2016-09/147511788756250100.jpg" width="199" height="116"></a></li>
+                                                    </ul>
+                    </div>
+                    <div class="case-quan">
+                        <ul></ul>
+                    </div>
+                </div>
+                                <div class="case-item">
+                    <div class="case-con clearfix">
+                        <ul>
+                          <li><a href="" target="_blank" title="北京大学"><img src="/upload/2016-09/147511826229687600.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="清华大学"><img src="/upload/2016-09/147511827385937600.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="北京师范大学"><img src="/upload/2016-09/147511828435937600.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="北京林业大学"><img src="/upload/2016-09/147511829882812500.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="中国石油大学"><img src="/upload/2016-09/147511831145312600.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="济南大学"><img src="/upload/2016-09/147511833946875100.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="中国海洋大学"><img src="/upload/2016-09/147511834593750000.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="1"><img src="/upload/2016-09/147511835243750000.jpg" width="199" height="116"></a></li>
+                          <li><a href="" target="_blank" title="2"><img src="/upload/2016-09/147511835785937600.jpg" width="199" height="116"></a></li>
+                        </ul>
+                    </div>
+                    <div class="case-quan">
+                        <ul></ul>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+    $(".case-item").slide({titCell:".case-quan ul", mainCell:".case-con ul", autoPage:true, effect:"left", autoPlay:false, vis:6, scroll:6, trigger:"click"});
+    $(".case .bd").slide({titCell:".case-tit li", mainCell:".case-box", effect:"fold", autoPlay:false});
+</script>
+<style type="text/css" >
+.box-wrap, .wrap {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+.col-hd-1 {
+    border-bottom: 1px solid #005AB1;
+    height: 45px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col-hd-1 h2 {
+    border-bottom: 3px solid #005AB1;
+    color: #005AB1;
+    float: left;
+    font-size: 16px;
+    line-height: 39px;
+    padding: 5px 15px 0 0;
+    position: relative;
+}
+.col-hd-1 h2 .hot-ico {
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    width: 25px;
+}
+.col-hd-1 .more {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+.col-hd-1 .more a {
+    color: #888;
+    font-size: 12px;
+}
+.col-hd-1 .more a:hover {
+    color: #d70c25;
+}
+.col-hd-2 {
+    background: rgba(0, 0, 0, 0) url("../images/xian.png") no-repeat scroll center center;
+    height: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.col-hd-2 h2 {
+    color: #d70c25;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
+    width: 145px;
+}
+.col-hd-2 h2 em {
+    color: #a8a7a7;
+    display: block;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.col-hd-2 h2 .hot-ico {
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: -3px;
+    width: 25px;
+}
+.pic-list-panel li {
+    float: left;
+    padding: 5px 0 20px;
+    text-align: center;
+}
+</style>
 
+    <div class="area-content" style="padding:20px 0 30px; background:#FFFFFF">
+        <div class="box-wrap clearfix">
+            <div class="col-Area fr" style="width:1200px;">
+                <div class="col-hd-1">
+                    <h2>友情链接</h2>
+                </div>
+                    <div class="pic-list-panel clearfix" id="index-module-4">
+                        <ul>
+                            <li style="width:152px;" class='Mgright'>
+                                <div class="pic"><a href="http://www.dts650.com" target="_blank" title="后处理培训">后处理培训</a></div>
+                            </li>                                                     <li style="width:152px;" class='Mgright'>
+                                <div class="pic"><a href="http://www.okagv.com" target="_blank" title="AGV">AGV</a></div>
+                            </li>                                                     <li style="width:152px;" class='Mgright'>
+                                <div class="pic"><a href="http://www.jtdny.com/" target="_blank" title="生物质燃烧机">生物质燃烧机</a></div>
+                            </li>
+                        </ul>
+                </div>
+                    <script type="text/javascript">
+                        getPicSpace("#index-module-4",152,7);  //设置图片间距
+                    </script>
+            </div>
+         </div>
+    </div>

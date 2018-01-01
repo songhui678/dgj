@@ -15,7 +15,7 @@ use yii\widgets\Breadcrumbs;
 	'links' => [
 		[
 			'label' => '解决方案',
-			'url' => ['/support'],
+			'url' => ['/custom'],
 			'template' => " {link}",
 		],
 

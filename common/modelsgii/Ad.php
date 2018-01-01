@@ -15,42 +15,48 @@ use Yii;
  * @property integer $sort
  * @property integer $status
  */
-class Ad extends \common\core\BaseActiveRecord
-{
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return '{{%ad}}';
-    }
+class Ad extends \common\core\BaseActiveRecord {
+	/**
+	 * @inheritdoc
+	 */
+	public static function tableName() {
+		return '{{%ad}}';
+	}
 
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        return [
-            [['image', 'type'], 'required'],
-            [['type', 'sort', 'status'], 'integer'],
-            [['image', 'url'], 'string', 'max' => 255],
-            [['title'], 'string', 'max' => 50]
-        ];
-    }
+	/**
+	 * @inheritdoc
+	 */
+	public function rules() {
+		return [
+			[['image', 'type'], 'required'],
+			[['type', 'sort', 'status'], 'integer'],
+			[['image', 'url'], 'string', 'max' => 255],
+			[['title'], 'string', 'max' => 50],
+		];
+	}
 
-    /**
-     * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'image' => 'Image',
-            'type' => 'Type',
-            'title' => 'Title',
-            'url' => 'Url',
-            'sort' => 'Sort',
-            'status' => 'Status',
-        ];
-    }
+	/**
+	 * @inheritdoc
+	 */
+	public function attributeLabels() {
+		return [
+			'id' => 'ID',
+			'image' => 'Image',
+			'type' => 'Type',
+			'title' => 'Title',
+			'url' => 'Url',
+			'sort' => 'Sort',
+			'status' => 'Status',
+		];
+	}
+
+	//显示图链接
+	public function getPhoto() {
+		$url = "";
+		$photo = \common\modelsgii\Picture::find()->where(array("id" => $this->image))->one();
+		if (is_object($photo)) {
+			$url = Yii::getAlias('@storageUrl') . "/image/$photo->path";
+		}
+		return $url;
+	}
 }

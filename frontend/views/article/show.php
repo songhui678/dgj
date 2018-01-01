@@ -2,15 +2,13 @@
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 ?>
-<link href="/static/css/article.css" rel="stylesheet">
-<div class="blk-main">
-   <div class="b plc">
-    <!-- HTML -->
-        <div class="p12-curmbs-1" navcrumbs="">
-            <?php echo Breadcrumbs::widget(['homeLink' => [
+<div class="container">
+    <div class="wrap clearfix">
+                <div class="location">
+<?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
-	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
+	'template' => "<img src='/static/newimage/home.jpg'>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[
@@ -31,114 +29,91 @@ use yii\widgets\Breadcrumbs;
 	]]);
 ?>
 
-        </div>
-    <!-- css -->
-    </div>
-<div class="clear"></div>
-<div class="p12-aboutinfo-1">
- <div class="blk-sm fl">
-    <div class="p14-infocontent-1 b">
-    <h1 class="p14-infocontent-1-tit"><?=$article->title?></h1>
-    <div class="p14-infocontent-1-sour">
 
-        <span>作者： </span>
-        <span>编辑： </span>
-        <span>来源： </span>
+                </div>
+                <div class="back-color">
+            <div class="art-box">
+                <h2><?=$article->title?></h2>
+                <div class="info">
+                    <span><img src="images/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
+                    <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d", $article->create_time); ?></em> </span>
+                    <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                </div>
+            </div>
+            <div class="article" id="info_content">
 
-        <span>发布日期：<?php echo date("Y-m-d H:i:s", $article->create_time); ?></span>
-        <!--<span>浏览次数:${data.clicks}</span>-->
-    </div>
-    <div class="p14-infocontent-1-text">
-        <div class="p14-infocontent-1-text-t1">
-            信息摘要：
-        </div>
-        <div class="p14-infocontent-1-text-t2"><?=$article->description?></div>
-        <div class="clear">
 
-        </div>
-    </div>
-    <div class="p14-infocontent-1-desc endit-content">
      <?=$article->content?>
     </div>
-    <div class="clear"></div>
+            <script language="javascript">
+            $(function(){
+                var imgObj = $("#info_content").find("img");
+                if (imgObj.length > 0)
+                {
+                    for (var i = 0; i < imgObj.length; i++)
+                    {
+                        if (imgObj[i].width > 1140) imgObj[i].width = 1140;
+                    }
+                }
+            });
+            </script>
+<div class="fx-wrap">
+                <div class="article-bottom-fx clearfix">
+                    <span class="fl">
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                        <p style="text-align: left; ">快给朋友分享吧！</p>
+                    </span>
+<!--                     <span class="zan"><i><img src="images/ico-zan.png"></i><span>点赞</span><em>+1</em></span> -->
+                </div>
+            </div>
+            <script language="javascript">
+            $(function(){
+                $(".zan").click(function(){
+                    $.ajax({
+                        type:"post",
+                        url:"ajax.php?active=zan",
+                        data:'id='+372,
+                        success: function(msg){
+                            if(msg==1){
+                                $(".zan").unbind("click");
+                                $(".zan span").text("已赞");
+                                $(".zan em").show(0);
+                                $(".zan em").animate({fontSize:'68px',opacity:'0'},1000);
+                                $(".zan em").hide(0);
+                            }else{
+                                alert(msg);
+                            };
+                        }
+                    });
+                });
 
+            });
+            </script>
+            <div class="up-next-wrap">
+                <div class="up-next">
+                    <ul class="clearfix">
+                    <?php if (!empty($nextArticle)) {?>
+                        <li>上一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$article->title?></a>
+                        </li>
+                    <?php } else {?>
+                            <li>没有上一条了</li>
+                    <?php }?>
+                    <?php if (!empty($beforeArticle)) {?>
+                        <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
+                        </li>
+                    <?php } else {?>
+                        <li>没有下一条了</li>
+                    <?php }?>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="p14-info-3 b">
-    <div class="p14-info-3-tit">
-        【相关推荐】
-    </div>
-    <div class="p14-info-3-list">
-        <ul>
-            <?php foreach ($tujianList as $article) {?>
-                <li><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><span>了解详情 &gt;</span><?=$article->title?></a></li>
-            <?php }?>
-        </ul>
-    </div>
-
-</div>
-    <div class="p14-pagination-1 b">
-    <dl>
-        <?php if (!empty($nextArticle)) {?>
-            <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>">查看详情 +</a></em></b><span>上一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
-            </dd>
-        <?php } else {?>
-            <dd><b><em></em></b><span style="width:100px;">没有上一条了</span></dd>
-        <?php }?>
-        <dt></dt>
-        <?php if (!empty($beforeArticle)) {?>
-            <dd><b><em><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>">查看详情 +</a></em></b><span>下一条</span><a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
-            </dd>
-        <?php } else {?>
-            <dd><b><em></em></b><span style="width:100px;">没有下一条了</span></dd>
-        <?php }?>
-
-    </dl>
-    <div class="p14-pagination-1-href">
-        <span><a href="<?=Url::to(['/article/index', 'id' => $cate->id])?>" title="返回列表">返回列表</a></span>
-    </div>
-    <div class="p14-pagination-1-key">
-        <p>本文标签：
-
-
-                    <span><a href="/helps/BoYiKangJieShao.html" title="北京博医康">北京博医康</a></span>
-
-
-        </p>
-    </div>
-    <div class="clear">
-
-    </div>
-
-</div>
-   </div>
-   <div class="blk-xs fr">
-    <div class="p14-info-2 b">
-    <div class="p14-info-2-tit">推荐资讯</div>
-    <div class="p14-info-2-list">
-        <?php foreach ($tujianList as $article) {?>
-        <dl>
-            <dt><a href="<?=Url::to(['/article/show', 'id' => $article->id])?>"><img alt="<?=$article->title?>" src="/resource/images/76a991fb31d84ee5a0dd0ac40fbe53b3_3.jpg" title="<?=$article->title?>"></a></dt>
-            <dd>
-                <h3><a href="<?=Url::to(['/article/show', 'id' => $article->id])?>"><?=$article->title?></a></h3>
-                <div class="p14-info-2-list-desc"><?=$article->description?></div>
-                <div class="p14-info-2-list-date"><?php echo date("Y-m-d", $article->create_time); ?></div>
-            </dd>
-        </dl>
-        <?php }?>
 
 
 
-    </div>
-    <div class="clear"></div>
 
-</div>
-    <div>
-    <div class="contact-z1">
-        <p>咨询热线</p>
-        <span>010-51656110</span>
-    </div>
 
-</div>
-   </div>
-   <div class="clear"></div>
-  </div>

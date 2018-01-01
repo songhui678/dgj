@@ -35,7 +35,7 @@ class GoodsCat extends \common\core\BaseActiveRecord {
 			// [['extend'], 'string'],
 			[['name'], 'string', 'max' => 30],
 			[['title', 'meta_title'], 'string', 'max' => 50],
-			[['link'], 'string', 'max' => 250],
+			[['link', 'image'], 'string', 'max' => 250],
 			[['keywords', 'description'], 'string', 'max' => 255],
 			[['name'], 'unique'],
 		];
@@ -52,6 +52,7 @@ class GoodsCat extends \common\core\BaseActiveRecord {
 			'title' => 'Title',
 			'link' => 'Link',
 			'extend' => 'Extend',
+			'image' => 'Image',
 			'meta_title' => 'Meta Title',
 			'keywords' => 'Keywords',
 			'description' => 'Description',
