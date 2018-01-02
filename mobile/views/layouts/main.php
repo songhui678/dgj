@@ -40,8 +40,9 @@
                 <li><a href="http://zkmeiling.com/category.php?class_id=105">合作案例</a><div class="navicon"><img src="images/nav_icon.png"> </div></li>
                 <li><a href="category.php?class_id=106">新闻中心</a><div class="navicon"><img src="images/nav_icon.png"> </div></li>
                 <li><a href="category.php?class_id=111">人力资源</a><div class="navicon"><img src="images/nav_icon.png"> </div></li>
-                <li><a href="category.php?class_id=107">联系我们</a><div class="navicon"><img src="images/nav_icon.png"> </div></li>
-                            </ul>
+                <li><a href="category.php?class_id=107">联系我们</a><div class="navicon"><img src="images/nav_icon.png"> </div>
+                </li>
+             </ul>
             <p class="navtop"><img src="images/navtop.png"></p>
         </div>
     </div>
