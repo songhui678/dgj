@@ -17,10 +17,10 @@ use yii\widgets\LinkPager;
   <div class="s_menu">
       <ul class="clearfix">
         <?php foreach ($cateList as $cate) {?>
-
-          <li><a href="category.php?class_id=102101107"  class='current'>-120℃— -164℃</a></li>
-          <li>|<a href="category.php?class_id=102101106" >-110℃— -152℃</a></li>
-        <?php }?>
+          <?php if (isset($cate['_child'])) {?>
+          <?php foreach ($cate['_child'] as $key=>$erji) {?>
+          <li><?php if($key>0){?>|<?}?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$cate['title']?>"  class='current'><?=$cate['title']?></a></li>
+        <?php }}}?>
       </ul>
   </div>
 </div>

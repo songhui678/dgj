@@ -1,0 +1,99 @@
+@charset "utf-8";
+.yk-nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+.yk-nav a {
+  text-decoration: none;
+  color: #555;
+}
+.yk-nav a:hover {
+  text-decoration: none;
+  color: #c31;
+}
+.yk-nav a:visited {
+  color: #555;
+}
+.yk-nav .yk-nav-box {
+  overflow: hidden;
+  position: relative;
+  min-width: 300px;
+  max-width: 984px;
+  margin: 0 auto;
+}
+.yk-nav .yk-nav-list {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #d3d4d6;
+  border-top: 1px solid #f1f1f1;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.yk-nav .yk-nav-pills {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+}
+.yk-nav .yk-nav-pills:before,
+.yk-nav .yk-nav-pills:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.yk-nav .yk-nav-pills:after {
+  clear: both;
+}
+.yk-nav .yk-nav-pills li {
+  float: left;
+  white-space: nowrap;
+}
+.yk-nav .yk-nav-pills li a {
+  display: inline-block;
+  line-height:40px;
+  height:40px;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #fff;
+  padding:3px 25px 0;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+}
+.yk-nav .yk-nav-pills li.on a,
+.yk-nav .yk-nav-pills a:hover {
+  border-bottom: 3px solid #0162b3;
+  color: #0162b3;
+  background:#f7f7f7;
+}
+
+.yk-pro{ background:#fff;}
+.yk-pro .yk-nav-list { height: 82px;}
+.yk-pro .yk-nav-list li a{padding-top:8px; height:72px; line-height:20px;}
+.yk-pro .yk-nav-list li a i { display: block; height: 45px; }
+.yk-pro .yk-nav-list li a .i0 { background: url("images/kind_1.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i1 { background: url("images/kind_2.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i2 { background: url("images/kind_3.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i3 { background: url("images/kind_4.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i4 { background: url("images/kind_5.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i5 { background: url("images/kind_6.png") no-repeat center center; }
+.yk-pro .yk-nav-list li a .i6 { background: url("images/kind_7.png") no-repeat center center; }
+
+.yk-pro .yk-nav-list li.on a .i0 { background: url("images/kind_01.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i1 { background: url("images/kind_02.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i2 { background: url("images/kind_03.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i3 { background: url("images/kind_04.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i4 { background: url("images/kind_05.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i5 { background: url("images/kind_06.png") no-repeat center center; }
+.yk-pro .yk-nav-list li.on a .i6 { background: url("images/kind_07.png") no-repeat center center; }
+
+
+1 min to Spreed
