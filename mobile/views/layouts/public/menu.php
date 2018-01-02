@@ -1,13 +1,32 @@
 <?php
 use yii\helpers\Url;
 ?>
-   <ul>
-     <li class="cur"><a href="/" title="首页">首页</a> </li>
-     <li><a href="<?=Url::toRoute('/product')?>" title="真空冷冻干燥机">真空冷冻干燥机</a> </li>
-     <li><a href="/product/CengXiShiYanLing.html" title="层析实验冷柜">层析实验冷柜</a> </li>
-     <li><a href="<?=Url::toRoute('/custom')?>" title="冻干机定制">冻干机定制</a> </li>
-     <li><a href="<?=Url::toRoute('/support')?>" title="技术服务">技术服务</a> </li>
-     <li><a href="<?=Url::toRoute(['/article'])?>" title="案例资讯">案例资讯</a> </li>
-     <li><a href="<?=Url::toRoute('/about')?>" title="走进博医康">走进博医康</a> </li>
-     <li><a href="<?=Url::toRoute('/contact')?>" title="联系博医康">联系博医康</a> </li>
-   </ul>
+    <div class="subnav-wrap">
+        <div class="subnav">
+            <ul>
+                <li><a href="<?=Url::toRoute('/')?>">首页</a>
+                <div class="navicon"><img src="/static/images/nav_icon.png"> </div>
+                </li>
+                <li><a href="<?=Url::toRoute('/about')?>">关于我们</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div></li>
+                <li><a href="<?=Url::toRoute('/product')?>">产品中心</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div></li>
+                <li><a href="<?=Url::toRoute('/support')?>">解决方案</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div></li>
+
+                <li><a href="<?=Url::toRoute('/service')?>">客服服务</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div></li>
+
+                <li><a href="<?=Url::toRoute(['/article'])?>">新闻中心</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div></li>
+                <li><a href="<?=Url::toRoute('/contact')?>">联系我们</a><div class="navicon"><img src="/static/images/nav_icon.png"> </div>
+                </li>
+             </ul>
+            <p class="navtop"><img src="/static/images/navtop.png"></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+        　　$(".navbtn, .menubtn a").click(function(){
+        　　　　$(".subnav-wrap").slideDown();
+        　　});
+            $(".navtop").click(function(){
+        　　　　$(".subnav-wrap").slideUp();
+        　　});
+        });
+    </script>

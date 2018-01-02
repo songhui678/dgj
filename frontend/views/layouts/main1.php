@@ -48,9 +48,7 @@ $this->beginPage();
     </div>
 </div>
 
-<script type="text/javascript">
-    $(".banner").slide({titCell:".hd ul", mainCell:".bd ul", effect:"fold", autoPlay:true, autoPage:true, delayTime:2000,interTime:4000, prevCell:".aPrev", nextCell:".aNext"});
-</script>
+
 <?=$content?>
 </div>
   </div>

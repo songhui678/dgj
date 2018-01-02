@@ -1,6 +1,7 @@
 <?php
 
 namespace mobile\controllers;
+use common\modelsgii\Goods;
 use common\modelsgii\Page;
 
 class ContactController extends \yii\web\Controller {
@@ -10,7 +11,8 @@ class ContactController extends \yii\web\Controller {
 	public $layout = 'main';
 	public function actionIndex() {
 		$content = Page::find()->where(array('name' => 'contact', 'type' => 2))->one();
-		return $this->render('index', array('content' => $content));
+		$goodsList = Goods::find()->where(array("status" => 1))->orderBy('sort asc')->limit(5)->all();
+		return $this->render('index', array('content' => $content, 'goodsList' => $goodsList));
 
 	}
 

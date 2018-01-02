@@ -17,7 +17,8 @@ class ContactController extends \yii\web\Controller {
 			// var_dump($adverList);exit;
 		}
 		$content = Page::find()->where(array('name' => 'contact', 'type' => 1))->one();
-		return $this->render('index', array('content' => $content, 'adverList' => $adverList));
+		$goodsList = Goods::find()->where(array("status" => 1))->orderBy('sort asc')->limit(5)->all();
+		return $this->render('index', array('content' => $content, 'adverList' => $adverList, 'goodsList' => $goodsList));
 	}
 
 }

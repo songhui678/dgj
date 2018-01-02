@@ -83,21 +83,21 @@ body { overflow-x:hidden; -webkit-text-size-adjust:none; max-width: 640px; margi
 .product .pro-tit ul li.on { background: #f5f7f9; border-color: #0066c3; transition: background 0.3s ease 0s; }
 .product .pro-tit ul li.on a { color: #0162b3;  }
 .product .pro-tit ul li a i { display: block; height: 45px; }
-.product .pro-tit ul li a .i1 { background: url("../images/kind_1.png") no-repeat center center; }
-.product .pro-tit ul li a .i2 { background: url("../images/kind_2.png") no-repeat center center; }
-.product .pro-tit ul li a .i3 { background: url("../images/kind_3.png") no-repeat center center; }
-.product .pro-tit ul li a .i4 { background: url("../images/kind_4.png") no-repeat center center; }
-.product .pro-tit ul li a .i5 { background: url("../images/kind_5.png") no-repeat center center; }
-.product .pro-tit ul li a .i6 { background: url("../images/kind_6.png") no-repeat center center; }
-.product .pro-tit ul li a .i7 { background: url("../images/kind_7.png") no-repeat center center; }
+.product .pro-tit ul li a .i1 { background: url("/static/images/kind_1.png") no-repeat center center; }
+.product .pro-tit ul li a .i2 { background: url("/static/images/kind_2.png") no-repeat center center; }
+.product .pro-tit ul li a .i3 { background: url("/static/images/kind_3.png") no-repeat center center; }
+.product .pro-tit ul li a .i4 { background: url("/static/images/kind_4.png") no-repeat center center; }
+.product .pro-tit ul li a .i5 { background: url("/static/images/kind_5.png") no-repeat center center; }
+.product .pro-tit ul li a .i6 { background: url("/static/images/kind_6.png") no-repeat center center; }
+.product .pro-tit ul li a .i7 { background: url("/static/images/kind_7.png") no-repeat center center; }
 
-.product .pro-tit ul li.on a .i1 { background: url("../images/kind_01.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i2 { background: url("../images/kind_02.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i3 { background: url("../images/kind_03.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i4 { background: url("../images/kind_04.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i5 { background: url("../images/kind_05.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i6 { background: url("../images/kind_06.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i7 { background: url("../images/kind_07.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i1 { background: url("/static/images/kind_01.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i2 { background: url("/static/images/kind_02.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i3 { background: url("/static/images/kind_03.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i4 { background: url("/static/images/kind_04.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i5 { background: url("/static/images/kind_05.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i6 { background: url("/static/images/kind_06.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i7 { background: url("/static/images/kind_07.png") no-repeat center center; }
 
 .pro-con {}
 .pro-con ul{padding:12px 0 15px; margin:0 3%;}
@@ -142,7 +142,7 @@ body { overflow-x:hidden; -webkit-text-size-adjust:none; max-width: 640px; margi
 .case { background: #f5f7f9; }
 .case h2 { font-size: 2rem; padding: 3% 0; font-weight: normal; color: #333; text-align: center;}
 .case .case-tit { text-align: center; padding:1% 0 3%;}
-.case .case-tit ul li { display: inline-block; padding: 0 5% 0 2%; width: 12%; background: url("../images/case_line.jpg") no-repeat right center;  text-align: center; }
+.case .case-tit ul li { display: inline-block; padding: 0 5% 0 2%; width: 12%; background: url("/static/images/case_line.jpg") no-repeat right center;  text-align: center; }
 .case .case-tit ul li a { display: block; border-bottom: 2px solid transparent; color: #4c6a7f; padding: 0 2%; font-size: 1.4rem; line-height: 2; }
 .case .case-tit ul li.on a{ color: #0066c3; border-bottom: 2px solid #0066c3; }
 .case .case-box{width: 95%; margin: 0 auto; position:relative; z-index:0; overflow:hidden; zoom:1;}
@@ -173,7 +173,7 @@ body { overflow-x:hidden; -webkit-text-size-adjust:none; max-width: 640px; margi
 .footnav .foot .menubtn { display:inline-block; width:50px; position:relative; top:-2px; text-align: center;}
 .footnav .foot .menubtn a { display: block; margin:0 auto; width: 46px; height: 46px; font-size: 1.2rem; font-weight: bold; text-transform: uppercase; border-radius: 50%; background: #fbfbfb; text-align: center; color: #666; box-shadow: 0 0 30px #034586; }
 .footnav .foot .menubtn a span { width: 46px; height: 46px; display:  table-cell; vertical-align: middle;  }
-.footnav .foot .menubtn:before { position: absolute; content: ""; top: -10px; left: 0; background:url("../images/foot_top.png") no-repeat center top; width: 100%; text-align: center; height: 10px;}
+.footnav .foot .menubtn:before { position: absolute; content: ""; top: -10px; left: 0; background:url("/static/images/foot_top.png") no-repeat center top; width: 100%; text-align: center; height: 10px;}
 
 .subnav-wrap { background:#005bb0; position:fixed; top: 0; width: 100%; left: 0; z-index: 200; display:none;}
 .subnav-wrap .subnav { width: 100%; }
@@ -303,5 +303,5 @@ body { overflow-x:hidden; -webkit-text-size-adjust:none; max-width: 640px; margi
 .xq-item-wrap .xq-item .pic { }
 .xq-item-wrap .xq-item .name { position: relative; text-align: center; font-size: 16px; font-weight: bold; line-height: 50px;  height: 50px; background: #fcfcfc; border-top: 1px solid #d9d9d9; }
 .xq-item-wrap .xq-item .name .kuan { position: absolute; top:17px; right: 17px; border: 1px solid #d0cece; width:14px; height: 14px; background: #fff; cursor: pointer;  }
-.xq-item-wrap .xq-item .name .on {background: url("../images/gou.png") no-repeat center center; }
+.xq-item-wrap .xq-item .name .on {background: url("/static/images/gou.png") no-repeat center center; }
 < 1 min to Spreed

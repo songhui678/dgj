@@ -31,19 +31,7 @@ use yii\widgets\LinkPager;
     <div class="main">
                   <div class="pro-item-wrap clearfix">
 
-                <div class="pro-item noMg">
-                  <div class="pic">
-                                    <a href="pdisplay.php?id=318" target="_blank"><img src="/upload/2017-07/150035803642762200.jpg" width="288" height="204" alt="超低温冷冻储存箱DW-HL528" /></a>
-                        <div class="name"><a href="pdisplay.php?id=318" target="_blank">超低温冷冻储存箱DW-HL528</a></div>
-                  </div>
-                  <dl>
-                      <dt><a href="pdisplay.php?id=318">超低温冷冻储存箱DW-HL528</a></dt>
-                      <dd class="txt">
-
-</dd>
-                      <!--<dd class="wendu">存储温度（℃）：</dd>-->
-                  </dl>
-              </div>
+ 
           <?php foreach ($goodsList as $goods) {?>
                 <div class="pro-item ">
                   <div class="pic">

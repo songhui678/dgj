@@ -1,14 +1,12 @@
 <?php
-use yii\helpers\Url;
-use yii\widgets\LinkPager;
 ?>
 <link id="headercss" href="/static/newcss/mheader.css" type="text/css" rel="stylesheet" />
 <nav class="yk-nav " id="mheader_nav">
     <div class="yk-nav-box">
         <div class="yk-nav-list" id="mheader_navbox">
             <ul class="yk-nav-pills">
-                <li class="on"><a href="<?=Url::toRoute(['/article'])?>"><i class="i0"></i>新闻动态</a></li>
-                            </ul>
+                <li class="on"><a href="category.php?class_id=104101"><i class="i0"></i>服务理念</a></li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -30,33 +28,21 @@ use yii\widgets\LinkPager;
 <div class="iContainer">
     <div class="wrap clearfix">
         <div class="main">
-                        <div class="inews">
-                <div class="news-item-wrap clearfix">
-                <?php foreach ($articleList as $key => $article) {
-	?>
-                <div class="news-item <?php if ($key % 2 != 0) {
-		echo "bg-color";
-	}
-	?>">
-                    <h2><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><?=$article->title?></a> </h2>
-                    <div class="txt"><?=$article->description?>
-                    </div>
-                    <p class="more"><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>">查看更多 &gt;</a> </p>
-                </div>
-                <?php }?>
-
-
-
-                                    </div>
+            <div class="article2" id="info_content">
+                <?=$content->content?>
             </div>
-            <div class="page">
-<?=LinkPager::widget([
-	'pagination' => $pages,
-	'firstPageLabel' => '首页',
-	'lastPageLabel' => '尾页',
-	'maxButtonCount' => 5,
-]);?>
-            </div>
+                <script language="javascript">
+                    $(function(){
+                        var imgObj = $("#info_content").find("img");
+                        if (imgObj.length > 0)
+                        {
+                            for (var i = 0; i < imgObj.length; i++)
+                            {
+                                if (imgObj[i].width > 1140) imgObj[i].width = 1140;
+                            }
+                        }
+                    });
+                </script>
                     </div>
     </div>
 </div>

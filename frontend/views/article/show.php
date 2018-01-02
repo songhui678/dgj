@@ -95,18 +95,18 @@ use yii\widgets\Breadcrumbs;
             <div class="up-next-wrap">
                 <div class="up-next">
                     <ul class="clearfix">
-                    <?php if (!empty($nextArticle)) {?>
-                        <li>上一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$article->title?></a>
-                        </li>
-                    <?php } else {?>
-                            <li>没有上一条了</li>
-                    <?php }?>
-                    <?php if (!empty($beforeArticle)) {?>
-                        <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
-                        </li>
-                    <?php } else {?>
-                        <li>没有下一条了</li>
-                    <?php }?>
+                      <?php if (!empty($nextArticle)) {?>
+                          <li>上一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
+                          </li>
+                      <?php } else {?>
+                              <li>没有上一条了</li>
+                      <?php }?>
+                      <?php if (!empty($beforeArticle)) {?>
+                          <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
+                          </li>
+                      <?php } else {?>
+                          <li>没有下一条了</li>
+                      <?php }?>
 
                     </ul>
                 </div>

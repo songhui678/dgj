@@ -1,8 +1,10 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 ?>
+
 <div class="container hhh">
     <div class="wrap clearfix">
         <div class="main">
@@ -27,25 +29,8 @@ use yii\widgets\Breadcrumbs;
                     <div class="back-color">
                     <div class="contact-wrap">
                         <div class="contact clearfix">
-                            <div class="map">
-                            <img src="/upload/2017-03/149034579505389900.jpg" width="584" height="287">
-                            </div>
-                            <div class="info">
-                                <p>
-    <strong>中科美菱低温科技股份有限公司服务热线：4008-600-266转3</strong>
-</p>
-<p>
-    销售服务：(086)551-62219671
-</p>
-<p>
-    监督热线：(086)551-64413458
-</p>
-<p>
-    传　　真：(086)551-62219667
-</p>
-<p>
-    地　　址：中国·安徽省合肥市经济技术开发区紫石路1862号
-</p>                            </div>
+                            <?=$content->content?>
+
                         </div>
                     </div>
 
@@ -56,13 +41,15 @@ use yii\widgets\Breadcrumbs;
                             <h2><span>推荐产品</span></h2>
                         </div>
                         <div class="xq-item-wrap clearfix">
-                                                        <div class="xq-item noMg">
-                                <div class="pic"><a href="pdisplay.php?id=207" title="超低温冷冻储存箱DW-HL1008"><img src="/upload/2017-03/148834817197966600.jpg" width="264" height="187" alt="超低温冷冻储存箱DW-HL1008"> </a></div>
+                        <?php foreach ($goodsList as $google) {?>
+                            <div class="xq-item noMg">
+                                <div class="pic"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="264" height="187" alt="<?=$goods->goods_name?>"> </a></div>
                                 <div class="name">
-                                    超低温冷冻储存箱DW-HL1008                                   <div class="kuan" date-id="207"></div>
+                                    <?=$goods->goods_name?>
+                                    <div class="kuan" date-id="<?=$goods->goods_id?>"></div>
                                 </div>
                             </div>
-
+                        <?php }?>
                         </div>
                         <script type="text/javascript">
                             $(".xq-item-wrap .kuan").click(function(){

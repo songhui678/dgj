@@ -1,66 +1,70 @@
 <?php
-use yii\widgets\Breadcrumbs;
+/* @var $this \yii\web\View */
+/* @var $content string */
+use yii\helpers\Url;
 ?>
-<link href="/mobile/css/contact.css" rel="stylesheet">
-<div>
-        <div class="m4-title_nav">
-            <div class="m4-t-sear1"></div>
-            <a class="m4-goback" href="javascript:history.back(-1);">返回上一页</a>
-            <a href="/contact" id="m4-topclick"></a>
-            <h2>公司信息</h2>
+<link id="headercss" href="/static/newcss/mheader.css" type="text/css" rel="stylesheet" />
+<nav class="yk-nav " id="mheader_nav">
+    <div class="yk-nav-box">
+        <div class="yk-nav-list" id="mheader_navbox">
+            <ul class="yk-nav-pills">
+              <li class="on"><a href="<?=Url::toRoute(['/contact'])?>"><i class="i0"></i>联系方式</a></li>
+            </ul>
         </div>
     </div>
-      <!-- END FOOTER -->
-    <?php $this->beginContent('@app/views/layouts/public/setting.php')?>
-    <?php $this->endContent()?>
-</div>
-   <!-- 面包屑 -->
-   <div class="m4-blk">
-    <div class="m4-crumbs-1">
-<?php echo Breadcrumbs::widget(['homeLink' => [
-	'label' => '首页',
-	'url' => ['/'],
-	'template' => "<p>{link}<span>&gt;</span>",
-],
-	'links' => [
-		[
-			'label' => '公司信息',
-			'url' => ['/contact'],
-			'template' => "{link}<p>",
-		],
+</nav>
+<script>
+    TouchSlide({slideCell:"#sd",effect:"leftLoop",mainCell:".dsffs",vis:3});
+</script>
+<script src="/static/newjs/iscroll.js"></script>
+<script src="/static/newjs/mheader.js"></script><style type="text/css">
 
-	]]);
-?>
+    .list-bj{width: 60px; height: 60px; border: 1px solid #ccc; text-align: center; line-height: 60px; font-size: 60px; font-family: "楷体"; font-weight: bold; color: #000000; _line-height:60px; *line-height:70px; line-height: 70px\9; margin-right:10px; }
+
+    .area ul li:hover .list-bj{border: 1px solid #1653A3; color: #1653A3;}
+
+    .area ul li:hover{border-bottom: 1px solid #1653A3; }
+
+    .area ul{border-bottom: 1px solid #fff;}
+
+</style>
+<div class="iContainer">
+    <div class="wrap clearfix">
+        <div class="main">
+                            <div class="back-color">
+                    <div class="contact-wrap">
+                        <div class="icontact clearfix">
+                             <?=$content->content?>
+                        </div>
+                    </div>
+
+                    <div class="cpxq">
+                        <div class="tit">
+                            <h2><em>*</em>产品推荐</h2>
+                        </div>
+                        <div class="xq-item-wrap clearfix">
+                        <?php foreach ($goodsList as $goods) {?>
+                            <div class="xq-item noMg">
+                                <div class="pic"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="264" height="187" alt="<?=$goods->goods_name?>"> </a></div>
+                                <div class="name">
+                                    <?=$goods->goods_name?>
+                                    <div class="kuan" date-id="<?=$goods->goods_id?>"></div>
+                                </div>
+                            </div>
+                        <?php }?>
+                        </div>
+                        <script type="text/javascript">
+                            $(".xq-item img").height($(".xq-item img").width()*0.8);
+                            $(".xq-item-wrap .kuan").click(function(){
+                                if($(this).hasClass("on")){
+                                    $(this).removeClass("on");
+                                }else{
+                                    $(this).addClass("on");
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
     </div>
 </div>
- <!-- 文章列表2 -->
-   <div class="m4-blk endit-content">
-    <div class="m4-prod-content-1-con prod-content">
-        <h2 class="m4-title1">博医康介绍</h2>
-        <dl><h4>
-    <a>专业冻干设备+解决方案提供商</a>
-</h4>
-<p>
-    北京博医康实验仪器有限公司成立于2002年，总部位于北京，是一家专业冻干设备及解决方案提供商，能够为客户提供从实验室型、中试型到工业生产型全范围的真空冷冻干燥设备，以及完整的真空冷冻解决方案。
-</p>
-<p>
-    <img alt="北京博医康" src="/mobile/resource/images/e177df9f6cd4434b9b42f76f7334862e_8.jpg" title="北京博医康">
-</p>
-<h4>
-    <a>产品应用领域广泛</a>
-</h4>
-<p>
-    十多年来，博医康坚持自主创新与技术引进相结合的发展之路，在公司冻干技术专家团队的努力下，公司的产品研发、生产能力与日俱增。时至今日，博医康真空冷冻干燥设备已在生物工程、医药、食品、材料科学以及科研等领域有着广泛应用，并凭借出色的产品质量，赢得了客户和市场的良好反馈。
-</p>
-<p>
-    <img align="" alt="北京博医康" src="/mobile/resource/images/29ce693571db49299a74457a6f85b0c0_58.jpg" title="北京博医康">
-</p>
-<h3>
-    <a>生产车间</a>
-</h3>
-<p>
-    <img alt="博医康" src="/mobile/resource/images/29ce693571db49299a74457a6f85b0c0_63.jpg" title="博医康">
-</p></dl>
-    </div>
 
-</div>
