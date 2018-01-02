@@ -5,21 +5,22 @@ use yii\widgets\LinkPager;
 <div class="menuwrap">
   <div class="menu wrap pro-tit">
     <dl class="clearfix">
-
+      <?php foreach ($cateList as $cate) {?>
         <dt>
-          <a href="category.php?class_id=102101" class="current"><i class="i1"></i>超低温冷冻存储箱</a>
+          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i1"></i><?=$cate['title']?></a>
         </dt>
-
+      <?php }?>
     </dl>
   </div>
 </div>
 <div class="third_menu">
   <div class="s_menu">
       <ul class="clearfix">
+        <?php foreach ($cateList as $cate) {?>
 
           <li><a href="category.php?class_id=102101107"  class='current'>-120℃— -164℃</a></li>
           <li>|<a href="category.php?class_id=102101106" >-110℃— -152℃</a></li>
-
+        <?php }?>
       </ul>
   </div>
 </div>
