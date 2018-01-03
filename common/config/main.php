@@ -10,13 +10,13 @@ return [
 
 	'components' => [
 		'cache' => [
-			'class' => 'yii\redis\Connection',
-			'hostname' => '47.104.72.210',
-			'port' => 6379,
-			'database' => 0,
-
+			'class' => 'yii\redis\Cache',
+			'redis' => [
+				'hostname' => 'localhost',
+				'port' => 6379,
+				'database' => 0,
+			],
 		],
-
 		/**
 		 * 多语言管理，
 		 * 将“源语言”翻译成“目标语言”，必须使用\Yii::t('common','中文')，当源语言和目标语言相同时默认不翻译

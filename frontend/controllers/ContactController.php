@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 use common\modelsgii\Ad;
 use common\modelsgii\AdCat;
+use common\modelsgii\Goods;
 use common\modelsgii\Page;
 
 class ContactController extends \yii\web\Controller {

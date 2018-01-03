@@ -34,10 +34,9 @@ use yii\widgets\LinkPager;
                 <div class="news-item-wrap clearfix">
                 <?php foreach ($articleList as $key => $article) {
 	?>
-                <div class="news-item <?php if ($key % 2 != 0) {
-		echo "bg-color";
-	}
-	?>">
+                <div class="news-item <?php if ($key % 2 != 0) {?>
+		 "bg-color";
+	<?php }?>">
                     <h2><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>"><?=$article->title?></a> </h2>
                     <div class="txt"><?=$article->description?>
                     </div>

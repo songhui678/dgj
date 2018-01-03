@@ -1,9 +1,10 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Html;
+use yii\helpers\Url;
 $this->beginPage();
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -11,9 +12,9 @@ $this->beginPage();
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="renderer" content="webkit">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title>企业简介 - 关于我们 - 美菱生物医疗</title>
-<meta name="keywords" content="超低温冰箱,医用冷藏箱,实验室超低温冰箱,血液冷藏箱,医用低温冰箱,-80℃超低温冰箱,美菱药品保存箱,智能生物样本库" />
-<meta name="description" content="美菱生物医疗主营低温,超低温存储设备,耗材及生物样本冻存管理,无线智能云监控,冷链仓储物流系统解决方案,家庭健康等业务,广泛应用于医疗,基因工程,生命科学等领域.欢迎来电咨询:4008600266" />
+<title><?=Html::encode($this->title)?></title>
+<meta name="description" content="<?php echo isset($this->metaTags['description']) ? $this->metaTags['description'] : ''; ?>" />
+<meta name="keywords" content="<?php echo isset($this->metaTags['keywords']) ? $this->metaTags['keywords'] : ''; ?>" />
 <link rel="shortcut icon" type="image/x-icon" href="" />
 <link href="/static/newcss/base.css" type="text/css" rel="stylesheet">
 <link href="/static/newcss/inside.css" type="text/css" rel="stylesheet">
@@ -24,16 +25,14 @@ $this->beginPage();
 <script type="text/javascript" src="/static/newjs/common.js?rightButton=0"></script>
 <script type="text/javascript" src="/static/newjs/morecity.js" mce_src="js/morecity.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
-<script type="text/javascript">uaredirect('http://m.dgj.com/');</script>
+<script type="text/javascript">uaredirect('http://m.nmgen.com.cn/');</script>
 <!--[if lt IE 7]><script src="js/iepng.js"></script><![endif]-->
-
-
 </head>
 <body>
 
 <div class="topArea wrap clearfix">
     <div class="logo fl">
-        <h1 class="logo"><a href="index.php"><img src="/upload/2016-09/147494550929618200.jpg" alt=""/></a></h1>
+        <h1 class="logo"><a href="<?=Url::toRoute('/')?>"><img src="/upload/2016-09/147494550929618200.jpg" alt=""/></a></h1>
     </div>
         <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
         <?php $this->endContent()?>

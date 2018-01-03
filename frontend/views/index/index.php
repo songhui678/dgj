@@ -54,38 +54,13 @@ use yii\helpers\Url;
         <div class="pro-wrap">
             <div class="pro-tit">
                 <ul>
-                    <li>
-                        <a href="category.php?class_id=102101">
-                            <i class="i1"></i>超低温冷冻存储箱                        </a>
-                    </li>
-                    <li>
-                        <a href="category.php?class_id=102102">
-                            <i class="i2"></i>血液血细胞速冻箱                        </a>
-                    </li>
-                    <li>
-                        <a href="category.php?class_id=102103">
-                            <i class="i3"></i>血液冷藏箱                        </a>
-                    </li>
-                                        <li>
-                        <a href="category.php?class_id=102104">
-                            <i class="i4"></i>医用冷藏箱                        </a>
-                    </li>
-                                        <li>
-                        <a href="category.php?class_id=102105">
-                            <i class="i5"></i>医用冷藏冷冻箱                        </a>
-                    </li>
-                                        <li>
-                        <a href="category.php?class_id=102106">
-                            <i class="i6"></i>医用低温箱                        </a>
-                    </li>
-                                        <li>
-                        <a href="category.php?class_id=102108">
-                            <i class="i7"></i>液氮罐                        </a>
-                    </li>
-                                    </ul>
+                  <?php foreach ($cateList as $key => $cate) {?>
+                  <li><a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>"><i class="i<?=$key?>"></i><?=$cate['title']?></a></li>
+                  <?php }?>
+                </ul>
             </div>
             <div class="pro-Box">
-                                <div class="pro-con clearfix">
+                   <div class="pro-con clearfix">
                     <div class="pro-big">
                         <div class="bd">
                             <ul>
@@ -242,7 +217,7 @@ use yii\helpers\Url;
                                                     </ul>
                     </div>
                 </div>
-                                <div class="pro-con clearfix">
+                <div class="pro-con clearfix">
                     <div class="pro-big">
                         <div class="bd">
                             <ul>
@@ -713,194 +688,7 @@ use yii\helpers\Url;
                     <p class="more"><a href="category.php?class_id=101101"><img src="images/more2.png"> </a> </p>
                 </div>
                             </div>
-            <div class="about-item clearfix">
-                <ul>
-                                        <li>
-                        <div class="list-txt">
-                            2016年6月，公司荣获“安徽省行业品牌创新企业”奖项                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2016年6月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2016年5月，公司喜获“2016年度合肥市知识产权示范企业”以及“2016年度合肥市认定企业技术中心”双项荣誉称号                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2016年5月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2016年2月，公司在全国股份转让系统成功挂牌，公司发展驶入快车道                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2016年2月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2015年8月，公司完成股份制改造，公司更名为中科美菱低温科技股份有限公司                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2015年8月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2015年4月，中标“科摩罗”冷库项目                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2015年4月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2014年10月，公司被认定为“高新技术企业”                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2014年10月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2014年8月，公司整体搬迁至合肥经济技术开发区                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2014年8月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2013年10月，DW-HL388S型超低温水冷式超低温冷冻储存箱被认定为“安徽省高新技术产品”称号                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2013年10月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2012年7月，DW-HL508型超低温冷冻储存箱、XC-1380L型血液冷藏箱被认定为“安徽省高新技术产品”称号                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2012年7月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2011年12月，DW-UW258、DW-HL538型超低温冷冻储存箱、DW-HW258SD血浆血细胞速冻箱被认定为“安徽省高新技术产品”称号                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2011年12月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2010年12月，公司承担的合肥市自主创新研发和消化吸收再创新项目顺利获得验收                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2010年12月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2010年2月，家用冰箱剥离深冷业务，公司发展提速                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2010年2月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2008年11月，公司被合肥市人民政府授予“合肥市科技创新型企业”                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2008年11月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2008年7月，公司获得合肥市科技创新专项基金支持                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2008年7月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2008年6月，公司取得ISO13485医疗器械质量管理体系认证证书                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2008年6月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2007年11月，公司超低温冰箱获2007年工业博览会银奖                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2007年11月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2007年9月，-86℃血浆/血细胞速冻箱研制成功，成为世界容积最大，制冷速度最快的速冻箱                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2007年9月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2007年2月，公司首席科学家吴剑峰教授的“深冷混合工质节流制冷技术及其应用”项目获国家技术发明二等奖                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2007年2月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2006年11月，公司成功研制中国最冷的冰箱——-164℃超低温冷冻储存箱，并经央视新闻联成功报道                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2006年11月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2006年9月，公司超低温冰箱项目被列入国家级火炬计划项目                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2006年9月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2004年11月，DW-HL328、DW-HW328、DW-ML328、DW-MW328型超低温冷冻储存箱获安徽省科学技术二等奖                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2004年11月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2004年6月，DW-FL208型超低温冷冻储存获合肥市科学技术进步奖                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2004年6月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2004年4月，取得职业健康安全体系认证证书                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2004年4月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2003年5月，取得高新技术企业认定证书                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2003年5月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2002年11月，取得医疗器械生产许可证                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2002年11月</p>
-                        </div>
-                    </li>
-                                        <li>
-                        <div class="list-txt">
-                            2002年10月，公司成立                        </div>
-                        <div class="time">
-                            <img src="images/time.png"><p>2002年10月</p>
-                        </div>
-                    </li>
-                                    </ul>
-                <p class="aPrev"><img src="images/about_prev.png"></p>
-                <p class="aNext"><img src="images/about_next.png"></p>
-            </div>
+
             <script type="text/javascript">
                 jQuery(".about-item").slide({mainCell:"ul", autoPage:true, effect:"leftLoop",autoPlay:false, vis:4, prevCell:".aPrev", nextCell:".aNext", trigger:"click"});
             </script>

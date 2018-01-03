@@ -1,11 +1,12 @@
 <?php
+use yii\helpers\Url;
 ?>
 <link id="headercss" href="/static/newcss/mheader.css" type="text/css" rel="stylesheet" />
 <nav class="yk-nav " id="mheader_nav">
     <div class="yk-nav-box">
         <div class="yk-nav-list" id="mheader_navbox">
             <ul class="yk-nav-pills">
-                <li class="on"><a href="category.php?class_id=104101"><i class="i0"></i>服务理念</a></li>
+                <li class="on"><a href="<?=Url::toRoute(['/service'])?>"><i class="i0"></i>服务理念</a></li>
             </ul>
         </div>
     </div>
