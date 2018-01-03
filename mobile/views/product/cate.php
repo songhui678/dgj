@@ -11,8 +11,6 @@ use yii\widgets\LinkPager;
                 <li class="on"><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i<?=$key?>"></i><?=$cate['title']?></a>
                 </li>
               <?php }?>
-
-
             </ul>
         </div>
     </div>
@@ -21,7 +19,7 @@ use yii\widgets\LinkPager;
   <div class="dsfg" id="sd">
     <div class="dsffs">
         <?php foreach ($cateList as $cate) {?>
-          <?php if (isset($cate['_child'])) {?>
+          <?php if ($cate['id'] == $productCate->id && isset($cate['_child'])) {?>
           <?php foreach ($cate['_child'] as $key => $erji) {?>
               <a  class='on'  href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"><?=$erji['title']?></a>
           <?php }}}?>
@@ -34,7 +32,6 @@ use yii\widgets\LinkPager;
 </script>
 <script src="/static/newjs/iscroll.js"></script>
 <script src="/static/newjs/mheader.js"></script><style type="text/css">
-
   .list-bj{width: 60px; height: 60px; border: 1px solid #ccc; text-align: center; line-height: 60px; font-size: 60px; font-family: "楷体"; font-weight: bold; color: #000000; _line-height:60px; *line-height:70px; line-height: 70px\9; margin-right:10px; }
 
   .area ul li:hover .list-bj{border: 1px solid #1653A3; color: #1653A3;}

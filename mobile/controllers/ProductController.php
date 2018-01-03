@@ -54,7 +54,7 @@ class ProductController extends Controller {
 	 * @return   [type]                   [description]
 	 */
 	public function actionCate($id) {
-		$cate = GoodsCat::find()->where(array("id" => $id, "status" => 1))->one();
+		$productCate = GoodsCat::find()->where(array("id" => $id, "status" => 1))->one();
 		$cateList = $this->cateTree();
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
@@ -63,8 +63,8 @@ class ProductController extends Controller {
 		//最新资讯
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
 
-		if (!empty($cate)) {
-			return $this->render('cate', array('cate' => $cate, 'pages' => $pages, 'articleList' => $articleList, 'goodsList' => $goodsList, 'cateList' => $cateList));
+		if (!empty($productCate)) {
+			return $this->render('cate', array('productCate' => $productCate, 'pages' => $pages, 'articleList' => $articleList, 'goodsList' => $goodsList, 'cateList' => $cateList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
