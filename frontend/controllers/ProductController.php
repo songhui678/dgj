@@ -26,6 +26,7 @@ class ProductController extends Controller {
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
 		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();
+		$adverList = array();
 		if (!empty($adCate)) {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
 			// var_dump($adverList);exit;

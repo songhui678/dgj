@@ -13,7 +13,7 @@ $this->params['title_sub'] = '后台首页';
 ?>
 
 <div class="note note-info">
-    <p> Dark mega menu style. 这里是提示信息 </p>
+    <p> 相关统计信息 </p>
 </div>
 
 <div class="row">
@@ -24,9 +24,9 @@ $this->params['title_sub'] = '后台首页';
             </div>
             <div class="details">
                 <div class="number">
-                    <span data-counter="counterup" data-value="1349">0</span>
+                    <span data-counter="counterup" data-value="1349"><?=$goodsView['view']?></span>
                 </div>
-                <div class="desc"> New Feedbacks </div>
+                <div class="desc"> 产品查看总次数 </div>
             </div>
         </a>
     </div>
@@ -37,8 +37,8 @@ $this->params['title_sub'] = '后台首页';
             </div>
             <div class="details">
                 <div class="number">
-                    <span data-counter="counterup" data-value="12,5">0</span>M$ </div>
-                <div class="desc"> Total Profit </div>
+                    <span data-counter="counterup" data-value="12,5"><?=$articleView['view']?></span></div>
+                <div class="desc"> 文章查看总次数 </div>
             </div>
         </a>
     </div>
@@ -51,11 +51,11 @@ $this->params['title_sub'] = '后台首页';
                 <div class="number">
                     <span data-counter="counterup" data-value="549">0</span>
                 </div>
-                <div class="desc"> New Orders </div>
+                <div class="desc"> 网站被访问次数 </div>
             </div>
         </a>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
             <div class="visual">
                 <i class="fa fa-globe"></i>
@@ -66,24 +66,14 @@ $this->params['title_sub'] = '后台首页';
                 <div class="desc"> Brand Popularity </div>
             </div>
         </a>
-    </div>
+    </div>-->
 </div>
 <div class="clearfix"></div>
 
 <div class="row-fluid margin-bottom-30">
     <div class="span6">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
-        <ul class="unstyled margin-top-10 margin-bottom-10">
-            <li><i class="icon-ok"></i> Nam liber tempor cum soluta</li>
-            <li><i class="icon-ok"></i> Mirum est notare quam</li>
-            <li><i class="icon-ok"></i> Lorem ipsum dolor sit amet</li>
-            <li><i class="icon-ok"></i> Mirum est notare quam</li>
-        </ul>
-        <!-- Blockquotes -->
-        <blockquote class="hero">
-            <p>Lorem ipsum dolor sit amet, consectetuer sed diam nonummy nibh euismod tincidunt. </p>
-            <small>Bob Nilson</small>
-        </blockquote>
+
+
     </div>
 </div>
 
