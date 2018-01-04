@@ -10,12 +10,13 @@ return [
 
 	'components' => [
 		'cache' => [
-			'class' => 'yii\redis\Cache',
-			'redis' => [
-				'hostname' => 'localhost',
-				'port' => 6379,
-				'database' => 0,
-			],
+			'class' => 'yii\caching\FileCache',
+			// 'class' => 'yii\redis\Cache',
+			// 'redis' => [
+			// 	'hostname' => 'localhost',
+			// 	'port' => 6379,
+			// 	'database' => 0,
+			// ],
 		],
 		/**
 		 * 多语言管理，

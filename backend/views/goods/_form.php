@@ -59,6 +59,7 @@ use yii\helpers\Url;
 
 <?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越前')?>
 
+<?=$form->field($model, 'is_tuijian')->radioList(['0' => '不推荐', '1' => '推荐首页'])->label('状态')?>
 <?=$form->field($model, 'status')->radioList(['1' => '正常', '0' => '隐藏'])->label('状态')?>
 
 <div class="form-actions">
