@@ -7,7 +7,7 @@ use yii\helpers\Url;
             <dl><dt><a href="<?=Url::toRoute('/about')?>">关于我们</a></dt></dl>
             <dl><dt><a href="<?=Url::toRoute('/product')?>">产品中心</a></dt>
             <?php
-$footList = \common\modelsgii\GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->all();
+$footList = \common\modelsgii\GoodsCat::find()->where(array("status" => 1))->limit(7)->orderBy('sort asc')->all();
 foreach ($footList as $cate) {
 	?>
                   <dd><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate->id])?>"><?=$cate->title?></a></dd>

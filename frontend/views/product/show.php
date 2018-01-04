@@ -1,48 +1,41 @@
 <?php
 use yii\helpers\Url;
 ?>
+<div class="banner">
+    <div class="bd">
+        <ul>
+        <?php foreach ($adverList as $adver) {?>
+            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="664" ></a>
+            </li>
+        <?php }?>
+        </ul>
+    </div>
+    <div class="hd">
+        <ul></ul>
+    </div>
+    <p class="aPrev"><img src="/static/newimage/aPrev.png"></p>
+    <p class="aNext"><img src="/static/newimage/aNext.png"></p>
+</div>
 <div class="menuwrap">
   <div class="menu wrap pro-tit">
     <dl class="clearfix">
-              <dt><a href="category.php?class_id=102101" class="current"><i class="i1"></i>超低温冷冻存储箱</a></dt>
-
-
-              <dt><a href="category.php?class_id=102102"><i class="i2"></i>血液血细胞速冻箱</a></dt>
-
-
-
-              <dt><a href="category.php?class_id=102103"><i class="i3"></i>血液冷藏箱</a></dt>
-
-
-
-              <dt><a href="category.php?class_id=102104"><i class="i4"></i>医用冷藏箱</a></dt>
-
-
-
-              <dt><a href="category.php?class_id=102105"><i class="i5"></i>医用冷藏冷冻箱</a></dt>
-
-
-
-              <dt><a href="category.php?class_id=102106"><i class="i6"></i>医用低温箱</a></dt>
-
-
-
-              <dt><a href="category.php?class_id=102108"><i class="i7"></i>液氮罐</a></dt>
-
-
-
-                    </dl>
+      <?php foreach ($cateList as $cate) {?>
+        <dt>
+          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i1"></i><?=$cate['title']?></a>
+        </dt>
+      <?php }?>
+    </dl>
   </div>
 </div>
 <div class="third_menu">
   <div class="s_menu">
       <ul class="clearfix">
-                  <li><a href="category.php?class_id=102101107" >-120℃— -164℃</a></li>
-                    <li>|<a href="category.php?class_id=102101106"  class='current'>-110℃— -152℃</a></li>
-                    <li>|<a href="category.php?class_id=102101103" >-10℃— -86℃</a></li>
-                    <li>|<a href="category.php?class_id=102101102" >-10℃— -65℃</a></li>
-                    <li>|<a href="category.php?class_id=102101101" >-10℃ — -40℃</a></li>
-                </ul>
+        <?php foreach ($cateList as $cate) {?>
+          <?php if (isset($cate['_child'])) {?>
+          <?php foreach ($cate['_child'] as $key=>$erji) {?>
+          <li><?php if($key>0){?>|<?}?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$cate['title']?>"  class='current'><?=$cate['title']?></a></li>
+        <?php }}}?>
+       </ul>
   </div>
 </div>
 

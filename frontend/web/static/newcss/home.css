@@ -9,41 +9,41 @@
 .hadv ul li { display: inline-block; width: 256px; height: 256px; margin: 0 60px; border-radius: 256px; background:rgba(255,255,255,.93); text-align: center; }
 .hadv ul li a { display: block; width: 100%; padding: 66px 0 0; color: #4c6a7f; font-size: 20px; font-weight: bold;  }
 .hadv ul li a i { display: block; height: 90px; }
-.hadv ul li a .i1 { background: url("../images/hadv_1.png") no-repeat center top; }
-.hadv ul li a .i2 { background: url("../images/hadv_2.png") no-repeat center top; }
-.hadv ul li a .i3 { background: url("../images/hadv_3.png") no-repeat center top; }
+.hadv ul li a .i1 { background: url("/static/newimage/hadv_1.png") no-repeat center top; }
+.hadv ul li a .i2 { background: url("/static/newimage/hadv_2.png") no-repeat center top; }
+.hadv ul li a .i3 { background: url("/static/newimage/hadv_3.png") no-repeat center top; }
 
 .hadv ul li:hover { background: #0972c8; transition: background 0.3s ease 0s; }
 .hadv ul li:hover a { color: #fff; }
-.hadv ul li:hover a .i1 {  background: url("../images/hadv_01.png") no-repeat center top;}
-.hadv ul li:hover a .i2 {  background: url("../images/hadv_02.png") no-repeat center top;}
-.hadv ul li:hover a .i3 {  background: url("../images/hadv_03.png") no-repeat center top;}
+.hadv ul li:hover a .i1 {  background: url("/static/newimage/hadv_01.png") no-repeat center top;}
+.hadv ul li:hover a .i2 {  background: url("/static/newimage/hadv_02.png") no-repeat center top;}
+.hadv ul li:hover a .i3 {  background: url("/static/newimage/hadv_03.png") no-repeat center top;}
 
-.product { background:#f5f7f9 url("../images/product.jpg") repeat-x top;}
+.product { background:#f5f7f9 url("/static/newimage/product.jpg") repeat-x top;}
 .product .pro-tit { height: 115px; }
 .product .pro-tit ul li { float: left; width: 171px; height: 112px; border-bottom: 3px solid transparent; text-align: center; }
 .product .pro-tit ul li a { display: block; width: 100%; padding-top: 12px; font-size: 14px; color: #4c6a7f; }
 .product .pro-tit ul li.on { background: #f5f7f9; border-color: #0066c3; transition: background 0.3s ease 0s; }
 .product .pro-tit ul li.on a { color: #0162b3;  }
 .product .pro-tit ul li a i { display: block; height: 65px; }
-.product .pro-tit ul li a .i1 { background: url("../images/kind_1.png") no-repeat center center; }
-.product .pro-tit ul li a .i2 { background: url("../images/kind_2.png") no-repeat center center; }
-.product .pro-tit ul li a .i3 { background: url("../images/kind_3.png") no-repeat center center; }
-.product .pro-tit ul li a .i4 { background: url("../images/kind_4.png") no-repeat center center; }
-.product .pro-tit ul li a .i5 { background: url("../images/kind_5.png") no-repeat center center; }
-.product .pro-tit ul li a .i6 { background: url("../images/kind_6.png") no-repeat center center; }
-.product .pro-tit ul li a .i7 { background: url("../images/kind_7.png") no-repeat center center; }
+.product .pro-tit ul li a .i1 { background: url("/static/newimage/kind_1.png") no-repeat center center; }
+.product .pro-tit ul li a .i2 { background: url("/static/newimage/kind_2.png") no-repeat center center; }
+.product .pro-tit ul li a .i3 { background: url("/static/newimage/kind_3.png") no-repeat center center; }
+.product .pro-tit ul li a .i4 { background: url("/static/newimage/kind_4.png") no-repeat center center; }
+.product .pro-tit ul li a .i5 { background: url("/static/newimage/kind_5.png") no-repeat center center; }
+.product .pro-tit ul li a .i6 { background: url("/static/newimage/kind_6.png") no-repeat center center; }
+.product .pro-tit ul li a .i7 { background: url("/static/newimage/kind_7.png") no-repeat center center; }
 
-.product .pro-tit ul li.on a .i1 { background: url("../images/kind_01.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i2 { background: url("../images/kind_02.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i3 { background: url("../images/kind_03.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i4 { background: url("../images/kind_04.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i5 { background: url("../images/kind_05.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i6 { background: url("../images/kind_06.png") no-repeat center center; }
-.product .pro-tit ul li.on a .i7 { background: url("../images/kind_07.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i1 { background: url("/static/newimage/kind_01.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i2 { background: url("/static/newimage/kind_02.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i3 { background: url("/static/newimage/kind_03.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i4 { background: url("/static/newimage/kind_04.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i5 { background: url("/static/newimage/kind_05.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i6 { background: url("/static/newimage/kind_06.png") no-repeat center center; }
+.product .pro-tit ul li.on a .i7 { background: url("/static/newimage/kind_07.png") no-repeat center center; }
 
 .pro-con { position: relative; margin-top: 45px; }
-.pro-con .hyh { position: absolute; top:-30px; right: 5px; width: 60px; padding-left: 20px; background: url("../images/flush.png") no-repeat; }
+.pro-con .hyh { position: absolute; top:-30px; right: 5px; width: 60px; padding-left: 20px; background: url("/static/newimage/flush.png") no-repeat; }
 .pro-con .hyh a { color: #4c6a7f; font-size: 12px; }
 .pro-con .pro-big { position: relative; float: left; width: 602px; height: 417px; text-align: center; }
 .pro-con .pro-big .bd { width: 601px; height: 417px; }
@@ -67,10 +67,10 @@
 .pro-con .pro-item ul li .gray { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,98,179,.92); transform: scale(0); opacity: 0; }
 .pro-con .pro-item ul li .gray a { display: block; padding: 43px 0 0; color: #fff; }
 .pro-con .pro-item ul li .gray a .name { font-size: 30px; color: #fff;  }
-.pro-con .pro-item ul li .gray a .txt { padding:8px 0 45px 0; font-size: 12px; background: url("../images/hover_icon.png") no-repeat center bottom;   }
+.pro-con .pro-item ul li .gray a .txt { padding:8px 0 45px 0; font-size: 12px; background: url("/static/newimage/hover_icon.png") no-repeat center bottom;   }
 .pro-con .pro-item ul li:hover .gray{ opacity: 1; transform: scale(1); transition: all 0.3s ease 0s;}
 
-.product .more { width: 136px; height: 68px; margin: 43px auto 0; background: url("../images/more.jpg") no-repeat; text-align: center;  }
+.product .more { width: 136px; height: 68px; margin: 43px auto 0; background: url("/static/newimage/more.jpg") no-repeat; text-align: center;  }
 .product .more a { display: block; padding-top: 32px; color: #4c6a7f; }
 
 .about { border-bottom: 1px solid #f5f7f9; margin-bottom: 96px; padding:55px 0 0; }
@@ -90,7 +90,7 @@
 
 .about-item { position: relative; width:1200px; bottom:-42px;}
 .about-item .tempWrap {width:1200px !important;}
-.about-item ul li { position: relative; float: left; width: 284px; margin:0 21px 0 0; background: url("../images/about-item.jpg") no-repeat;  }
+.about-item ul li { position: relative; float: left; width: 284px; margin:0 21px 0 0; background: url("/static/newimage/about-item.jpg") no-repeat;  }
 .about-item ul li .list-txt { padding: 12px 9px 0; height:90px; line-height: 22px; color: #4c6a7f; font-size: 12px; }
 .about-item ul li .time {width: 96%; text-align:center; padding-top:15px;}
 .about-item ul li .time p { padding-top: 10px; color: #0066c3; font-size:13px;}
@@ -121,7 +121,7 @@
 .case { background: #f5f7f9; }
 .case .hd h2 { height: 65px; padding-top: 50px; color: #1f364b; font-size: 36px; font-weight: normal; text-align: center; }
 .case .case-tit { text-align: center; padding-bottom: 28px; }
-.case .case-tit ul li { display: inline-block; padding: 0 7px 0 20px; background: url("../images/case_line.jpg") no-repeat left center; line-height: 25px; text-align: center; }
+.case .case-tit ul li { display: inline-block; padding: 0 7px 0 20px; background: url("/static/newimage/case_line.jpg") no-repeat left center; line-height: 25px; text-align: center; }
 .case .case-tit ul li em{ display: block; border-bottom: 2px solid transparent; height: 26px; color: #4c6a7f; padding: 0 7px; font-size: 14px; cursor:pointer;}
 .case .case-tit ul li.on em{ color:#0066c3; border-bottom: 2px solid #0066c3; }
 

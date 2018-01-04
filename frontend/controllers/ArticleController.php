@@ -23,6 +23,7 @@ class ArticleController extends Controller {
 		$articleList = Article::find()->where(array("category_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$toutiaoArticle = Article::find()->where(array("category_id" => $id, "status" => 2))->orderBy('create_time desc')->one();
 		$adCate = AdCat::find()->where(array("name" => 'article', "status" => 1))->one();
+		$adverList = array();
 		if (!empty($adCate)) {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
 			// var_dump($adverList);exit;

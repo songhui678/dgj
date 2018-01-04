@@ -67,21 +67,21 @@
 .menuwrap .pro-tit dl dt a { display: block; width: 100%; height: 94px; line-height:20px; padding-top: 15px; font-size: 14px; color: #4c6a7f; }
 .menuwrap .pro-tit dl dt a.hover { color: #0162b3;  background: #f5f7f9; border-bottom:3px solid #0066c3; transition: background 0.3s ease 0s;}
 .menuwrap .pro-tit dl dt a i { display: block; height: 55px; }
-.menuwrap .pro-tit dl dt a .i1 { background: url("../images/kind_1.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i2 { background: url("../images/kind_2.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i3 { background: url("../images/kind_3.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i4 { background: url("../images/kind_4.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i5 { background: url("../images/kind_5.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i6 { background: url("../images/kind_6.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a .i7 { background: url("../images/kind_7.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i1 { background: url("/static/newimage/kind_1.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i2 { background: url("/static/newimage/kind_2.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i3 { background: url("/static/newimage/kind_3.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i4 { background: url("/static/newimage/kind_4.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i5 { background: url("/static/newimage/kind_5.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i6 { background: url("/static/newimage/kind_6.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a .i7 { background: url("/static/newimage/kind_7.png") no-repeat center center; }
 
-.menuwrap .pro-tit dl dt a:hover .i1, .menuwrap .pro-tit dl dt a.current .i1{ background: url("../images/kind_01.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i2, .menuwrap .pro-tit dl dt a.current .i2{ background: url("../images/kind_02.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i3, .menuwrap .pro-tit dl dt a.current .i3{ background: url("../images/kind_03.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i4, .menuwrap .pro-tit dl dt a.current .i4{ background: url("../images/kind_04.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i5, .menuwrap .pro-tit dl dt a.current .i5{ background: url("../images/kind_05.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i6, .menuwrap .pro-tit dl dt a.current .i6{ background: url("../images/kind_06.png") no-repeat center center; }
-.menuwrap .pro-tit dl dt a:hover .i7, .menuwrap .pro-tit dl dt a.current .i7{ background: url("../images/kind_07.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i1, .menuwrap .pro-tit dl dt a.current .i1{ background: url("/static/newimage/kind_01.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i2, .menuwrap .pro-tit dl dt a.current .i2{ background: url("/static/newimage/kind_02.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i3, .menuwrap .pro-tit dl dt a.current .i3{ background: url("/static/newimage/kind_03.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i4, .menuwrap .pro-tit dl dt a.current .i4{ background: url("/static/newimage/kind_04.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i5, .menuwrap .pro-tit dl dt a.current .i5{ background: url("/static/newimage/kind_05.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i6, .menuwrap .pro-tit dl dt a.current .i6{ background: url("/static/newimage/kind_06.png") no-repeat center center; }
+.menuwrap .pro-tit dl dt a:hover .i7, .menuwrap .pro-tit dl dt a.current .i7{ background: url("/static/newimage/kind_07.png") no-repeat center center; }
 
 .third_menu{ background:#F7F7F7; padding-top:20px;}
 .s_menu { display: block; margin:0 auto; height: 52px; background: #fff; border-bottom: 1px solid #d4d4d4;  border-radius: 8px; padding-left:5px; width:1195px;}
@@ -95,7 +95,7 @@
 .pro-item-wrap .pro-item .pic { position: relative; width: 288px; height: 204px; line-height:204px; text-align:center; font-size:16px; color:#333; border-bottom: 1px solid #d9d9d9; }
 .pro-item-wrap .pro-item .pic img{ vertical-align:top;}
 .pro-item-wrap .pro-item .pic .name { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(1,98,179,.92); transform: scale(0); opacity: 0; }
-.pro-item-wrap .pro-item .pic .name a { display: block; line-height:40px; padding: 53px 0 45px 0; color: #fff; font-size: 30px; background: url("../images/hover_icon.png") no-repeat center bottom; text-align: center;    }
+.pro-item-wrap .pro-item .pic .name a { display: block; line-height:40px; padding: 53px 0 45px 0; color: #fff; font-size: 30px; background: url("/static/newimage/hover_icon.png") no-repeat center bottom; text-align: center;    }
 .pro-item-wrap .pro-item .pic:hover .name { opacity: 1; transform: scale(1); transition: all 0.3s ease 0s; }
 .pro-item-wrap .pro-item dl {padding: 20px 15px 12px; font-size: 12px; line-height: 18px; color: #666; }
 .pro-item-wrap .pro-item dl dt { height: 24px; }
@@ -148,7 +148,7 @@
 .xq-item-wrap .xq-item .pic { width: 264px; height: 187px; }
 .xq-item-wrap .xq-item .name { position: relative; text-align: center; font-size: 16px; font-weight: bold; line-height: 50px;  height: 50px; background: #fcfcfc; border-top: 1px solid #d9d9d9; }
 .xq-item-wrap .xq-item .name .kuan { position: absolute; top:17px; right: 17px; border: 1px solid #d0cece; width:14px; height: 14px; background: #fff; cursor: pointer;  }
-.xq-item-wrap .xq-item .name .on {background: url("../images/gou.png") no-repeat center center; }
+.xq-item-wrap .xq-item .name .on {background: url("/static/newimage/gou.png") no-repeat center center; }
 
 .mess-write-wrap { background: #fff; margin-top:27px;  }
 .mess-write { padding: 30px 50px 20px;}
@@ -182,13 +182,13 @@
 .job-item{padding-bottom:35px;}
 .job-item .tit{ position:relative; height:50px; line-height:50px; font-size:14px; color:#444; background:#eee; padding:0 60px 0 30px; cursor:pointer;}
 .job-item .tit .t{float:left; width:400px; padding-right:20px;}
-.job-item .tit .ico{ position:absolute; top:10px; right:15px; width:30px; height:30px; background:url(../images/fjia.png) no-repeat;}
+.job-item .tit .ico{ position:absolute; top:10px; right:15px; width:30px; height:30px; background:url(/static/newimage/fjia.png) no-repeat;}
 .job-item .job-info{padding:15px 20px 5px; display:none;}
 .job-item .job-info .job-i{padding:0 0 20px; font-size:14px; color:#666; line-height:180%;}
 .job-item .job-info .btn{ background:#2b75d9; width:180px; height:46px; line-height:46px; text-align:center; font-size:16px;}
 .job-item .job-info .btn a, .job-item .job-info .btn a:hover{color:#fff; display:block;}
 
-.job-cur .tit .ico{ background:url(../images/fjian.png) no-repeat;}
+.job-cur .tit .ico{ background:url(/static/newimage/fjian.png) no-repeat;}
 .job-cur .job-info{ display:block;}
 
 /*搜索页*/
@@ -236,7 +236,7 @@
 
 .area ul li{width: 270px; height: 60px; margin-bottom: 40px; margin-right: 50px; border-bottom: 1px solid #e0e0e0; padding-bottom: 21px;}
 
-/* .icon13,.icon14,.icon15,.icon16,.icon17,.icon18,.icon19,.icon20,.icon21,.icon22,.icon23,.icon24{background: url(../images/font.png) no-repeat; width: 60px; height: 60px;}
+/* .icon13,.icon14,.icon15,.icon16,.icon17,.icon18,.icon19,.icon20,.icon21,.icon22,.icon23,.icon24{background: url(/static/newimage/font.png) no-repeat; width: 60px; height: 60px;}
 
 .icon13{background-position: 0 0;}
 
@@ -284,7 +284,7 @@
 
 .area ul li:hover .icon23,
 
-.area ul li:hover .icon24{background: url(../images/font.png) no-repeat; width: 60px; height: 60px;}
+.area ul li:hover .icon24{background: url(/static/newimage/font.png) no-repeat; width: 60px; height: 60px;}
 
 
 
@@ -364,23 +364,23 @@
 
 .ladyScroll1{width:930px;height:1664px;margin:20px auto;position:relative;}
 
-.ladyScroll1 .prev,.ladyScroll1 .next{width:29px;height:29px;position:absolute; bottom: 0; left:425px;z-index:100; cursor:pointer; background: url(../images/pre1.png) no-repeat;}
+.ladyScroll1 .prev,.ladyScroll1 .next{width:29px;height:29px;position:absolute; bottom: 0; left:425px;z-index:100; cursor:pointer; background: url(/static/newimage/pre1.png) no-repeat;}
 
-.ladyScroll1 .next{ left:auto; right:424px; background: url(../images/next1.png) no-repeat;}
+.ladyScroll1 .next{ left:auto; right:424px; background: url(/static/newimage/next1.png) no-repeat;}
 
-.ladyScroll1 .prev:hover{background: url(../images/pre2.png) no-repeat;}
+.ladyScroll1 .prev:hover{background: url(/static/newimage/pre2.png) no-repeat;}
 
-.ladyScroll1 .next:hover{background: url(../images/next2.png) no-repeat;}
+.ladyScroll1 .next:hover{background: url(/static/newimage/next2.png) no-repeat;}
 
 .ladyScroll1 .scrollWrap{width:930px;position:absolute;}
 
 .ladyScroll1 dl{float:left;width:930px;position:relative;}
 
-.icon12{position: absolute; background: url(../images/13.png) no-repeat; height: 684px; width: 17px; z-index: 99; top: 80px; left: 457px;}
+.icon12{position: absolute; background: url(/static/newimage/13.png) no-repeat; height: 684px; width: 17px; z-index: 99; top: 80px; left: 457px;}
 
 .ladyScroll1 dl .left{width: 428px;}
 
-.ladyScroll1 dl .left .list{width: 363px; padding: 25px 40px 25px 25px; height: 84px; background: url(../images/left-k.png) no-repeat; line-height:20px; }
+.ladyScroll1 dl .left .list{width: 363px; padding: 25px 40px 25px 25px; height: 84px; background: url(/static/newimage/left-k.png) no-repeat; line-height:20px; }
 
 .ladyScroll1 dl .left .list .bt{font-size: 14px; color: #000000; }
 
@@ -388,15 +388,15 @@
 
 .ladyScroll1 dl .left .list .time{font-size: 12px; font-family: arial; color: #999999;}
 
-.ladyScroll1 dl .left .list:hover{background: url(../images/left-k2.png) no-repeat;}
+.ladyScroll1 dl .left .list:hover{background: url(/static/newimage/left-k2.png) no-repeat;}
 
 .ladyScroll1 dl .left .list:hover .bt{color: #eaf0fa;}
 
 .ladyScroll1 dl .left .list:hover .nr,.ladyScroll1 dl .left .list:hover .time{color: #becff0;}
 
-.ladyScroll1 dl .left .list1{background: url(../images/right-k.png) no-repeat;}
+.ladyScroll1 dl .left .list1{background: url(/static/newimage/right-k.png) no-repeat;}
 
-.ladyScroll1 dl .left .list1:hover{background: url(../images/right-k2.png) no-repeat;}
+.ladyScroll1 dl .left .list1:hover{background: url(/static/newimage/right-k2.png) no-repeat;}
 
 .mb15 {
     margin-bottom: 15px;
@@ -419,7 +419,7 @@
 .list11 ul li a { padding-left:5px; }
 
 .list11 .date { float:right; padding-left:9px; color:#999; font-size:14px; font-family:Arial; }
-.list11 .ico { float:left; width:6px; _width:3px; height:20px; margin:0; background:url(../images/point_01.gif) no-repeat 0 7px; }
+.list11 .ico { float:left; width:6px; _width:3px; height:20px; margin:0; background:url(/static/newimage/point_01.gif) no-repeat 0 7px; }
         .client-2 {
             position: fixed;
             right: 0px;
@@ -442,7 +442,7 @@
             width: 77px;
         } 
 .client-2 li i {
-            background: url("/static/images/fx.png") no-repeat;
+            background: url("/static/newimage/fx.png") no-repeat;
             display: block;
             width: 30px;
             height: 27px;

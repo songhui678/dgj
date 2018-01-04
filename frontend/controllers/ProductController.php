@@ -54,6 +54,7 @@ class ProductController extends Controller {
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
 
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();
+		$adverList = array();
 		if (!empty($adCate)) {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
 			// var_dump($adverList);exit;
@@ -99,7 +100,7 @@ class ProductController extends Controller {
 	 * ---------------------------------------
 	 */
 	private function cateTree() {
-		$lists = GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->asArray()->all();
+		$lists = GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
 		$lists = ArrayHelper::list_to_tree($lists, 'id', 'pid');
 		// $lists = ArrayHelper::jstree($lists);
 		return $lists;
