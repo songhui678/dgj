@@ -17,14 +17,14 @@ class ProductController extends Controller {
 	 * @var string
 	 */
 	public $layout = 'main';
-	public function actionIndex($id = 1) {
+	public function actionIndex() {
 
-		$cate = GoodsCat::find()->where(array("id" => $id))->one();
+		$cate = GoodsCat::find()->where(array("id" => 1))->one();
 		$cateList = $this->cateTree();
 		// var_export($cateList);exit;
-		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		$goodsCount = Goods::find()->where(array("cat_id" => $cate->id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
-		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+		$goodsList = Goods::find()->where(array("cat_id" => $cate->id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();
 		$adverList = array();
 		if (!empty($adCate)) {

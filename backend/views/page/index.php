@@ -39,6 +39,15 @@ $columns = [
 		'attribute' => 'title',
 	],
 	[
+		'label' => '多屏',
+		'options' => ['width' => '50px;'],
+		'content' => function ($model) {
+			return $model['type'] == 1 ?
+			Html::tag('span', 'PC', ['class' => 'label label-sm label-success']) :
+			Html::tag('span', '手机', ['class' => 'label label-sm label-danger']);
+		},
+	],
+	[
 		'label' => '状态',
 		'options' => ['width' => '50px;'],
 		'content' => function ($model) {

@@ -21,7 +21,7 @@ use yii\widgets\ActiveForm;
 
     <?=$form->field($model, 'category_id')->dropDownList(
 	ArrayHelper::listDataLevel(\backend\models\ArticleCat::find(array('status' => 1))->asArray()->all(), 'id', 'title', 'id', 'pid'),
-	['class' => 'form-control'])->label('文章分类');?>
+	['class' => 'form-control'])->label('新闻分类');?>
 
 
     </div>

@@ -19,8 +19,8 @@ use yii\helpers\Html;
 	ArrayHelper::merge(['0' => '一级栏目'], ArrayHelper::listDataLevel(\backend\models\ArticleCat::find()->asArray()->all(), 'id', 'title', 'id', 'pid')),
 	['class' => 'form-control c-md-2'])->label('上级菜单')?> -->
 
-<?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-2'])->label('栏目名称')->hint('栏目中文名称')?>
-<?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('栏目标识')->hint('英文标识，只允许含有:英文、数字和中划线')?>
+<?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-2'])->label('分类名称')->hint('分类中文名称')?>
+<?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('分类标识')->hint('英文标识，只允许含有:英文、数字和中划线')?>
 <?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越靠前')?>
 <?=$form->field($model, 'status')->radioList(['1' => '显示', '0' => '隐藏'])->label('是否显示')?>
 

@@ -10,7 +10,7 @@ use yii\helpers\Url;
 
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
-$this->title = '文章分类管理';
+$this->title = '新闻分类管理';
 $this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
@@ -113,7 +113,7 @@ $columns = [
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-settings font-dark"></i>
-                    <span class="caption-subject font-dark sbold uppercase">Tree栏目管理</span>
+                    <span class="caption-subject font-dark sbold uppercase">新闻分类管理</span>
                 </div>
                 <div class="actions">
 

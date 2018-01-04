@@ -32,7 +32,7 @@ $this->beginPage();
 
 <div class="topArea wrap clearfix">
     <div class="logo fl">
-        <h1 class="logo"><a href="<?=Url::toRoute('/')?>"><img src="/upload/2016-09/147494550929618200.jpg" alt=""/></a></h1>
+        <h1 class="logo"><a href="<?=Url::toRoute('/')?>"><img src="/static/newimage/logo.png" alt=""/></a></h1>
     </div>
         <?php $this->beginContent('@app/views/layouts/public/menu.php')?>
         <?php $this->endContent()?>
