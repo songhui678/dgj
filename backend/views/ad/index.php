@@ -1,8 +1,8 @@
 <?php
 
+use backend\models\AdCat;
 use yii\grid\GridView;
 use yii\helpers\Html;
-
 /* @var $model common\modelsgii\Ad */
 /* @var $dataProvider yii\data\ActiveDataProvider  */
 /* @var $searchModel backend\models\search\AdSearch */
@@ -30,13 +30,30 @@ $columns = [
 		'options' => ['width' => '50px;'],
 	],
 	[
-		'header' => '类型',
-		'options' => ['width' => '150px;'],
-		'attribute' => 'type',
+		'header' => '上级分类',
+		'content' => function ($model) {
+			$str = '';
+			$paths = AdCat::getParents($model['cate_id']);
+			foreach ($paths as $value) {
+				$str .= $value['title'] . ' > ';
+			}
+			$str = rtrim($str, ' > ');
+			return $str;
+		},
 	],
 	[
 		'header' => '标题',
 		'attribute' => 'title',
+	],
+
+	[
+		'label' => '多屏',
+		'options' => ['width' => '50px;'],
+		'content' => function ($model) {
+			return $model['type'] ?
+			Html::tag('span', 'PC', ['class' => 'label label-sm label-success']) :
+			Html::tag('span', '手机', ['class' => 'label label-sm label-danger']);
+		},
 	],
 	[
 		'label' => '排序',
@@ -47,7 +64,9 @@ $columns = [
 		'label' => '状态',
 		'options' => ['width' => '50px;'],
 		'content' => function ($model) {
-			return '正常';
+			return $model['status'] ?
+			Html::tag('span', '正常') :
+			Html::tag('span', '隐藏');
 		},
 	],
 	[

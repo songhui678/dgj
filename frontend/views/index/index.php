@@ -233,7 +233,7 @@ use yii\helpers\Url;
                         <ul>
                         <?php foreach ($linksList as $links) {?>
                             <li style="width:152px;" class='Mgright'>
-                                <div class="pic"><a href="<?=$links->link?>" target="_blank" title="<?=$links->title?>"><?=$links->title?></a></div>
+                                <div class="pic"><a href="<?=$links->link?>" target="_blank" rel="nofollow" title="<?=$links->title?>"><?=$links->title?></a></div>
                             </li>
                         <?php }?>
                         </ul>

@@ -19,7 +19,7 @@ class AboutController extends Controller {
 		$adCate = AdCat::find()->where(array("name" => 'about', "status" => 1))->one();
 		if (!empty($adCate)) {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
-			// var_dump($adverList);exit;
+
 		}
 
 		return $this->render('index', array('content' => $content, 'adverList' => $adverList));

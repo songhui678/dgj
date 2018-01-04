@@ -66,7 +66,9 @@ $columns = [
 		'label' => '状态',
 		'options' => ['width' => '50px;'],
 		'content' => function ($model) {
-			return '正常';
+			return $model['status'] ?
+			Html::tag('span', '正常') :
+			Html::tag('span', '隐藏');
 		},
 	],
 	[
