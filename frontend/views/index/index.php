@@ -27,13 +27,13 @@ use yii\helpers\Url;
         <div class="txt">  新默真科技，专业为实验室提供完善、一体化系统解决方案。</div>
     </div>
     <div class="bd">
-        <img src="images/hadv.jpg">
+        <img src="/static/newimage/hadv.jpg">
     </div>
     <div class="wrap">
         <ul>
         <?php if (!empty($adIndexList)) {?>
         <?php foreach ($adIndexList as $adver) {?>
-            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><p><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></p></a>
+            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
             </li>
         <?php }}?>
         </ul>
@@ -122,7 +122,7 @@ use yii\helpers\Url;
                         <li><span>应用<Br>广泛</span></li>
                         <li><span>服务<Br>完善</span></li>
                     </ul>
-                    <p class="more"><a href="category.php?class_id=101101"><img src="images/more2.png"> </a> </p>
+                    <p class="more"><a href="category.php?class_id=101101"><img src="/static/newimage/more2.png"> </a> </p>
                 </div>
             </div>
 
@@ -134,12 +134,9 @@ use yii\helpers\Url;
 </div>
 <div class="news">
     <div class="wrap clearfix">
-        <p class="aPrev"><img src="images/n_prev.jpg"> </p>
-        <p class="aNext"><img src="images/n_Next.jpg"> </p>
+        <p class="aPrev"><img src="/static/newimage/n_prev.jpg"> </p>
+        <p class="aNext"><img src="/static/newimage/n_Next.jpg"> </p>
         <div class="news-item-wrap"></div>
-    </div>
-    <div class="news-quan">
-        <ul></ul>
     </div>
 </div>
 <script type="text/javascript">
@@ -191,7 +188,7 @@ use yii\helpers\Url;
     color: #d70c25;
 }
 .col-hd-2 {
-    background: rgba(0, 0, 0, 0) url("../images/xian.png") no-repeat scroll center center;
+    background: rgba(0, 0, 0, 0) url("..//static/newimage/xian.png") no-repeat scroll center center;
     height: 50px;
     margin-bottom: 25px;
     text-align: center;
