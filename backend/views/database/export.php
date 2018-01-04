@@ -8,7 +8,7 @@ use yii\helpers\Url;
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
 $this->title = '数据库管理';
-$this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
+$this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
 \backend\assets\TablesAsset::register($this);
@@ -22,21 +22,11 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
         </div>
         <div class="actions">
             <div class="btn-group btn-group-devided">
-                <?=Html::a('立即备份 <i class="icon-plus"></i>','javascript:;',['id'=>'export', 'class'=>'btn green','style'=>'margin-right:10px;'])?>
-                <?=Html::a('优化表 <i class="icon-check"></i>',['optimize'],['id'=>'optimize', 'class'=>'btn green','style'=>'margin-right:10px;'])?>
-                <?=Html::a('修复表 <i class="icon-medkit"></i>',['repair'],['id'=>'repair','class'=>'btn green','style'=>'margin-right:10px;'])?>
+                <?=Html::a('立即备份 <i class="icon-plus"></i>', 'javascript:;', ['id' => 'export', 'class' => 'btn green', 'style' => 'margin-right:10px;'])?>
+                <?=Html::a('优化表 <i class="icon-check"></i>', ['optimize'], ['id' => 'optimize', 'class' => 'btn green', 'style' => 'margin-right:10px;'])?>
+                <?=Html::a('修复表 <i class="icon-medkit"></i>', ['repair'], ['id' => 'repair', 'class' => 'btn green', 'style' => 'margin-right:10px;'])?>
             </div>
-            <div class="btn-group">
-                <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                    工具箱
-                    <i class="fa fa-angle-down"></i>
-                </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="javascript:;"><i class="fa fa-pencil"></i> 导出Excel </a></li>
-                    <li class="divider"> </li>
-                    <li><a href="javascript:;"> 其他 </a></li>
-                </ul>
-            </div>
+
         </div>
     </div>
     <div class="portlet-body">
@@ -55,7 +45,7 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
                     </tr>
                 </thead>
                 <tbody>
-                
+
                 <?php foreach ($list as $key => $value): ?>
                 <tr class="odd gradeX">
                     <td><input type="checkbox" class="checkboxes" checked="chedked" name="tables[]" value="<?=$value['name']?>" /></td>
@@ -65,11 +55,11 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
                     <td><?=$value['create_time']?></td>
                     <td class="info">未备份</td>
                     <td>
-                        <a href="<?=Url::toRoute(['optimize', 'tables'=>$value['name']])?>" class="ajax-get btn btn-xs purple"><i class="fa fa-check"></i> 优化表</a>
-                        <a href="<?=Url::toRoute(['repair', 'tables'=>$value['name']])?>" class="ajax-get btn btn-xs purple"><i class="fa fa-medkit"></i> 修复表</a>
+                        <a href="<?=Url::toRoute(['optimize', 'tables' => $value['name']])?>" class="ajax-get btn btn-xs purple"><i class="fa fa-check"></i> 优化表</a>
+                        <a href="<?=Url::toRoute(['repair', 'tables' => $value['name']])?>" class="ajax-get btn btn-xs purple"><i class="fa fa-medkit"></i> 修复表</a>
                     </td>
                 </tr>
-                <?php endforeach ?>
+                <?php endforeach?>
 
                 </tbody>
             </table>
@@ -79,10 +69,10 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
 </div>
 
 <!-- 定义数据块 -->
-<?php $this->beginBlock('test'); ?>
+<?php $this->beginBlock('test');?>
 jQuery(document).ready(function() {
     highlight_subnav('database/index?type=export'); //子导航高亮
-    
+
     /* 列表一键多选 */
     jQuery('#sample_11 .group-checkable').change(function () {
         var set = jQuery(this).attr("data-set");
@@ -96,10 +86,10 @@ jQuery(document).ready(function() {
         });
         jQuery.uniform.update(set);
     });
-    
+
     /* 批量 优化表and修复表 */
     var $form = $("#export-form"), $export = $("#export"), tables;
-    
+
     $("#optimize").add($("#repair")).click(function(){
         $.post(this.href, $form.serialize(), function(data){
             if(data.status){
@@ -114,7 +104,7 @@ jQuery(document).ready(function() {
         }, "json");
         return false;
     });
-    
+
     /* 批量 备份表 */
     $export.click(function(){
         $export.parent().children().addClass("disabled");
@@ -142,7 +132,7 @@ jQuery(document).ready(function() {
         );
         return false;
     });
-    
+
     function backup(tab, status){
         status && showmsg(tab.id, "开始备份...(0%)");
         $.get($form.attr("action"), tab, function(data){
@@ -172,9 +162,9 @@ jQuery(document).ready(function() {
     function showmsg(id, msg){
         $form.find("input[value=" + tables[id] + "]").closest("tr").find(".info").html(msg);
     }
-    
+
 });
-<?php $this->endBlock() ?>
+<?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
-<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END); ?>
+<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END);?>
 

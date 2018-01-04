@@ -98,17 +98,7 @@ $columns = [
                 <?=Html::a('添加 <i class="fa fa-plus"></i>', ['add'], ['class' => 'btn green', 'style' => 'margin-right:10px;'])?>
                 <?=Html::a('删除 <i class="fa fa-times"></i>', ['delete'], ['class' => 'btn green ajax-post confirm', 'target-form' => 'ids', 'style' => 'margin-right:10px;'])?>
             </div>
-<!--             <div class="btn-group">
-                <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                    工具箱
-                    <i class="fa fa-angle-down"></i>
-                </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="javascript:;"><i class="fa fa-pencil"></i> 导出Excel </a></li>
-                    <li class="divider"> </li>
-                    <li><a href="javascript:;"> 其他 </a></li>
-                </ul>
-            </div> -->
+
         </div>
     </div>
     <div class="portlet-body">

@@ -7,7 +7,7 @@ use yii\helpers\Url;
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
 $this->title = '还原数据库';
-$this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
+$this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
 \backend\assets\TablesAsset::register($this);
@@ -21,19 +21,9 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
         </div>
         <div class="actions">
             <div class="btn-group btn-group-devided">
-                
+
             </div>
-            <div class="btn-group">
-                <button class="btn blue btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                    工具箱
-                    <i class="fa fa-angle-down"></i>
-                </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="javascript:;"><i class="fa fa-pencil"></i> 导出Excel </a></li>
-                    <li class="divider"> </li>
-                    <li><a href="javascript:;"> 其他 </a></li>
-                </ul>
-            </div>
+
         </div>
     </div>
     <div class="portlet-body">
@@ -53,7 +43,7 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
                     </tr>
                 </thead>
                 <tbody>
-                
+
                 <?php foreach ($list as $key => $value): ?>
                 <tr class="odd gradeX">
                     <td><?=date('Ymd-His', $value['time'])?></td>
@@ -63,11 +53,11 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
                     <td><?=$key?></td>
                     <td>-</td>
                     <td>
-                        <a href="<?=Url::toRoute(['import', 'time'=>$value['time']])?>" class="db-import btn btn-xs purple"><i class="icon-check"></i> 还原</a>
-                        <a href="<?=Url::toRoute(['del', 'time'=>$value['time']])?>" class="ajax-get confirm btn btn-xs purple"><i class="icon-trash"></i> 删除</a>
+                        <a href="<?=Url::toRoute(['import', 'time' => $value['time']])?>" class="db-import btn btn-xs purple"><i class="icon-check"></i> 还原</a>
+                        <a href="<?=Url::toRoute(['del', 'time' => $value['time']])?>" class="ajax-get confirm btn btn-xs purple"><i class="icon-trash"></i> 删除</a>
                     </td>
                 </tr>
-                <?php endforeach ?>
+                <?php endforeach?>
 
                 </tbody>
             </table>
@@ -77,17 +67,17 @@ $this->params['title_sub'] = '';  // 在\yii\base\View中有$params这个可以�
 </div>
 
 <!-- 定义数据块 -->
-<?php $this->beginBlock('test'); ?>
+<?php $this->beginBlock('test');?>
 jQuery(document).ready(function() {
     highlight_subnav('database/index?type=import'); //子导航高亮
-    
+
     /* 还原数据库 */
     $(".db-import").click(function(){
         var self = this, status = ".";
         $.get(self.href, success, "json");
         window.onbeforeunload = function(){ return "正在还原数据库，请不要关闭！" }
         return false;
-    
+
         function success(data){
             if(data.status){
                 if(data.gz){
@@ -100,9 +90,9 @@ jQuery(document).ready(function() {
                 }
                 $(self).parent().prev().text(data.info);
                 if(data.part){
-                    $.get(self.href, 
-                        {"part" : data.part, "start" : data.start}, 
-                        success, 
+                    $.get(self.href,
+                        {"part" : data.part, "start" : data.start},
+                        success,
                         "json"
                     );
                 }  else {
@@ -113,9 +103,9 @@ jQuery(document).ready(function() {
             }
         }
     });
-    
+
 });
-<?php $this->endBlock() ?>
+<?php $this->endBlock()?>
 <!-- 将数据块 注入到视图中的某个位置 -->
-<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END); ?>
+<?php $this->registerJs($this->blocks['test'], \yii\web\View::POS_END);?>
 
