@@ -1,4 +1,5 @@
 <?php
+use common\helpers\StringHelper;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
@@ -49,7 +50,7 @@ use yii\widgets\LinkPager;
                   <dl>
                       <dt><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><?=$goods->goods_name?></a></dt>
                       <dd class="txt">
-                        <?=$goods->description?>
+                        <?php echo StringHelper::truncate_utf8_string($goods->description, 55); ?>
                       </dd>
                       <!--<dd class="wendu">存储温度（℃）：</dd>-->
                   </dl>

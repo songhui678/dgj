@@ -19,7 +19,7 @@ use yii\helpers\Html;
 	['class' => 'form-control c-md-2'])->label('分类')->hint('英文标识');?>
 
 <?=$form->field($model, 'type')->selectList(
-	['1' => 'PC', '2' => '手机'],
+	[1 => 'PC', 2 => '手机'],
 	['class' => 'form-control c-md-2'])->label('多屏')?>
 
 <?=$form->field($model, 'title')->textInput()->label('广告标题');?>

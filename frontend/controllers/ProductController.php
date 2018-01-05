@@ -126,7 +126,6 @@ class ProductController extends Controller {
 		} else {
 			return FuncHelper::ajaxReturn(400, '点赞失败', $id);
 		}
-
 	}
 
 	/**

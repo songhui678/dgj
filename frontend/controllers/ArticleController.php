@@ -1,6 +1,7 @@
 <?php
 
 namespace frontend\controllers;
+use common\helpers\FuncHelper;
 use common\modelsgii\Ad;
 use common\modelsgii\AdCat;
 use common\modelsgii\Article;
@@ -58,5 +59,23 @@ class ArticleController extends Controller {
 			// var_dump($adverList);exit;
 		}
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'tujianList' => $tujianList, 'xiangguanList' => $xiangguanList, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle, 'adverList' => $adverList));
+	}
+	/**
+	 * [actionZan 产品详情]
+	 * @Author   songhui@daojia.com.cn
+	 * @DateTime 2017-12-15T11:57:16+0800
+	 * @param    [type]                   $id [description]
+	 * @return   [type]                       [description]
+	 */
+	public function actionZan() {
+		$id = \Yii::$app->request->get('id');
+		$article = Article::find()->where(array("id" => $id, "status" => 1))->one();
+		if (!empty($article)) {
+			$article->up = $article->up + 1;
+			$article->save();
+			return FuncHelper::ajaxReturn(200, '点赞成功', $article);
+		} else {
+			return FuncHelper::ajaxReturn(400, '点赞失败', $id);
+		}
 	}
 }

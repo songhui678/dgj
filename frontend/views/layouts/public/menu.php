@@ -12,7 +12,7 @@ use yii\helpers\Url;
                     <div class="subNav subNav_1 clearfix">
                     <dl>
 <?php
-$footList = \common\modelsgii\GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->all();
+$footList = \common\modelsgii\GoodsCat::find()->where(array("pid" => 0, "status" => 1))->orderBy('sort asc')->all();
 foreach ($footList as $key => $cate) {
 	if ($key == 0) {
 		?>

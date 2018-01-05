@@ -85,7 +85,7 @@ class Goods extends \common\core\BaseActiveRecord {
 		$url = "";
 		$photo = \common\modelsgii\Picture::find()->where(array("id" => $this->goods_cover))->one();
 		if (is_object($photo)) {
-			$url = Yii::getAlias('@storageUrl') . "image/$photo->path";
+			$url = Yii::getAlias('@storageUrl') . "/image/$photo->path";
 		}
 		return $url;
 	}
