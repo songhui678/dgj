@@ -14,7 +14,9 @@ class ArticleController extends Controller {
 	public $layout = 'main';
 
 	public function actionIndex($id = 1) {
-
+		$this->getView()->title = "冻干机|进口冻干机|实验室冻干机|原位冻干机|纳米材料冻干机|制药冻干机|中试冻干机|生物制品冻干机-新默真科技（北京）有限公司";
+		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
+		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
 		$cate = ArticleCat::find()->where(array("pid" => 0, "id" => $id))->one();
 
 		$articleCount = Article::find()->where(array("category_id" => $id, "status" => 1))->count('id');
@@ -25,6 +27,9 @@ class ArticleController extends Controller {
 	}
 
 	public function actionShow($id) {
+		$this->getView()->title = "冻干机|进口冻干机|实验室冻干机|原位冻干机|纳米材料冻干机|制药冻干机|中试冻干机|生物制品冻干机-新默真科技（北京）有限公司";
+		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
+		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
 		$article = Article::find()->where(array("id" => $id, "status" => 1))->one();
 		// Article::updateByPk($id, array('view' => $article->view + 1));
 		$article->view = $article->view + 1;
@@ -45,87 +50,4 @@ class ArticleController extends Controller {
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle));
 	}
 
-	public function actionTest() {
-		$arr = array(1, 2, 3);
-		foreach ($arr as &$val) {
-			$val;
-		}
-		foreach ($arr as $val) {
-			echo $val;
-		}
-		exit;
-		// $orderList = array(
-		// 	array(
-		// 		"orderId" => "test001",
-		// 		"startTime" => "2017-11-25 21:17:22",
-		// 		"endTime" => "2017-11-25 21:27:22",
-		// 	),
-		// 	array(
-		// 		"orderId" => "test002",
-		// 		"startTime" => "2017-11-25 21:20:22",
-		// 		"endTime" => "2017-11-25 21:37:22",
-		// 	),
-		// 	array(
-		// 		"orderId" => "test003",
-		// 		"startTime" => "2017-11-25 21:03:22",
-		// 		"endTime" => "2017-11-25 21:17:22",
-		// 	),
-		// );
-		$orderList = array();
-		for ($i = 0; $i < 50000; $i++) {
-			$orderList[] = array(
-				"orderId" => "test003",
-				// "startTime" => "2017-11-25 21:03:22",
-				"startTime" => date('Y-m-d H:i:s', time() + $i),
-				"endTime" => "2017-11-25 21:17:22",
-			);
-		}
-
-		$a = $this->msectime();
-		var_dump($a);
-
-		array_multisort(array_column($orderList, "startTime"), SORT_ASC, $orderList);
-
-		$b = $this->msectime();
-		var_dump($b);
-		var_dump($b - $a);
-		$orderArr = array();
-		foreach ($orderList as $key => $order) {
-			// $order['startTime'] = strtotime($order['startTime']);
-			// $order['endTime'] = strtotime($order['endTime']);
-			$orderArr[strtotime($order['startTime'])] = $order;
-		}
-		ksort($orderList);
-
-		$c = $this->msectime();
-		var_dump($c);
-		var_dump($c - $b);
-		exit;
-		// var_dump($orderList);exit;
-		$count = count($orderList);
-		for ($i = 0; $i < $count - 1; $i++) {
-			$j = $i + 1;
-			if (isset($orderList[$j])) {
-				if ($orderList[$i]['endTime'] >= $orderList[$j]["startTime"]) {
-					//处理后一条数据的结束时间比前一条数据结束时间小的情况
-					if ($orderList[$i]['endTime'] >= $orderList[$j]["endTime"]) {
-						$orderList[$j] = $orderList[$i];
-					} else {
-						$orderList[$j]["startTime"] = $orderList[$i]["startTime"];
-					}
-					$orderList[$i] = array();
-				}
-			} else {
-				$i++;
-			}
-		}
-
-		var_dump($orderList);exit;
-	}
-
-	private function msectime() {
-		list($msec, $sec) = explode(' ', microtime());
-		$msectime = (float) sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
-		return $msectime;
-	}
 }
