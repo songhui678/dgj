@@ -37,10 +37,10 @@ use yii\helpers\Url;
       <div class="art-box">
                 <h2><?=$goods->goods_name?></h2>
                 <div class="info">
-                    <span><img src="images/i_icon_scan.jpg"><em><?=$goods->view?></em> </span>
-
-                    <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d", $goods->create_time); ?></em> </span>
-                    <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                    <span><img src="/static/newimage/i_icon_scan.jpg"><em><?=$goods->view?></em> </span>
+                    <span><img src="/static/newimage/i_icon_zan.jpg"><em><?=$goods->up?></em> </span>
+                    <span><img src="/static/newimage/i_icon_time.jpg"><em><?php echo date("Y-m-d", $goods->create_time); ?></em> </span>
+                    <span><img src="/static/newimage/i_icon_pen.jpg"><em>新默真科技</em> </span>
                 </div>
             </div>
             <div class="pro-article clearfix">
@@ -57,7 +57,7 @@ use yii\helpers\Url;
                 <div class="pro-info">
                     <h2><?=$goods->goods_name?></h2>
                     <div class="txt"><?=$goods->description?></div>
-                    <div class="btn"><a href=""><img src="images/p_btn.jpg"> </a> </div>
+                    <div class="btn"><a href=""><img src="/static/newimage/p_btn.jpg"> </a> </div>
                 </div>
             </div>
             <script type="text/javascript">
@@ -96,26 +96,26 @@ use yii\helpers\Url;
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                       <p style="text-align: left; ">快给朋友分享吧！</p>
                     </span>
-                    <span class="zan"><i><img src="images/ico-zan.png"></i><span>点赞</span><em>+1</em></span>
+                    <span class="zan"><i><img src="/static/newimage/ico-zan.png"></i><span>点赞</span><em>+1</em></span>
                 </div>
             </div>
-            <script language="javascript">
+     <script language="javascript">
       $(function(){
         $(".zan").click(function(){
           $.ajax({
-            type:"post",
-            url:"ajax.php?active=zan",
-            data:'id='+132,
+            type:"get",
+            url:"<?=Url::toRoute(['/product/zan'])?>",
+            data:'id='+<?=$goods->goods_id?>,
             success: function(msg){
-              if(msg==1){
+              if(msg.code==200){
                 $(".zan").unbind("click");
                 $(".zan span").text("已赞");
                 $(".zan em").show(0);
-                              $(".zan em").animate({fontSize:'68px',opacity:'0'},1000);
-                              $(".zan em").hide(0);
-                          }else{
-                              alert(msg);
-                          };
+                $(".zan em").animate({fontSize:'68px',opacity:'0'},1000);
+                $(".zan em").hide(0);
+              }else{
+                  alert(msg.msg);
+              };
             }
           });
         });

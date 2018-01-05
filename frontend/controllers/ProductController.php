@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\helpers\ArrayHelper;
+use common\helpers\FuncHelper;
 use common\modelsgii\Ad;
 use common\modelsgii\AdCat;
 use common\modelsgii\Article;
@@ -102,6 +103,29 @@ class ProductController extends Controller {
 			$this->redirect(array('index/error'));
 		}
 	}
+
+	/**
+	 * [actionZan 产品详情]
+	 * @Author   songhui@daojia.com.cn
+	 * @DateTime 2017-12-15T11:57:16+0800
+	 * @param    [type]                   $id [description]
+	 * @return   [type]                       [description]
+	 */
+	public function actionZan() {
+
+		$id = \Yii::$app->request->get('id');
+
+		$goods = Goods::find()->where(array("goods_id" => $id, "status" => 1))->one();
+		if (!empty($goods)) {
+			$goods->up = $goods->up + 1;
+			$goods->save();
+			return FuncHelper::ajaxReturn(200, '点赞成功', $goods);
+		} else {
+			return FuncHelper::ajaxReturn(400, '点赞失败', $id);
+		}
+
+	}
+
 	/**
 	 * ---------------------------------------
 	 * 获取栏目数据tree结构
