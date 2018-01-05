@@ -31,13 +31,20 @@ use yii\helpers\Url;
     </div>
     <div class="wrap">
         <ul>
-        <?php if (!empty($adIndexList)) {?>
-        <?php foreach ($adIndexList as $adver) {?>
-            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
+            <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 1])?>"><i class="i1"></i>冻干机</a>
             </li>
-        <?php }}?>
+            <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 2])?>">
+                    <i class="i2"></i>超微粉气流粉碎机 </a>
+            </li>
+            <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 4])?>">
+                    <i class="i3"></i>微射流均质机 </a>
+            </li>
         </ul>
     </div>
+
 </div>
 <div class="product">
     <div class="wrap">
@@ -110,7 +117,7 @@ use yii\helpers\Url;
         <div class="bd">
             <div class="about-con clearfix">
                                 <div class="intropic">
-                    <img src="/upload/2016-10/147643440164642800.jpg" width="604" height="346">
+                    <img src="/static/newimage/147643440164642800.jpg" width="604" height="346">
                 </div>
                 <div class="intro">
                     <h2><a href="category.php?class_id=101101">新默真科技</a> </h2>
@@ -132,13 +139,7 @@ use yii\helpers\Url;
         </div>
     </div>
 </div>
-<div class="news">
-    <div class="wrap clearfix">
-        <p class="aPrev"><img src="/static/newimage/n_prev.jpg"> </p>
-        <p class="aNext"><img src="/static/newimage/n_Next.jpg"> </p>
-        <div class="news-item-wrap"></div>
-    </div>
-</div>
+
 <script type="text/javascript">
     jQuery(".news").slide({titCell:".news-quan ul", mainCell:".wrap .news-item-wrap", autoPage:true, effect:"leftLoop", autoPlay:true, vis:3, prevCell:".aPrev", nextCell:".aNext", trigger:"click"});
 </script>
@@ -188,7 +189,7 @@ use yii\helpers\Url;
     color: #d70c25;
 }
 .col-hd-2 {
-    background: rgba(0, 0, 0, 0) url("..//static/newimage/xian.png") no-repeat scroll center center;
+    background: rgba(0, 0, 0, 0) url("/static/newimage/xian.png") no-repeat scroll center center;
     height: 50px;
     margin-bottom: 25px;
     text-align: center;

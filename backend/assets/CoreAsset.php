@@ -17,7 +17,7 @@ class CoreAsset extends AssetBundle {
 	public $sourcePath = '@common/metronic';
 	/* 全局CSS文件 */
 	public $css = [
-		'http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&subset=all',
+		// 'http://fonts.useso.com/css?family=Open+Sans:400,300,600,700&subset=all',
 		'global/plugins/font-awesome/css/font-awesome.min.css',
 		'global/plugins/simple-line-icons/simple-line-icons.min.css',
 		'global/plugins/bootstrap/css/bootstrap.min.css',

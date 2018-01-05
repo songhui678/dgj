@@ -20,7 +20,7 @@ class AboutController extends Controller {
 		$content = Page::find()->where(array('name' => 'about', 'type' => 1))->one();
 		$adCate = AdCat::find()->where(array("name" => 'about', "status" => 1))->one();
 		if (!empty($adCate)) {
-			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
+			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "type" => 1))->orderBy('sort asc')->limit(5)->all();
 
 		}
 

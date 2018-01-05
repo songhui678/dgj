@@ -29,7 +29,7 @@ class Ad extends \common\core\BaseActiveRecord {
 	public function rules() {
 		return [
 			[['image', 'type'], 'required'],
-			[['type', 'sort', 'status', 'image'], 'integer'],
+			[['type', 'cate_id', 'sort', 'status', 'image'], 'integer'],
 			[['url'], 'string', 'max' => 255],
 			[['title'], 'string', 'max' => 50],
 		];
@@ -41,6 +41,7 @@ class Ad extends \common\core\BaseActiveRecord {
 	public function attributeLabels() {
 		return [
 			'id' => 'ID',
+			'cate_id' => 'Cate_id',
 			'image' => 'Image',
 			'type' => 'Type',
 			'title' => 'Title',

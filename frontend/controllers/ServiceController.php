@@ -17,7 +17,7 @@ class ServiceController extends \yii\web\Controller {
 		$adCate = AdCat::find()->where(array("name" => 'service', "status" => 1))->one();
 		$adverList = array();
 		if (!empty($adCate)) {
-			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
+			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "type" => 1))->orderBy('sort asc')->limit(5)->all();
 			// var_dump($adverList);exit;
 		}
 		$content = Page::find()->where(array('name' => 'service', 'type' => 1))->one();

@@ -1,7 +1,6 @@
 <?php
 
 namespace mobile\controllers;
-use common\modelsgii\AdCat;
 use common\modelsgii\Article;
 use common\modelsgii\ArticleCat;
 use yii\data\Pagination;
@@ -42,11 +41,7 @@ class ArticleController extends Controller {
 
 		$sql = "select id,title from yii2_article where id>" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
 		$beforeArticle = Article::findBysql($sql)->one();
-		$adCate = AdCat::find()->where(array("name" => 'article', "status" => 1))->one();
-		if (!empty($adCate)) {
-			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
-			// var_dump($adverList);exit;
-		}
+
 		return $this->render('show', array('cate' => $cate, 'article' => $article, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle));
 	}
 
