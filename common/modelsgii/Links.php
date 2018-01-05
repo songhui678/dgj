@@ -28,8 +28,7 @@ class Links extends \common\core\BaseActiveRecord {
 	 */
 	public function rules() {
 		return [
-			[['status', 'sort'], 'integer'],
-			[['create_time', 'update_time'], 'safe'],
+			[['status', 'sort', 'create_time', 'update_time'], 'integer'],
 			[['title', 'link'], 'string', 'max' => 255],
 			[['photo'], 'string', 'max' => 100],
 		];

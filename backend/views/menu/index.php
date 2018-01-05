@@ -33,10 +33,11 @@ $columns = [
 	[
 		'header' => '名称',
 		'attribute' => 'title',
+		'options' => ['width' => '90px;'],
 	],
 	[
 		'header' => '菜单路径',
-		'options' => ['width' => '300px;'],
+		'options' => ['width' => '200px;'],
 		'content' => function ($model, $key) {
 			if ($model['pid'] == 0) {
 				return '无';
@@ -56,10 +57,12 @@ $columns = [
 		'value' => function ($model) {
 			return $model['group'] ? $model['group'] : '';
 		},
+		'options' => ['width' => '200px;'],
 	],
 	[
 		'label' => 'URL',
 		'value' => 'url',
+		'options' => ['width' => '200px;'],
 	],
 	[
 		'label' => '排序',

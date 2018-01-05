@@ -1,6 +1,5 @@
 <?php
 
-use backend\models\ArticleCat;
 use yii\grid\GridView;
 use yii\helpers\Html;
 
@@ -10,7 +9,7 @@ use yii\helpers\Html;
 
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
-$this->title = '内容管理';
+$this->title = '友情链接管理';
 $this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
@@ -30,26 +29,15 @@ $columns = [
 		'attribute' => 'id',
 		'options' => ['width' => '50px;'],
 	],
+
 	[
-		'header' => '标识',
-		'options' => ['width' => '150px;'],
-		'attribute' => 'name',
-	],
-	[
-		'header' => '名称',
+		'header' => '标题',
 		'attribute' => 'title',
 	],
 	[
-		'header' => '上级分类',
-		'content' => function ($model) {
-			$str = '';
-			$paths = ArticleCat::getParents($model['category_id']);
-			foreach ($paths as $value) {
-				$str .= $value['title'] . ' > ';
-			}
-			$str = rtrim($str, ' > ');
-			return $str;
-		},
+		'header' => '链接',
+		'options' => ['width' => '150px;'],
+		'attribute' => 'link',
 	],
 	[
 		'label' => '排序',
@@ -60,7 +48,9 @@ $columns = [
 		'label' => '状态',
 		'options' => ['width' => '50px;'],
 		'content' => function ($model) {
-			return '正常';
+			return $model['status'] ?
+			Html::tag('span', '正常') :
+			Html::tag('span', '隐藏');
 		},
 	],
 	[

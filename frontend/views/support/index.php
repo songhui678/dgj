@@ -1,8 +1,23 @@
 <?php
 /* @var $this \yii\web\View */
 /* @var $content string */
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 ?>
+<div class="iBanner">
+    <div class="bd">
+        <?php foreach ($adverList as $adver) {?>
+            <a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
+        <?php }?>
+    </div>
+</div>
+<div class="menuwrap">
+  <div class="menu wrap ">
+    <dl class="clearfix">
+          <dt><a href="<?=Url::toRoute('/support')?>" class="current"><i class="i1"></i>解决方案</a></dt>
+     </dl>
+  </div>
+</div>
 <div class="container hhh">
   <div class="wrap clearfix">
     <div class="main">

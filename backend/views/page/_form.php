@@ -19,6 +19,9 @@ use yii\helpers\Url;
 <?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('文章标识')->hint('英文标识，只允许含有:英文、数字和中划线');?>
 
 <?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-5'])->label('文章标题')->hint('单页文章标题');?>
+<?=$form->field($model, 'type')->selectList(
+	['1' => 'PC', '2' => '手机'],
+	['class' => 'form-control c-md-2'])->label('多屏')?>
 
 <?=$form->field($model, 'content')->widget('\kucha\ueditor\UEditor', [
 	'clientOptions' => [

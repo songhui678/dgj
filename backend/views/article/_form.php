@@ -18,19 +18,19 @@ use yii\helpers\Url;
 ]);?>
 <?=$form->field($model, 'category_id')->selectList(
 	ArrayHelper::listDataLevel(\backend\models\ArticleCat::find()->asArray()->all(), 'id', 'title', 'id', 'pid'),
-	['class' => 'form-control c-md-2'])->label('栏目')->hint('英文标识');?>
+	['class' => 'form-control c-md-2'])->label('新闻分类')->hint('英文标识');?>
 
 <?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('文章标识')->hint('英文标识，只允许含有:英文、数字和中划线');?>
 
-<?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-5'])->label('文章标题')->hint('文章标题');?>
+<?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-5'])->label('文章标题')->hint('新闻标题');?>
 
 <!-- 单图 -->
 <?=$form->field($model, 'cover')->widget('\common\widgets\images\Images', [
 	//'type' => \backend\widgets\images\Images::TYPE_IMAGE, // 单图
 	'saveDB' => 1, //图片是否保存到picture表，默认不保存
-], ['class' => 'c-md-12'])->label('封面图片')->hint('单图图片尺寸为：300*300');?>
+], ['class' => 'c-md-12'])->label('新闻图片')->hint('单图图片尺寸为：300*300');?>
 
-<?=$form->field($model, 'description')->textarea(['class' => 'form-control c-md-4', 'rows' => 3])->label('文章描述')->hint('文章描述')?>
+<?=$form->field($model, 'description')->textarea(['class' => 'form-control c-md-4', 'rows' => 3])->label('新闻描述')->hint('文章描述')?>
 
 <?=$form->field($model, 'content')->widget('\kucha\ueditor\UEditor', [
 	'clientOptions' => [

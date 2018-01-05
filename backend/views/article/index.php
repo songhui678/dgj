@@ -10,7 +10,7 @@ use yii\helpers\Html;
 
 /* ===========================以下为本页配置信息================================= */
 /* 页面基本属性 */
-$this->title = '内容管理';
+$this->title = '新闻管理';
 $this->params['title_sub'] = ''; // 在\yii\base\View中有$params这个可以在视图模板中共享的参数
 
 /* 加载页面级别资源 */
@@ -60,7 +60,9 @@ $columns = [
 		'label' => '状态',
 		'options' => ['width' => '50px;'],
 		'content' => function ($model) {
-			return '正常';
+			return $model['status'] ?
+			Html::tag('span', '正常') :
+			Html::tag('span', '隐藏');
 		},
 	],
 	[

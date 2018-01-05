@@ -21,7 +21,7 @@ use yii\helpers\Html;
 
 <?=$form->field($model, 'link')->textarea(['class' => 'form-control c-md-4', 'rows' => 3])->label('链接地址')->hint('外链地址必须带http://')?>
 
-
+<?=$form->field($model, 'sort')->textInput(['class' => 'form-control c-md-1'])->label('排序值')->hint('排序值越小越前')?>
 <?=$form->field($model, 'status')->radioList(['1' => '正常', '0' => '隐藏'])->label('状态')?>
 
 <div class="form-actions">
