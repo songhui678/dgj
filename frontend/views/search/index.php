@@ -1,96 +1,68 @@
 <?php
+use common\helpers\StringHelper;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
+use yii\widgets\LinkPager;
 ?>
-<link href="/static/css/search.css" rel="stylesheet">
-<div class="blk-main clearafter">
-   <div class="blk-md">
-    <div class="b plc">
-    <!-- HTML -->
-        <div class="p12-curmbs-1" navcrumbs="">
-            <?php echo Breadcrumbs::widget(['homeLink' => [
+<div class="iBanner">
+    <div class="bd">
+        <?php foreach ($adverList as $adver) {?>
+            <a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
+        <?php }?>
+    </div>
+</div>
+
+<div class="container">
+  <div class="wrap clearfix">
+    <div class="location">
+      <?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
-	'template' => "<b>您的位置:</b>&gt;{link}<span>&gt;</span>",
+	'template' => "<img src='/static/newimage/home.jpg'>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[
-			'label' => '全站搜索',
+			'label' => '信息搜索',
 			'url' => ['/search'],
-			'template' => " {link}",
+			'template' => "{link}<span>&gt;</span>",
+		],
+		[
+			'label' => "{$search_keyword}",
+			'template' => "<span style='font-size: 12px;'>{link}</span>",
 		],
 
 	]]);
 ?>
     </div>
-    <!-- css -->
-</div>
-        <div class="blk-main">
-            <div class="xnznr-search-1-tit tit-md"><h3>搜索结果</h3></div>
-            <div class="xnznr-search-1-main">
-                    <?php foreach ($goodsList as $goods) {?>
-                       <dl>
-                              <dt><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>"><img src="<?=$goods->photo?>" ></a></dt>
-                              <dd>
-                               <h4><a class="t1-article-link" href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>"><?=$goods->goods_name?></a></h4>
-                               <div class="xnznr-search-1-desc">
-                                <?=$goods->description?>
-                               </div>
-                           </dd>
-                       </dl>
-                    <?php }?>
-
-
-
-
-                        </div>
-              <div class="clear"></div>
-              <div class="xnznr-page-main"></div>
-              <div id="saveid">
-                <?=LinkPager::widget(['pagination' => $pages]);?>
-              </div>
-        </div>
-<style>
-            .xnznr-page{text-align: center;margin-top: 25px;}
-            .xnznr-page a{display:inline-block;width: 30px;height: 30px;line-height: 30px; text-align: center;border:1px solid #aaa;vertical-align: middle;margin-right: 4px;}
-            .xnznr-page a.cur{color: #fff;background: #124a62;border: 1px solid #124a62;}
-            .xnznr-page a img{display: block;}
-            .xnznr-search-1-tit{border-bottom: 1px solid #ccc;}
-            .xnznr-search-1-tit h3{width: 145px;height: 46px;text-align: center;line-height: 46px;background: #333;color: #fff;font-weight: normal;position: relative;top: 1px;font-size:24px;}
-            .xnznr-search-1-main dl{padding: 23px 0;clear: both;border-bottom: 1px solid #cbcbcb;display: inline-block;width: 100%;}
-            .xnznr-search-1-main dt{width: 18%;padding-right: 23px;float: left;}
-            .xnznr-search-1-main dt img{width: 100%;}
-            .xnznr-search-1-main dd{float: left;width: 79%;}
-            .xnznr-search-1-main dd h4{font-size: 18px;font-weight: normal;}
-            .xnznr-search-1-main dd h4 span{color: #f00;}
-            .xnznr-search-1-desc{line-height: 30px;height: 60px;padding-top: 8px;overflow: hidden;}
-
-
-             .xnznr-page-main {
-                text-align: center;
-                margin-top: 25px;
-            }
-
-            .xnznr-page-main a,.xnznr-page-main span {
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                text-align: center;
-                border: 1px solid #aaa;
-                vertical-align: middle;
-                margin-right: 4px;
-            }
-            .xnznr-page-main .laypage_curr {
-                color: #fff;
-                background: #666;
-                border: 1px solid #666;
-            }
-
-            .xnznr-page-main a img {
-                display: block;
-            }
-            </style>
-
-
-   </div>
+    <div class="main" style="background:#fff; padding:0 0 40px;">
+      <div class="list-news">
+            <?php foreach ($goodsList as $goods) {?>
+                  <div class="pic-news clearfix">
+                  <p class="pic">
+                      <a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" target="_blank" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="228" height="158" alt="<?=$goods->goods_name?>"/></a>
+                  </p>
+                  <div class="txt">
+                    <h4><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" target="_blank" title="<?=$goods->goods_name?>"><?php echo StringHelper::truncate_utf8_string($goods->goods_name, 18); ?></a></h4>
+                    <div class="i"><?=$goods->description?></div>
+                    <p class="more"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" target="_blank">详 情</a></p>
+                  </div>
+                </div>
+            <?php }?>
+            <?php foreach ($articleList as $article) {?>
+            <dl>
+                <dt><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" target="_blank" title="<?=$article->title?>"><?php echo StringHelper::truncate_utf8_string($article->title, 18); ?></a><em>发布时间：<?php echo date("Y-m-d H:i:s", $article->create_time); ?></em></dt>
+                <dd>
+                  <?=$article->description?><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>" target="_blank">[详情]</a>
+                </dd>
+            </dl>
+            <?php }?>
+      </div>
+      <div class="page">
+      <span>
+        <?=LinkPager::widget(['pagination' => $pages]);?>
+      </span>
+      </div>
+    </div>
   </div>
+</div>
+

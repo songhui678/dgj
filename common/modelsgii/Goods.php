@@ -89,4 +89,5 @@ class Goods extends \common\core\BaseActiveRecord {
 		}
 		return $url;
 	}
+
 }

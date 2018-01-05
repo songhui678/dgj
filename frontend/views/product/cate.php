@@ -2,20 +2,12 @@
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
-<div class="banner">
+<div class="iBanner">
     <div class="bd">
-        <ul>
         <?php foreach ($adverList as $adver) {?>
-            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="664" ></a>
-            </li>
+            <a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
         <?php }?>
-        </ul>
     </div>
-    <div class="hd">
-        <ul></ul>
-    </div>
-    <p class="aPrev"><img src="/static/newimage/aPrev.png"></p>
-    <p class="aNext"><img src="/static/newimage/aNext.png"></p>
 </div>
 <div class="menuwrap">
   <div class="menu wrap pro-tit">

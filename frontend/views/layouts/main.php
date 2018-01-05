@@ -41,8 +41,10 @@ $this->beginPage();
     </script>
     <div class="set fr clearfix">
         <div class="searchbox fl">
-            <form action="search.php" method="get" class="search-form clearfix" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }">
-                <div class="input-box"><input type="text" name="search_keyword" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }" onfocus="if (this.value == '请输入关键字') this.value=''" onblur="if (this.value == '') this.value=''" value="" /></div>
+            <form action="<?=Url::toRoute('/search')?>" method="get" class="search-form clearfix" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }">
+                <div class="input-box">
+                <input type="text" name="search_keyword" onsubmit="if(this.search_keyword.value == ''){ alert('搜索关键字不能为空！'); this.search_keyword.focus(); return false; }" onfocus="if (this.value == '请输入关键字') this.value=''" onblur="if (this.value == '') this.value=''" value="" />
+                </div>
                 <div class="btn-box"><button type="submit"></button></div>
             </form>
         </div>
