@@ -6,7 +6,7 @@ use yii\helpers\Url;
     <ul>
         <?php if (!empty($adverList)) {?>
         <?php foreach ($adverList as $adver) {?>
-            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
+            <li style="display: table-cell; vertical-align: top; width: 640px;"><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
             </li>
         <?php }}?>
     </ul>
@@ -27,15 +27,25 @@ use yii\helpers\Url;
   });
 </script>
 <div class="solution">
-    <img src="/static/images/olution.jpg">
+    <img src="/static/images/solution.jpg">
     <div class="solution-wrap">
         <ul>
-        <?php if (!empty($adIndexList)) {?>
-        <?php foreach ($adIndexList as $adver) {?>
-            <li><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><p><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></p></a>
+            <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 1])?>">
+                    <p><img src="/static/images/s_1.png"> </p>
+                    冻干机</a>
             </li>
-        <?php }}?>
-         </ul>
+            <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 2])?>">
+                    <p><img src="/static/images/s_2.png"> </p>
+                    超微粉气流粉碎机</a>
+            </li>
+             <li>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 4])?>">
+                    <p><img src="/static/images/s_3.png"> </p>
+                    微射流均质机</a>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="product" id="product">

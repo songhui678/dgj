@@ -28,7 +28,7 @@ $this->beginPage();
 
 <div class="top">
     <h1 class="logo">
-        <a href="<?=Url::toRoute('/')?>"><img _src="/static/images/logo.png" src="/static/images/logo.png" alt="新默真科技"></a>
+        <a href="<?=Url::toRoute('/')?>"><img _src="/static/images/logo1.png" src="/static/images/logo.png" alt="新默真科技"></a>
     </h1>
     <div class="navbtn"><img src="/static/images/navbtn.jpg"></div>
     <?php $this->beginContent('@app/views/layouts/public/menu.php')?>

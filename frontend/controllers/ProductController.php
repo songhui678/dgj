@@ -23,7 +23,8 @@ class ProductController extends Controller {
 		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
 		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
 		$cate = GoodsCat::find()->where(array("id" => $id))->one();
-		$cateList = $this->cateTree();
+		$cateTree = $this->cateTree();
+		$cateList = GoodsCat::find()->where(array('pid' => 0, "status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
 		// var_export($cateList);exit;
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
@@ -36,7 +37,7 @@ class ProductController extends Controller {
 		}
 
 		if (!empty($cate)) {
-			return $this->render('index', array('cate' => $cate, 'cateList' => $cateList, 'pages' => $pages, 'goodsList' => $goodsList, 'adverList' => $adverList));
+			return $this->render('index', array('cate' => $cate, 'cateTree' => $cateTree, 'cateList' => $cateList, 'pages' => $pages, 'goodsList' => $goodsList, 'adverList' => $adverList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
@@ -55,7 +56,8 @@ class ProductController extends Controller {
 		$goods = Goods::find()->where(array("goods_id" => $id, "status" => 1))->one();
 		$goods->view = $goods->view + 1;
 		$goods->save();
-		$cateList = $this->cateTree();
+		$cateTree = $this->cateTree();
+		$cateList = GoodsCat::find()->where(array('pid' => 0, "status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
 		//最新资讯
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
 
@@ -70,7 +72,7 @@ class ProductController extends Controller {
 		if (!empty($goods)) {
 			$goodsList = Goods::find()->where(array("cat_id" => $goods->cat_id, "status" => 1))->orderBy('create_time asc')->limit(3)->all();
 
-			return $this->render('show', array('goods' => $goods, 'cateList' => $cateList, 'articleList' => $articleList, 'goodsList' => $goodsList, 'adverList' => $adverList));
+			return $this->render('show', array('goods' => $goods, 'cateTree' => $cateTree, 'cateList' => $cateList, 'articleList' => $articleList, 'goodsList' => $goodsList, 'adverList' => $adverList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
@@ -86,7 +88,8 @@ class ProductController extends Controller {
 		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
 		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
 		$cate = GoodsCat::find()->where(array("id" => $id))->one();
-		$cateList = $this->cateTree();
+		$cateList = GoodsCat::find()->where(array('pid' => 0, "status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
+		$cateTree = $this->cateTree();
 		// var_export($cateList);exit;
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
@@ -98,7 +101,7 @@ class ProductController extends Controller {
 		}
 
 		if (!empty($cate)) {
-			return $this->render('cate', array('cate' => $cate, 'cateList' => $cateList, 'pages' => $pages, 'goodsList' => $goodsList, 'adverList' => $adverList));
+			return $this->render('cate', array('cate' => $cate, 'cateList' => $cateList, 'cateTree' => $cateTree, 'pages' => $pages, 'goodsList' => $goodsList, 'adverList' => $adverList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
