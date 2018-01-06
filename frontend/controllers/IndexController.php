@@ -27,7 +27,6 @@ class IndexController extends Controller {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "type" => 1))->orderBy('sort asc')->limit(5)->all();
 			// var_dump($adverList);exit;
 		}
-		// $cateIdArr = array_column($cateList, 'id');
 		foreach ($cateList as $key => $cate) {
 			$where['cat_id'] = $cate['id'];
 			$where['status'] = 1;

@@ -48,7 +48,7 @@ class Goods extends \common\core\BaseActiveRecord {
 	 */
 	public function rules() {
 		return [
-			[['cat_id', 'goods_cover', 'view', 'up', 'down', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
+			[['cat_id', 'goods_cover', 'view', 'up', 'down', 'is_tuijian', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
 			[['goods_cover', 'content'], 'required'],
 			[['content'], 'string'],
 			[['goods_sn'], 'string', 'max' => 60],
@@ -73,6 +73,7 @@ class Goods extends \common\core\BaseActiveRecord {
 			'tag' => 'Tag',
 			'view' => 'View',
 			'up' => 'Up',
+			'is_tuijian' => 'Is_tuijian',
 			'down' => 'Down',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',

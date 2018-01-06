@@ -15,7 +15,7 @@ class GoodsSearch extends Goods {
 	 */
 	public function rules() {
 		return [
-			[['goods_id', 'cat_id', 'goods_cover', 'view', 'up', 'down', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
+			[['goods_id', 'cat_id', 'goods_cover', 'view', 'up', 'is_tuijian', 'down', 'create_time', 'update_time', 'sort', 'status'], 'integer'],
 			[['goods_sn', 'goods_name', 'keywords', 'description', 'content', 'tag'], 'safe'],
 		];
 	}
@@ -56,6 +56,7 @@ class GoodsSearch extends Goods {
 		$query->andFilterWhere([
 			'goods_id' => $this->goods_id,
 			'cat_id' => $this->cat_id,
+			'is_tuijian' => $this->is_tuijian,
 			'goods_cover' => $this->goods_cover,
 			'view' => $this->view,
 			'up' => $this->up,
