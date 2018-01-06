@@ -5,7 +5,7 @@ use yii\widgets\Breadcrumbs;
 <div class="iBanner">
     <div class="bd">
         <?php foreach ($adverList as $adver) {?>
-            <a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
+            <a href="<?=$adver->url?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
         <?php }?>
     </div>
 </div>
@@ -26,9 +26,9 @@ use yii\widgets\Breadcrumbs;
 ],
 	'links' => [
 		[
-			'label' => '新闻中心',
-			'url' => ['/article'],
-			'template' => "{link}<span>&gt;</span>",
+			'label' => '$cate->title',
+			'url' => $cate->id == 1 ? ['/article'] : ['/service'],
+			'template' => "{link}<span></span>",
 		],
 
 		[

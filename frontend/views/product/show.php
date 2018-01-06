@@ -4,7 +4,7 @@ use yii\helpers\Url;
 <div class="iBanner">
     <div class="bd">
         <?php foreach ($adverList as $adver) {?>
-            <a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
+            <a href="<?=$adver->url?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>" width="1920" height="258" ></a>
         <?php }?>
     </div>
 </div>

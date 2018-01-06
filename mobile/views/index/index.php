@@ -6,7 +6,7 @@ use yii\helpers\Url;
     <ul>
         <?php if (!empty($adverList)) {?>
         <?php foreach ($adverList as $adver) {?>
-            <li style="display: table-cell; vertical-align: top; width: 640px;"><a href="<?=Url::toRoute([$adver->url])?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
+            <li style="display: table-cell; vertical-align: top; width: 640px;"><a href="<?=$adver->url?>" target="_blank" title="<?=$adver->title?>"><img src="<?=$adver->photo?>" alt="<?=$adver->title?>"></a>
             </li>
         <?php }}?>
     </ul>
