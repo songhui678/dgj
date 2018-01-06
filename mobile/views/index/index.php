@@ -98,14 +98,14 @@ use yii\helpers\Url;
         <div class="txt">新默真科技，专业为实验室提供完善、一体化系统解决方案。</div>
     </div>
         <div class="pic">
-        <img src="/upload/2016-10/147643440164642800.jpg">
+        <img src="/static/images/147643440164642800.jpg">
     </div>
     <div class="info">
         <h2><a href="<?=Url::toRoute('/about')?>">新默真科技</a></h2>
         <div class="intro">
           新默真科技（北京）有限公司经销仪器设备，主要致力和服务于研究和中试生产领域，有着优质的产品和良好的售后服务。新默真科技（北京）有限公司的诚信、实力和产品质量获得业界的认可。
         </div>
-        <p class="more"><a href="<?=Url::toRoute('/about')?>"><img src="images/more.jpg"> </a> </p>
+        <p class="more"><a href="<?=Url::toRoute('/about')?>"><img src="/static/images/more.jpg"> </a> </p>
     </div>
     </div>
 <div class="news" id="news">
