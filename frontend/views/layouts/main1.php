@@ -25,7 +25,7 @@ $this->beginPage();
 <script type="text/javascript" src="/static/newjs/common.js?rightButton=0"></script>
 <script type="text/javascript" src="/static/newjs/morecity.js" mce_src="js/morecity.js"></script>
 <script language="javascript" type="text/javascript" src="/static/scripts/uaredirect.js"></script>
-<script type="text/javascript">uaredirect('http://m.nmgen.com.cn/');</script>
+<script type="text/javascript">uaredirect('http://m.jieshuolol.com/');</script>
 <!--[if lt IE 7]><script src="js/iepng.js"></script><![endif]-->
 </head>
 <body>
