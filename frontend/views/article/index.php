@@ -30,13 +30,9 @@ use yii\widgets\LinkPager;
 		[
 			'label' => '新闻中心',
 			'url' => ['/article'],
-			'template' => "{link}<span>&gt;</span>",
+			'template' => "{link}<span></span>",
 		],
-		[
-			'label' => "{$cate['title']}",
-			'url' => ['/article/index', "id" => "{$cate['id']}"],
-			'template' => "{link}",
-		],
+
 	]]);
 ?>
                         </div>

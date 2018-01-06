@@ -1,8 +1,7 @@
 <?php
-/* @var $this \yii\web\View */
-/* @var $content string */
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
+use yii\widgets\LinkPager;
 ?>
 <div class="iBanner">
     <div class="bd">
@@ -14,48 +13,70 @@ use yii\widgets\Breadcrumbs;
 <div class="menuwrap">
   <div class="menu wrap ">
     <dl class="clearfix">
-          <dt><a href="<?=Url::toRoute('/service')?>" class="current"><i class="i1"></i>客户服务</a></dt>
+          <dt><a href="<?=Url::toRoute('/article')?>" class="current"><i class="i1"></i>技术支持</a></dt>
      </dl>
   </div>
 </div>
 <div class="container hhh">
-  <div class="wrap clearfix">
-    <div class="main">
-            <div class="location">
-            <?php echo Breadcrumbs::widget(['homeLink' => [
+    <div class="wrap clearfix">
+        <div class="main">
+     <div class="location">
+ <?php echo Breadcrumbs::widget(['homeLink' => [
 	'label' => '首页',
 	'url' => ['/'],
 	'template' => "<img src='/static/newimage/home.jpg'>{link}<span>&gt;</span>",
 ],
 	'links' => [
 		[
-			'label' => '客户服务',
+			'label' => '技术支持',
 			'url' => ['/service'],
-			'template' => " {link}",
+			'template' => "{link}<span></span>",
 		],
 
 	]]);
 ?>
+                        </div>
+
+            <div class="news-item-wrap clearfix ">
+            <?php foreach ($articleList as $article) {?>
+                    <div class="news-item noMg">
+                        <div class="pic"><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>" target="_blank"><img src="<?=$article->photo?>" width="360" height="225" /></a></div>
+                        <dl>
+                        <dt><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>"><?=$article->title?></a></dt>
+                        <dd>
+                        <?=$article->description?>
+                        </dd>
+                            <dd class="info">
+                                <span><img src="images/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
+                                <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d H:i:s", $article->create_time); ?></em> </span>
+                                <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                            </dd>
+                        </dl>
+                    </div>
+                     <?php }?>
+
+
+    </div>
+            <script type="text/javascript">
+                $(".job-item .tit").click(function(){
+                    var this_par = $(this).parent();
+                    if(this_par.hasClass("job-cur")){
+                        this_par.removeClass("job-cur");
+                    }else{
+                        this_par.addClass("job-cur");
+                        this_par.siblings().removeClass("job-cur");
+                    }
+                });
+            </script>
+            <div class="page">
+                <?=LinkPager::widget([
+	'pagination' => $pages,
+	'firstPageLabel' => '首页',
+	'lastPageLabel' => '尾页',
+	'maxButtonCount' => 5,
+]);?>
 
             </div>
-       <div class="article clearfix" id="info_content">
-
-
-              <?=$content->content?>
-       </div>
-
-        <script language="javascript">
-          $(function(){
-            var imgObj = $("#info_content").find("img");
-            if (imgObj.length > 0)
-            {
-              for (var i = 0; i < imgObj.length; i++)
-              {
-                if (imgObj[i].width > 1140) imgObj[i].width = 1140;
-              }
-            }
-          });
-        </script>
-                  </div>
-  </div>
+          </div>
+    </div>
 </div>

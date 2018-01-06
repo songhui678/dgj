@@ -30,11 +30,7 @@ use yii\widgets\Breadcrumbs;
 			'url' => ['/article'],
 			'template' => "{link}<span>&gt;</span>",
 		],
-		[
-			'label' => "{$cate['title']}",
-			'url' => ['/article/index', "id" => "{$cate['id']}"],
-			'template' => "{link}<span>&gt;</span>",
-		],
+
 		[
 			'label' => "{$article['title']}",
 			'url' => ['/article/show', "id" => "{$article['id']}"],

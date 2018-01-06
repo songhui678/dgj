@@ -27,7 +27,7 @@ foreach ($footList as $key => $cate) {
                 </div>
             </li>
                 <li><a href="<?=Url::toRoute('/support')?>" <?php if (Yii::$app->controller->id == "support") {?>class="current"<?php }?>>解决方案</a></li>
-                <li><a href="<?=Url::toRoute('/service')?>" <?php if (Yii::$app->controller->id == "service") {?>class="current"<?php }?>>客服服务</a></li>
+                <li><a href="<?=Url::toRoute('/service')?>" <?php if (Yii::$app->controller->id == "service") {?>class="current"<?php }?>>技术支持</a></li>
                 <li><a href="<?=Url::toRoute(['/article'])?>" <?php if (Yii::$app->controller->id == "article") {?>class="current"<?php }?>>新闻中心</a></li>
                 <li><a href="<?=Url::toRoute('/contact')?>" <?php if (Yii::$app->controller->id == "contact") {?>class="current"<?php }?>>联系我们</a></li>
         </ul>

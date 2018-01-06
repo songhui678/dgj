@@ -14,7 +14,7 @@ foreach ($footList as $cate) {
                 <?php }?>
             </dl>
             <dl><dt><a href="<?=Url::toRoute('/support')?>">解决方案</a></dt></dl>
-            <dl><dt><a href="<?=Url::toRoute('/service')?>">客户服务</a></dt></dl>
+            <dl><dt><a href="<?=Url::toRoute('/service')?>">技术支持</a></dt></dl>
             <dl><dt><a href="<?=Url::toRoute(['/article'])?>">新闻中心</a></dt></dl>
             <dl><dt><a href="<?=Url::toRoute('/contact')?>">联系我们</a></dt></dl>
         </div>
