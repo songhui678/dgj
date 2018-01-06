@@ -12,7 +12,7 @@ use yii\widgets\Breadcrumbs;
 <div class="menuwrap">
   <div class="menu wrap ">
     <dl class="clearfix">
-          <dt><a href="<?=Url::toRoute('/article')?>" class="current"><i class="i1"></i>新闻中心</a></dt>
+          <dt><a href="<?=Url::toRoute('/service')?>" class="current"><i class="i1"></i>技术支持</a></dt>
      </dl>
   </div>
 </div>
@@ -26,14 +26,14 @@ use yii\widgets\Breadcrumbs;
 ],
 	'links' => [
 		[
-			'label' => '新闻中心',
-			'url' => ['/article'],
+			'label' => '技术支持',
+			'url' => ['/service'],
 			'template' => "{link}<span></span>",
 		],
 
 		[
 			'label' => "{$article['title']}",
-			'url' => ['/article/show', "id" => "{$article['id']}"],
+			'url' => ['/service/show', "id" => "{$article['id']}"],
 			'template' => "{link}",
 		],
 	]]);
@@ -103,13 +103,13 @@ use yii\widgets\Breadcrumbs;
                 <div class="up-next">
                     <ul class="clearfix">
                       <?php if (!empty($nextArticle)) {?>
-                          <li>上一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
+                          <li>上一条： <a href="<?=Url::toRoute(['/service/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
                           </li>
                       <?php } else {?>
                               <li>没有上一条了</li>
                       <?php }?>
                       <?php if (!empty($beforeArticle)) {?>
-                          <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
+                          <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/service/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
                           </li>
                       <?php } else {?>
                           <li>没有下一条了</li>

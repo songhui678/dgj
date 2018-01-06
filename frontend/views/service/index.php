@@ -13,7 +13,7 @@ use yii\widgets\LinkPager;
 <div class="menuwrap">
   <div class="menu wrap ">
     <dl class="clearfix">
-          <dt><a href="<?=Url::toRoute('/article')?>" class="current"><i class="i1"></i>技术支持</a></dt>
+          <dt><a href="<?=Url::toRoute('/service')?>" class="current"><i class="i1"></i>技术支持</a></dt>
      </dl>
   </div>
 </div>
@@ -40,16 +40,16 @@ use yii\widgets\LinkPager;
             <div class="news-item-wrap clearfix ">
             <?php foreach ($articleList as $article) {?>
                     <div class="news-item noMg">
-                        <div class="pic"><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>" target="_blank"><img src="<?=$article->photo?>" width="360" height="225" /></a></div>
+                        <div class="pic"><a href="<?=Url::toRoute(['/service/show', 'id' => $article->id])?>" title="<?=$article->title?>" target="_blank"><img src="<?=$article->photo?>" width="360" height="225" /></a></div>
                         <dl>
-                        <dt><a href="<?=Url::toRoute(['/article/show', 'id' => $article->id])?>" title="<?=$article->title?>"><?=$article->title?></a></dt>
+                        <dt><a href="<?=Url::toRoute(['/service/show', 'id' => $article->id])?>" title="<?=$article->title?>"><?=$article->title?></a></dt>
                         <dd>
                         <?=$article->description?>
                         </dd>
                             <dd class="info">
-                                <span><img src="images/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
-                                <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d H:i:s", $article->create_time); ?></em> </span>
-                                <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                                <span><img src="/static/newimage/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
+                                <span><img src="/static/newimage/i_icon_time.jpg"><em><?php echo date("Y-m-d H:i:s", $article->create_time); ?></em> </span>
+                                <span><img src="/static/newimage/i_icon_pen.jpg"><em>新默真科技</em> </span>
                             </dd>
                         </dl>
                     </div>

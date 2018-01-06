@@ -28,8 +28,8 @@ use yii\widgets\LinkPager;
 ],
 	'links' => [
 		[
-			'label' => '$cate->title',
-			'url' => $cate->id == 1 ? ['/article'] : ['/service'],
+			'label' => '新闻中心',
+			'url' => ['/article'],
 			'template' => "{link}<span></span>",
 		],
 
@@ -47,9 +47,9 @@ use yii\widgets\LinkPager;
                         <?=$article->description?>
                         </dd>
                             <dd class="info">
-                                <span><img src="images/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
-                                <span><img src="images/i_icon_time.jpg"><em><?php echo date("Y-m-d H:i:s", $article->create_time); ?></em> </span>
-                                <span><img src="images/i_icon_pen.jpg"><em>新默真科技</em> </span>
+                                <span><img src="/static/newimage/i_icon_scan.jpg"><em><?=$article->view?></em> </span>
+                                <span><img src="/static/newimage/i_icon_time.jpg"><em><?php echo date("Y-m-d H:i:s", $article->create_time); ?></em> </span>
+                                <span><img src="/static/newimage/i_icon_pen.jpg"><em>新默真科技</em> </span>
                             </dd>
                         </dl>
                     </div>
