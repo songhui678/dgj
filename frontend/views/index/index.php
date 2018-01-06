@@ -24,7 +24,7 @@ use yii\helpers\Url;
 <div class="hadv">
     <div class="hd">
         <h2>解决方案</h2>
-        <div class="txt">  新默真科技，专业为实验室提供完善、一体化系统解决方案。</div>
+        <div class="txt">   新默真科技，为研发和中试实验室提供物料冻干、超微粉碎和微射流均质的系统解决方案</div>
     </div>
     <div class="bd">
         <img src="/static/newimage/hadv.jpg">
