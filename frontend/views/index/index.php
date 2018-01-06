@@ -52,7 +52,7 @@ use yii\helpers\Url;
             <div class="pro-tit">
                 <ul>
                   <?php foreach ($cateList as $key => $cate) {?>
-                  <li><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>"><i class="i<?=$key?>"></i><?=$cate['title']?></a></li>
+                  <li><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>"><i class="i<?=$key + 1?>"></i><?=$cate['title']?></a></li>
                   <?php }?>
                 </ul>
             </div>
