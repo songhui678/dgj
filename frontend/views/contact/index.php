@@ -59,25 +59,13 @@ use yii\widgets\Breadcrumbs;
                                 <div class="pic"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="264" height="187" alt="<?=$goods->goods_name?>"> </a></div>
                                 <div class="name">
                                     <?=$goods->goods_name?>
-                                    <div class="kuan" date-id="<?=$goods->goods_id?>"></div>
                                 </div>
                             </div>
                         <?php }?>
                         </div>
-                        <script type="text/javascript">
-                            $(".xq-item-wrap .kuan").click(function(){
-                                if($(this).hasClass("on")){
-                                    $(this).removeClass("on");
-                                }else{
-                                    $(this).addClass("on");
-                                }
-                            });
-                        </script>
+
                     </div>
                 </div>
-
-
-
-                                    </div>
+</div>
     </div>
 </div>
