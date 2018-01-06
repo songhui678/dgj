@@ -20,4 +20,25 @@ class ServiceController extends \yii\web\Controller {
 
 		return $this->render('index', array('cate' => $cate, 'articleList' => $articleList, 'pages' => $pages));
 	}
+
+	public function actionShow($id) {
+
+		$article = Article::find()->where(array("id" => $id, "status" => 1))->one();
+		$this->getView()->title = $article->title . "-技术支持-新默真科技（北京）有限公司";
+		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
+		$this->getView()->metaTags['description'] = $article->description;
+		// Article::updateByPk($id, array('view' => $article->view + 1));
+		$article->view = $article->view + 1;
+		$article->save();
+		$cate = ArticleCat::find()->where(array("pid" => 0, "id" => $article->category_id))->one();
+
+		// Article::findBySql('SELECT * FROM user')->one();  此方法是用 sql  语句查询 user 表里面的一条数据；
+		$sql = "select id,title from yii2_article where id<" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
+		$nextArticle = Article::findBySql($sql)->one();
+
+		$sql = "select id,title from yii2_article where id>" . $id . " and category_id=" . $article->category_id . " and status=1 order by id asc limit 1";
+		$beforeArticle = Article::findBysql($sql)->one();
+
+		return $this->render('show', array('cate' => $cate, 'article' => $article, 'nextArticle' => $nextArticle, 'beforeArticle' => $beforeArticle));
+	}
 }

@@ -6,7 +6,7 @@ use yii\helpers\Url;
     <div class="yk-nav-box">
         <div class="yk-nav-list" id="mheader_navbox">
             <ul class="yk-nav-pills">
-                              <li class="on"><a href="<?=Url::toRoute(['/article'])?>"><i class="i0"></i>新闻动态</a></li>
+                              <li class="on"><a href="<?=Url::toRoute(['/service'])?>"><i class="i0"></i>技术支持</a></li>
                     </ul>
         </div>
     </div>

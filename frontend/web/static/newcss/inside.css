@@ -29,16 +29,26 @@
 .news-item-wrap .news-item .info span { padding-right: 10px;}
 .news-item-wrap .news-item .info span em { padding-left: 5px; vertical-align: middle; }
 
+
+/* 搜索页码*/
+/* 页码*/
+.pages{width:700px;height:50px;float: right;margin-top: 15px;}
+.pages ul{clear:both;}
+.pages ul li{line-height:32px;float:left;font-size:14px;}
+.pages ul li a{border:#033c6c solid 1px;display:block;padding:0px 15px; text-decoration:none;color:#033c6c;float:left;}
+.pages ul li a:hover{color:#01569d;}
+.pages ul li a.hover{color:#000;background-color:#033c6c;}
+
 .page { text-align: center; padding-top: 20px; }
 .page a { margin: 0 2px; padding: 2px 8px; background: #fff; border: 1px solid #dcdcdc; border-radius: 4px; color: #666; font-size: 13px; }
 .page a:hover,.page a.current { background: #01569d; border-color: #033c6c; color: #fff; }
 
-.p12-pagination-1-main{margin: 0 auto;width: 240px;padding:20px 0;height: 30px;}
-.p12-pagination-1 a,.p12-pagination-1 span{display: block;width:28px;height: 26px;line-height: 26px;border: 1px solid #e5e5e5;float: left;text-align: center;margin: 0 2px;background:#fff;}
-.p12-pagination-1 span{border: 1px solid #fff;}
-.p12-pagination-1 .laypage_curr{background:#0674b1;color:#fff;}
+.page{margin: 0 auto;width: 240px;padding:20px 0;height: 30px;}
+.page span{display: block;width:28px;height: 26px;line-height: 26px;border: 1px solid #e5e5e5;float: left;text-align: center;margin: 0 2px;background:#fff;}
+.page span{border: 1px solid #fff;}
+.page .laypage_curr{background:#0674b1;color:#fff;}
 
-.p12-pagination-1 .laypage_first,.p12-pagination-1 .laypage_last{display:none;}
+.page .laypage_first,..page.laypage_last{display:none;}
 
 
 

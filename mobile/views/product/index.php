@@ -58,12 +58,14 @@ use yii\widgets\LinkPager;
           <?php }?>
         </ul>
       </div>
-      <div class="page">
-      <?=LinkPager::widget([
+      <div class="pages">
+                <?=LinkPager::widget([
 	'pagination' => $pages,
 	'firstPageLabel' => '首页',
 	'lastPageLabel' => '尾页',
-	'maxButtonCount' => 5,
+	'nextPageLabel' => '下一页',
+	'prevPageLabel' => '上一页',
+	'maxButtonCount' => 9,
 ]);?>
 
           </div>

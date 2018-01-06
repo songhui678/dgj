@@ -185,7 +185,16 @@ body { overflow-x:hidden; -webkit-text-size-adjust:none; max-width: 640px; margi
 .subnav-wrap .subnav .navtop { text-align: center; padding: 4% 0; }
 .subnav-wrap .subnav .navtop img { height: 18px; }
 
+/* 页码*/
+.pages{width:1000px;height:50px;float: center;margin-top: 15px;}
+.pages ul{clear:both;}
 
+.pages ul li{line-height:32px;float:left;font-size:14px;}
+.pages ul li first disabled{line-height:32px;float:left;font-size:14px;}
+.pages ul li prev disabled{line-height:32px;float:left;font-size:14px;}
+.pages ul li a{border:#033c6c solid 1px;display:block;padding:0px 15px; text-decoration:none;color:#033c6c;float:left;}
+.pages ul li a:hover{color:#01569d;}
+.pages ul li a.hover{color:#000;background-color:#033c6c;}
 /*产品页面*/
 .page { padding: 4% 0; text-align: center; }
 .page a { padding: 2px 5px; margin: 0 1px; background: #fff; border: 1px solid #dcdcdc; border-radius: 4px; }
