@@ -28,7 +28,7 @@ use yii\widgets\LinkPager;
         <?php foreach ($cateTree as $cate) {?>
           <?php if (isset($cate['_child'])) {?>
           <?php foreach ($cate['_child'] as $key => $erji) {?>
-          <li><?php if ($key > 0) {?>|<?php }?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"  class='current'><?=$cate['title']?></a></li>
+          <li><?php if ($key > 0) {?>|<?php }?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"  class='current'><?=$erji['title']?></a></li>
         <?php }}}?>
       </ul>
   </div>

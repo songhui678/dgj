@@ -75,7 +75,7 @@ use yii\helpers\Url;
               <?php }?>
             </ul>
             <div class="detail">
-                <img src="images/detail.jpg">
+                <img src="/static/images/detail.jpg">
                 <a href="<?=Url::toRoute('/product')?>">更多产品</a>
             </div>
         </div>

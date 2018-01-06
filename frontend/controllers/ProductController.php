@@ -134,7 +134,7 @@ class ProductController extends Controller {
 	 * ---------------------------------------
 	 */
 	private function cateTree() {
-		$lists = GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
+		$lists = GoodsCat::find()->where(array("status" => 1))->orderBy('sort asc')->asArray()->all();
 		$lists = ArrayHelper::list_to_tree($lists, 'id', 'pid');
 		// $lists = ArrayHelper::jstree($lists);
 		return $lists;
