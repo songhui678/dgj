@@ -126,10 +126,10 @@ use yii\helpers\Url;
                     <div class="txt">
 新默真科技（北京）有限公司经销仪器设备，主要致力和服务于研究和中试生产领域，有着优质的产品和良好的售后服务。新默真科技（北京）有限公司的诚信、实力和产品质量获得业界的认可。</div>
                     <ul>
-                        <li><span>高新<Br>技术</span></li>
-                        <li><span>自主<Br>研发</span></li>
-                        <li><span>应用<Br>广泛</span></li>
-                        <li><span>服务<Br>完善</span></li>
+                        <li><span>一流的<Br>产品</span></li>
+                        <li><span>先进的<Br>技术</span></li>
+                        <li><span>广泛的<Br>应用</span></li>
+                        <li><span>细致的<Br>服务</span></li>
                     </ul>
                     <p class="more"><a href="category.php?class_id=101101"><img src="/static/newimage/more2.png"> </a> </p>
                 </div>
