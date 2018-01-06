@@ -57,7 +57,7 @@ use yii\helpers\Url;
                 <div class="pro-info">
                     <h2><?=$goods->goods_name?></h2>
                     <div class="txt"><?=$goods->description?></div>
-                    <div class="btn"><a href=""><img src="/static/newimage/p_btn.jpg"> </a> </div>
+                    <div class="btn"><a href="tencent://message/?uin=898329669&amp;Site=&amp;Menu=yes"><img src="/static/newimage/p_btn.jpg"> </a> </div>
                 </div>
             </div>
             <script type="text/javascript">
