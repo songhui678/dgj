@@ -30,7 +30,7 @@ return [
 	/* UEditor编辑器配置 */
 	'ueditorConfig' => [
 		/* 图片上传配置 */
-		'imageRoot' => Yii::getAlias("@base/web/storage/image/"), //图片path前缀
+		'imageRoot' => Yii::getAlias("@base/web/storage/"), //图片path前缀
 		//'imageRoot'            => Yii::getAlias("@base/web/storage"), //图片path前缀，服务器解析到/web/目录时，上传到这里
 		'imageUrlPrefix' => Yii::getAlias('@storageUrl/image/'), //图片url前缀
 		'imagePathFormat' => '/image/{yyyy}{mm}/editor{time}{rand:6}',
