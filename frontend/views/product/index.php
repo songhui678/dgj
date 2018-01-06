@@ -14,7 +14,7 @@ use yii\widgets\LinkPager;
 <div class="menuwrap">
   <div class="menu wrap pro-tit">
     <dl class="clearfix">
-      <?php foreach ($cateList as $cate) {?>
+      <?php foreach ($cateList as $key => $cate) {?>
         <dt>
           <a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i<?=$key + 1?>"></i><?=$cate['title']?></a>
         </dt>
