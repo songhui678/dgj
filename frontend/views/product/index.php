@@ -14,9 +14,9 @@ use yii\widgets\LinkPager;
 <div class="menuwrap">
   <div class="menu wrap pro-tit">
     <dl class="clearfix">
-      <?php foreach ($cateList as $key => $cate) {?>
+      <?php foreach ($cateList as $key => $cat) {?>
         <dt>
-          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i<?=$key + 1?>"></i><?=$cate['title']?></a>
+          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cat['id']])?>" title="<?=$cat['title']?>" class="current"><i class="i<?=$key + 1?>"></i><?=$cat['title']?></a>
         </dt>
       <?php }?>
     </dl>
@@ -25,9 +25,9 @@ use yii\widgets\LinkPager;
 <div class="third_menu">
   <div class="s_menu">
       <ul class="clearfix">
-        <?php foreach ($cateTree as $cate) {?>
-          <?php if (isset($cate['_child'])) {?>
-          <?php foreach ($cate['_child'] as $key => $erji) {?>
+        <?php foreach ($cateTree as $treeCate) {?>
+          <?php if (isset($treeCate['_child']) && $treeCate['id'] == $cate->id) {?>
+          <?php foreach ($treeCate['_child'] as $key => $erji) {?>
           <li><?php if ($key > 0) {?>|<?php }?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"  class='current'><?=$erji['title']?></a></li>
         <?php }}}?>
       </ul>

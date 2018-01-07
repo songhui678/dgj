@@ -1,4 +1,5 @@
 <?php
+use common\helpers\StringHelper;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
@@ -9,12 +10,13 @@ use yii\widgets\LinkPager;
         <?php }?>
     </div>
 </div>
+
 <div class="menuwrap">
   <div class="menu wrap pro-tit">
     <dl class="clearfix">
-      <?php foreach ($cateList as $key => $cate) {?>
+      <?php foreach ($cateList as $key => $cat) {?>
         <dt>
-          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="ii<?=$key + 1?>"></i><?=$cate['title']?></a>
+          <a href="<?=Url::toRoute(['/product/cate', 'id' => $cat['id']])?>" title="<?=$cat['title']?>" class="current"><i class="i<?=$key + 1?>"></i><?=$cat['title']?></a>
         </dt>
       <?php }?>
     </dl>
@@ -23,10 +25,10 @@ use yii\widgets\LinkPager;
 <div class="third_menu">
   <div class="s_menu">
       <ul class="clearfix">
-        <?php foreach ($cateTree as $cate) {?>
-          <?php if (isset($cate['_child'])) {?>
-          <?php foreach ($cate['_child'] as $key=>$erji) {?>
-          <li><?php if($key>0){?>|<?}?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"  class='current'><?=$erji['title']?></a></li>
+        <?php foreach ($cateTree as $treeCate) {?>
+          <?php if (isset($treeCate['_child']) && $treeCate['id'] == $cate->id) {?>
+          <?php foreach ($treeCate['_child'] as $key => $erji) {?>
+          <li><?php if ($key > 0) {?>|<?php }?> <a href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"  class='current'><?=$erji['title']?></a></li>
         <?php }}}?>
       </ul>
   </div>
@@ -38,7 +40,7 @@ use yii\widgets\LinkPager;
     <div class="main">
                   <div class="pro-item-wrap clearfix">
 
- 
+
           <?php foreach ($goodsList as $goods) {?>
                 <div class="pro-item ">
                   <div class="pic">
@@ -48,7 +50,7 @@ use yii\widgets\LinkPager;
                   <dl>
                       <dt><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><?=$goods->goods_name?></a></dt>
                       <dd class="txt">
-                        <?=$goods->description?>
+                        <?php echo StringHelper::truncate_utf8_string($goods->description, 55); ?>
                       </dd>
                       <!--<dd class="wendu">存储温度（℃）：</dd>-->
                   </dl>
@@ -60,12 +62,12 @@ use yii\widgets\LinkPager;
       </div>
       <div class="pages">
                 <?=LinkPager::widget([
-  'pagination' => $pages,
-  'firstPageLabel' => '首页',
-  'lastPageLabel' => '尾页',
-  'nextPageLabel' => '下一页',
-  'prevPageLabel' => '上一页',
-  'maxButtonCount' => 9,
+	'pagination' => $pages,
+	'firstPageLabel' => '首页',
+	'lastPageLabel' => '尾页',
+	'nextPageLabel' => '下一页',
+	'prevPageLabel' => '上一页',
+	'maxButtonCount' => 9,
 ]);?>
 </div>
 

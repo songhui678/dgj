@@ -7,7 +7,7 @@
     <div class="yk-nav-box">
         <div class="yk-nav-list" id="mheader_navbox">
             <ul class="yk-nav-pills">
-                  <li class="on"><a href="category.php?class_id=101101"><i class="i0"></i>企业简介</a></li>
+                  <li class="on"><a href="<?=Url::toRoute('/about')?>"><i class="i0"></i>企业简介</a></li>
             </ul>
         </div>
     </div>

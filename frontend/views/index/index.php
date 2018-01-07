@@ -122,7 +122,7 @@ use yii\helpers\Url;
                     <img src="/static/newimage/147643440164642800.jpg" width="604" height="346">
                 </div>
                 <div class="intro">
-                    <h2><a href="category.php?class_id=101101">新默真科技</a> </h2>
+                    <h2><a href="<?=Url::toRoute('/about')?>">新默真科技</a> </h2>
                     <div class="txt">
 新默真科技（北京）有限公司经销仪器设备，主要致力和服务于研究和中试生产领域，有着优质的产品和良好的售后服务。新默真科技（北京）有限公司的诚信、实力和产品质量获得业界的认可。</div>
                     <ul>
@@ -131,7 +131,7 @@ use yii\helpers\Url;
                         <li><span>广泛的<Br>应用</span></li>
                         <li><span>细致的<Br>服务</span></li>
                     </ul>
-                    <p class="more"><a href="category.php?class_id=101101"><img src="/static/newimage/more2.png"> </a> </p>
+                    <p class="more"><a href="<?=Url::toRoute('/about')?>"><img src="/static/newimage/more2.png"> </a> </p>
                 </div>
             </div>
 
