@@ -1,6 +1,10 @@
 <?php
 
 namespace mobile\controllers;
+use common\modelsgii\Article;
+use common\modelsgii\ArticleCat;
+use yii\data\Pagination;
+use yii\web\Controller;
 
 class ServiceController extends \yii\web\Controller {
 	/**

@@ -25,7 +25,7 @@ use yii\helpers\Url;
             <li><a href="<?=Url::toRoute('/product')?>"><img src="/static/images/foot_product.png"><p>产品</p></a></li>
         </ul>
         <ul class="list_02 clearfix">
-            <li><a href="<?=Url::toRoute('/service')?>"><img src="/static/images/foot_customer.png"><p>客户</p></a></li>
+            <li><a href="<?=Url::toRoute('/service')?>"><img src="/static/images/foot_customer.png"><p>技术</p></a></li>
             <li><a href="<?=Url::toRoute(['/article'])?>"><img src="/static/images/foot_news.png"><p>资讯</p></a></li>
         </ul>
         <div class="menubtn">

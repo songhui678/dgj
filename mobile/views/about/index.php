@@ -1,6 +1,5 @@
 <?php
-/* @var $this \yii\web\View */
-/* @var $content string */
+use yii\helpers\Url;
 ?>
 <link id="headercss" href="/static/newcss/mheader.css" type="text/css" rel="stylesheet" />
 <nav class="yk-nav " id="mheader_nav">
