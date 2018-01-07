@@ -53,7 +53,7 @@ return [
 				'/service/show/<id:\d+>.html' => '/service/show',
 				'/article/' => '/article/index',
 				'/article/show/<id:\d+>.html' => '/article/show',
-				'/product/cate/<id:\d+>.html' => '/product/cate',
+				'/product/cate/<id:\d+>/' => '/product/cate',
 				'/product/cate/<id:\d+>/<page:\d+>' => 'product/cate',
 				'/product/show/<id:\d+>.html' => '/product/show',
 				'/contact/' => '/contact/index',
