@@ -12,7 +12,7 @@ use yii\widgets\Breadcrumbs;
 <div class="menuwrap">
   <div class="menu wrap ">
     <dl class="clearfix">
-          <dt><a href="<?=Url::toRoute('/article')?>" class="current"><i class="i1"></i>新闻中心</a></dt>
+          <dt><a href="<?=Url::toRoute('/article')?>" class="current"><i class="i1"></i><?=$cate->title?></a></dt>
      </dl>
   </div>
 </div>
@@ -26,7 +26,7 @@ use yii\widgets\Breadcrumbs;
 ],
 	'links' => [
 		[
-			'label' => '新闻中心',
+			'label' => "$cate->title",
 			'url' => ['/article'],
 			'template' => "{link}<span></span>",
 		],

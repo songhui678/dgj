@@ -36,5 +36,31 @@ return [
 				],
 			],
 		],
+
+		'urlManager' => [
+			'class' => 'yii\web\UrlManager',
+			'enablePrettyUrl' => true,
+			'showScriptName' => false,
+			// 'enableStrictParsing' => true,
+			// 'suffix' => '.html',
+			'rules' => [
+				//首页
+				'/' => 'index/index',
+				'/about/' => 'about/index',
+				'/product/' => '/product/index',
+				'/support/' => '/support/index',
+				'/service/' => '/service/index',
+				'/service/show/<id:\d+>.html' => '/service/show',
+				'/article/' => '/article/index',
+				'/article/show/<id:\d+>.html' => '/article/show',
+				'/product/cate/<id:\d+>.html' => '/product/cate',
+				'/product/cate/<id:\d+>/<page:\d+>' => 'product/cate',
+				'/product/show/<id:\d+>.html' => '/product/show',
+				'/contact/' => '/contact/index',
+				'<controller:\w+>/<id:\d+>' => '<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+				'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+			],
+		],
 	],
 ];
