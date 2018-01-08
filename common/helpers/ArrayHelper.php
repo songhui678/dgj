@@ -199,11 +199,11 @@ class ArrayHelper extends \yii\helpers\ArrayHelper {
 	}
 	//获取分类下所有子分类
 	public static function getSubs($catId) {
-		$sub = array();
-		$lists = common\modelsgii\GoodsCat::find()->where(array("pid" => $catId, "status" => 1))->orderBy('sort asc')->all();
+		$sub = array($catId);
+		$lists = \common\modelsgii\GoodsCat::find()->where(array("pid" => $catId, "status" => 1))->orderBy('sort asc')->all();
 		foreach ($lists as $cate) {
 			$sub[] = $cate->id;
-			$sublists = common\modelsgii\GoodsCat::find()->where(array("pid" => $cate->id, "status" => 1))->orderBy('sort asc')->all();
+			$sublists = \common\modelsgii\GoodsCat::find()->where(array("pid" => $cate->id, "status" => 1))->orderBy('sort asc')->all();
 
 			$sub = array_merge($sub, array_column($sublists, 'id'));
 		}

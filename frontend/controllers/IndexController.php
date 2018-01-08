@@ -28,10 +28,11 @@ class IndexController extends Controller {
 			// var_dump($adverList);exit;
 		}
 		foreach ($cateList as $key => $cate) {
-			$where['cat_id'] = $cate['id'];
+			$goodsCateArr = ArrayHelper::getSubs($cate['id']);
+			$where['cat_id'] = $goodsCateArr;
 			$where['status'] = 1;
 			$where['is_tuijian'] = 0;
-			$cateList[$key]['tuijianList'] = Goods::find()->where(array("cat_id" => $cate['id'], "status" => 1, "is_tuijian" => 1))->orderBy('sort asc')->limit(3)->all();
+			$cateList[$key]['tuijianList'] = Goods::find()->where(array("cat_id" => $cgoodsCateArr, "status" => 1, "is_tuijian" => 1))->orderBy('sort asc')->limit(3)->all();
 
 			$cateList[$key]['goodsList'] = Goods::find()->where($where)->orderBy('sort asc')->limit(4)->all();
 		}

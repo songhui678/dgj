@@ -25,10 +25,12 @@ class ProductController extends Controller {
 		$cate = GoodsCat::find()->where(array("id" => $id))->one();
 		$cateTree = $this->cateTree();
 		$cateList = GoodsCat::find()->where(array('pid' => 0, "status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
+		$goodsCateArr = ArrayHelper::getSubs($id);
 		// var_export($cateList);exit;
-		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		$goodsCount = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->count('goods_id');
+
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '12']);
-		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();
 		$adverList = array();
 		if (!empty($adCate)) {
@@ -91,10 +93,10 @@ class ProductController extends Controller {
 		$cate = GoodsCat::find()->where(array("id" => $id))->one();
 		$cateList = GoodsCat::find()->where(array('pid' => 0, "status" => 1))->orderBy('sort asc')->limit(7)->asArray()->all();
 		$cateTree = $this->cateTree();
-		// var_export($cateList);exit;
-		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		//获取分类下所有子分类
 		$goodsCateArr = ArrayHelper::getSubs($id);
+		$goodsCount = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->count('goods_id');
+
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '12']);
 		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();

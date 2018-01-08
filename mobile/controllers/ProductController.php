@@ -23,7 +23,8 @@ class ProductController extends Controller {
 		$cateList = $this->cateTree();
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
-		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+		$goodsCateArr = ArrayHelper::getSubs($id);
+		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 
 		return $this->render('index', array('pages' => $pages, 'goodsList' => $goodsList, 'cateList' => $cateList));
 
@@ -65,9 +66,10 @@ class ProductController extends Controller {
 		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
 		$productCate = GoodsCat::find()->where(array("id" => $id, "status" => 1))->one();
 		$cateList = $this->cateTree();
-		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		$goodsCateArr = ArrayHelper::getSubs($id);
+		$goodsCount = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
-		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 
 		//最新资讯
 		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();

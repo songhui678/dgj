@@ -28,7 +28,8 @@ class IndexController extends Controller {
 		}
 		// $cateIdArr = array_column($cateList, 'id');
 		foreach ($cateList as $key => $cate) {
-			$where['cat_id'] = $cate['id'];
+			$goodsCateArr = ArrayHelper::getSubs($cate->id);
+			$where['cat_id'] = $goodsCateArr;
 			$where['status'] = 1;
 			$cateList[$key]['goodsList'] = Goods::find()->where($where)->orderBy('sort asc')->limit(4)->all();
 		}
