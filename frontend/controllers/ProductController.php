@@ -93,8 +93,10 @@ class ProductController extends Controller {
 		$cateTree = $this->cateTree();
 		// var_export($cateList);exit;
 		$goodsCount = Goods::find()->where(array("cat_id" => $id, "status" => 1))->count('goods_id');
+		//获取分类下所有子分类
+		$goodsCateArr = ArrayHelper::getSubs($id);
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '12']);
-		$goodsList = Goods::find()->where(array("cat_id" => $id, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
+		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
 		$adCate = AdCat::find()->where(array("name" => 'product', "status" => 1))->one();
 		if (!empty($adCate)) {
 			$adverList = Ad::find()->where(array("cate_id" => $adCate->id, "status" => 1))->orderBy('sort asc')->limit(5)->all();
@@ -140,4 +142,5 @@ class ProductController extends Controller {
 		// $lists = ArrayHelper::jstree($lists);
 		return $lists;
 	}
+
 }
