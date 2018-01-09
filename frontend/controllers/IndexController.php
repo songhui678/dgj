@@ -32,7 +32,7 @@ class IndexController extends Controller {
 			$where['cat_id'] = $goodsCateArr;
 			$where['status'] = 1;
 			$where['is_tuijian'] = 0;
-			$cateList[$key]['tuijianList'] = Goods::find()->where(array("cat_id" => $cgoodsCateArr, "status" => 1, "is_tuijian" => 1))->orderBy('sort asc')->limit(3)->all();
+			$cateList[$key]['tuijianList'] = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1, "is_tuijian" => 1))->orderBy('sort asc')->limit(3)->all();
 
 			$cateList[$key]['goodsList'] = Goods::find()->where($where)->orderBy('sort asc')->limit(4)->all();
 		}
