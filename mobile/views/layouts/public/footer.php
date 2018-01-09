@@ -2,13 +2,13 @@
 use yii\helpers\Url;
 ?>
 <div class="contact">
-    <div class="tel">010-51656110，68678971</div>
+    <div class="tel">电话:010-51656110 传真：010-51620600</div>
     <div class="add">北京市石景山区八角西街61号</div>
     <ul class="contact-ul">
         <li><a href="tel:01051656110"><img src="/static/images/icon_tel.jpg"> </a> </li>
         <li><a href="<?=Url::toRoute(['/contact'])?>"><img src="/static/images/icon_map.jpg"> </a> </li>
-        <li><a href="mqqwpa://im/chat?chat_type=wpa&uin=&version=1&src_type=web&web_src=oicqzone.com"><img src="/static/images/icon_qq.jpg"> </a> </li>
-        <li><a href=""><img src="/static/images/icon_weibo.jpg"> </a> </li>
+        <li><a href="mqqwpa://im/chat?chat_type=wpa&uin=898329669&version=1&src_type=web&web_src=oicqzone.com"><img src="/static/images/icon_qq.jpg"> </a> </li>
+        <li><img src="/static/images/icon_weibo.jpg"></li>
     </ul>
     <div class="copyright">
         <p>
