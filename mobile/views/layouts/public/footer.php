@@ -2,7 +2,9 @@
 use yii\helpers\Url;
 ?>
 <div class="contact">
-    <div class="tel">电话:010-51656110 传真：010-51620600</div>
+    <div class="tel">电话：010-51656110</div>
+    <div class="tel">传真：010-51620600</div>
+    <div class="tel">Email：nmgen01@163.com</div>
     <div class="add">北京市石景山区八角西街61号</div>
     <ul class="contact-ul">
         <li><a href="tel:01051656110"><img src="/static/images/icon_tel.jpg"> </a> </li>
