@@ -32,15 +32,15 @@ use yii\helpers\Url;
     <div class="wrap">
         <ul>
             <li>
-                <a href="<?=Url::toRoute(['/product/cate', 'id' => 1])?>"><i class="i1"></i>冻干机</a>
+                <a href="<?=Url::toRoute(['/product/cate', 'id' => 1])?>"><i class="i1"></i>冻干设备与工艺</a>
             </li>
             <li>
                 <a href="<?=Url::toRoute(['/product/cate', 'id' => 2])?>">
-                    <i class="i2"></i>超微粉气流粉碎机 </a>
+                    <i class="i2"></i>超微粉碎及检测 </a>
             </li>
             <li>
                 <a href="<?=Url::toRoute(['/product/cate', 'id' => 4])?>">
-                    <i class="i3"></i>微射流均质机 </a>
+                    <i class="i3"></i>微射流均质与配液 </a>
             </li>
         </ul>
     </div>
@@ -114,7 +114,7 @@ use yii\helpers\Url;
     <div class="wrap">
         <div class="hd">
             <h2>关于我们</h2>
-            <div class="txt">新默真科技，专业为实验室提供完善、一体化系统解决方案。</div>
+            <div class="txt">新默真科技，为您提供冻干、粉碎、纳米均质系统解决方案。</div>
         </div>
         <div class="bd">
             <div class="about-con clearfix">

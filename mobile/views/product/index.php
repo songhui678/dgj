@@ -11,8 +11,6 @@ use yii\widgets\LinkPager;
                 <li class="on"><a href="<?=Url::toRoute(['/product/cate', 'id' => $cate['id']])?>" title="<?=$cate['title']?>" class="current"><i class="i<?=$key?>"></i><?=$cate['title']?></a>
                 </li>
               <?php }?>
-
-
             </ul>
         </div>
     </div>

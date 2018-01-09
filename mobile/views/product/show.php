@@ -36,8 +36,8 @@ use yii\widgets\Breadcrumbs;
 <div class="iContainer">
     <div class="wrap clearfix">
         <div class="art-box">
-            <h2>超低温冷冻储存箱DW-ZW128</h2>
-            <div class="info"><span>浏览量：3545</span><span>时间：2016-09-29</span></div>
+            <h2><?=$goods->goods_name?></h2>
+            <div class="info"><span>浏览量：<?=$goods->view?></span><span>时间：<?php echo date("Y-m-d", $goods->create_time); ?></span></div>
         </div>
                 <div class="pdisplay">
                         <div class="article">
