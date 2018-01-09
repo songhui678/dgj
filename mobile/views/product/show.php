@@ -18,11 +18,7 @@ use yii\helpers\Url;
 
     <div class="dsfg" id="sd">
         <div class="dsffs">
-          <?php foreach ($cateList as $cate) {?>
-          <?php if (isset($cate['_child'])) {?>
-          <?php foreach ($cate['_child'] as $key => $erji) {?>
-              <a  class='on'  href="<?=Url::toRoute(['/product/cate', 'id' => $erji['id']])?>" title="<?=$erji['title']?>"><?=$erji['title']?></a>
-          <?php }}}?>
+            <a  class='on'  href="<?=Url::toRoute(['/product/cate', 'id' => $productCate['id']])?>" title="<?=$productCate['title']?>"><?=$productCate['title']?></a>
         </div>
     </div>
 

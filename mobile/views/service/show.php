@@ -39,13 +39,13 @@ use yii\helpers\Url;
     </script>
         <ul class="up-down">
               <?php if (!empty($nextArticle)) {?>
-                  <li>上一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
+                  <li>上一条： <a href="<?=Url::toRoute(['/service/show', 'id' => $nextArticle->id])?>" title="<?=$nextArticle->title?>"><?=$nextArticle->title?></a>
                   </li>
               <?php } else {?>
                       <li>没有上一条了</li>
               <?php }?>
               <?php if (!empty($beforeArticle)) {?>
-                  <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/article/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
+                  <li class="noBorder">下一条： <a href="<?=Url::toRoute(['/service/show', 'id' => $beforeArticle->id])?>" title="<?=$beforeArticle->title?>"><?=$beforeArticle->title?></a>
                   </li>
               <?php } else {?>
                   <li>没有下一条了</li>

@@ -3,7 +3,6 @@
 namespace mobile\controllers;
 
 use common\helpers\ArrayHelper;
-use common\modelsgii\Article;
 use common\modelsgii\Goods;
 use common\modelsgii\GoodsCat;
 use yii\data\Pagination;
@@ -45,11 +44,10 @@ class ProductController extends Controller {
 		$this->getView()->title = $goods->goods_name . "-产品中心-新默真科技（北京）有限公司";
 		$this->getView()->metaTags['keywords'] = $goods->keywords . '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
 		$this->getView()->metaTags['description'] = $goods->description;
-		//最新资讯
-		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(3)->all();
+		$productCate = GoodsCat::find()->where(array("id" => $goods->cat_id, "status" => 1))->one();
 
 		if (!empty($goods)) {
-			return $this->render('show', array('goods' => $goods, 'articleList' => $articleList, 'cateList' => $cateList));
+			return $this->render('show', array('goods' => $goods, 'productCate' => $productCate, 'cateList' => $cateList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
@@ -72,12 +70,8 @@ class ProductController extends Controller {
 		$goodsCount = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->count('goods_id');
 		$pages = new Pagination(['totalCount' => $goodsCount, 'pageSize' => '10']);
 		$goodsList = Goods::find()->where(array("cat_id" => $goodsCateArr, "status" => 1))->orderBy('sort asc')->offset($pages->offset)->limit($pages->limit)->all();
-
-		//最新资讯
-		$articleList = Article::find()->where(array("status" => 1))->orderBy('create_time asc')->limit(10)->all();
-
 		if (!empty($productCate)) {
-			return $this->render('cate', array('productCate' => $productCate, 'pages' => $pages, 'articleList' => $articleList, 'goodsList' => $goodsList, 'cateList' => $cateList));
+			return $this->render('cate', array('productCate' => $productCate, 'pages' => $pages, 'goodsList' => $goodsList, 'cateList' => $cateList));
 		} else {
 			$this->redirect(array('index/error'));
 		}
