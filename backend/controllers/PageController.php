@@ -78,10 +78,12 @@ class PageController extends BaseController {
 	 * @return mixed
 	 * ---------------------------------------
 	 */
-	public function actionEdit($id) {
+	public function actionEdit() {
+		$id = Yii::$app->request->get('id', 0);
 		$model = $this->findModel($id);
 
 		if (Yii::$app->request->isPost) {
+
 			$data = Yii::$app->request->post('Page');
 			//$data['update_time'] = time(); // backend/models/Article->behaviors()自动完成时间更新
 			/* 表单数据加载、验证、数据库操作 */

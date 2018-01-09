@@ -21,7 +21,8 @@ use yii\widgets\ActiveForm;
     <?=$form->field($model, 'title')->textInput()->label('标题')?>
     </div>
     <div class="col-md-2">
-    <?=$form->field($model, 'status')->dropDownList(['' => '全部', 0 => '隐藏', 1 => '正常'], ['class' => 'form-control'])->label('状态');?>
+    <?=$form->field($model, 'type')->dropDownList(['' => '全部', 1 => 'pc', 2 => '手机'], ['class' => 'form-control'])->label('多屏');?>
+
     </div>
 
     <div class="col-md-2">

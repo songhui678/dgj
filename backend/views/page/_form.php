@@ -19,11 +19,9 @@ use yii\helpers\Url;
 <?=$form->field($model, 'name')->textInput(['class' => 'form-control c-md-2'])->label('文章标识')->hint('英文标识，只允许含有:英文、数字和中划线');?>
 
 <?=$form->field($model, 'title')->textInput(['class' => 'form-control c-md-5'])->label('文章标题')->hint('单页文章标题');?>
-<?php if ($model->type == 1) {?>
-	<?=$form->field($model, 'type')->radioList([1 => 'PC', 2 => '手机'])->label('多屏')?>
-<?php } else {?>
-	<?=$form->field($model, 'type')->radioList([2 => '手机', 1 => 'PC'])->label('多屏')?>
-<?php }?>
+
+<?=$form->field($model, 'type')->radioList(['1' => 'PC', '2' => '手机'])->label('多屏')?>
+
 <?=$form->field($model, 'content')->widget('\kucha\ueditor\UEditor', [
 	'clientOptions' => [
 		'serverUrl' => Url::to(['/public/ueditor']), //确保serverUrl正确指向后端地址
@@ -46,7 +44,7 @@ use yii\helpers\Url;
 	],
 ], ['class' => 'c-md-9'])->label('文章内容');?>
 
-<?=$form->field($model, 'type')->textInput()->hiddenInput(['value' => '1'])->label(false);?>
+
 <?=$form->field($model, 'status')->radioList(['1' => '正常', '0' => '隐藏'])->label('状态')?>
 
 <div class="form-actions">

@@ -2,23 +2,26 @@
 
 namespace common\modelsgii;
 
+use Yii;
+
 /**
- * This is the model class for table "{{%page}}".
+ * This is the model class for table "yii2_page".
  *
- * @property integer $id
- * @property string $name
- * @property string $title
- * @property string $content
- * @property integer $create_time
- * @property integer $update_time
- * @property integer $status
+ * @property int $id
+ * @property string $name 英文标识
+ * @property string $title 标题
+ * @property string $content 内容
+ * @property int $create_time 创建时间
+ * @property int $update_time 更新时间
+ * @property int $type
+ * @property int $status 状态
  */
 class Page extends \common\core\BaseActiveRecord {
 	/**
 	 * @inheritdoc
 	 */
 	public static function tableName() {
-		return '{{%page}}';
+		return 'yii2_page';
 	}
 
 	/**
@@ -28,7 +31,7 @@ class Page extends \common\core\BaseActiveRecord {
 		return [
 			[['name', 'title', 'content'], 'required'],
 			[['content'], 'string'],
-			[['create_time', 'update_time', 'status', 'type'], 'integer'],
+			[['create_time', 'update_time', 'type', 'status'], 'integer'],
 			[['name'], 'string', 'max' => 30],
 			[['title'], 'string', 'max' => 100],
 		];
