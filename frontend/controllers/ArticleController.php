@@ -18,7 +18,7 @@ class ArticleController extends Controller {
 	public function actionIndex($id = 1) {
 		$this->getView()->title = "新闻中心-新默真科技（北京）有限公司";
 		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
-		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为您提供冻干机、酶标仪、蠕动泵和灌装机等产品专业的技术咨询和服务。';
+		$this->getView()->metaTags['description'] = '进口冻干机 美国VirTis冻干机-新默真科技，为您提供美国SP SCIENTIFIC公司生产的最佳配置的冷冻干燥设备，包括实验型冻干机、中试型冻干机、小型生产型及产业型冻干机；协助您选择最高性能的酶标仪；为您推荐最稳定的蠕动泵和灌装机！新默真科技，为研发和中试实验室提供物料冻干机、超微粉碎机和微射流均质机的系统解决方案。';
 		$cate = ArticleCat::find()->where(array("pid" => 0, "id" => $id))->one();
 		$cateList = ArticleCat::find()->where(array("pid" => 0))->orderBy('sort asc')->all();
 		$articleCount = Article::find()->where(array("category_id" => $id, "status" => 1))->count('id');
@@ -40,7 +40,7 @@ class ArticleController extends Controller {
 
 		$this->getView()->title = $article->title . "-新闻中心-新默真科技（北京）有限公司";
 		$this->getView()->metaTags['keywords'] = '美国VirTis冻干机，冷冻干燥机，超微粉气流粉碎机，微射流均质机，加拿大Simport耗材';
-		$this->getView()->metaTags['description'] = $article->description;
+		$this->getView()->metaTags['description'] = $article->description . "新默真科技，为研发和中试实验室提供物料冻干机、超微粉碎机和微射流均质机的系统解决方案。";
 
 		// Article::updateByPk($id, array('view' => $article->view + 1));
 		$article->view = $article->view + 1;
