@@ -15,5 +15,4 @@ class SupportController extends \yii\web\Controller {
 		$content = Page::find()->where(array('name' => 'support', 'type' => 2))->one();
 		return $this->render('index', array('content' => $content));
 	}
-
 }

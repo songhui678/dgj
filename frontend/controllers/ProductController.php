@@ -46,7 +46,6 @@ class ProductController extends Controller {
 	}
 	/**
 	 * [actionShow 产品详情]
-	 * @Author   songhui@daojia.com.cn
 	 * @DateTime 2017-12-15T11:57:16+0800
 	 * @param    [type]                   $id [description]
 	 * @return   [type]                       [description]
@@ -82,7 +81,6 @@ class ProductController extends Controller {
 	}
 	/**
 	 * [actionCate 产品分类列表]
-	 * @Author   songhui@daojia.com.cn
 	 * @DateTime 2017-12-15T11:57:50+0800
 	 * @return   [type]                   [description]
 	 */
@@ -116,7 +114,6 @@ class ProductController extends Controller {
 
 	/**
 	 * [actionZan 产品详情]
-	 * @Author   songhui@daojia.com.cn
 	 * @DateTime 2017-12-15T11:57:16+0800
 	 * @param    [type]                   $id [description]
 	 * @return   [type]                       [description]

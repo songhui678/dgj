@@ -65,7 +65,6 @@ class ArticleController extends Controller {
 	}
 	/**
 	 * [actionZan 产品详情]
-	 * @Author   songhui@daojia.com.cn
 	 * @DateTime 2017-12-15T11:57:16+0800
 	 * @param    [type]                   $id [description]
 	 * @return   [type]                       [description]
