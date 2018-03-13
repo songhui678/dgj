@@ -75,7 +75,7 @@ class ArticleController extends BaseController {
 			$data['update_time'] = time();
 			/* 表单数据加载、验证、数据库操作 */
 			if ($this->saveRow($model, $data)) {
-				$this->insertTag($model->id, $data['tag']);
+				$this->insertTag($id, $data['tag']);
 				$this->success('操作成功', $this->getForward());
 			} else {
 				$this->error('操作错误');
