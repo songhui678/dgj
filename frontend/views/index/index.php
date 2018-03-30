@@ -83,7 +83,8 @@ use yii\helpers\Url;
                     <div class="pro-item">
                         <ul>
                         <?php foreach ($cateList as $key => $cate) {?>
-                          <?php foreach ($cate['goodsList'] as $goods) {?>
+                          <?php foreach ($cate['goodsList'] as $goodkey => $goods) {?>
+                          <?php if ($goodkey < 4) {?>
                            <li>
                                 <div class="list-pic"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="233" height="165"></a></div>
                                 <p class="name"><?=$goods->goods_name?></p>
@@ -94,7 +95,7 @@ use yii\helpers\Url;
                                     </a>
                                 </div>
                             </li>
-                          <?php }}?>
+                          <?php }}}?>
 
                           </ul>
                     </div>
