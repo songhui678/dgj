@@ -57,13 +57,12 @@ use yii\helpers\Url;
                 </ul>
             </div>
             <div class="pro-Box">
+                  <?php foreach ($cateList as $key => $cate) {?>
                    <div class="pro-con clearfix">
                     <div class="pro-big">
                         <div class="bd">
                             <ul>
-                              <?php foreach ($cateList as $key => $cate) {?>
                                <?php foreach ($cate['tuijianList'] as $goods) {?>
-
                                <li class="clearfix">
                                     <p class="p"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="300" height="277"></a></p>
                                     <div class="t">
@@ -72,26 +71,18 @@ use yii\helpers\Url;
                                         <p class="m"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>">了解详情</a></p>
                                     </div>
                                 </li>
-                                <?php }}?>
+                                <?php }?>
 
                            </ul>
                         </div>
                         <div class="hd">
                             <ul>
-                            <li class="">1</li>
-                            <li class="">2</li>
-                            <li class="">3</li>
-                            <li class="">4</li>
-                            <li class="">5</li>
-                            <li class="">6</li>
                             </ul>
                         </div>
                     </div>
                     <div class="pro-item">
                         <ul>
-                        <?php foreach ($cateList as $key => $cate) {?>
                           <?php foreach ($cate['goodsList'] as $goodkey => $goods) {?>
-                          <?php if ($goodkey < 4) {?>
                            <li>
                                 <div class="list-pic"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>"><img src="<?=$goods->photo?>" width="233" height="165"></a></div>
                                 <p class="name"><?=$goods->goods_name?></p>
@@ -102,11 +93,11 @@ use yii\helpers\Url;
                                     </a>
                                 </div>
                             </li>
-                          <?php }}}?>
-
+                          <?php }?>
                           </ul>
                     </div>
                 </div>
+                <?php }?>
               </div>
         </div>
         <script type="text/javascript">
