@@ -41,8 +41,9 @@ use yii\widgets\LinkPager;
                   <div class="pro-item-wrap clearfix">
 
 
-          <?php foreach ($goodsList as $goods) {?>
-                <div class="pro-item ">
+          <?php foreach ($goodsList as $key => $goods) {?>
+
+              <div <?php if ($key % 4 == 0) {?>class="pro-item noMg" <?}else{?> class="pro-item" <?php }?> >
                   <div class="pic">
                         <a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>" target="_blank"><img src="<?=$goods->photo?>" width="288" height="204" alt="<?=$goods->goods_name?>" /></a>
                         <div class="name"><a href="<?=Url::toRoute(['/product/show', 'id' => $goods->goods_id])?>" title="<?=$goods->goods_name?>" target="_blank"><?=$goods->goods_name?></a></div>
